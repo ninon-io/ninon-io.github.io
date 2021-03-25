@@ -1,9 +1,13 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Research"
+    url: https://ninon-io.github.io/research
+  - title: "Teaching"
+    url: https://ninon-io.github.io/teaching
+  - title: "Projects"
+    url: https://ninon-io.github.io/projects
+  - title: "About"
+    url: https://ninon-io.github.io/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
