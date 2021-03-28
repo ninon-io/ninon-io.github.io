@@ -1,5 +1,5 @@
 ---
 title: "Home page"
-layout: splash
+layout: single
 permalink: /about
 ---
