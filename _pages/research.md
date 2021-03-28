@@ -1,5 +1,5 @@
 ---
-title: "Home page"
+title: "Research"
 layout: splash
 permalink: /research
 ---
