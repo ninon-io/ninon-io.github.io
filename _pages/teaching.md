@@ -11,7 +11,7 @@ excerpt: "All the educational material and project statements available here."
 feature_row:
   - image_path: /images/patchpd.jpeg
     alt: "Pure Data"
-    title: "ATIAM - Pure Data courses"
+    title: "Pure Data"
     excerpt: "PDF files and projects for **M2 - ATIAM**"
     url: "/teaching/puredata"
     btn_label: "Enter"
@@ -23,7 +23,7 @@ feature_row:
     url: "/teaching/cryptology"
     btn_label: "Enter"
     btn_class: "btn--inverse"
-  - image_path: /images/JAVA.svg
+  - image_path: /images/java.png
     title: "JAVA"
     excerpt: "PDF files and project for **L3**"
     url: "/teaching/java"
