@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /* Colors */
-$background-color: #18121E !default;
+$background-color: #000006 !default;
 $text-color: #eaeaea !default;
 $primary-color: #76323f !default;
 $border-color: #155765 !default; // mix(#fff, $background-color, 20%) !default;
@@ -15,7 +15,7 @@ $link-color: #D9B310 !default; // mix($primary-color, $text-color, 40%) !default
 $link-color-hover: mix(#fff, $link-color, 25%) !default;
 $link-color-visited: mix(#000, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$masthead-link-color-hover: // mix(#000, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
 .author__urls.social-icons i,
