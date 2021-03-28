@@ -4,6 +4,8 @@ layout: single
 permalink: /
 author_profile: true
 classes: wide
+header:
+  image: /images/header.jpg
 ---
 
 # BIENVENUE
