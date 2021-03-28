@@ -4,8 +4,6 @@ layout: single
 permalink: /
 author_profile: true
 classes: wide
-header:
-  image: /images/ACIDS.png
 ---
 
 # BIENVENUE
