@@ -1,6 +1,6 @@
 ---
-title: "Home page"
-layout: splash
+title: ""
+layout: single
 permalink: /
 ---
 
