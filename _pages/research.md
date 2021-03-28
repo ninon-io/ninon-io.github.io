@@ -5,7 +5,7 @@ permalink: /research
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/research_header.jpg
+  overlay_image: /images/research_header.jpeg
 excerpt: "All the educational material and project statements available here."
 PhD:
   - image_path: /images/java.png
