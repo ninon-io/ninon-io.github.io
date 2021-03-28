@@ -1,5 +1,5 @@
 ---
-title: "Home page"
+title: "About"
 layout: single
 permalink: /about
 ---
