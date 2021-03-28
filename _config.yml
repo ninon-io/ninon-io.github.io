@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Ninon Devis"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/Ninon.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Researcher in AI applied to music, teacher at Sorbonne University and IRCAM"
   location         : "IRCAM, Paris"
   email            :
