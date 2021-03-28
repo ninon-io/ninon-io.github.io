@@ -1,5 +1,5 @@
 ---
-title: "Home page"
+title: "Projects"
 layout: splash
 permalink: /projects
 ---
