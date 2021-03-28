@@ -5,10 +5,10 @@ permalink: /research
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/reasearch-header.jpg
+  overlay_image: /images/reasearch_header.jpg
 excerpt: "All the educational material and project statements available here."
 PhD:
-  - image_path: /images/java.jpg
+  - image_path: /images/java.png
     alt: "PhD"
     title: "PhD Subject"
     excerpt: 'PhD Subject'
@@ -16,7 +16,7 @@ PhD:
     btn_label: "Enter"
     btn_class: "btn--primary"
 conferences:
-  - image_path: /images/java.jpg
+  - image_path: /images/java.png
     alt: "placeholder image 2"
     title: "Placeholder Image Right Aligned"
     excerpt: 'Links to the **descriptions and videos** of various speaking intervention'
@@ -24,7 +24,7 @@ conferences:
     btn_label: "Read More"
     btn_class: "btn--primary"
 papers:
-  - image_path: /images/java.jpg
+  - image_path: /images/java.png
     alt: "placeholder image 2"
     title: "Scientific Papers"
     excerpt: 'Links over seminar 1:'
