@@ -1,5 +1,5 @@
 ---
-title: "Home page"
+title: "Teaching"
 layout: splash
 permalink: /teaching
 ---
