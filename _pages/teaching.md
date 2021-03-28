@@ -4,7 +4,7 @@ layout: splash
 permalink: /teaching
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0.7"
   overlay_image: /images/teaching_header.jpg
 excerpt: "All the educational material and project statements available here."
 
