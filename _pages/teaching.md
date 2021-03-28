@@ -2,6 +2,12 @@
 title: "Teaching"
 layout: splash
 permalink: /teaching
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /images/header.jpg
+excerpt: "All the educational material and project statements available here."
+
 feature_row:
   - image_path: /images/patchpd.jpeg
     alt: "Pure Data"
@@ -25,3 +31,4 @@ feature_row:
     btn_class: "btn--inverse"
     
 ---
+{% include feature_row %}
