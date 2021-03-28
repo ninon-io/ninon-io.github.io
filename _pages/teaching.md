@@ -13,20 +13,20 @@ feature_row:
     alt: "Pure Data"
     title: "Pure Data"
     excerpt: "PDF files and projects for **M2 - ATIAM**"
-    url: "/teaching/puredata"
+    url: "teaching/puredata"
     btn_label: "Enter"
     btn_class: "btn--inverse"
   - image_path: /images/crypto.jpg
     alt: "Crypto"
     title: "Cryptology"
     excerpt: "Exercices and corrections for **L3** and **M1**"
-    url: "/teaching/cryptology"
+    url: "teaching/cryptology"
     btn_label: "Enter"
     btn_class: "btn--inverse"
   - image_path: /images/java.png
     title: "JAVA"
     excerpt: "PDF files and project for **L3**"
-    url: "/teaching/java"
+    url: "teaching/java"
     btn_label: "Enter"
     btn_class: "btn--inverse"
     
