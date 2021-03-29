@@ -25,9 +25,9 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 - keyboard control
 - subpatches
 
-You can find the PDF associated to this course here:
+> You can find the PDF associated to this course here:
 
-The used patches here:
+> The used patches here:
 
 The second course presents deeper technics to build more complicated patches and get new sounds. You can find:
 - technics to normalize the signal
@@ -40,9 +40,9 @@ The second course presents deeper technics to build more complicated patches and
 - building of a kick drum with presets
 - courses about externals (given by P. Esling)
 
-You can find the PDF associated to this course here:
+> You can find the PDF associated to this course here:
 
-The used patches here:
+> The used patches here:
 
 ## Project
 
