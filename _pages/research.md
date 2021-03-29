@@ -21,7 +21,7 @@ conferences:
     title: "Conferences and Seminars"
     excerpt: 'Links to the **descriptions and videos** of various speaking intervention'
     url: "research/conferences"
-    btn_label: "Read More"
+    btn_label: "Enter"
     btn_class: "btn--primary"
 papers:
   - image_path: /images/papers.jpeg
@@ -29,7 +29,7 @@ papers:
     title: "Scientific Papers"
     excerpt: 'List of publications'
     url: "research/papers"
-    btn_label: "Read More"
+    btn_label: "Enter"
     btn_class: "btn--primary"
 ---
 
