@@ -11,7 +11,7 @@ PhD:
   - image_path: /images/phd.jpg
     alt: "PhD"
     title: "PhD Subject"
-    excerpt: '> Lightweight deep learning on real-time embedded architectures.'
+    excerpt: 'Lightweight deep learning on real-time embedded architectures.'
     url: "research/phd"
     btn_label: "Read More"
     btn_class: "btn--primary"
