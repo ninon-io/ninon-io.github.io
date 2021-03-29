@@ -2,7 +2,7 @@
 title: "Conferences & Seminars"
 layout: single
 permalink: /research/conferences/
-author_profile: true
+author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
