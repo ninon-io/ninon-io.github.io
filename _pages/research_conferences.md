@@ -10,7 +10,7 @@ header:
 toc: true
 ---
 
-## Intelligence artificielle – Musique – Incarnation // 24.03.2021
+## Intelligence artificielle – Musique – Incarnation 24.03.2021
 
 ### SCAI and Collegium Musicae
 
@@ -25,7 +25,7 @@ Il s'agit de conceptualiser clairement ce qui manque à un logiciel pour dispos
 
 [Collegium Musicae](http://www.collegium.musicae.sorbonne-universite.fr/fr/actualites/musique-et-intelligence-artificielle.html)
 
-##  Intelligence artificielle, art et créativité // 26.01.2021
+##  Intelligence artificielle, art et créativité 26.01.2021
 
 ### CIS CNRS
 
