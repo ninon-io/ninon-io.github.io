@@ -10,6 +10,8 @@ header:
 excerpt: "Publications sorted by date"
 toc: true
 toc_label: "Publications"
+sidebar:
+  nav: "research"
 ---
 
 ## Creativity in the era of artificial intelligence 08.2020
