@@ -2,11 +2,6 @@
 title: "Projects"
 layout: splash
 permalink: /projects
----
----
-title: "Projects"
-layout: splash
-permalink: /projects
 header:
   overlay_color: "#000"
   overlay_filter: "0.7"
