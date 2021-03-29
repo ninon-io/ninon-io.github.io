@@ -8,7 +8,7 @@ header:
   overlay_image: /images/research_header.jpg
 excerpt: "All the educational material and project statements available here."
 PhD:
-  - image_path: /images/phd.jpeg
+  - image_path: /images/phd.jpg
     alt: "PhD"
     title: "PhD Subject"
     excerpt: '> Lightweight deep learning on real-time embedded architectures.'
