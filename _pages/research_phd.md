@@ -12,6 +12,7 @@ header:
       url: "https://acids.ircam.fr/"
 excerpt: "Lightweight deep learning on real-time embedded architectures"
 toc: true
+toc_label: "Table of Contents"
 ---
 
 ## Subject
