@@ -8,9 +8,9 @@ header:
   overlay_filter: "0.5"
   overlay_image: /images/modular.jpeg
   actions:
-    - label: "Download"
-      url: "https://puredata.info/downloads"
-excerpt: "First, get your Pure Data"
+    - label: "Team Work"
+      url: "https://acids.ircam.fr/"
+excerpt: "Lightweight deep learning on real-time embedded architectures"
 toc: true
 ---
 
