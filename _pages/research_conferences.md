@@ -19,7 +19,7 @@ La réflexion sur l'inscription corporelle des improvisateurs artificiels est ju
 D'autre part, la psychologie de l'action a également mis en évidence le rôle crucial joué par l'inscription corporelle des agents dans leur capacité́ à se coordonner au cours d'actions collectives. L'expression d'attitudes sociales par le corps ainsi que la perception multimodale du corps d'autrui sont des facilitateurs importants de la coordination. Le rôle du corps est particulièrement saillant dans les actions conjointes impliquant une coordination émergente, plutôt que planifiée, dans la mesure où elle est sous-tendue par des mécanismes d'entraînement, de simulation motrice ou de couplages sensorimoteurs qui impliquent directement des propriétés du corps.
 Il s'agit de conceptualiser clairement ce qui manque à un logiciel pour disposer d'une inscription corporelle, au-delà̀ d'une simple inscription matérielle, et de déterminer si un robot musicien possède véritablement une cognition incarnée et une gestuelle instrumentale, et si oui en quels sens. Il conviendra aussi de déterminer si la perception multimodale du corps du co-improvisateur est décisive pour la coordination, ou si c'est plutôt le fait même d'interagir avec un improvisateur pourvu d'un corps similaire qui compte, indépendamment du fait qu'il soit visuellement perçu ou non.
 
-## Links
+### Links
 
 [SCAI](https://scai.sorbonne-universite.fr/public/events/view/0d80ac1a8656ee823101/1)
 
@@ -35,7 +35,7 @@ L’objectif du projet est de modéliser la créativité musicale en développan
 
 Dans le cadre de cette séance, nous allons pouvoir découvrir les divers projets de l’équipe ACIDS et entendre quelques œuvres composées à l’aide de l’intelligence artificielle. Mais le cœur de la séance sera consacrée au papier co-édité par Ninon Devis et Philippe Esling, “Creativity in the Era of Artificial Intelligence” qui propose un angle théorique intéressant sur un nombre de questions centrales à l’étude de la créativité artificielle.
 
-## Links
+### Links
 
 [CIS CNRS](https://cis.cnrs.fr/sem-ia-art-philippe-esling-et-ninon-devis/)
 
