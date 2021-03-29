@@ -12,7 +12,7 @@ toc: true
 
 ## Intelligence artificielle – Musique – Incarnation // 24.03.2021
 
-### Co-organised event by **SCAI** and **Collegium Musicae of the Sorbonne University**
+### Co-organised event by SCAI and Collegium Musicae
 
 La réflexion sur l'inscription corporelle des improvisateurs artificiels est jusque là restée au second plan. Pourtant, deux développements récents dans l'étude de la cognition et de l'action humaines suggèrent que cette focalisation quasi exclusive sur le software reste insatisfaisante. D'une part, les théories de la cognition incarnée développées en sciences cognitives insistent sur la nécessité́ de prendre en compte l'inscription corporelle des processus cognitifs pour les comprendre scientifiquement et les reproduire artificiellement. Ce qui est vrai de la cognition en général se vérifie également dans le cas de la musique, et en particulier de l'improvisation musicale.
 
