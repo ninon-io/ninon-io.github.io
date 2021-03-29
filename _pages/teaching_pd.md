@@ -16,6 +16,8 @@ toc: true
 
 ## Courses
 
+### Basic Notions
+
 The first course aims at introducing the basic concept of **PD**, while giving the essential elements to build your first synthesizer. A particular attention is given for patch clarity and simplicity. You can find:
 - basic notions to begin
 - presentation of oscillators
@@ -28,6 +30,8 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 > You can find the PDF associated to this course here:
 
 > The used patches here:
+
+### Advanced Notions
 
 The second course presents deeper technics to build more complicated patches and get new sounds. You can find:
 - technics to normalize the signal
