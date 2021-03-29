@@ -11,7 +11,7 @@ PhD:
   - image_path: /images/phd.jpg
     alt: "PhD"
     title: "PhD Subject"
-    excerpt: '> ### Lightweight deep learning on real-time embedded architectures
+    excerpt: '> ### Lightweight deep learning on real-time embedded architectures.
 
 Deep learning models have provided extremely successful methods in most application fields, by enabling unprecedented accuracy in various tasks. However, the consistently overlooked downside of deep models is their massive complexity and tremendous computation cost. Besides the challenge of understanding such models, the energy and computational costs of such architectures are raising crucial issues of environmental sustainability. 
 
