@@ -13,6 +13,8 @@ header:
 excerpt: "Lightweight deep learning on real-time embedded architectures"
 toc: true
 toc_label: "Table of Contents"
+sidebar:
+  nav: "research"
 ---
 
 ## Subject
