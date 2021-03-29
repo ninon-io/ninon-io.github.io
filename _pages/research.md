@@ -13,7 +13,7 @@ PhD:
     title: "PhD Subject"
     excerpt: 'PhD Subject'
     url: "research/phd"
-    btn_label: "Enter"
+    btn_label: "Read More"
     btn_class: "btn--primary"
 conferences:
   - image_path: /images/java.png
