@@ -27,7 +27,7 @@ papers:
   - image_path: /images/papers.jpeg
     alt: "Papers"
     title: "Scientific Papers"
-    excerpt: 'List of the publications'
+    excerpt: 'List of publications'
     url: "research/papers"
     btn_label: "Read More"
     btn_class: "btn--primary"
