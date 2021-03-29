@@ -46,15 +46,35 @@ The aims of this PhD will be attained by
 
 ## Bibliographie
 
-The goal of this assignment is to compose an entire track _**only using Pure Data**_. It must last less than 15 minutes and has no restriction regarding the genre.
-
-You must provide a .wav or .mp3 of your creation alongside with all the patches and samples you used to make it. You can attach a README.txt if necessary.
-
-No post-processing, mixing or mastering are allowed unless you attach a README.txt explaining your method and why you felt the need to do that. A raw track must be provided as well.
-
-No Max MSP allowed but any creative experiment will be valued.
-
-> You can find the complete subject here:  
+Alexandre Défossez, Neil Zeghidour, Nicolas Usunier, Léon Bottou, and Francis Bach.  Sing:Symbol-to-instrument neural generator.  InAdvances in Neural Information Processing Systems,pages 9041–9051, 2018.
+Chris Donahue, Julian McAuley, and Miller Puckette.  Adversarial audio synthesis.Interna-tional Conference on Learning Representations, 2019.
+Jesse Engel, Kumar Krishna Agrawal, Shuo Chen, Ishaan Gulrajani, Chris Donahue, andAdam Roberts. Gansynth: Adversarial neural audio synthesis.arXiv preprint arXiv:1902.08710,2019.
+Jesse Engel, Lamtharn Hantrakul, Chenjie Gu, and Adam Roberts.   Ddsp:  Differentiabledigital signal processing.International Conference on Learning Representations, 2020.
+Jesse Engel, Cinjon Resnick, Adam Roberts, Sander Dieleman, Douglas Eck, Karen Si-monyan, and Mohammad Norouzi.   Neural audio synthesis of musical notes with wavenetautoencoders.International Conference on Machine Learning, 70:1068–1077, 2017.
+Philippe Esling, Axel Chemla-Romeu-Santos, and Adrien Bitton.  Generative timbre spaceswith variational audio synthesis.  InProceedings of the International Conference on DigitalAudio Effects (DAFx), 2018.
+Soroush Mehri, Kundan Kumar, Ishaan Gulrajani, Rithesh Kumar, Shubham Jain, Jose Sotelo,Aaron Courville, and Yoshua Bengio.  Samplernn: An unconditional end-to-end neural audiogeneration model.  InInternational Conference on Learning Representations, 2017.
+A.  van  den  Oord,  Yazhe  Li,  Igor  Babuschkin,  Karen  Simonyan,  Oriol  Vinyals,  KorayKavukcuoglu, George Driessche, Edward Lockhart, Luis Cobo, Florian Stimberg, NormanCasagrande, Dominik Grewe, Seb Noury, Sander Dieleman, Erich Elsen, Nal Kalchbrenner,Heiga Zen, Alex Graves, Helen King, Tom Walters, Dan Belov, and Demis Hassabis.  Parallelwavenet: Fast high-fidelity speech synthesis.International Conference on Machine Learning,80:3918–3926, 2018.
+Aäron van den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals, AlexGraves, Nal Kalchbrenner, Andrew Senior, and Koray Kavukcuoglu.  Wavenet: A generativemodel for raw audio.  In9th ISCA Speech Synthesis Workshop, pages 125–125, 2016.
+Xin Wang, Shinji Takaki, and Junichi Yamagishi.  Neural source-filter waveform models forstatistical parametric speech synthesis.IEEE Transactions on Audio, Speech, and LanguageProcessing, 28:402–415, 2019.Lottery Ticket Hypothesis.
+Utku Evci, Trevor Gale, Jacob Menick, Pablo Samuel Castro, and Erich Elsen.  Rigging thelottery: Making all tickets winners.arXiv preprint arXiv:1911.11134, 2019.
+Jonathan Frankle and Michael Carbin.    The lottery ticket hypothesis:  Finding sparse,trainable neural networks.  InInternational Conference on Learning Representations, 2019.
+Jonathan Frankle, Gintare Karolina Dziugaite, Daniel M Roy, and Michael Carbin.  Linearmode connectivity and the lottery ticket hypothesis.arXiv preprint arXiv:1912.05671, 2019.
+Jonathan Frankle, Gintare Karolina Dziugaite, Daniel M Roy, and Michael Carbin.  Stabi-lizing the lottery ticket hypothesis.arXiv preprint arXiv:1903.01611, 2019.
+Jonathan Frankle, David J. Schwab, and Ari S. Morcos.  The early phase of neural networktraining.  InInternational Conference on Learning Representations, 2020.
+Chaoqi Wang, Guodong Zhang, and Roger Grosse.  Picking winning tickets before trainingby preserving gradient flow.arXiv preprint arXiv:2002.07376, 2020.
+Haoran You, Chaojian Li, Pengfei Xu, Yonggan Fu, Yue Wang, Xiaohan Chen, YingyanLin, Zhangyang Wang, and Richard G Baraniuk.  Drawing early-bird tickets: Towards moreefficient training of deep networks.arXiv preprint arXiv:1909.11957, 2019.2
+Pruning.
+Song Han, Jeff Pool, John Tran, and William Dally.  Learning both weights and connectionsfor efficient neural network.   InAdvances in neural information processing systems, pages1135–1143, 2015.
+Yihui He, Xiangyu Zhang, and Jian Sun.  Channel pruning for accelerating very deep neuralnetworks.  InProceedings of the IEEE International Conference on Computer Vision, pages1389–1397, 2017.
+Zehao Huang and Naiyan Wang.    Data-driven sparse structure selection for deep neuralnetworks.   InProceedings of the European conference on computer vision (ECCV), pages304–320, 2018.
+Yann LeCun, John S Denker, and Sara A Solla.  Optimal brain damage.  InAdvances in neuralinformation processing systems, pages 598–605, 1990.
+Namhoon Lee, Thalaiyasingam Ajanthan, and Philip HS Torr.   Snip:  Single-shot networkpruning based on connection sensitivity.arXiv preprint arXiv:1810.02340, 2018.
+Hao Li, Asim Kadav, Igor Durdanovic, Hanan Samet, and Hans Peter Graf.  Pruning filters forefficient convnets.arXiv preprint arXiv:1608.08710, 2016.[P24]Zhuang Liu, Jianguo Li, Zhiqiang Shen, Gao Huang, Shoumeng Yan, and Changshui Zhang.Learning efficient convolutional networks through network slimming.  InProceedings of theIEEE International Conference on Computer Vision, pages 2736–2744, 2017.
+Zhuang Liu, Mingjie Sun, Tinghui Zhou, Gao Huang, and Trevor Darrell.  Rethinking thevalue of network pruning.arXiv preprint arXiv:1810.05270, 2018.
+Jian-Hao Luo, Jianxin Wu, and Weiyao Lin.  Thinet: A filter level pruning method for deepneural network compression.  InProceedings of the IEEE international conference on computervision, pages 5058–5066, 2017.
+Dmitry Molchanov, Arsenii Ashukha, and Dmitry Vetrov.   Variational dropout sparsifiesdeep neural networks.InProceedings of the 34th International Conference on MachineLearning-Volume 70, pages 2498–2507. JMLR. org, 2017.General audio ML.
+Sercan Ö Arık, Heewoo Jun, and Gregory Diamos.  Fast spectrogram inversion usingmulti-head convolutional neural networks.IEEE Signal Processing Letters, 26(1):94–98, 2019.Optimization.
+Sercan Ö Arık, Heewoo Jun, and Gregory Diamos.  Fast spectrogram inversion using multi-head convolutional neural networks.IEEE Signal Processing Letters, 26(1):94–98, 2019
 
 ## Examples
 
