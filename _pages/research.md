@@ -6,7 +6,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.7"
   overlay_image: /images/research_header.jpg
-excerpt: "All the educational material and project statements available here."
+excerpt: "All items linked to my research in creative musical AI"
 PhD:
   - image_path: /images/phd.jpg
     alt: "PhD"
