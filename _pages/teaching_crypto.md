@@ -1,5 +1,5 @@
 ---
-title: "Pure Data"
+title: "Cryptology"
 layout: single
 permalink: /teaching/cryptology/
 author_profile: false
