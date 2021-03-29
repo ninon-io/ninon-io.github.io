@@ -8,6 +8,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /images/mic.jpg
 toc: true
+toc_label: "Conferences"
 ---
 
 ## Intelligence artificielle – Musique – Incarnation 24.03.2021
