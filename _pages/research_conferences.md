@@ -1,7 +1,7 @@
 ---
 title: "Conferences & Seminars"
 layout: single
-permalink: /teaching/conferences/
+permalink: /research/conferences/
 author_profile: false
 header:
   overlay_color: "#000"
