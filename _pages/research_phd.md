@@ -1,7 +1,7 @@
 ---
 title: "PhD Subject"
 layout: single
-permalink: /teaching/cryptology/
+permalink: /research/phd/
 author_profile: false
 header:
   overlay_color: "#000"
