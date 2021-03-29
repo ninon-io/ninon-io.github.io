@@ -8,15 +8,15 @@ header:
   overlay_image: /images/project.jpeg
 excerpt: "Various musicals and scientific projects, ideas, experimentations"
 music:
-  - image_path: /images/phd.jpeg
+  - image_path: /images/project2.jpeg
     alt: "Music"
-    title: "Music"
+    title: "Neurorack"
     excerpt: 'Live music w/ weird instruments'
     url: "research/phd"
     btn_label: "Read More"
     btn_class: "btn--primary"
 dj:
-  - image_path: /images/conference.jpeg
+  - image_path: /images/mic.jpg
     alt: "DJ"
     title: "DJ stuffs"
     excerpt: 'Berghain gig'
@@ -31,6 +31,8 @@ cat:
     url: "research/papers"
     btn_label: "Read More"
     btn_class: "btn--primary"
+toc: true
+toc_label: "Table of Contents"
 ---
 
 {% include feature_row id="music" type="left" %}
