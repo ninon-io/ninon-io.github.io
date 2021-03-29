@@ -12,6 +12,7 @@ header:
       url: "https://puredata.info/downloads"
 excerpt: "First, get your JAVA"
 toc: true
+toc_label: "Table of Contents"
 ---
 
 ## Courses
