@@ -13,6 +13,8 @@ header:
 excerpt: "First, get your Pure Data"
 toc: true
 toc_label: "Table of Contents"
+sidebar:
+  nav: "teaching"
 ---
 
 ## Courses
