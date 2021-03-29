@@ -56,16 +56,6 @@ No Max MSP allowed but any creative experiment will be valued.
 
 > You can find the complete subject here:  
 
-Some examples from my students:
+## Examples
 
-### Contact information
-> Ninon Devis
-> c/o IRCAM  
-> 1, Place Igor Stravinsky  
-> F-75004 Paris, France  
-
-Teacher - University Paris 6 - UPMC  
-PhD - AI applied to music
-Master - Acoustics, Signal Processing and Informatics  
-IRCAM - CNRS UMR 9912  
-*Music Representations* team  
+Here are examples of tracks made by my students in accordance with the subject.
