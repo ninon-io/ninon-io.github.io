@@ -13,6 +13,8 @@ header:
 excerpt: "First, get your JAVA"
 toc: true
 toc_label: "Table of Contents"
+sidebar:
+  nav: "teaching"
 ---
 
 ## Courses
