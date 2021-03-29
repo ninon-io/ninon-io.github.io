@@ -3,7 +3,6 @@ title: "JAVA"
 layout: single
 permalink: /teaching/java
 author_profile: false
-classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
