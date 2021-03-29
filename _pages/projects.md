@@ -35,7 +35,7 @@ cat:
 
 {% include feature_row id="music" type="left" %}
 
-{% include feature_row id="DJ" type="right" %}
+{% include feature_row id="dj" type="right" %}
 
 {% include feature_row id="cat" type="left" %}
 
