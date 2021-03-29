@@ -16,6 +16,8 @@ toc: true
 
 ## Subject
 
+### Introduction
+
 Deep learning have provided extremely successful solutions in almost all application fields, enabling unprecedented accuracy in both discriminative and generative tasks. However, the consistently overlooked downside of these models is their stunningly massive complexity, incurring tremendous computation costs and extensive inference time. This aspect is almost always underestimated in evaluating the quality of proposed models, overshadowed by the never-ending quest for accuracy. However, this complexity hampers the challenge of understanding the behavior of such models. Furthermore, the energy and computational costs are raising crucial issues of environmental sustainability. As a showering example, MegatronLM is a massive transformer model with 8.3 billion parameters, where training this  model took 512 V100 GPUs running continuously for 9.2 days. Hence, many prospects are still unattainable, specifically these huge memory footprint and humongous data processing are a major impediment to relying on these models on real-time embedded and constrained hardware. 
 
 Specifically in audio applications, novel deep generative models are able to synthesize waveform data matching the acoustic properties of a given dataset with unprecedented quality. However, this task remains challenging as the generation of high-quality waveform requires to handle complex temporal structures at multiple scales. In this setup, reducing the size and memory footprints become eminently important as the audio generation domain is built around real-time settings and on dedicated lightweight embedded hardware. At the time being, the lack of work on lightweight and sparse deep models is a significant limitation for potential deployment on embedded platforms such as _Raspberry Pi_ or _Arduino_, which are particularly pervasive. Subsequently, none of the current deep generative audio models can fit real-life use with these computational constraints and memory limitations.
@@ -75,7 +77,3 @@ Pruning.
 - Dmitry Molchanov, Arsenii Ashukha, and Dmitry Vetrov.   Variational dropout sparsifiesdeep neural networks.InProceedings of the 34th International Conference on MachineLearning-Volume 70, pages 2498–2507. JMLR. org, 2017.General audio ML.
 - Sercan Ö Arık, Heewoo Jun, and Gregory Diamos.  Fast spectrogram inversion usingmulti-head convolutional neural networks.IEEE Signal Processing Letters, 26(1):94–98, 2019.Optimization.
 - Sercan Ö Arık, Heewoo Jun, and Gregory Diamos.  Fast spectrogram inversion using multi-head convolutional neural networks.IEEE Signal Processing Letters, 26(1):94–98, 2019
-
-## Examples
-
-Here are examples of tracks made by my students in accordance with the subject.
