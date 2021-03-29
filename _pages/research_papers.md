@@ -13,7 +13,7 @@ toc: true
 
 ## Creativity in the era of artificial intelligence 08.2020
 
-### Philippe Esling, Ninon Devis
+> Philippe Esling, Ninon Devis
 
 Creativity is a deeply debated topic, as this concept is arguably quintessential to our humanity. Across different epochs, it has been infused with an extensive variety of meanings relevant to that era. Along these, the evolution of technology have provided a plurality of novel tools for creative purposes. Recently, the advent of Artificial Intelligence (AI), through deep learning approaches, have seen proficient successes across various applications. The use of such technologies for creativity appear in a natural continuity to the artistic trend of this century. However, the aura of a technological artefact labeled as intelligent has unleashed passionate and somewhat unhinged debates on its implication for creative endeavors. In this paper, we aim to provide a new perspective on the question of creativity at the era of AI, by blurring the frontier between social and computational sciences. To do so, we rely on reflections from social science studies of creativity to view how current AI would be considered through this lens. As creativity is a highly context-prone concept, we underline the limits and deficiencies of current AI, requiring to move towards artificial creativity. We argue that the objective of trying to purely mimic human creative traits towards a self-contained ex-nihilo generative machine would be highly counterproductive, putting us at risk of not harnessing the almost unlimited possibilities offered by the sheer computational power of artificial agents.
 
@@ -22,6 +22,8 @@ Creativity is a deeply debated topic, as this concept is arguably quintessential
 [Creativity in the era of artificial intelligence](https://arxiv.org/pdf/2008.05959.pdf)
 
 ## Diet deep generative audio models with structured lottery
+
+> Philippe Esling, Ninon Devis, Adrien Bitton, Antoine Caillon, Axel Chemla--Romeu-Santos, Constance Douwes
 
 ###  Proceedings of the 23rd International Conference on Digital Audio Effects (DAFx-20), Vienna, Austria, September 8-12, 2020
 
@@ -32,6 +34,8 @@ Deep learning models have provided extremely successful solutions in most audio 
 [Diet deep generative audio models with structured lottery](https://arxiv.org/pdf/2007.16170.pdf)
 
 ## Ultra-light deep MIR by trimming lottery tickets
+
+> Philippe Esling, Theis Bazin, Adrien Bitton, Tristan Carsault, Ninon Devis
 
 ###  21st International Society for Music Information Retrieval Conference 11-15 October 2020, Montreal, Canada
 
