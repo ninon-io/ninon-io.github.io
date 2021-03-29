@@ -7,7 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /images/mic.jpg
-toc: false
+toc: true
 ---
 
 ## Intelligence artificielle – Musique – Incarnation // 24.03.2021
