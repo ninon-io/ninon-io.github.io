@@ -61,7 +61,7 @@ sidebar:
 
 [Get the PDF](/documents/Crypto_Romantique_TD5.pdf){: .btn .btn--primary}
 
-## Introduction à la sécurité (ISEC) - M1
+## Introduction à la sécurité - M1
 
 ### TD 1
 
