@@ -19,7 +19,7 @@ dj:
   - image_path: /images/mic.jpg
     alt: "DJ"
     title: "DJ stuffs"
-    excerpt: 'Berghain gig'
+    excerpt: 'Under construction'
     url: "research/conferences"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -27,7 +27,7 @@ cat:
   - image_path: /images/papers.jpeg
     alt: "cats"
     title: "Cats and Turtle"
-    excerpt: 'Story of baby'
+    excerpt: 'Under construction'
     url: "research/papers"
     btn_label: "Read More"
     btn_class: "btn--primary"
