@@ -19,8 +19,12 @@ sidebar:
 
 ## Cours magistraux
 
-PDF1 & 2
+[Héritage](/documents/01_JAVA_Héritage.pdf){: .btn .btn--primary}       
+[Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--primary}
 
-## Project
+[Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--primary}
+[Interface Graphique](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--primary}
 
-Subject: here PDF
+## Projet
+
+[Tarot](/documents/Projet_tarot_Java.pdf){: .btn .btn--primary}
