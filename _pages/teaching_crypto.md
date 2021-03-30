@@ -8,18 +8,23 @@ header:
   overlay_filter: "0.5"
   overlay_image: /images/header.jpg
   actions:
-    - label: "Download"
-      url: "https://puredata.info/downloads"
-excerpt: "First, get your Pure Data"
+    - label: "Have fun here"
+      url: "https://overthewire.org/wargames/"
+excerpt: "Cryptologie Romantique et Introduction à la sécurité"
 toc: true
 toc_label: "Table of Contents"
 sidebar:
   nav: "teaching"
 ---
 
-## Courses
+## Romantic Cryptology - L3
 
-PDF1 & 2
+### Subject and Correction of exercices
+
+
+
+[Get the PDF of the subject](/documents/td1-etu_compressed.pdf){: .btn .btn--primary}
+
 
 ## Project
 
