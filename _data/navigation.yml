@@ -17,16 +17,16 @@ main:
 
 research:
   - title: "PhD Subject"
-    url: https://ninon-io.github.io/research/phd/
+    url: https://ninon-io.github.io/research/phd
   - title: "Conferences"
-    url: https://ninon-io.github.io/research/conferences/
+    url: https://ninon-io.github.io/research/conferences
   - title: "Scientific Papers"
-    url: https://ninon-io.github.io/research/papers/
+    url: https://ninon-io.github.io/research/papers
 
 teaching:
   - title: "Pure Data"
-    url: https://ninon-io.github.io/teaching/puredata/
+    url: https://ninon-io.github.io/teaching/puredata
   - title: "Cryptology"
-    url: https://ninon-io.github.io/teaching/cryptology/
+    url: https://ninon-io.github.io/teaching/cryptology
   - title: "Java"
-    url: https://ninon-io.github.io/teaching/java/
+    url: https://ninon-io.github.io/teaching/java
