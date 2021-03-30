@@ -16,7 +16,7 @@ PhD:
     btn_label: "Read More"
     btn_class: "btn--primary"
 conferences:
-  - image_path: /images/phone2.jpg
+  - image_path: /images/berg2.jpg
     alt: "Conferences"
     title: "Conferences and Seminars"
     excerpt: 'Links to the **descriptions and videos** of various speaking intervention'
