@@ -17,7 +17,8 @@ sidebar:
   nav: "teaching"
 ---
 
-## Romantic Cryptology - L3
+## Cryptologie Romantique - L3
+
 
 [Enoncé](/documents/td1-etu_compressed.pdf){: .btn .btn--primary}
 
