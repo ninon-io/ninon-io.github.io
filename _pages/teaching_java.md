@@ -19,11 +19,11 @@ sidebar:
 
 ## Cours magistraux
 
-[Héritage](/documents/01_JAVA_Héritage.pdf){: .btn .btn--primary}       
-[Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--primary}
+[Héritage](/documents/01_JAVA_Héritage.pdf){: .btn .btn--light-outline}       
+[Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--light-outline}
 
-[Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--primary}
-[Interface Graphique](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--primary}
+[Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--light-outline}
+[Interface Graphique](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--light-outline}
 
 ## Projet
 
