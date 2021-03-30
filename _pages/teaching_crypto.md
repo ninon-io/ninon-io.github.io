@@ -66,7 +66,6 @@ sidebar:
 ### TD 1
 
 [Exercices faciles](/documents/TD1Simple.pdf){: .btn .btn--primary}
-
 [Exercices avancés](/documents/TD1_ISEC_2021.pdf){: .btn .btn--primary}
 
 - Taille des clefs
