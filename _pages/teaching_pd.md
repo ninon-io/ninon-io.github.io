@@ -30,9 +30,9 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 - keyboard control
 - subpatches
 
-> You can find the PDF associated to this course here:
+> You can find the PDF associated to this course [Here](/documents/Pure_Data.pdf){: .btn .btn--light-outline}
 
-> The used patches here:
+> The used patches [Here](/documents/patches1.zip){: .btn .btn--light-outline}
 
 ### Advanced Notions
 
@@ -47,9 +47,9 @@ The second course presents deeper technics to build more complicated patches and
 - building of a kick drum with presets
 - courses about externals (given by P. Esling)
 
-> You can find the PDF associated to this course here:
+> You can find the PDF associated to this course [Here](/documents/Pure_Data2.pdf){: .btn .btn--light-outline}
 
-> The used patches here:
+> The used patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
 
 ## Project
 
@@ -61,7 +61,7 @@ No post-processing, mixing or mastering are allowed unless you attach a README.t
 
 No Max MSP allowed but any creative experiment will be valued.
 
-> You can find the complete subject here:  
+> You can find the complete subject [Here](/documents/Pure_Data_Project.pdf){: .btn .btn--light-outline} 
 
 ## Examples
 
