@@ -111,13 +111,13 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/ninon.devis/"
+      # url: "https://www.facebook.com/ninon.devis/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ninon-io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/ninon.devis/?hl=fr"
+      # url: "https://www.instagram.com/ninon.devis/?hl=fr"
 
 # Site Footer
 footer:
