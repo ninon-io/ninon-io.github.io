@@ -10,7 +10,7 @@ header:
 
 ## Introduction
 
-I am currently doing a PhD in machine learning and artificial intelligence applied to music at [IRCAM](http://www.ircam.fr), where I belong to the [ACIDS research group](http://acids.ircam.fr). I teach cryptology and JAVA at [Sorbonne Université](http://www.sorbonne-universite.fr/) and Pure Data in the [ATIAM](http://atiam.ircam.fr) Masters.
+I am currently doing a PhD in machine learning and artificial intelligence applied to music at [IRCAM](http://www.ircam.fr), where I belong to the [ACIDS research group](http://acids.ircam.fr), in the [Music Representation Team](https://www.stms-lab.fr/team/representations-musicales/). I teach cryptology and JAVA at [Sorbonne Université](http://www.sorbonne-universite.fr/) and Pure Data in the [ATIAM](http://atiam.ircam.fr) Masters.
 
 ### Contact information
 > Ninon Devis
