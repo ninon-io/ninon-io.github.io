@@ -17,12 +17,14 @@ sidebar:
 
 > Ninon Devis
 
+###  Article de vulgarisation pour le journal en ligne The Conversation
+
 Au sein de nos sociétés profondément impactées par les avancées technologiques, il semble que l’espace créatif tende également à se développer en harmonie avec ces progrès. Plus particulièrement, l’exploitation de l’intelligence artificielle s’intensifie et son utilisation s’immisce dans toutes les sphères artistiques. Et pourtant, bien que l’IA soit par définition un algorithme capable de résoudre des tâches relevant de l’intelligence humaine, le succès de son utilisation – quel que soit son domaine d’étude – repose sur une formalisation rigoureuse du problème traité ainsi qu’une définition claire des objectifs.
 
 À ce titre, il semble légitime de se demander dans quelle mesure il est possible de conjuguer créativité et intelligence artificielle. Peut-on élaborer une forme de créativité artificielle ? Si oui, quelles en sont ses limites ? Face à l’automatisation massive qui n’épargne aucun domaine des arts, quelle place conserve l’originalité ? Dans le secteur de la musique, quels outils futurs reposant sur l’IA peut-on concevoir ? Quels pourraient alors être les instruments de demain ?
 
 ### Lien
-Vers The Conversation:
+
 [L'avenir de la créativité sera-t-il artificiel](https://theconversation.com/lavenir-de-la-creativite-musicale-sera-t-il-artificiel-157443)
 
 ## Creativity in the era of artificial intelligence 08.2020
