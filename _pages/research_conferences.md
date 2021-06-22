@@ -13,6 +13,18 @@ sidebar:
   nav: "research"
 ---
 
+## Presentation of the Neurorack Project for Raster-Noton 11.06.2021
+
+### IRCAM X Raster-Noton
+
+On the occasion of the Manifeste 2021 festival organized by IRCAM, the ACIDS team presented all the current projects with a view to a possible collaboration with the Raster-Noton label.
+
+### Links
+
+[Full Presentation](https://www.youtube.com/watch?v=_00pHC5LTQQ)
+
+[Raster-Noton](https://raster-media.net/)
+
 ## Intelligence artificielle – Musique – Incarnation 24.03.2021
 
 ### SCAI and Collegium Musicae
