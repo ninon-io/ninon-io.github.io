@@ -25,7 +25,7 @@ The goal of this project is to design the next generation of music instrument, p
 Deep learning models have provided extremely successful methods in most application fields, by enabling unprecedented accuracy in various tasks, including audio generation. However, the consistently overlooked downside of deep models is their massive complexity and tremendous computation cost.
 In the context of music creation and composition, model reduction becomes eminently important to provide these systems to users in real-time settings and on dedicated lightweight embedded hardware, which are particularly pervasive in the audio generation domain. Hence, in order to design a stand alone and real time instrument, we first need to craft an extremely lightweight model in terms of computation and memory footprint. To make this task even more easier, we relied on the Nvidia Jetson Nano which is a nanocomputer containing 128-core GPUs (graphical unit processors) and 4 CPUs.
 
-![jetson](images/jetsonnano.PNG)
+![jetson](../images/jetsonnano.PNG)
 
 The compression problem is the core of my PhD and a full description can be found [here](https://ninon-io.github.io/research/phd/).
 
@@ -41,6 +41,22 @@ We designed our instrument so that it follows several aspects that we found cruc
 ### Design Process
 
 The work was divided between three major steps:
-![steps](images/steps.PNG)
+![steps](../images/steps.PNG)
 
-We set our sights on the generation of impacts as it is a very complex sound to reproduce. 
+> Model Description
+
+We set our sights on the generation of *impacts* as they are very complex sounds to reproduce and almost impossible to tweak. Our model allows to generate a large variety of impacts, and enabling the possibility to play, craft and merge them. 
+
+The sound is generated from the distribution of 7 descriptors that can be adjusted:
+- Loudness
+- Percussivity
+- Noisiness
+- Tone-like
+- Richness
+- Brightness
+- Pitch
+
+> Interface
+
+One of the biggest advantage of our module is that it can interact with other classical synthesizer. We divided our panel into CV and gates control:
+
