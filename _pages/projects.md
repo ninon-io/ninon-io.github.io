@@ -11,7 +11,7 @@ music:
   - image_path: /images/project2.jpeg
     alt: "Music"
     title: "Neurorack"
-    excerpt: 'Live music w/ weird instruments'
+    excerpt: 'AI based synthesizers'
     url: "projects/neurorack"
     btn_label: "Read More"
     btn_class: "btn--primary"
