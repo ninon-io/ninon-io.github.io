@@ -8,7 +8,7 @@ header:
   overlay_image: /images/project.jpeg
 excerpt: "Various musicals and scientific projects, ideas, experimentations"
 music:
-  - image_path: /images/project2.jpeg
+  - image_path: /images/neurorack.jpg
     alt: "Music"
     title: "Neurorack"
     excerpt: 'AI based synthesizers'
