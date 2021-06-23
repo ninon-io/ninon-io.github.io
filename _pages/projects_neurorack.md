@@ -31,8 +31,6 @@ In the context of music creation and composition, model reduction becomes eminen
   <img width="460" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/jetsonnano.PNG">
 </p>
 
-<> ![jetson](../images/jetsonnano.PNG)
-
 The compression problem is the core of my PhD and a full description can be found [here](https://ninon-io.github.io/research/phd/).
 
 > Targets of our instrument
@@ -49,7 +47,9 @@ We designed our instrument so that it follows several aspects that we found cruc
 ### Design Process
 
 The work was divided between three major steps:
-![steps](../images/steps.PNG)
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/steps.PNG">
+</p>
 
 > Model Description
 
