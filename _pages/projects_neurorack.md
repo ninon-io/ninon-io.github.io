@@ -28,7 +28,7 @@ Deep learning models have provided extremely successful methods in most applicat
 In the context of music creation and composition, model reduction becomes eminently important to provide these systems to users in real-time settings and on dedicated lightweight embedded hardware, which are particularly pervasive in the audio generation domain. Hence, in order to design a stand alone and real time instrument, we first need to craft an extremely lightweight model in terms of computation and memory footprint. To make this task even more easier, we relied on the Nvidia Jetson Nano which is a nanocomputer containing 128-core GPUs (graphical unit processors) and 4 CPUs.
 
 <p align="center">
-  <img width="300" height="200" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/jetsonnano.PNG">
+  <img width="300" height="200" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/jetson.png">
 </p>
 
 The compression problem is the core of my PhD and a full description can be found [here](https://ninon-io.github.io/research/phd/).
