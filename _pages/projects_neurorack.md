@@ -22,7 +22,7 @@ The Neurorack is the first ever AI-based real-time synthesizer, which comes in m
 
 ### Introduction
 
-The goal of this project is to design the next generation of music instrument, providing a new tool for musician while enhancing the musician's creativity. It proposes a novel approach to think and compose music. We deeply think that AI can be used to achieve this quest.
+The goal of this project is to design the next generation of music instrument, providing a new tool for musician while enhancing the user's creativity. It proposes a novel approach to think and compose music. We deeply think that AI can be used to achieve this quest.
 
 > Problematique
 
@@ -99,4 +99,3 @@ We are currently working on several aspects of this project:
 
 ******************************************************************
 
-[](https://drive.google.com/file/d/1fCmFhy_DHtwlOp2PH9_Rv_iSlQM-02l0/view?usp=sharing)
