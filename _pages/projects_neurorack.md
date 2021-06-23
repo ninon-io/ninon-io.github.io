@@ -84,7 +84,7 @@ Here is an example of an ambiant track, where all impacts were composed with the
   <source src="https://drive.google.com/file/d/1fCmFhy_DHtwlOp2PH9_Rv_iSlQM-02l0/view?usp=sharing" type="audio/wav">
 </audio></html>
 
-[Audio Demo](https://drive.google.com/file/d/1fCmFhy_DHtwlOp2PH9_Rv_iSlQM-02l0/view?usp=sharing)
+[](https://drive.google.com/file/d/1fCmFhy_DHtwlOp2PH9_Rv_iSlQM-02l0/view?usp=sharing)
 
 ***************************************************************
 ### Further Development
