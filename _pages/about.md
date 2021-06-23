@@ -13,7 +13,7 @@ classes: wide
 
 Passionate about music and sciences.
 
-Sciences:
+> Sciences:
 - 2020 - 2023: PhD on AI applied to music
 - 2019 - 2020: Master Degree at IRCAM (*Signal Processing, Acoustic and Computer Science apply to music*)
 - 2016 - 2017: High school teacher at Lycée Dorian in Paris 
@@ -22,7 +22,7 @@ Sciences:
 - 2012 - 2014: Engineering School ESTP
 - 2009 - 2012: Preparatory Classes at Lycée Condorcet (*Dominant of physics and chemistry*)
 
-Music:
+> Music:
 - 2021: First AI based modular synth crafting
 - 2020: Professional training with certification on Max MSP at IRCAM
 - 2019: Workshop and mini-training in composition, mixing and mastering in Berlin
