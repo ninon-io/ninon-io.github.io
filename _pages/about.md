@@ -12,6 +12,7 @@ classes: wide
 *****************************************************
 
 Passionate about music and sciences.
+
 Sciences:
 - 2020 - 2023: PhD on AI applied to music
 - 2019 - 2020: Master Degree at IRCAM (Institute for Research and Coordination in Acoustics and Music)
@@ -24,5 +25,10 @@ Sciences:
 
 Music:
 - 2021: First AI based modular synth crafter
-- 2018: 
+- 2020: Professional training with certification on Max MSP at IRCAM
+- 2019: Workshop and mini-training in composition, mixing and mastering in Berlin
+- 2018: Intensive Ableton Live training in Melbourne
+- 2013 - 2019: Djs gig at several festival (*Ozora, Nataraja, Chateau Perché, Taka Tuka, Forest Soul Gathering...)
+- 2013 - 2017: Resident DJ at Keller in Zurich
+- 1998 - 2008: piano and music theory training at the music conservatory in Paris
 
