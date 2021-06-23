@@ -16,9 +16,9 @@ music:
     btn_label: "Read More"
     btn_class: "btn--primary"
 dj:
-  - image_path: /images/mic.jpg
+  - image_path: /images/ninondj.jpeg
     alt: "DJ"
-    title: "DJ stuffs"
+    title: "Gigs and lives"
     excerpt: 'Under construction'
     url: "research/conferences"
     btn_label: "Read More"
