@@ -23,7 +23,7 @@ Sciences:
 - 2009 - 2012: Preparatory Classes at Lycée Condorcet (*Dominant of physics and chemistry*)
 
 Music:
-- 2021: First AI based modular synth crafter
+- 2021: First AI based modular synth crafting
 - 2020: Professional training with certification on Max MSP at IRCAM
 - 2019: Workshop and mini-training in composition, mixing and mastering in Berlin
 - 2018: Intensive Ableton Live training in Melbourne
