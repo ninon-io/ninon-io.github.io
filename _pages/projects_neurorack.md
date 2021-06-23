@@ -69,7 +69,7 @@ The sound is generated from the distribution of 7 descriptors that can be adjust
 One of the biggest advantage of our module is that it can interact with other classical synthesizer. Following the classical conventions of modular synthesizers, our instrument can be controlled using CVs (control voltages) or gates.
 
 <p align="center">
-  <img width="1000" height="1000" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/interface_neurorack.png">
+  <img width="700" height="500" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/interface_neurorack.png">
 </p>
 
 
