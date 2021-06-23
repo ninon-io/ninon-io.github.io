@@ -79,6 +79,11 @@ A second impact can be chosen to be "merge" with the main impact: we will call t
 
 Here is an example of an ambiant track, where all impacts were composed with the Neurorack:
 
+<html>
+<audio controls>
+  <source src="https://github.com/ninon-io/ninon-io.github.io/blob/master/audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
 ***************************************************************
 ### Further Development
 
