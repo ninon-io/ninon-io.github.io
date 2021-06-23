@@ -46,14 +46,14 @@ We designed our instrument so that it follows several aspects that we found cruc
 
 ### Design Process
 
-The work was divided between three major steps:
+The work has been divided between three major steps:
 <p align="center">
   <img width="1200" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/steps.PNG">
 </p>
 
 > Model Description
 
-We set our sights on the generation of *impacts* as they are very complex sounds to reproduce and almost impossible to tweak. Our model allows to generate a large variety of impacts, and enabling the possibility to play, craft and merge them. 
+We set our sights on the generation of *impacts* as they are very complex sounds to reproduce and almost impossible to tweak. Our model allows to generate a large variety of impacts, and enables the possibility to play, craft and merge them. 
 
 The sound is generated from the distribution of 7 descriptors that can be adjusted:
 - Loudness
@@ -66,11 +66,22 @@ The sound is generated from the distribution of 7 descriptors that can be adjust
 
 > Interface
 
-One of the biggest advantage of our module is that it can interact with other classical synthesizer. Following the classical conventions of modular synthesizers, our instrument can be controlled using CVs (control voltages) or gates.
+One of the biggest advantage of our module is that it can interact with other synthesizer. Following the classical conventions of modular synthesizers, our instrument can be controlled using CVs (control voltages) or gates.
 
 <p align="center">
   <img width="700" height="500" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/interface_neurorack.png">
 </p>
+
+The main gate triggers the generation of the chosen impact. Then it is possible to modify the amount of Richness and Noisiness with two of the CVs.
+A second impact can be chosen to be "merge" with the main impact: we will call this operation the interpolation between two impacts. Their amounts of descriptors are melt to give an hybrid impact. The "degree of merging" is controlled by the third CV, whereas the second gate triggers the interpolation. 
+
+***************************************************************
+
+Here is an example of an ambiant track, where all impacts were composed with the Neurorack:
+
+***************************************************************
+### Further Development
+
 
 
 
