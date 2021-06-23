@@ -11,4 +11,4 @@ classes: wide
 
 *****************************************************
 
-Passionate by music and sciences 
+Passionate by music and sciences.
