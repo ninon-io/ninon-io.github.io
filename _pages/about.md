@@ -11,4 +11,8 @@ classes: wide
 
 *****************************************************
 
-Passionate by music and sciences.
+Passionate about music and sciences.
+
+Add CV here !
+
+
