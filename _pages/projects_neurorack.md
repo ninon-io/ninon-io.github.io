@@ -76,8 +76,8 @@ The main gate triggers the generation of the chosen impact. Then it is possible 
 A second impact can be chosen to be "merge" with the main impact: we will call this operation the interpolation between two impacts. Their amounts of descriptors are melt to give an hybrid impact. The "degree of merging" is controlled by the third CV, whereas the second gate triggers the interpolation. 
 
 ***************************************************************
-
-Here is an example of an ambiant track, where all impacts were composed with the Neurorack:
+### Audio example
+Here is an example of a track, where all impacts were composed with the Neurorack:
 
 <html>
 <audio controls>
