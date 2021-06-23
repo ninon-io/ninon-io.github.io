@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "en-US"
 title                    : "Ninon Devis"
 title_separator          : "-"
-subtitle                 : "Researcher-Teacher"
+subtitle                 : "Researcher-Teacher // Musician"
 name                     : "Ninon Devis"
 description              : "AI applied to music at IRCAM & Sorbonne University"
 url                      : "https://ninon-io.github.io/"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Ninon Devis"
   avatar           : "/images/Ninon.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Researcher in AI applied to music Teacher at SU and IRCAM"
+  bio              : "Researcher in AI applied to music Teacher at SU and IRCAM   "
   location         : "IRCAM, Paris"
   email            : 
   links:
