@@ -48,7 +48,7 @@ We designed our instrument so that it follows several aspects that we found cruc
 
 The work has been divided between three major steps:
 <p align="center">
-  <img width="1200" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/steps.PNG">
+  <img width="1200" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/steps.png">
 </p>
 
 > Model Description
