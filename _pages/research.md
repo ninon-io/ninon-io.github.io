@@ -26,7 +26,7 @@ conferences:
 papers:
   - image_path: /images/papers.jpeg
     alt: "Papers"
-    title: "Scientific Papers"
+    title: "Papers"
     excerpt: 'List of publications'
     url: "research/papers"
     btn_label: "Enter"
