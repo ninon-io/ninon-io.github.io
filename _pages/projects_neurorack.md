@@ -87,6 +87,10 @@ Here is an example of an ambiant track, where all impacts were composed with the
 ***************************************************************
 ### Further Development
 
+We are currently working on several aspects of this project:
+- developping a nice looking menu.
+- adding a VAE ([Variational Auto Encoder](https://en.wikipedia.org/wiki/Autoencoder)) in order to navigate into its latent space to generate sounds instead of the 7 descriptors.
+- compress the model to get rid of the Jetson Nano and working CPU only.
+- developping variants with others models to generate other types of sounds. 
 
-
-
+******************************************************************
