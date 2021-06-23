@@ -84,7 +84,7 @@ Here is an example of an ambiant track, where all impacts were composed with the
   <source src="../audio/raster_demo.wav" type="audio/wav">
 </audio></html>
 
-[](https://drive.google.com/file/d/1fCmFhy_DHtwlOp2PH9_Rv_iSlQM-02l0/view?usp=sharing)
+
 
 ***************************************************************
 ### Further Development
@@ -96,3 +96,5 @@ We are currently working on several aspects of this project:
 - developping variants with others models to generate other types of sounds. 
 
 ******************************************************************
+
+[](https://drive.google.com/file/d/1fCmFhy_DHtwlOp2PH9_Rv_iSlQM-02l0/view?usp=sharing)
