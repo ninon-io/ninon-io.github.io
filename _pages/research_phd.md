@@ -17,6 +17,8 @@ sidebar:
   nav: "research"
 ---
 
+[Activity Report Here](/documents/PhD_Report.pdf){: .btn .btn--light-outline}
+
 ## Subject
 
 ### Introduction
