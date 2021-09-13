@@ -19,9 +19,9 @@ sidebar:
 
 ## Cours magistraux
 
-> 13.09.2021.
+> 13.09.2021. Héritage
 
-Lors de ce deuxxième cours, nous effectuons d'abord un bref rappel des notions vues dans le premier cours (modificateur, portée de classe, structure de code, constructeur, emploi de static, java dynamique et java statique). Nous abordons ensuite des notions primordiales:
+Pour ce deuxième cours nous rappelons d'abord les notions vues dans le premier cours (modificateur, portée de classe, structure de code, constructeur, emploi de static, java dynamique et java statique). Nous abordons ensuite des notions primordiales:
 - Packages
 - Diagrammes UML
 - Héritage
@@ -31,12 +31,24 @@ Lors de ce deuxxième cours, nous effectuons d'abord un bref rappel des notions 
 
 Vous trouverez également l'énoncé du mini projet "Lecteur de fichiers" à rendre pour le 16.10.2021.
 
-[Héritage](/documents/01_JAVA_Héritage.pdf){: .btn .btn--light-outline}       
-[Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--light-outline}
+[Héritage](/documents/01_JAVA_Héritage.pdf){: .btn .btn--light-outline}
 
+> 16.09.2021. Polymorphisme
+
+> 13.10.2021. Gestion de projet et Interface Graphique
+
+> 19.10.2021. Interface Graphique
+
+<!---
+
+<> [Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--light-outline}
 [Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--light-outline}
 [Interface Graphique](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--light-outline}
-
-## Projet
-
 <> [Tarot](/documents/Projet_tarot_Java.pdf){: .btn .btn--primary}
+
+-->
+
+
+## Projet Final 
+
+To be announced
