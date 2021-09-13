@@ -19,6 +19,18 @@ sidebar:
 
 ## Cours magistraux
 
+> 13.09.2021.
+
+Lors de ce deuxxième cours, nous effectuons d'abord un bref rappel des notions vues dans le premier cours (modificateur, portée de classe, structure de code, constructeur, emploi de static, java dynamique et java statique). Nous abordons ensuite des notions primordiales:
+- Packages
+- Diagrammes UML
+- Héritage
+- Interface
+- Classe abstraite
+- Modificateurs
+
+Vous trouverez également l'énoncé du mini projet "Lecteur de fichiers" à rendre pour le 16.10.2021.
+
 [Héritage](/documents/01_JAVA_Héritage.pdf){: .btn .btn--light-outline}       
 [Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--light-outline}
 
@@ -27,4 +39,4 @@ sidebar:
 
 ## Projet
 
-[Tarot](/documents/Projet_tarot_Java.pdf){: .btn .btn--primary}
+<> [Tarot](/documents/Projet_tarot_Java.pdf){: .btn .btn--primary}
