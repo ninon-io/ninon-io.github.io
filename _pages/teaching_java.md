@@ -34,13 +34,13 @@ Pour ce deuxième cours nous rappelons d'abord les notions vues dans le premier 
 - Classe abstraite
 - Modificateurs
 
-Vous trouverez également l'énoncé du mini projet "Lecteur de fichiers" à rendre pour le 16.10.2021.
+Vous trouverez également l'énoncé du mini projet "Lecteur de fichiers" à rendre pour le 15.10.2021.
 
 > 16.09.2021. Polymorphisme
 
 > 13.10.2021. Gestion de projet et Interface Graphique
 
-> 19.10.2021. Interface Graphique
+> 15.10.2021. Interface Graphique
 
 <!---
 
