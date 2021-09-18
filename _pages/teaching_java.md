@@ -38,12 +38,12 @@ Vous trouverez également l'énoncé du mini projet "Lecteur de fichiers" à ren
 
 > 16.09.2021. Polymorphisme
 
-Un bilan des notions sur l'héritage et notamment la différence entre variable d'instance et de classe, la notion de constructeur, l'utilisation de this et super. Lecours est ensuite constitué d'un exercice filé sur le démarrage du mini projet RPG qui nous permet d'aborder les notions de:
+Un bilan des notions sur l'héritage et notamment la différence entre variable d'instance et de classe, la notion de constructeur, l'utilisation de this et super pour commencer. Le cours est ensuite constitué d'un exercice filé sur le démarrage du mini projet RPG qui nous permet d'aborder les notions de:
 - Type statique et type dynamique
 - Polymorphisme par sous-typage (overriding)
 - Polymorphisme de surcharge (overloading)
 - Mariage Polymorphique
-- La classe Object
+- Classe Object
 
 L'énoncé du mini projet RPG à rendre pour le 19.10.2021 se trouve à la fin des slides.
 
