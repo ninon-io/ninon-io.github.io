@@ -30,6 +30,8 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 - keyboard control
 - subpatches
 
+<!---
+
 > PDF associated to this course [Here](/documents/Pure_Data.pdf){: .btn .btn--light-outline}
 
 > Used zipped patches [Here](/documents/patches1.zip){: .btn .btn--light-outline}
@@ -63,9 +65,11 @@ No Max MSP allowed but any creative experiment will be valued.
 
 > Full subject [Here](/documents/Pure_Data_Project.pdf){: .btn .btn--light-outline} 
 
+-->
+
 ## Examples
 
-Here are examples of tracks made by my students in accordance with the subject.
+Here are examples of tracks made by my students in accordance with the subject of the project.
 
 > Jeremy Uzan - Pure House Data
 <html>
