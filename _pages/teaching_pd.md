@@ -66,3 +66,40 @@ No Max MSP allowed but any creative experiment will be valued.
 ## Examples
 
 Here are examples of tracks made by my students in accordance with the subject.
+
+> Jeremy Uzan - Pure House Data
+<html>
+<audio controls>
+  <source src="../audio/PureHouseData.mp3" type="audio/mp3">
+</audio></html>
+
+
+
+> Anonymous 
+<html>
+<audio controls>
+  <source src="../audio/Chable.mp3" type="audio/mp3">
+</audio></html>
+
+
+> Anonymous
+<html>
+<audio controls>
+  <source src="../audio/Le.mp3" type="audio/mp3">
+</audio></html>
+
+
+
+> Florian Angulo - Untitled
+<html>
+<audio controls>
+  <source src="../audio/Angulo.mp3" type="audio/mp3">
+</audio></html>
+
+
+
+> Argan Verrier - ABZ
+<html>
+<audio controls>
+  <source src="../audio/Angulo.mp3" type="audio/mp3">
+</audio></html>
