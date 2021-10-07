@@ -75,7 +75,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/PureHouseData.mp3" type="audio/mp3">
+  <source src="../audio/uzan.mp3" type="audio/mp3">
 </audio></html>
 
 
@@ -84,7 +84,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/Chable.mp3" type="audio/mp3">
+  <source src="../audio/chable.mp3" type="audio/mp3">
 </audio></html>
 
 
@@ -92,7 +92,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/Le.mp3" type="audio/mp3">
+  <source src="../audio/le.mp3" type="audio/mp3">
 </audio></html>
 
 
@@ -101,7 +101,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/Angulo.mp3" type="audio/mp3">
+  <source src="../audio/angulo.mp3" type="audio/mp3">
 </audio></html>
 
 
@@ -110,5 +110,5 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/Angulo.mp3" type="audio/mp3">
+  <source src="../audio/angulo.mp3" type="audio/mp3">
 </audio></html>
