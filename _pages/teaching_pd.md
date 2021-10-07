@@ -30,11 +30,11 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 - keyboard control
 - subpatches
 
-<!---
-
 > PDF associated to this course [Here](/documents/Pure_Data.pdf){: .btn .btn--light-outline}
 
 > Used zipped patches [Here](/documents/patches1.zip){: .btn .btn--light-outline}
+
+<!---
 
 ### Advanced Notions
 
