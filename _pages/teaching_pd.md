@@ -75,7 +75,7 @@ Here are examples of tracks made by my students in accordance with the subject o
     <figcaption>Jeremy Uzan - Pure House Data:</figcaption>
     <audio
         controls
-        src="../audio/uzan.mp3">
+        src="ninon-io.github.io/audio/uzan.mp3">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
