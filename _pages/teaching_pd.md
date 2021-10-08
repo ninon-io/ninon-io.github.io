@@ -111,7 +111,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/angulo.mp3" type="audio/mp3">
+  <source src="../audio/angulo.mp3" type="audio/mpeg">
 </audio></html>
 
 
@@ -120,5 +120,5 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/angulo.mp3" type="audio/mp3">
+  <source src="../audio/verrier.wav" type="audio/wav">
 </audio></html>
