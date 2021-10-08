@@ -71,6 +71,16 @@ No Max MSP allowed but any creative experiment will be valued.
 
 Here are examples of tracks made by my students in accordance with the subject of the project.
 
+<figure>
+    <figcaption>Jeremy Uzan - Pure House Data:</figcaption>
+    <audio
+        controls
+        src="../audio/uzan.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
 > Jeremy Uzan - Pure House Data
 
 <html>
