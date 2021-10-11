@@ -94,7 +94,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/chable.mp3" type="audio/mp3">
+  <source src="../audio/chable.mp3" type="audio/mpeg">
 </audio></html>
 
 
@@ -107,7 +107,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 
 
-> Florian Angulo - Untitled
+Florian Angulo - Untitled
 
 <html>
 <audio controls>
@@ -116,7 +116,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 
 
-> Argan Verrier - ABZ
+Argan Verrier - ABZ
 
 <html>
 <audio controls>
