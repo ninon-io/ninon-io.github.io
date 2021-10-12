@@ -51,6 +51,10 @@ L'énoncé du mini projet RPG à rendre pour le 19.10.2021 se trouve à la fin d
 
 > 13.10.2021. Gestion de projet et Interface Graphique
 
+[Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--light-outline}
+
+[Interface Graphique 1](/documents/04_JAVA_Interface_Graphique_1.pdf){: .btn .btn--light-outline}
+
 > 15.10.2021. Interface Graphique
 
 <!---
