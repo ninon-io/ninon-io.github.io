@@ -61,7 +61,17 @@ No post-processing, mixing or mastering are allowed unless you attach a README.t
 
 No Max MSP allowed but any creative experiment will be valued.
 
-> Full subject [Here](/documents/Project.pdf){: .btn .btn--light-outline} 
+> Full subject [Here](/documents/Project.pdf){: .btn .btn--light-outline}
+
+Moreover, you can find the usefull litterature to build your own externals for Pd:
+
+[How to write external](/documents/Project.pdf){: .btn .btn--light-outline}
+
+[Annexes](/documents/Project.pdf){: .btn .btn--light-outline}
+
+[The optional project](/documents/Project.pdf){: .btn .btn--light-outline}
+
+[Compressed externals to downloads from Philippe](/documents/Project.pdf){: .btn .btn--light-outline}
 
 
 ## Examples
