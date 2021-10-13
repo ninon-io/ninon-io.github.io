@@ -77,7 +77,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="./audio/chable.mp3" type="audio/mpeg">
+  <source src="ninon-io.github.io/audio/chable.mp3" type="audio/mp3">
 </audio></html>
 
 
