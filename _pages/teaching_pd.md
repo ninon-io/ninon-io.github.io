@@ -94,7 +94,7 @@ Florian Angulo - Untitled
 
 <html>
 <audio controls>
-  <source src="../audio/angulo.mp3" type="audio/mpeg">
+  <source src="https://github.com/ninon-io/ninon-io.github.io/tree/master/audio/angulo.mp3" type="audio/mpeg">
 </audio></html>
 
 
@@ -103,7 +103,7 @@ Argan Verrier - ABZ
 
 <html>
 <audio controls>
-  <source src="../audio/verrier.wav" type="audio/wav">
+  <source src="https://github.com/ninon-io/ninon-io.github.io/tree/master/audio/verrier.wav" type="audio/wav">
 </audio></html>
 
 
