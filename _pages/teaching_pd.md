@@ -34,8 +34,6 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 
 > Used zipped patches [Here](/documents/patches1.zip){: .btn .btn--light-outline}
 
-<!---
-
 ### Advanced Notions
 
 The second course presents deeper technics to build more complicated patches and get new sounds. You can find:
@@ -49,7 +47,7 @@ The second course presents deeper technics to build more complicated patches and
 - building of a kick drum with presets
 - courses about externals (given by P. Esling)
 
-> PDF associated to this course [Here](/documents/Pure_Data2.pdf){: .btn .btn--light-outline}
+> PDF associated to this course [Here](/documents/PD2.pdf){: .btn .btn--light-outline}
 
 > Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
 
@@ -63,9 +61,8 @@ No post-processing, mixing or mastering are allowed unless you attach a README.t
 
 No Max MSP allowed but any creative experiment will be valued.
 
-> Full subject [Here](/documents/Pure_Data_Project.pdf){: .btn .btn--light-outline} 
+> Full subject [Here](/documents/Project.pdf){: .btn .btn--light-outline} 
 
--->
 
 ## Examples
 
