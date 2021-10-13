@@ -63,6 +63,8 @@ No Max MSP allowed but any creative experiment will be valued.
 
 > Full subject [Here](/documents/Project.pdf){: .btn .btn--light-outline}
 
+## Externals
+
 Moreover, you can find the usefull litterature to build your own externals for Pd:
 
 [How to write external](/documents/Project.pdf){: .btn .btn--light-outline}
