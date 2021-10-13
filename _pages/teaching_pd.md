@@ -68,30 +68,16 @@ No Max MSP allowed but any creative experiment will be valued.
 
 Here are examples of tracks made by my students in accordance with the subject of the project.
 
-<figure>
-    <figcaption>Jeremy Uzan - Pure House Data:</figcaption>
-    <audio
-        controls
-        src="ninon-io.github.io/audio/uzan.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-
 > Jeremy Uzan - Pure House Data
 
-<html>
-<audio controls>
-  <source src="../audio/uzan.mp3" type="audio/mp3">
-</audio></html>
-
+[Youtube link](https://www.youtube.com/watch?v=Lqg1Hlp5fSA){: .btn .btn--light-outline}
 
 
 > Anonymous 
 
 <html>
 <audio controls>
-  <source src="../audio/chable.mp3" type="audio/mpeg">
+  <source src="./audio/chable.mp3" type="audio/mpeg">
 </audio></html>
 
 
