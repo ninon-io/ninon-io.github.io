@@ -89,7 +89,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="ninon-io.github.io/audio/chable.mp3" type="audio/mpeg">
+  <source src="/audio/chable.mp3">
 </audio></html>
 
 
@@ -106,7 +106,7 @@ Florian Angulo - Untitled
 
 <html>
 <audio controls>
-  <source src="../audio/angulo.mp3">
+  <source src="/audio/angulo.mp3">
 </audio></html>
 
 
@@ -115,7 +115,7 @@ Argan Verrier - ABZ
 
 <html>
 <audio controls>
-  <source src="https://github.com/ninon-io/ninon-io.github.io/tree/master/audio/verrier.wav">
+  <source src="/audio/verrier.wav">
 </audio></html>
 
 
