@@ -67,13 +67,13 @@ No Max MSP allowed but any creative experiment will be valued.
 
 Moreover, you can find the usefull litterature to build your own externals for Pd:
 
-[How to write external](/documents/Project.pdf){: .btn .btn--light-outline}
+[How to write external](/documents/Project_Annex_PD.pdf){: .btn .btn--light-outline}
 
-[Annexes](/documents/Project.pdf){: .btn .btn--light-outline}
+[Annexes](/documents/Project_Annex_HowTo.pdf){: .btn .btn--light-outline}
 
-[The optional project](/documents/Project.pdf){: .btn .btn--light-outline}
+[The optional project](/documents/ProjectPhilippe.pdf){: .btn .btn--light-outline}
 
-[Compressed externals to downloads from Philippe](/documents/Project.pdf){: .btn .btn--light-outline}
+[Compressed externals to download from Philippe](/documents/pd_externals.pdf){: .btn .btn--light-outline}
 
 
 ## Examples
