@@ -97,7 +97,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="../audio/le.mp3">
+  <source src="/audio/le.mp3">
 </audio></html>
 
 
