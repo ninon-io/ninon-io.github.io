@@ -38,12 +38,11 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 
 The second course presents deeper technics to build more complicated patches and get new sounds. You can find:
 - technics to normalize the signal
-- amplitude modulation
 - ring modulation
+- amplitude modulation
 - the frequency modulation
 - building a step sequencer
 - read a soundfile
-- write a soundfile
 - building of a kick drum with presets
 - courses about externals (given by P. Esling)
 
