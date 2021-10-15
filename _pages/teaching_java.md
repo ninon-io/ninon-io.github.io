@@ -51,21 +51,21 @@ L'énoncé du mini projet RPG à rendre pour le 19.10.2021 se trouve à la fin d
 
 > 13.10.2021. Gestion de projet et Interface Graphique
 
-[Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--light-outline}
+Rappel sur les IDE et les gestionnaires de version, mise en place de tests avec JUnit et de la documentation Javadoc. 
 
-[Interface Graphique 1](/documents/04_JAVA_Interface_Graphique_1.pdf){: .btn .btn--light-outline}
+[Lien vers le cours](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--light-outline}
+
+Début du cours sur les interface graphique, présentation des éléments simple de Swing et des Listeners.
+
+[Lien vers le cours](/documents/04_JAVA_Interface_Graphique_1.pdf){: .btn .btn--light-outline}
 
 > 15.10.2021. Interface Graphique
 
-<!---
+Création d'un mini paint simplifié, en utilisant des classes anonymes et des classes internes. 
 
-<> [Polymorphisme](/documents/02_JAVA_Polymorphisme.pdf){: .btn .btn--light-outline}
-[Gestion de Projet](/documents/03_JAVA_Gestion_projet.pdf){: .btn .btn--light-outline}
-[Interface Graphique](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--light-outline}
-<> [Tarot](/documents/Projet_tarot_Java.pdf){: .btn .btn--primary}
+[Lien vers le cours](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--light-outline}
 
--->
-
+Mini projet interface graphique facultatif à rendre pour le 15 Novembre.
 
 ## Projet Final 
 
