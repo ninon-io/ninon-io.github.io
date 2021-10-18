@@ -9,6 +9,13 @@ header:
 excerpt: "All the educational material and project statements available here."
 
 feature_row:
+ - image_path: /images/ableton.jpg
+    alt: "Ableton Live"
+    title: "Ableton Live"
+    excerpt: "PDF files and projects for **M2 - ATIAM**"
+    url: "teaching/ableton"
+    btn_label: "Enter"
+    btn_class: "btn--primary"
   - image_path: /images/patchpd.jpeg
     alt: "Pure Data"
     title: "Pure Data"
