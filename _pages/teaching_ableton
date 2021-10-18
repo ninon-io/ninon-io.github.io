@@ -10,7 +10,7 @@ header:
   actions:
     - label: "Download"
       url: "https://www.ableton.com/en/trial/"
-excerpt: "Download the trial version of Ableton Live, you will have an access for 3 months. You must create an ableton account to register your version."
+excerpt: "Download the trial version of Ableton Live 11, you will have an access for 3 months. You must create an ableton account to register your version."
 toc: true
 toc_label: "Table of Contents"
 sidebar:
