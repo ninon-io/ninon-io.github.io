@@ -1,7 +1,7 @@
 ---
 title: "Ableton"
 layout: single
-permalink: /teaching/ableton/
+permalink: /teaching/ableton
 author_profile: false
 header:
   overlay_color: "#000"
