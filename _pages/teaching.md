@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 layout: splash
-permalink: /teaching
+permalink: /teachin
 header:
   overlay_color: "#000"
   overlay_filter: "0.7"
