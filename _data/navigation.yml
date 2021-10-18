@@ -24,6 +24,8 @@ research:
     url: https://ninon-io.github.io/research/papers
 
 teaching:
+  - title: "Ableton"
+    url: https://ninon-io.github.io/teaching/ableton
   - title: "Pure Data"
     url: https://ninon-io.github.io/teaching/puredata
   - title: "Cryptology"
