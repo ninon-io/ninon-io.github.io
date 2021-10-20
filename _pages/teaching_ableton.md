@@ -28,7 +28,7 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
 - The presentation of the arrangement view
 - How to export your track
 
-> PDF associated to this course [Here](/documents/Ableton_intro.pdf){: .btn .btn--light-outline}
+> PDF associated to this course [Here](/documents/Ableton.pdf){: .btn .btn--light-outline}
 
 > Please also download the samples you will use during this course [Here](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
