@@ -6,11 +6,11 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/Ableton_header.png
+  overlay_image: /images/particles.jpg
   actions:
     - label: "Download"
       url: "https://www.ableton.com/en/trial/"
-excerpt: "Download the trial version of Ableton Live 11, you will have an access for 3 months. You must create an ableton account to register your version."
+excerpt: "Download the trial version of Ableton Live 11, you will have a free access for 3 months."
 toc: true
 toc_label: "Table of Contents"
 sidebar:
@@ -29,6 +29,10 @@ The first course aims at introducing the basic concept of **Ableton**, while giv
 - How to export your track
 
 > PDF associated to this course [Here](/documents/Ableton_intro.pdf){: .btn .btn--light-outline}
+
+Please also download the samples you will use during this course [Here](/documents/Ableton_intro.pdf){: .btn .btn--light-outline}
+
+<!---
 
 ### Advanced Notions
 
@@ -69,33 +73,4 @@ Here are examples of tracks made by my students in accordance with the subject o
   <source src="/audio/chable.mp3">
 </audio></html>
 
-
-> Anonymous
-
-<html>
-<audio controls>
-  <source src="/audio/le.mp3">
-</audio></html>
-
-
-
-Florian Angulo - Untitled
-
-<html>
-<audio controls>
-  <source src="/audio/angulo.mp3">
-</audio></html>
-
-
-
-Argan Verrier - ABZ
-
-<html>
-<audio controls>
-  <source src="/audio/verrier.wav">
-</audio></html>
-
-
-
-
-
+-->
