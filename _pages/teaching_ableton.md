@@ -21,7 +21,7 @@ sidebar:
 
 ### Basic Notions
 
-The first course aims at introducing the basic concept of **Ableton**, while giving the essential elements to make your first track. You can find:
+The first course aims at introducing the basic concepts of **Ableton**, while giving the essential elements to make your first track. You can find:
 - Basic notions to begin
 - The presentation of audio tracks
 - A dive into the audio effects and particularly Eq and Compressor
@@ -30,7 +30,7 @@ The first course aims at introducing the basic concept of **Ableton**, while giv
 
 > PDF associated to this course [Here](/documents/Ableton_intro.pdf){: .btn .btn--light-outline}
 
-Please also download the samples you will use during this course [Here](/documents/Ableton_intro.pdf){: .btn .btn--light-outline}
+Please also download the samples you will use during this course [Here](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
 <!---
 
