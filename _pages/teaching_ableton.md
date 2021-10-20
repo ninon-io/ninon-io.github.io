@@ -52,7 +52,7 @@ The second course presents deeper technics to compose your music. You can find:
 
 ## Project
 
-> The artistic theme of this year is: _**Time**_
+# The artistic theme of this year is: _**Time**_
 
 The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restriction regarding the genre.
 
