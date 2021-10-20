@@ -5,7 +5,7 @@ permalink: /teaching/ableton
 author_profile: false
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0.8"
   overlay_image: /images/particles.jpg
   actions:
     - label: "Download"
