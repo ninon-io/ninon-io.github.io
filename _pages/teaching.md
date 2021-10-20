@@ -9,7 +9,7 @@ header:
 excerpt: "All the educational material and project statements available here."
 
 feature_row:
-  - image_path: /images/ableton.jpg
+  - image_path: /images/abletonlive.jpg
     alt: "Ableton Live"
     title: "Ableton Live"
     excerpt: "PDF files and projects for **M2 - ATIAM**"
