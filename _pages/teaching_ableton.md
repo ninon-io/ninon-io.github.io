@@ -47,15 +47,22 @@ The second course presents deeper technics to compose your music. You can find:
 
 > Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
 
+
+-->
+
 ## Project
+
+> The artistic theme of this year is: _**Time**_
 
 The goal of this assignment is to compose an entire track _**using Ableton**_. It must last less than 15 minutes and has no restriction regarding the genre.
 
-You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You can attach a README.txt if you want to introduce your artisctic intention.
+You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You should attach a README.txt if you want to introduce your artisctic intention.
 
 Any creative experiment will be valued.
 
-> Full subject [Here](/documents/Project.pdf){: .btn .btn--light-outline}
+> Full subject [Here](/documents/Ableton_project.pdf){: .btn .btn--light-outline}
+
+<!---
 
 ## Examples
 
