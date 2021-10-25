@@ -63,7 +63,7 @@ Début du cours sur les interface graphique, présentation des éléments simple
 
 Création d'un mini paint simplifié, en utilisant des classes anonymes et des classes internes. 
 
-[Lien vers le cours](/documents/04_JAVA_Interface_Graphique.pdf){: .btn .btn--light-outline}
+[Lien vers le cours](/documents/04_JAVA_Interface_Graphique_2.pdf){: .btn .btn--light-outline}
 
 Mini projet interface graphique facultatif à rendre pour le 15 Novembre.
 
