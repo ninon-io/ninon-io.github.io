@@ -32,23 +32,16 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
 
 > Download here the samples you can use during this course [Here](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
-<!---
 
 ### Advanced Notions
 
 The second course presents deeper technics to compose your music. You can find:
 - A presentation of Midi Tracks
-- Explanation of Midi Effects
-- Mixing and Automation in Live
+- Explanation of the Midi Effects
 - Recording and Resampling
-- Mastering concepts
+- Some mixing concepts
 
-> PDF associated to this course [Here](/documents/PD2.pdf){: .btn .btn--light-outline}
-
-> Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
-
-
--->
+> PDF associated to this course [Here](/documents/Ableton_2.pdf){: .btn .btn--light-outline}
 
 ## Project
 
