@@ -49,7 +49,7 @@ The second course presents deeper technics to compose your music. You can find:
 
 The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restriction regarding the genre.
 
-You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You should attach a README.txt if you want to introduce your artisctic intention.
+You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You should attach a README.txt if you want to introduce your artistic intention.
 
 Any creative experiment will be valued.
 
