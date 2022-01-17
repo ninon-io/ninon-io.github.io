@@ -13,6 +13,18 @@ toc_label: "Publications"
 sidebar:
   nav: "research"
 ---
+## Neurorack: deep audio learning in hardware synthesizers - 12.2021
+
+> Ninon Devis, Philippe Esling
+
+###  Post conference article, EPFL (École Polytechnique Fédérale de Lausanne)
+
+Deep learning models have provided extremely successful methods in most application fields by enabling unprecedented accuracy in various tasks. For audio applications, although the massive complexity of generative models allows handling complex temporal structures, it often precludes their real-time use on resource-constrained hardware platforms, particularly pervasive in this field. The lack of adequate lightweight models is an impediment to the development of stand-alone instruments based on deep models, entailing a significant limitation for real-life creation by musicians and composers. Recently, we built the first deep learning-based music instrument by implementing a lightweight generative musical audio model on an adequate hardware platform that can handle its complexity. By embedding this deep model, we provide a controllable and flexible creative hardware interface. More precisely, we focused our work on the Eurorack synthesizers format, which offers Control Voltage (CV) and gate mechanisms allowing to interact with other classical Eurorack modules.
+
+### Link
+
+[Neurorack: deep audio learning in hardware synthesizers](https://infoscience.epfl.ch/record/291222?ln=en)
+
 ## L'avenir de la créativité sera-t-il artificiel ? 06.2021
 
 > Ninon Devis
