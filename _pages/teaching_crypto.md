@@ -68,7 +68,7 @@ sidebar:
 [Exercices faciles](/documents/TD1Simple.pdf){: .btn .btn--primary}
 [Exercices avancés](/documents/TD1_ISEC_2021.pdf){: .btn .btn--primary}
 
-- Taille des clefs
+- Taille des clefs (Q.1-6 + 9-10)
 - Modes opératoires et propriétés de sécurité
 
 <!---
