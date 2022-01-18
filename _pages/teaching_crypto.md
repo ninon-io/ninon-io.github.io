@@ -71,7 +71,9 @@ sidebar:
 - Taille des clefs
 - Modes opératoires et propriétés de sécurité
 
-% [Corrections](/documents/ISEC_TD1.pdf){: .btn .btn--light-outline}
+<!---
+[Corrections](/documents/ISEC_TD1.pdf){: .btn .btn--light-outline}
+-->
 
 ### TD 2
 
@@ -81,7 +83,9 @@ sidebar:
 - Mode opératoire CBC*
 - Attaque sur CBC avec padding RFC2040
 
+<!---
 % [Corrections](/documents/ISEC_TD2_Corrections.pdf){: .btn .btn--light-outline}
+-->
 
 ### TD 3
 
@@ -92,7 +96,9 @@ sidebar:
 - Multicollisions pour les fonctions de hachage itérées
 - Chiffrement par bloc et fonction de compression
 
+<!---
 % [Corrections](/documents/TD3_Correction.pdf){: .btn .btn--light-outline}
+-->
 
 ### TD 4
 
@@ -104,7 +110,9 @@ sidebar:
 - Sécurité de la construction de Matyas-Meyer-Oseas avec le DES
 - Attaque en collision contre les fonctions de hachage concaténées
 
+<!---
 % [Corrections](/documents/ISEC_TD4_PDF.pdf){: .btn .btn--light-outline}
+-->
 
 ### TD 5
 
@@ -114,4 +122,6 @@ sidebar:
 - Algorithme de Shanks
 - Sécurité du RSA naïf
 
+<!---
 % [Corrections](/documents/ISEC_TD5_Corrigé.pdf){: .btn .btn--light-outline}
+-->
