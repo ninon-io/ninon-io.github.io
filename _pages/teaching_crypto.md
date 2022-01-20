@@ -71,6 +71,8 @@ sidebar:
 - Taille des clefs (Q.1-6 + 9-10)
 - Modes opératoires et propriétés de sécurité
 
+[Exercices guidés](/documents/TD1_details.pdf){: .btn .btn--primary}
+
 <!---
 [Corrections](/documents/ISEC_TD1.pdf){: .btn .btn--light-outline}
 -->
