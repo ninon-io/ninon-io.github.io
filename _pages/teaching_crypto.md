@@ -83,6 +83,8 @@ sidebar:
 - Mode opératoire CBC*
 - Attaque sur CBC avec padding RFC2040
 
+[Exercices guidés](/documents/TD2_details.pdf){: .btn .btn--primary}
+
 <!---
 % [Corrections](/documents/ISEC_TD2_Corrections.pdf){: .btn .btn--light-outline}
 -->
