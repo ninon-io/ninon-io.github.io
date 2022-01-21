@@ -98,6 +98,8 @@ sidebar:
 - Multicollisions pour les fonctions de hachage itérées
 - Chiffrement par bloc et fonction de compression
 
+[Exercices guidés](/documents/TD3_details.pdf){: .btn .btn--primary}
+
 <!---
 % [Corrections](/documents/TD3_Correction.pdf){: .btn .btn--light-outline}
 -->
