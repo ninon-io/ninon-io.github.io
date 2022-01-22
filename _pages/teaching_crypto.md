@@ -114,6 +114,8 @@ sidebar:
 - Sécurité de la construction de Matyas-Meyer-Oseas avec le DES
 - Attaque en collision contre les fonctions de hachage concaténées
 
+[Exercices guidés](/documents/TD4_details.pdf){: .btn .btn--primary}
+
 <!---
 % [Corrections](/documents/ISEC_TD4_PDF.pdf){: .btn .btn--light-outline}
 -->
