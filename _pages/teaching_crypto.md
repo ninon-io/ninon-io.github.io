@@ -85,9 +85,8 @@ sidebar:
 
 [Exercices guidés](/documents/TD2_details.pdf){: .btn .btn--primary}
 
-<!---
-% [Corrections](/documents/ISEC_TD2_Corrections.pdf){: .btn .btn--light-outline}
--->
+% [Corrections](/documents/ISEC_TD2_PDF_correct.pdf){: .btn .btn--light-outline}
+
 
 ### TD 3
 
