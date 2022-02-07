@@ -99,7 +99,7 @@ sidebar:
 
 [Exercices guidés](/documents/TD3_details.pdf){: .btn .btn--primary}
 
-% [Corrections](/documents/TD3_Correction.pdf){: .btn .btn--light-outline}
+[Corrections](/documents/TD3_Correction.pdf){: .btn .btn--light-outline}
 
 
 ### TD 4
@@ -114,7 +114,7 @@ sidebar:
 
 [Exercices guidés](/documents/TD4_details.pdf){: .btn .btn--primary}
 
-% [Corrections](/documents/ISEC_TD4_PDF.pdf){: .btn .btn--light-outline}
+[Corrections](/documents/ISEC_TD4_PDF.pdf){: .btn .btn--light-outline}
 
 ### TD 5
 
@@ -124,5 +124,5 @@ sidebar:
 - Algorithme de Shanks
 - Sécurité du RSA naïf
 
-% [Corrections](/documents/ISEC_TD5_Corrigé.pdf){: .btn .btn--light-outline}
+[Corrections](/documents/ISEC_TD5_Corrigé.pdf){: .btn .btn--light-outline}
 
