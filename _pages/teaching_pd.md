@@ -30,9 +30,13 @@ The first course aims at introducing the basic concept of **PD**, while giving t
 - keyboard control
 - subpatches
 
+<!---
+
 > PDF associated to this course [Here](/documents/Introduction_Pure_Data.pdf){: .btn .btn--light-outline}
 
 > Used zipped patches [Here](/documents/patches1.zip){: .btn .btn--light-outline}
+
+-->
 
 ### Advanced Notions
 
@@ -46,9 +50,13 @@ The second course presents deeper technics to build more complicated patches and
 - building of a kick drum with presets
 - courses about externals (given by P. Esling)
 
+<!---
+
 > PDF associated to this course [Here](/documents/PD2.pdf){: .btn .btn--light-outline}
 
 > Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
+
+-->
 
 ## Project
 
