@@ -28,10 +28,13 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
 - The presentation of the arrangement view
 - How to export your track
 
+<!---
+
 > PDF associated to this course [Here](/documents/Ableton.pdf){: .btn .btn--light-outline}
 
 > Download here the samples you can use during this course [Here](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
+-->
 
 ### Advanced Notions
 
@@ -41,11 +44,15 @@ The second course presents deeper technics to compose your music. You can find:
 - Recording and Resampling
 - Some mixing concepts
 
+<!---
+
 > PDF associated to this course [Here](/documents/Ableton_2.pdf){: .btn .btn--light-outline}
+
+-->
 
 ## Project
 
-### The artistic theme of this year is: _**Time**_
+### The artistic theme of this year is: _**Beginning**_
 
 The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restriction regarding the genre.
 
@@ -53,7 +60,7 @@ You must provide a .wav of your creation alongside with the ableton project and 
 
 Any creative experiment will be valued.
 
-> Full subject [Here](/documents/Ableton_project.pdf){: .btn .btn--light-outline}
+> Full subject from 2021/2022 [Here](/documents/Ableton_project.pdf){: .btn .btn--light-outline}
 
 <!---
 
