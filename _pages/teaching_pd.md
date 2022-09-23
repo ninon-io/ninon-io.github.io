@@ -56,7 +56,6 @@ The second course presents deeper technics to build more complicated patches and
 
 > Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
 
--->
 
 ## Project
 
@@ -82,6 +81,8 @@ Moreover, you can find the usefull litterature to build your own externals for P
 
 [Compressed externals to download from Philippe](/documents/pd_externals.zip){: .btn .btn--light-outline}
 
+
+-->
 
 ## Examples
 
