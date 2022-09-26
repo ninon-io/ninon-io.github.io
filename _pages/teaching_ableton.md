@@ -73,7 +73,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="/audio/cosmic_waves.wav.asd">
+  <source src="/audio/cosmic_waves.wav">
 </audio></html>
 
 > Roy Yacoob - Une minute 
