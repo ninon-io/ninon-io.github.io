@@ -68,22 +68,28 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 ### 2021/2022 Theme of the year: **time**
 
-Beginner Project
-> Sarah Nabi - Sing with me 
+**Beginner Project**
+> Sarah Nabi - Cosmic waves 
 
 <html>
 <audio controls>
-  <source src="/audio/nabi.mp3">
+  <source src="/audio/cosmic_waves.wav">
+</audio></html>
+
+> Roy Yacoob - Une minute 
+
+<html>
+<audio controls>
+  <source src="/audio/UNE_MINUTE.wav">
 </audio></html>
 
 
-
-Expert project
+**Expert project**
 > David Genova - Sing with me 
 
 <html>
 <audio controls>
-  <source src="/audio/Sing_with_me.mp3">
+  <source src="/audio/Sing_with_me.wav">
 </audio></html>
 
 
