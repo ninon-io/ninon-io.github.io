@@ -76,7 +76,7 @@ Here are examples of tracks made by my students in accordance with the subject o
   <source src="/audio/cosmic_waves.wav">
 </audio></html>
 
-> Roy Yacoob - Une minute 
+> Roy Yakoob - Une minute 
 
 <html>
 <audio controls>
