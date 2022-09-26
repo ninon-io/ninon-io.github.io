@@ -88,10 +88,29 @@ Moreover, you can find the usefull litterature to build your own externals for P
 
 Here are examples of tracks made by my students in accordance with the subject of the project.
 
+### 2021/2022
+
+> Nils Demerle 
+
+<html>
+<audio controls>
+  <source src="/audio/Experiences.mp3">
+</audio></html>
+
+
+> Anonymous - Track 
+
+<html>
+<audio controls>
+  <source src="/audio/track.mp3">
+</audio></html>
+
+
+### 2020/2021
+
 > Jeremy Uzan - Pure House Data
 
 [Youtube link](https://www.youtube.com/watch?v=Lqg1Hlp5fSA){: .btn .btn--light-outline}
-
 
 > Anonymous 
 
@@ -100,7 +119,6 @@ Here are examples of tracks made by my students in accordance with the subject o
   <source src="/audio/chable.mp3">
 </audio></html>
 
-
 > Anonymous
 
 <html>
@@ -108,25 +126,17 @@ Here are examples of tracks made by my students in accordance with the subject o
   <source src="/audio/le.mp3">
 </audio></html>
 
-
-
-Florian Angulo - Untitled
+> Florian Angulo - Untitled
 
 <html>
 <audio controls>
   <source src="/audio/angulo.mp3">
 </audio></html>
 
-
-
-Argan Verrier - ABZ
+> Argan Verrier - ABZ
 
 <html>
 <audio controls>
   <source src="/audio/verrier.wav">
 </audio></html>
-
-
-
-
 
