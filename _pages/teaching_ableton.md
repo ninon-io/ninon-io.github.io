@@ -73,14 +73,14 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="/audio/cosmic_waves.wav">
+  <source src="/audio/cosmic_waves.wav.asd">
 </audio></html>
 
 > Roy Yacoob - Une minute 
 
 <html>
 <audio controls>
-  <source src="/audio/UNE_MINUTE.wav">
+  <source src="/audio/UNE_MINUTE.mp3">
 </audio></html>
 
 
@@ -89,7 +89,7 @@ Here are examples of tracks made by my students in accordance with the subject o
 
 <html>
 <audio controls>
-  <source src="/audio/Sing_with_me.wav">
+  <source src="/audio/Sing_with_me.mp3">
 </audio></html>
 
 
