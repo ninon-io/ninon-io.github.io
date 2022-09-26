@@ -62,22 +62,36 @@ Any creative experiment will be valued.
 
 > Full subject from 2021/2022 [Here](/documents/Ableton_project.pdf){: .btn .btn--light-outline}
 
-<!---
-
 ## Examples
 
 Here are examples of tracks made by my students in accordance with the subject of the project.
 
-> Jeremy Uzan - Pure House Data
+### 2021/2022 Theme of the year: **time**
 
-[Youtube link](https://www.youtube.com/watch?v=Lqg1Hlp5fSA){: .btn .btn--light-outline}
-
-
-> Anonymous 
+Beginner Project
+> Sarah Nabi - Sing with me 
 
 <html>
 <audio controls>
-  <source src="/audio/chable.mp3">
+  <source src="/audio/nabi.mp3">
 </audio></html>
 
--->
+
+
+Expert project
+> David Genova - Sing with me 
+
+<html>
+<audio controls>
+  <source src="/audio/Sing_with_me.mp3">
+</audio></html>
+
+
+> Leo Carril - LOVE SToRY 
+
+<html>
+<audio controls>
+  <source src="/audio/LOVE_SToRY.mp3">
+</audio></html>
+
+
