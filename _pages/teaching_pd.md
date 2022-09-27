@@ -19,6 +19,14 @@ sidebar:
 
 ## Courses
 
+### Set up
+
+During this course, you will make sounds (even music?) using Pure Data. It is therefore mandatory to have a **personal computer and headphones**. It is also recommended that you have **a mouse** as patching with a trackpad can quickly become tricky. If you don't have some of the equipment mentioned above, don't hesitate to send me an email, I will then bring you additional equipment.
+
+Please, do not forget your headphones !
+
+Furthermore, it would be perfect if you could download PD with the provided link above before our first course.
+
 ### Basic Notions
 
 The first course aims at introducing the basic concept of **PD**, while giving the essential elements to build your first synthesizer. A particular attention is given for patch clarity and simplicity. You can find:
