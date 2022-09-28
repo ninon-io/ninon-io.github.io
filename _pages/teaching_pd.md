@@ -27,15 +27,13 @@ Please, do not forget your headphones !
 
 Furthermore, it would be perfect if you could download PD with the provided link above before our first course. Once the software is installed, open it and go to:
 
-1. Media > Test Audio and MIDI...
+- Step 1: Media > Test Audio and MIDI...
 
-In the opened window, at the top left there is a small patch "test tones", click on the square associated to 60 or 80.
-
-If you have sound: all good, the manipulation is finished.
+In the opened window, at the top left there is a small patch "test tones", click on the square associated to 60 or 80. If you have sound: all good, the manipulation is finished.
 
 If not, go to
 
-2. Media > Audio Settings
+- Step 2: Media > Audio Settings
 
 Check that your sample rate is 44100 and increase the delay to 80msec.
 Repeat step 1.
