@@ -83,7 +83,7 @@ No post-processing, mixing or mastering are allowed unless you attach a README.t
 
 No Max MSP allowed but any creative experiment will be valued.
 
-> Full subject [Here](/documents/Pure_Data_Project.pdf){: .btn .btn--light-outline}
+> Full subject [Here](/documents/Project_Pure_Data.pdf){: .btn .btn--light-outline}
 
 <!---
 
