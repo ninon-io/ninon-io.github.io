@@ -72,7 +72,7 @@ The second course presents deeper technics to build more complicated patches and
 
 > Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
 
-
+-->
 ## Project
 
 The goal of this assignment is to compose an entire track _**only using Pure Data**_. It must last less than 15 minutes and has no restriction regarding the genre.
@@ -84,6 +84,8 @@ No post-processing, mixing or mastering are allowed unless you attach a README.t
 No Max MSP allowed but any creative experiment will be valued.
 
 > Full subject [Here](/documents/Pure_Data_Project.pdf){: .btn .btn--light-outline}
+
+<!---
 
 ## Externals
 
