@@ -66,13 +66,10 @@ The second course presents deeper technics to build more complicated patches and
 - building of a kick drum with presets
 - courses about externals (given by P. Esling)
 
-<!---
-
-> PDF associated to this course [Here](/documents/PD2.pdf){: .btn .btn--light-outline}
+> PDF associated to this course [Here](/documents/PD02_2022.pdf){: .btn .btn--light-outline}
 
 > Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
 
--->
 ## Project
 
 The goal of this assignment is to compose an entire track _**only using Pure Data**_. It must last less than 15 minutes and has no restriction regarding the genre.
@@ -83,9 +80,7 @@ No post-processing, mixing or mastering are allowed unless you attach a README.t
 
 No Max MSP allowed but any creative experiment will be valued.
 
-> Full subject [Here](/documents/Project_Pure_Data.pdf){: .btn .btn--light-outline}
-
-<!---
+> Full subject [Here](/documents/PD_Project_2022.pdf){: .btn .btn--light-outline}
 
 ## Externals
 
@@ -99,8 +94,6 @@ Moreover, you can find the usefull litterature to build your own externals for P
 
 [Compressed externals to download from Philippe](/documents/pd_externals.zip){: .btn .btn--light-outline}
 
-
--->
 
 ## Examples
 
