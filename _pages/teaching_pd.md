@@ -19,7 +19,7 @@ sidebar:
 
 ## Courses
 
-### Set up
+### Set up - To do before the first session
 
 During this course, you will make sounds (even music?) using Pure Data. It is therefore mandatory to have a **personal computer and headphones**. It is also recommended to have **a mouse** as patching with a trackpad can quickly become tricky. If you don't have some of the equipment mentioned above, don't hesitate to send me an email, I will then bring you additional equipment.
 
@@ -37,6 +37,10 @@ If not, go to
 
 Check that your sample rate is 44100 and increase the delay to 80msec.
 Repeat step 1.
+
+If you have time and if you wish, you can have a look on those website which will give you a very decent intuition about:
+- [sound synthesis](https://pudding.cool/2018/02/waveforms/)
+- [synthesizers](https://learningsynths.ableton.com/en/get-started) 
 
 ### Basic Notions
 
