@@ -19,6 +19,24 @@ sidebar:
 
 ## Courses
 
+### Set up - To do before the first session
+
+During this course, you will make music using Ableton. It is therefore mandatory to have a **personal computer and headphones**. It is also recommended to have **a mouse** for praticity. If you don't have some of the equipment mentioned above, don't hesitate to send me an email, I will then bring you additional equipment.
+
+Please, do not forget your headphones !
+
+Furthermore please **download the trial of Ableton** through the link provided above. You will have access to the software for 3 months which more than enough as you shoud send me your project on January the 1st.
+
+The course is divided between two sessions of 4 hours. The time will be divided between explaination of concepts and free playing time during which you will be experimenting. My goal is to give you solid base to be able to compose and express your creativity through Ableton while renforcing your knowledge in sound design, composition and mixing.
+
+If you have time and if you wish, you can have a look on those website which will give you a very decent intuition about:
+- [sound synthesis](https://pudding.cool/2018/02/waveforms/)
+- [synthesizers](https://learningsynths.ableton.com/en/get-started) 
+
+> Download here the samples you can use during this course here: [Mixed samples](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
+
+You can also download the sample you like [here](https://weraveyou.com/tech/best-free-music-samples/)
+
 ### Basic Notions
 
 The first course aims at introducing the basic concepts of **Ableton**, while giving the essential elements to make your first track. You can find:
