@@ -70,11 +70,11 @@ The second course presents deeper technics to compose your music. You can find:
 
 ## Project
 
-### Artistic theme of this year: _**TBA**_
+### Artistic theme of this year: _**BLACK**_
 
 The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restriction regarding the genre.
 
-You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You should attach a README.txt if you want to introduce your artistic intention.
+You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You have to attach a README.txt to introduce your artistic intention and the processing you did.
 
 Any creative experiment will be valued.
 
@@ -82,7 +82,7 @@ Any creative experiment will be valued.
 
 ## Examples
 
-Here are examples of tracks made by my students in accordance with the subject of the project.
+Here are examples of tracks made by my students in accordance with the past subject.
 
 ### 2021/2022 **Time**
 
