@@ -35,7 +35,7 @@ If you have time and if you wish, you can have a look on those website which wil
 
 > Download here the samples you can use during this course here: [Mixed samples](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
-You can also download the sample you like [here](https://weraveyou.com/tech/best-free-music-samples/)
+You can also download samples you like [here](https://weraveyou.com/tech/best-free-music-samples/)
 
 ### Basic Notions
 
