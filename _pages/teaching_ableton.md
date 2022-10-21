@@ -21,13 +21,13 @@ sidebar:
 
 ### Set up - To do before the first session
 
-During this course, you will make music using Ableton. It is therefore mandatory to have a **personal computer and headphones**. It is also recommended to have **a mouse** for praticity. If you don't have some of the equipment mentioned above, don't hesitate to send me an email, I will then bring you additional equipment.
+During this course, you will compose music using Ableton. It is therefore mandatory to have a **personal computer and headphones**. It is also recommended that you have a **mouse** for convenience. If you don't have some of the equipment mentioned above, feel free to email me and I will bring you additional equipment.
 
-Please, do not forget your headphones !
+Don't forget your headphones!
 
-Furthermore please **download the trial of Ableton** through the link provided above. You will have access to the software for 3 months which more than enough as you shoud send me your project on January the 1st.
+Also, please **download the trial version of Ableton** via the link provided above. You will have access to the software for 3 months, which is plenty of time since you will have to send me your project on January 1st.
 
-The course is divided between two sessions of 4 hours. The time will be divided between explaination of concepts and free playing time during which you will be experimenting. My goal is to give you solid base to be able to compose and express your creativity through Ableton while renforcing your knowledge in sound design, composition and mixing.
+The course is divided into two 4-hour sessions. The time will be divided between explaining the concepts and free play time during which you will experiment. My goal is to give you a solid foundation to be able to compose and express your creativity through Ableton while reinforcing your knowledge in sound design, composition and mixing.
 
 If you have time and if you wish, you can have a look on those website which will give you a very decent intuition about:
 - [sound synthesis](https://pudding.cool/2018/02/waveforms/)
@@ -87,6 +87,7 @@ Here are examples of tracks made by my students in accordance with the past subj
 ### 2021/2022 **Time**
 
 **Beginner Project**
+
 > Sarah Nabi - Cosmic waves 
 
 <html>
@@ -102,7 +103,8 @@ Here are examples of tracks made by my students in accordance with the past subj
 </audio></html>
 
 
-**Expert project**
+**Advanced project**
+
 > David Genova - Sing with me 
 
 <html>
