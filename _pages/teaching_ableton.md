@@ -37,6 +37,8 @@ If you have time and if you wish, you can have a look on those website which wil
 
 You can also download samples you like [here](https://weraveyou.com/tech/best-free-music-samples/)
 
+Remember that the PDF given alongside each courses can not replace trials and experiments you will do during the courses, they act as reminders if you are looking for shortcuts, particular function or a processing.
+
 ### Basic Notions
 
 The first course aims at introducing the basic concepts of **Ableton**, while giving the essential elements to make your first track. You can find:
@@ -49,8 +51,6 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
 <!---
 
 > PDF associated to this course [Here](/documents/Ableton.pdf){: .btn .btn--light-outline}
-
-> Download here the samples you can use during this course [Here](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
 -->
 
