@@ -55,11 +55,7 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
   - A dive into the audio effects and particularly Eq and Compressor
   - How to export your track
 
-<!---
-
-> PDF associated to this course [Here](/documents/Ableton.pdf){: .btn .btn--light-outline}
-
--->
+> PDF associated to this course [Here](/documents/Ableton01_2022.pdf){: .btn .btn--light-outline}
 
 ### Advanced Notions
 
