@@ -42,11 +42,18 @@ Remember that the PDF given alongside each courses can not replace trials and ex
 ### Basic Notions
 
 The first course aims at introducing the basic concepts of **Ableton**, while giving the essential elements to make your first track. You can find:
-- Basic notions to begin
-- The presentation of audio tracks
-- A dive into the audio effects and particularly Eq and Compressor
-- The presentation of the arrangement view
-- How to export your track
+- Basics:
+  - Introduction to Ableton
+  - Music Composition overview
+  - Description of the interface of the session view
+- Session View:
+  - Presentation of Audio Clip
+  - Clip properties
+  - Usage of Warping and Quantization
+- Composition:
+  - Presentation of the arrangement view
+  - A dive into the audio effects and particularly Eq and Compressor
+  - How to export your track
 
 <!---
 
