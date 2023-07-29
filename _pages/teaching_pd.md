@@ -17,7 +17,7 @@ sidebar:
   nav: "teaching"
 ---
 
-## Previous students Composition [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
+## Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
 
 ## Courses
 
