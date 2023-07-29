@@ -8,9 +8,9 @@ header:
   overlay_filter: "0.6"
   overlay_image: /images/particles.jpg
   actions:
-    - label: "Download"
+    - label: "Here"
       url: "https://www.ableton.com/en/trial/"
-excerpt: "Download the trial version of Ableton Live 11, you will have a free access for 3 months."
+excerpt: "Download the trial version of Ableton Live 11"
 toc: true
 toc_label: "Table of Contents"
 sidebar:
