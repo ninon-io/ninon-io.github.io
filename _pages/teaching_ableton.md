@@ -17,9 +17,7 @@ sidebar:
   nav: "teaching"
 ---
 
-## Previous students Composition
-
-[ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
+## Previous students Composition [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
 
 ## Courses
 
@@ -91,45 +89,3 @@ You must provide a .wav of your creation alongside with the ableton project and 
 Any creative experiment will be valued.
 
 > Full subject [Here](/documents/ATIAM_Ableton2022.pdf){: .btn .btn--light-outline}
-
-## Examples
-
-Here are examples of tracks made by my students in accordance with the past subject.
-
-### 2021/2022 **Time**
-
-**Beginner Project**
-
-> Sarah Nabi - Cosmic waves 
-
-<html>
-<audio controls>
-  <source src="/audio/cosmic_waves.wav">
-</audio></html>
-
-> Roy Yakoob - Une minute 
-
-<html>
-<audio controls>
-  <source src="/audio/UNE_MINUTE.mp3">
-</audio></html>
-
-
-**Advanced project**
-
-> David Genova - Sing with me 
-
-<html>
-<audio controls>
-  <source src="/audio/Sing_with_me.mp3">
-</audio></html>
-
-
-> Leo Carril - LOVE SToRY 
-
-<html>
-<audio controls>
-  <source src="/audio/LOVE_SToRY.mp3">
-</audio></html>
-
-
