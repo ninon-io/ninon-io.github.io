@@ -17,29 +17,29 @@ sidebar:
   nav: "teaching"
 ---
 
-## Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
+### Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
 
 ## Courses
 
 ### Set up - To do before the first session
 
-During this course, you will compose music using Ableton. It is therefore mandatory to have a **personal computer and headphones**. It is also recommended that you have a **mouse** for convenience. If you don't have some of the equipment mentioned above, feel free to email me and I will bring you additional equipment.
+During this course, you will compose music using Ableton. It is, therefore, mandatory to have a **personal computer and headphones**. It is also recommended to have a **mouse** for convenience. If you don't have some of the equipment mentioned above, feel free to email me, and I will bring you additional equipment.
 
 Don't forget your headphones!
 
 Also, please **download the trial version of Ableton** via the link provided above. You will have access to the software for 3 months, which is plenty of time since you will have to send me your project on January 1st.
 
-The course is divided into two 4-hour sessions. The time will be divided between explaining the concepts and free play time during which you will experiment. My goal is to give you a solid foundation to be able to compose and express your creativity through Ableton while reinforcing your knowledge in sound design, composition and mixing.
+The course is divided into two 4-hour sessions. The time will be divided between explaining the concepts and free playtime during which you will experiment. My goal is to give you a solid foundation to be able to compose and express your creativity through Ableton while reinforcing your knowledge in sound design, composition, and mixing.
 
-If you have time and if you wish, you can have a look on those website which will give you a very decent intuition about:
-- [sound synthesis](https://pudding.cool/2018/02/waveforms/)
-- [synthesizers](https://learningsynths.ableton.com/en/get-started) 
+If you have time and if you wish, you can have a look at these websites, which will give you a very decent intuition about:
+- [Sound synthesis](https://pudding.cool/2018/02/waveforms/)
+- [Synthesizers](https://learningsynths.ableton.com/en/get-started) 
 
-> Download here the samples you can use during this course here: [Mixed samples](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
+> Download the samples you can use during this course here: [Mixed samples](https://drive.google.com/drive/folders/17IzUHC-Wqjyklfrf5vK1NxUjYjYgdkHN?usp=sharing){: .btn .btn--light-outline}
 
-You can also download samples you like [here](https://weraveyou.com/tech/best-free-music-samples/)
+You can also download samples you like [here](https://weraveyou.com/tech/best-free-music-samples/).
 
-Remember that the PDF given alongside each courses can not replace trials and experiments you will do during the courses, they act as reminders if you are looking for shortcuts, particular function or a processing.
+Remember that the PDFs given alongside each course cannot replace the trials and experiments you will do during the courses. They act as reminders if you are looking for shortcuts, particular functions, or processing techniques.
 
 ### Basic Notions
 
@@ -82,9 +82,9 @@ The second course presents deeper technics to compose your music, especially how
 
 ### Artistic theme of this year: _**BLACK**_
 
-The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restriction regarding the genre.
+The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restrictions regarding the genre.
 
-You must provide a .wav of your creation alongside with the ableton project and all the samples you used to make it. You have to attach a README.txt to introduce your artistic intention and the processing you did.
+You must provide a .wav file of your creation alongside the Ableton project and all the samples you used to make it. Please attach a README.txt to introduce your artistic intention and the processing you did.
 
 Any creative experiment will be valued.
 
