@@ -17,9 +17,7 @@ sidebar:
   nav: "teaching"
 ---
 
-## Previous students Composition
-
-[ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
+## Previous students Composition [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
 
 ## Courses
 
@@ -101,61 +99,3 @@ Moreover, you can find the usefull litterature to build your own externals for P
 [The optional project](/documents/ProjectPhilippe.pdf){: .btn .btn--light-outline}
 
 [Compressed externals to download from Philippe](/documents/pd_externals.zip){: .btn .btn--light-outline}
-
-
-## Examples
-
-Here are examples of tracks made by my students in accordance with the subject of the project.
-
-### 2021/2022
-
-> Nils Demerle 
-
-<html>
-<audio controls>
-  <source src="/audio/Experiences.mp3">
-</audio></html>
-
-
-> Mathile Abrassart - PurePatate
-
-<html>
-<audio controls>
-  <source src="/audio/Abrassart_audio.wav">
-</audio></html>
-
-
-### 2020/2021
-
-> Jeremy Uzan - Pure House Data
-
-[Youtube link](https://www.youtube.com/watch?v=Lqg1Hlp5fSA){: .btn .btn--light-outline}
-
-> Anonymous 
-
-<html>
-<audio controls>
-  <source src="/audio/chable.mp3">
-</audio></html>
-
-> Anonymous
-
-<html>
-<audio controls>
-  <source src="/audio/le.mp3">
-</audio></html>
-
-> Florian Angulo - Untitled
-
-<html>
-<audio controls>
-  <source src="/audio/angulo.mp3">
-</audio></html>
-
-> Argan Verrier - ABZ
-
-<html>
-<audio controls>
-  <source src="/audio/verrier.wav">
-</audio></html>
-
