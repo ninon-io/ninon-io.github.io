@@ -37,16 +37,19 @@ On this website, you will find the following sections:
 
 ## Passion for Electronic Music
 
-Beyond my academic pursuits, I find my inspiration in the realm of electronic music, constantly exploring new horizons of sound and melody. I believe that true creativity flourishes when shared, and I would be delighted to engage in any collaborative endeavors in my field.
+Beyond my academic pursuits, I find my inspiration in the realm of electronic music, constantly exploring new horizons of sound and melody. I believe that creativity flourishes when shared, and I would be delighted to engage in any collaborative endeavors in my field.
 
 ### Contact information
 > Ninon Devis
 > c/o IRCAM  
 > 1, Place Igor Stravinsky  
-> F-75004 Paris, France  
+> F-75004 Paris, France
+>
+> ninon.devis@ircam.fr 
 
 Teacher - University Paris 6 - UPMC  
 PhD - AI applied to music
+
 Master - Acoustics, Signal Processing and Informatics  
 IRCAM - CNRS UMR 9912  
 *Analysis Synthesis* team  
