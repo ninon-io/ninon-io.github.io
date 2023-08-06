@@ -23,16 +23,7 @@ dj:
     url: "research/conferences"
     btn_label: "Read More"
     btn_class: "btn--primary"
-cat:
-  - image_path: /images/papers.jpeg
-    alt: "cats"
-    title: "Cats and Turtle"
-    excerpt: 'Under construction'
-    url: "research/papers"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-toc: true
-toc_label: "Table of Contents"
+
 ---
 
 {% include feature_row id="music" type="left" %}
