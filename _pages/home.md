@@ -10,7 +10,7 @@ header:
 
 # Introduction
 
-I am a passionate PhD student, currently exploring the exciting realm of deep learning applied to music at [IRCAM](http://www.ircam.fr). My work centers around the captivating intersections of technology and music within the [ACIDS research group](http://acids.ircam.fr) of the [Analysis Synthesis Team]([https://www.stms-lab.fr/team/representations-musicales/](http://anasynth.ircam.fr/home/english)).
+I am a PhD student, currently exploring the realm of deep learning applied to music at [IRCAM](http://www.ircam.fr). My work centers around the intersections of technology and music within the [ACIDS research group](http://acids.ircam.fr) of the [Analysis Synthesis Team]([https://www.stms-lab.fr/team/representations-musicales/](http://anasynth.ircam.fr/home/english)).
 
 In addition to my research, I contribute to education by teaching Ableton and Pure Data for the [ATIAM](http://atiam.ircam.fr) Master.
 
