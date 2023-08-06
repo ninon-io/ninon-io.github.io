@@ -26,10 +26,6 @@ My research revolves around the following key areas:
 
 4. **Reflective Study on AI's Artistic Applications and Interviews with Artists:** Through reflective exploration, I investigate the artistic applications of artificial intelligence in music. Engaging in insightful interviews with talented artists, I seek to understand the impact of technology on artistic expression.
 
-## Passion for Electronic Music
-
-Beyond my academic pursuits, I find my inspiration in the realm of electronic music, constantly exploring new horizons of sound and melody. I believe that true creativity flourishes when shared, and I would be delighted to engage in any collaborative endeavors in my field.
-
 ## Website Sections
 
 On this website, you will find the following sections:
@@ -38,6 +34,10 @@ On this website, you will find the following sections:
 - **Publications, Conferences, and Seminars**: Details about my academic contributions and presentations.
 - **Main Projects**: Information about the key projects I have been involved in.
 - **Pedagogical Material**: Access to course materials for the courses I teach.
+
+## Passion for Electronic Music
+
+Beyond my academic pursuits, I find my inspiration in the realm of electronic music, constantly exploring new horizons of sound and melody. I believe that true creativity flourishes when shared, and I would be delighted to engage in any collaborative endeavors in my field.
 
 ### Contact information
 > Ninon Devis
