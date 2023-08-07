@@ -14,11 +14,15 @@ toc_label: "Table of content"
 
 # Eurorack Impact synthesizer
 
-The Neurorack is the first ever AI-based real-time synthesizer, which comes in many formats and more specifically in the Eurorack format. The current prototype relies on the Jetson Nano and the Eurorack hardware and software have been developed by our team: [Philippe Esling](https://esling.github.io/), Martin Vert and myself. The full scientific paper associated to this project is available [here](https://infoscience.epfl.ch/record/291222).
+The Neurorack is the first ever AI-based real-time synthesizer, which comes in many formats and more specifically in the Eurorack format. The current prototype relies on the Jetson Nano and the Eurorack hardware and software have been developed by our team: Philippe Esling, Martin Vert and myself. The full scientific paper associated to this project is available [here](https://infoscience.epfl.ch/record/291222).
 
-## Video demo
+## Ressources
 
 [Youtube Link](https://www.youtube.com/watch?v=64VpQenCHVs)
+
+Link to the [Github](https://github.com/acids-ircam/neurorack).
+
+Nvidia project of the month Award: [link to the article](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/).
 
 ### Introduction
 
