@@ -56,7 +56,8 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
   - Presentation of the arrangement view
   - A dive into the audio effects and particularly Eq and Compressor
   - How to export your track
-<!--- 
+<!--
+
 > PDF associated to this course [Here](/documents/Ableton01_2022.pdf){: .btn .btn--light-outline}
 
 ### Advanced Notions
@@ -76,11 +77,12 @@ The second course presents deeper technics to compose your music, especially how
   - Recording and resampling
 
 > PDF associated to this course [Here](/documents/Ableton02_2022.pdf){: .btn .btn--light-outline}
-Wrap text --->
+
+Wrap text -->
 
 ## Project
 
-### Artistic theme of this year: _**BLACK**_
+### Artistic theme of this year: _**ILLUSION**_
 
 The goal of this assignment is to compose an entire track using _**Ableton**_. It must last less than 15 minutes and has no restrictions regarding the genre.
 
