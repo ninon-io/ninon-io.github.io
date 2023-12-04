@@ -56,6 +56,24 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
   - Presentation of the arrangement view
   - A dive into the audio effects and particularly Eq and Compressor
   - How to export your track
+ 
+  > PDF associated to this course [Here](/documents/Ableton01_2023.pdf){: .btn .btn--light-outline}
+
+### Advanced Notions
+
+The second course presents deeper technics to compose your music, especially how to make your own audio samples. You can find:
+- Sound Design:
+  - Sound Design Concepts
+  - Synthesis Sources
+  - Presentation of Midi
+- MIDI:
+  - Impulse & Simpler Instrument
+  - MIDI Effects
+  - Instrument Rack
+- Mixing Concepts:
+  - Tips & tricks for mixing
+  - Plug-in
+  - Recording and resampling
 
 ## Project
 
