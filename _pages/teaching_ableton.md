@@ -85,4 +85,4 @@ You must provide a .wav file of your creation alongside the Ableton project and 
 
 Any creative experiment will be valued.
 
-> Full subject [Here](/documents/ATIAM_Ableton2022.pdf){: .btn .btn--light-outline}
+> Full subject [Here](/documents/Ableton_project.pdf){: .btn .btn--light-outline}
