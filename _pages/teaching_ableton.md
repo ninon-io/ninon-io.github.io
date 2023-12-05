@@ -74,6 +74,8 @@ The second course presents deeper technics to compose your music, especially how
   - Tips & tricks for mixing
   - Plug-in
   - Recording and resampling
+ 
+> PDF associated to this course [Here](/documents/Ableton02_2022.pdf){: .btn .btn--light-outline}
 
 ## Project
 
