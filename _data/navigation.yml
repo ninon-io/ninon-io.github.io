@@ -18,6 +18,8 @@ main:
 research:
   - title: "PhD Subject"
     url: https://ninon-io.github.io/research/phd
+  - title: "PhD Companion Page"
+    url: https://ninon-io.github.io/research/manuscript
   - title: "Conferences"
     url: https://ninon-io.github.io/research/conferences
   - title: "Scientific Papers"
@@ -32,3 +34,9 @@ teaching:
     url: https://ninon-io.github.io/teaching/cryptology
   - title: "Java"
     url: https://ninon-io.github.io/teaching/java
+
+  manuscript:
+  - title: "Music References"
+    url: https://ninon-io.github.io/research/manuscript/music
+  - title: "Other"
+    url: https://ninon-io.github.io/research/manuscript/other
