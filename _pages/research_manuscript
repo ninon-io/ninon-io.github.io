@@ -1,7 +1,7 @@
 ---
 title: "PhD Companion Page"
 layout: splash
-permalink: research/research_manuscript
+permalink: research/manuscript
 header:
   overlay_color: "#000"
   overlay_filter: "0.7"
@@ -12,7 +12,7 @@ PhD:
     alt: "PhD"
     title: "Music References"
     excerpt: 'Link to the cited music'
-    url: "research/research_manuscript/music"
+    url: "research/manuscript/music"
     btn_label: "Enter"
     btn_class: "btn--primary"
 Other:
@@ -20,7 +20,7 @@ Other:
     alt: "Other"
     title: "Other"
     excerpt: 'Example'
-    url: "research_manuscript/conferences"
+    url: "research/manuscript/other"
     btn_label: "Enter"
     btn_class: "btn--primary"
 ---
