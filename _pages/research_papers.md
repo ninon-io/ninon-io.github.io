@@ -14,8 +14,7 @@ sidebar:
   nav: "research"
 ---
 
-## UNDER REVIEW
-
+## Under Reviw
 > Shahan Nercessian, Johannes Imort, Ninon Devis, Frederik Blang
 
 <p align="center">
@@ -55,7 +54,7 @@ Despite significant advances in deep models for music generation, the use of the
 > Ninon Devis, Philippe Esling
 
 <p align="center">
-EPFL (École Polytechnique Fédérale de Lausanne) - 2021 
+EPFL - 2021 
 </p>
 
 Deep learning models have provided extremely successful methods in most application fields by enabling unprecedented accuracy in various tasks. For audio applications, although the massive complexity of generative models allows handling complex temporal structures, it often precludes their real-time use on resource-constrained hardware platforms, particularly pervasive in this field. The lack of adequate lightweight models is an impediment to the development of stand-alone instruments based on deep models, entailing a significant limitation for real-life creation by musicians and composers. Recently, we built the first deep learning-based music instrument by implementing a lightweight generative musical audio model on an adequate hardware platform that can handle its complexity. By embedding this deep model, we provide a controllable and flexible creative hardware interface. More precisely, we focused our work on the Eurorack synthesizers format, which offers Control Voltage (CV) and gate mechanisms allowing to interact with other classical Eurorack modules.
@@ -74,7 +73,7 @@ Au sein de nos sociétés profondément impactées par les avancées technologiq
 
 À ce titre, il semble légitime de se demander dans quelle mesure il est possible de conjuguer créativité et intelligence artificielle. Peut-on élaborer une forme de créativité artificielle ? Si oui, quelles en sont ses limites ? Face à l’automatisation massive qui n’épargne aucun domaine des arts, quelle place conserve l’originalité ? Dans le secteur de la musique, quels outils futurs reposant sur l’IA peut-on concevoir ? Quels pourraient alors être les instruments de demain ?
 
-[Lien](https://theconversation.com/lavenir-de-la-creativite-musicale-sera-t-il-artificiel-157443)
+[Lien](https://theconversation.com/lavenir-de-la-creativite-musicale-sera-t-il-artificiel-157443){: .btn .btn--light-outline}
 
 ## Creativity in the era of artificial intelligence
 
