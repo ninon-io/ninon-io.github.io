@@ -5,7 +5,7 @@ permalink: /research
 header:
   overlay_color: "#000"
   overlay_filter: "0.7"
-  overlay_image: /images/research_header.jpg
+  overlay_image: /images/research_header2.webp
 excerpt: "All items linked to my research in creative musical AI"
 PhD:
   - image_path: /images/phd2.webp
