@@ -43,8 +43,8 @@ papers:
 
 {% include feature_row id="PhD" type="left" %}
 
-{% include feature_row id="Manuscript" type="center" %}
+{% include feature_row id="Manuscript" type="right" %}
 
-{% include feature_row id="conferences" type="right" %}
+{% include feature_row id="conferences" type="left" %}
 
-{% include feature_row id="papers" type="left" %}
+{% include feature_row id="papers" type="right" %}
