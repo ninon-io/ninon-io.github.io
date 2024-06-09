@@ -15,7 +15,7 @@ PhD:
     url: "research/phd"
     btn_label: "Read More"
     btn_class: "btn--primary"
-Manuscript Companion:
+Manuscript:
   - image_path: /images/phd2.webp
     alt: "Manuscript"
     title: "Manuscript Companion"
