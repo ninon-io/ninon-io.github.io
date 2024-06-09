@@ -12,9 +12,9 @@ classes: wide
 *****************************************************
 <p align="center">
 Passionate about music and sciences. 
+</p>
 
 You can find my resume [here](/documents/Ableton01_2023.pdf){: .btn .btn--light-outline}
-</p>
 
 > Sciences:
 - 2024 - Today: Audio Research Engineer at Native Instruments (Berlin), Deep Learning applied to music
