@@ -49,7 +49,7 @@ Beyond my academic pursuits, I find my inspiration in the realm of electronic mu
 >
 > ninon.devis@ircam.fr 
 
-Research Engineer - Native Instruments - Berlin
+Research Engineer - Native Instruments
 Teacher - University Paris 6 - UPMC  
 PhD - AI applied to music
 
