@@ -64,9 +64,7 @@ Au sein de nos sociétés profondément impactées par les avancées technologiq
 
 À ce titre, il semble légitime de se demander dans quelle mesure il est possible de conjuguer créativité et intelligence artificielle. Peut-on élaborer une forme de créativité artificielle ? Si oui, quelles en sont ses limites ? Face à l’automatisation massive qui n’épargne aucun domaine des arts, quelle place conserve l’originalité ? Dans le secteur de la musique, quels outils futurs reposant sur l’IA peut-on concevoir ? Quels pourraient alors être les instruments de demain ?
 
-### Lien
-
-[L'avenir de la créativité sera-t-il artificiel](https://theconversation.com/lavenir-de-la-creativite-musicale-sera-t-il-artificiel-157443)
+[Lien](https://theconversation.com/lavenir-de-la-creativite-musicale-sera-t-il-artificiel-157443)
 
 ## Creativity in the era of artificial intelligence 08.2020
 
