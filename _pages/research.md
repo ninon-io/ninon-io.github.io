@@ -16,7 +16,7 @@ PhD:
     btn_label: "Read More"
     btn_class: "btn--primary"
 Manuscript:
-  - image_path: /images/phd2.webp
+  - image_path: /images/manuscript.webp
     alt: "Manuscript"
     title: "Manuscript Companion"
     excerpt: 'Additional material for my manuscript'
