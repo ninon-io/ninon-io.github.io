@@ -4,7 +4,7 @@ layout: splash
 permalink: /research
 header:
   overlay_color: "#000"
-  overlay_filter: "0.7"
+  overlay_filter: "0.5"
   overlay_image: /images/research_header2.webp
 excerpt: "All items linked to my research in creative musical AI"
 PhD:
@@ -13,6 +13,14 @@ PhD:
     title: "PhD Subject"
     excerpt: 'Lightweight deep learning on real-time embedded architectures.'
     url: "research/phd"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+Manuscript Companion:
+  - image_path: /images/phd2.webp
+    alt: "Manuscript"
+    title: "Manuscript Companion"
+    excerpt: 'Additional material for my manuscript'
+    url: "research/manuscript"
     btn_label: "Read More"
     btn_class: "btn--primary"
 conferences:
