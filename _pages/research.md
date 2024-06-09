@@ -8,7 +8,7 @@ header:
   overlay_image: /images/research_header.jpg
 excerpt: "All items linked to my research in creative musical AI"
 PhD:
-  - image_path: /images/phd.jpg
+  - image_path: /images/phd2.webp
     alt: "PhD"
     title: "PhD Subject"
     excerpt: 'Lightweight deep learning on real-time embedded architectures.'
