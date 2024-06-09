@@ -32,7 +32,7 @@ conferences:
     btn_label: "Enter"
     btn_class: "btn--primary"
 papers:
-  - image_path: /images/papers2.webp
+  - image_path: /images/paper2.webp
     alt: "Papers"
     title: "Papers"
     excerpt: 'List of publications'
