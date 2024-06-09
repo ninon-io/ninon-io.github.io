@@ -10,9 +10,11 @@ header:
 
 # Introduction
 
-I am a PhD student, currently exploring the realm of deep learning applied to music at [IRCAM](http://www.ircam.fr). My work centers around the intersections of technology and music within the [ACIDS research group](http://acids.ircam.fr) of the [Analysis Synthesis Team]([https://www.stms-lab.fr/team/representations-musicales/](http://anasynth.ircam.fr/home/english)).
+I am a PhD student and Research Engineer deeply engaged in advancing the field of deep learning within music. My academic research is conducted at [IRCAM](http://www.ircam.fr) where I am part of the [ACIDS research group](http://acids.ircam.fr) under the [Analysis Synthesis Team](http://anasynth.ircam.fr/home/english). Learn more about my work [here](https://ninon-io.github.io/research).
 
-In addition to my research, I contribute to education by teaching [Ableton](https://ninon-io.github.io/teaching/ableton) and [Pure Data](https://ninon-io.github.io/teaching/puredata/) for the [ATIAM](http://atiam.ircam.fr) Master. You can listen to the results of their final projects [here](https://soundcloud.com/atiam-ircam/sets) !
+Alongside my research, I teach courses on [Ableton](https://ninon-io.github.io/teaching/ableton) and [Pure Data](https://ninon-io.github.io/teaching/puredata/) for the [ATIAM](http://atiam.ircam.fr) Master's program. You can explore some of the innovative projects by my students on [SoundCloud](https://soundcloud.com/atiam-ircam/sets).
+
+Additionally, I have taken on the role of Research Engineer at [Native Instruments](https://www.native-instruments.com/en/) within the Audio Research Team, focusing on applying deep learning techniques to develop cutting-edge music technology solutions.
 
 ## Research Focus
 
@@ -30,7 +32,7 @@ My research revolves around the following key areas:
 
 On this website, you will find the following sections:
 
-- **Introduction to My Researches**: An overview of my research projects and interests.
+- **Introduction**: An overview of my research projects and interests.
 - **Publications, Conferences, and Seminars**: Details about my academic contributions and presentations.
 - **Main Projects**: Information about the key projects I have been involved in.
 - **Pedagogical Material**: Access to course materials for the courses I teach.
@@ -47,6 +49,7 @@ Beyond my academic pursuits, I find my inspiration in the realm of electronic mu
 >
 > ninon.devis@ircam.fr 
 
+Research Engineer - Native Instruments - Berlin
 Teacher - University Paris 6 - UPMC  
 PhD - AI applied to music
 
