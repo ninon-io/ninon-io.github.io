@@ -11,9 +11,10 @@ classes: wide
 
 *****************************************************
 
-Passionate about music and sciences.
+Passionate about music and sciences. You can find my resume [here](/documents/Ableton01_2023.pdf){: .btn .btn--light-outline}
 
 > Sciences:
+- 2024 - Today: Audio Research Engineer at Native Instruments (Berlin), Deep Learning applied to music
 - 2020 - 2023: PhD on AI applied to music
 - 2019 - 2020: Master Degree at IRCAM (*Signal Processing, Acoustic and Computer Science apply to music*)
 - 2016 - 2017: High school teacher at Lycée Dorian in Paris 
