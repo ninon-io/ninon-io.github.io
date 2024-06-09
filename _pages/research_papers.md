@@ -13,6 +13,24 @@ toc_label: "Publications"
 sidebar:
   nav: "research"
 ---
+
+## UNDER REVIEW - 05.2023
+
+> Shahan Nercessian, Johannes Imort, Ninon Devis, Frederik Blang
+
+### ISMIR
+
+
+## The ACIDS Research project - 05.2023
+
+> Giovanni Bindi, Antoine Caillon, Axel Chemla--Romeu-Santos, Nils Demerlé, Ninon Devis, Constance Douwes, Philippe Esling, David Genova, Sarah Nabi.
+
+###  VDT Magazin
+
+Throughout history, music has been closely intertwined with technological advancements. The evolution of musical genres has been greatly influenced by the development of musical instruments and tools, which have been made possible by groundbreaking scientific discoveries. The study of organology, for instance, has shed light on the progression of musical instruments, allowing composers to explore new forms of expression. Significant technological breakthroughs, like the hammer mechanism of the piano in the 18th century, have enabled composers to create music with greater tonal expression and dynamic range. This has played a crucial role in the rise of the piano as a leading solo instrument in Western classical music. The advent of electronic synthesizers has further expanded the range of sounds available and has become ubiquitous in various musical genres, even giving rise to entirely new ones. In recent years, Artificial Intelligence (AI) has made significant strides, particularly in the field of deep machine learning (ML). Generative models, in particular, have seen impressive results in generating entirely new data, spanning computer vision, language processing, and audio synthesis. As a result, a plethora of models capable of generating high-quality images, audio, and text from user-written prompts have emerged, such as StableDiffusion from Stability AI, AudioLM from Google, and ChatGPT from OpenAI. The integration of ML into music creation is also gaining popularity, with dedicated tools such as DDSP or RAVE being developed for specific creative applications. However, this trend raises profound questions regarding the nature and place of these tools in the creative landscape. Are we witnessing a turning point in our relationship with creative mediums? What are the promises and dangers that may arise from these novel tools? This article seeks to illuminate the relationship between ML tools and musical creativity, by illustrating these questions with the work performed over the past decade by the ACIDS group at IRCAM.
+
+[Paper only with VDT account]([https://arxiv.org/abs/2302.13542](https://tonmeister.org/de/magazin/2023/2/)){: .btn .btn--light-outline}
+
 ## Continuous descriptor-based control for deep audio synthesis - 02.2023
 
 > Ninon Devis, Nils Demerlé, Sarah Nabi, David Genova, Philippe Esling
