@@ -24,7 +24,7 @@ Manuscript:
     btn_label: "Read More"
     btn_class: "btn--primary"
 conferences:
-  - image_path: /images/conference2.webp
+  - image_path: /images/conference.webp
     alt: "Conferences"
     title: "Conferences and Seminars"
     excerpt: 'Links to the **descriptions and videos** of various speaking intervention'
@@ -32,7 +32,7 @@ conferences:
     btn_label: "Enter"
     btn_class: "btn--primary"
 papers:
-  - image_path: /images/paper2.webp
+  - image_path: /images/paper.webp
     alt: "Papers"
     title: "Papers"
     excerpt: 'List of publications'
