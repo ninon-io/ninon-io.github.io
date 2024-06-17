@@ -27,7 +27,7 @@ Projection du documentaire "L’IA peut-elle créer de l’art ?" de Dennis Wagn
 
 [Description]([https://www.sorbonne-universite.fr/evenements/lia-peut-elle-creer-de-lart]){: .btn .btn--light-outline}
 
-## Presentation of the Neurorack Project for Raster-Noton 11.06.2021
+## Neurorack Project for Raster-Noton
 
 > IRCAM X Raster-Noton
 
@@ -37,7 +37,7 @@ On the occasion of the Manifeste 2021 festival organized by IRCAM, the ACIDS tea
 
 [Raster-Noton](https://raster-media.net/)
 
-## Intelligence artificielle – Musique – Incarnation 24.03.2021
+## Intelligence artificielle – Musique – Incarnation
 
 > SCAI and Collegium Musicae
 
@@ -50,7 +50,7 @@ Il s'agit de conceptualiser clairement ce qui manque à un logiciel pour dispos
 
 [Collegium Musicae](http://www.collegium.musicae.sorbonne-universite.fr/fr/actualites/musique-et-intelligence-artificielle.html)
 
-##  Intelligence artificielle, art et créativité 26.01.2021
+##  Intelligence artificielle, Art et Créativité
 
 > CIS CNRS
 
@@ -59,8 +59,6 @@ Le séminaire Intelligence artificielle, art et créativité reçoit le 26 janvi
 L’objectif du projet est de modéliser la créativité musicale en développant des modèles d’intelligence artificielle et d’apprentissage machine innovants et de fournir des outils d’exploration intuitive de la créativité. Le projet fournit une ample activité théorique, de modélisation et d’expérimentation d’outils.
 
 Dans le cadre de cette séance, nous allons pouvoir découvrir les divers projets de l’équipe ACIDS et entendre quelques œuvres composées à l’aide de l’intelligence artificielle. Mais le cœur de la séance sera consacrée au papier co-édité par Ninon Devis et Philippe Esling, “Creativity in the Era of Artificial Intelligence” qui propose un angle théorique intéressant sur un nombre de questions centrales à l’étude de la créativité artificielle.
-
-Links
 
 [CIS CNRS](https://cis.cnrs.fr/sem-ia-art-philippe-esling-et-ninon-devis/)
 
