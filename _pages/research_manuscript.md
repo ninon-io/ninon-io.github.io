@@ -8,7 +8,7 @@ header:
   overlay_image: /images/research_header2.webp
 excerpt: "Additional Material relative to my PhD manuscript"
 Music:
-  - image_path: /images/phd.jpg
+  - image_path: /images/music_ref.webp
     alt: "PhD"
     title: "Music References"
     excerpt: 'Link to the cited music'
