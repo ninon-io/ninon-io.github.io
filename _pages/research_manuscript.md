@@ -5,9 +5,9 @@ permalink: research/manuscript
 header:
   overlay_color: "#000"
   overlay_filter: "0.7"
-  overlay_image: /images/research_header.jpg
+  overlay_image: /images/research_header2.webp
 excerpt: "Additional Material relative to my PhD manuscript"
-PhD:
+Music:
   - image_path: /images/phd.jpg
     alt: "PhD"
     title: "Music References"
@@ -25,8 +25,7 @@ Other:
     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="PhD" type="left" %}
+{% include feature_row id="Music" type="left" %}
 
-{% include feature_row id="conferences" type="right" %}
+{% include feature_row id="Other" type="right" %}
 
-{% include feature_row id="papers" type="left" %}
