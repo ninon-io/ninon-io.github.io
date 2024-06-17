@@ -34,7 +34,7 @@ Throughout history, music has been closely intertwined with technological advanc
 
 [Paper only with VDT account]([https://arxiv.org/abs/2302.13542](https://tonmeister.org/de/magazin/2023/2/)){: .btn .btn--light-outline}
 
-## Continuous descriptor-based control for deep audio synthesis - 02.2023
+## Continuous descriptor-based control for deep audio synthesis
 
 > Ninon Devis, Nils Demerlé, Sarah Nabi, David Genova, Philippe Esling
 
