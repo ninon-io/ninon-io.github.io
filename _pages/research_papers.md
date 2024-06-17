@@ -14,7 +14,7 @@ sidebar:
   nav: "research"
 ---
 
-## Under Reviw
+## Under Review
 > Shahan Nercessian, Johannes Imort, Ninon Devis, Frederik Blang
 
 <p align="center">
