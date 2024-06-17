@@ -13,6 +13,24 @@ sidebar:
   nav: "research"
 ---
 
+## Can AI create Art ?
+
+> Sorbonne University x Arte x France Inter
+
+<p align="center">
+2024
+</p>
+
+Les programmes d’intelligence artificielle parviennent aujourd’hui à générer des contenus d’une qualité impressionnante jusqu’à faire confondre la réalité et le virtuel. Leurs algorithmes sont à l’origine de transformations majeures de la société qui soulèvent d’ores et déjà des questions politique, sociale, culturelle, éthique et bien sûr morale.
+
+Qu'est-ce que la créativité ? Comment peut-on l'évaluer ?
+
+Est-ce que l’art généré par l’IA est-il de l’art ? Quel impact a-t-elle pour l’art et les artistes ? Ces systèmes intelligents sont-ils véritablement intelligents et créatifs ?
+
+Projection du documentaire "L’IA peut-elle créer de l’art ?" de Dennis Wagner, en partenariat avec Arte et débat d'experts animé par Daniel Fiévet, journaliste à France Inter.
+
+[Description]([https://www.sorbonne-universite.fr/evenements/lia-peut-elle-creer-de-lart]){: .btn .btn--light-outline}
+
 ## Presentation of the Neurorack Project for Raster-Noton 11.06.2021
 
 ### IRCAM X Raster-Noton
