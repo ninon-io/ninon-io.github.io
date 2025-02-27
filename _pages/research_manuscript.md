@@ -14,9 +14,68 @@ sidebar:
   nav: "research"
 ---
 
-###
+## Music References
 
-Music References
+> Chapter 2
 
+Rrose - Waterfall
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+> Chapter 3
+
+Max Mathews - Daisy Bell
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+Max Mathews - Numerology
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+Clara Roockmore - The art of the Theremin
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+Wendy Carlos - Switched-On Bach
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+Jean-Claude Risset
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+John Chowning - Stria
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+Iannis Xanakis - Grnaular stuff
+
+<html>
+<audio controls>
+  <source src="../audio/raster_demo.wav" type="audio/wav">
+</audio></html>
+
+## Additional material for Fader-Rave
 
 
