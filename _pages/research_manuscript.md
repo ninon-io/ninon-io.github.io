@@ -31,14 +31,14 @@ Max Mathews - Daisy Bell
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Mathews_DaisyBell.flac" type="audio/flac">
 </audio></html>
 
 Max Mathews - Numerology
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Mathews_Numerology.mp3" type="audio/mp3">
 </audio></html>
 
 Clara Roockmore - The art of the Theremin
@@ -66,7 +66,7 @@ John Chowning - Stria
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Stria_Chowning.flac" type="audio/flac">
 </audio></html>
 
 Iannis Xanakis - Grnaular stuff
