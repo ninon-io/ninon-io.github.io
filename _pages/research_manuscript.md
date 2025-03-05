@@ -61,7 +61,7 @@ Jean-Claude Risset
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Mutations_1977_Jean_Claude_Risset.mp3" type="audio/mp3">
 </audio></html>
 
 John Chowning - Stria
@@ -75,7 +75,8 @@ Iannis Xanakis - Grnaular stuff
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Xenakis_ConcretePH.mp3" type="audio/mp3
+    ">
 </audio></html>
 
 ## Additional material for Fader-Rave
