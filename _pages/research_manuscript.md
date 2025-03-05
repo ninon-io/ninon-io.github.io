@@ -14,6 +14,8 @@ sidebar:
   nav: "research"
 ---
 
+> This page is continuously updated, don't hesitate to come back !
+
 ## Music References
 
 > Chapter 2
@@ -52,7 +54,7 @@ Wendy Carlos - Switched-On Bach
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Wendy_Carlos_Air_on_a G_String.mp3" type="audio/mp3">
 </audio></html>
 
 Jean-Claude Risset
