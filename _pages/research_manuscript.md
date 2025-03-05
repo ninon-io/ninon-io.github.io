@@ -43,14 +43,14 @@ Max Mathews - Numerology
   <source src="../audio/Mathews_Numerology.mp3" type="audio/mp3">
 </audio></html>
 
-Clara Roockmore - The art of the Theremin
+Clara Roockmore - The Swan (The art of the Theremin)
 
 <html>
 <audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
+  <source src="../audio/Saint-Saëns_The_Swan.mp3" type="audio/mp3">
 </audio></html>
 
-Wendy Carlos - Switched-On Bach
+Wendy Carlos - Air on a G String (Switched-On Bach)
 
 <html>
 <audio controls>
