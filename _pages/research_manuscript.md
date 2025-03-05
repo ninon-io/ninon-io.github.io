@@ -57,7 +57,7 @@ Wendy Carlos - Air on a G String (Switched-On Bach)
   <source src="../audio/Wendy_Carlos_Air_on_a G_String.mp3" type="audio/mp3">
 </audio></html>
 
-Jean-Claude Risset
+Jean-Claude Risset - Mutations
 
 <html>
 <audio controls>
@@ -71,7 +71,7 @@ John Chowning - Stria
   <source src="../audio/Stria_Chowning.flac" type="audio/flac">
 </audio></html>
 
-Iannis Xanakis - Grnaular stuff
+Iannis Xanakis - Concrete PH
 
 <html>
 <audio controls>
