@@ -16,11 +16,11 @@ music:
     btn_label: "Read More"
     btn_class: "btn--primary"
 dj:
-  - image_path: /images/ninondj.jpeg
+  - image_path: /images/Nin_and_Jun.jpg
     alt: "DJ"
-    title: "Gigs and lives"
+    title: "CTM - MONOM"
     excerpt: 'Under construction'
-    url: "research/conferences"
+    url: "projects/ctm"
     btn_label: "Read More"
     btn_class: "btn--primary"
 
