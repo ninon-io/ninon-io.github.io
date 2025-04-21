@@ -12,94 +12,179 @@ toc: true
 toc_label: "Table of content"
 ---
 
-# Eurorack Impact synthesizer
+<!-- Load Bulma from CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-The Neurorack is the first ever AI-based real-time synthesizer, which comes in many formats and more specifically in the Eurorack format. The current prototype relies on the Jetson Nano and the Eurorack hardware and software have been developed by our team: Philippe Esling, Martin Vert and myself. The full scientific paper associated to this project is available [here](https://infoscience.epfl.ch/record/291222).
+<section class="section">
+  <div class="container content">
 
-## Ressources
+# Neurorack — Deep-Learning based Eurorack Synthesizer
 
-[Youtube Link](https://www.youtube.com/watch?v=64VpQenCHVs)
+The Neurorack is a fully standalone real-time synthesizer powered by deep learning, built to integrate seamlessly into a modular Eurorack setup. It explores the use of perceptual audio descriptors as controls for generating and sculpting impact sounds—kicks, hits, cinematic booms—in real time, directly from neural synthesis.
 
-Link to the [Github](https://github.com/acids-ircam/neurorack).
+📄 [Scientific paper](https://infoscience.epfl.ch/record/291222)  
+🎬 [Demo video](https://www.youtube.com/watch?v=64VpQenCHVs)  
+💾 [GitHub repository](https://github.com/acids-ircam/neurorack)  
+🏆 [NVIDIA Project of the Month](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/)
 
-Nvidia project of the month Award: [link to the article](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/).
+---
 
-### Introduction
+## Goals
 
-The goal of this project is to design the next generation of music instrument, providing a new tool for musician while enhancing the user's creativity. It proposes a novel approach to think and compose music. We deeply think that AI can be used to achieve this quest.
+> Our aim is to build the next generation of musical instruments — systems that are expressive, real-time, and creative by nature. AI is not just a tool here, it’s part of the instrument.
 
-> Motivations
+We designed the Neurorack with four key principles:
 
-Deep learning models have provided extremely successful methods in most application fields, by enabling unprecedented accuracy in various tasks, including audio generation. However, the consistently overlooked downside of deep models is their massive complexity and tremendous computation cost.
-In the context of music creation and composition, model reduction becomes eminently important to provide these systems to users in real-time settings and on dedicated lightweight embedded hardware, which are particularly pervasive in the audio generation domain. Hence, in order to design a stand alone and real time instrument, we first need to craft an extremely lightweight model in terms of computation and memory footprint. To make this task even more easier, we relied on the Nvidia Jetson Nano which is a nanocomputer containing 128-core GPUs (graphical unit processors) and 4 CPUs.
+- **Musical**: Generates rich, evolving sounds that would be impossible to synthesize traditionally.
+- **Controllable**: Responds directly to CV and gate signals from other modular gear.
+- **Real-time**: Synthesizes audio in one pass with near-zero latency.
+- **Standalone**: No computer required — it’s a complete instrument.
 
-<p align="center">
-  <img width="300" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/jetson.png">
-</p>
+---
 
-The compression problem is the core of my PhD and a full description can be found [here](https://ninon-io.github.io/research/phd/).
+## Model & Generation Strategy
 
-> Targets of our instrument
+We focused on the generation of **impact sounds**, because they're notoriously hard to synthesize (transients, texture, pitch/noise hybrid nature).
 
-We designed our instrument so that it follows several aspects that we found crucial:
+Each sound is generated from a vector of 7 descriptors:
 
-- Musical: the generative model we choose is particularly interesting as it produces sounds that are impossible to synthesize without using samples.
-- Controllable: the interface was relevantly chosen, being handy and easy to manipulate.
-- Real-time: the hardware behaves as traditional instrument and is as reactive.
-- Stand alone: it is playable without any computer.
-
-**************************************************************************************
-
-### Design Process
-
-The work has been divided between three major steps:
-<p align="center">
-  <img width="1200" height="300" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/steps.png">
-</p>
-
-> Model Description
-
-We set our sights on the generation of *impacts* as they are very complex sounds to reproduce and almost impossible to tweak. Our model allows to generate a large variety of impacts, and enables the possibility to play, craft and merge them. 
-
-The sound is generated from the distribution of 7 descriptors that can be adjusted:
-- Loudness
-- Percussivity
-- Noisiness
-- Tone-like
-- Richness
-- Brightness
+- Loudness  
+- Percussivity  
+- Noisiness  
+- Tone-like quality  
+- Richness  
+- Brightness  
 - Pitch
 
-> Interface
+These can be adjusted via CV inputs or interpolated between two target sounds using real-time control.
 
-One of the biggest advantage of our module is that it can interact with other synthesizer. Following the classical conventions of modular synthesizers, our instrument can be controlled using CVs (control voltages) or gates.
+<div class="has-text-centered">
+  <img src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/steps.png" style="max-width: 100%;">
+  <p class="is-size-7">Design process: model selection, compression, and embedding.</p>
+</div>
 
-<p align="center">
-  <img width="700" height="500" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/interface_neurorack.png">
-</p>
+---
 
-The main gate triggers the generation of the chosen impact. Then it is possible to modify the amount of Richness and Noisiness with two of the CVs.
-A second impact can be chosen to be "merge" with the main impact: we will call this operation the interpolation between two impacts. Their amounts of descriptors are melt to give an hybrid impact. The "degree of merging" is controlled by the third CV, whereas the second gate triggers the interpolation. 
+## Interface
 
-***************************************************************
-### Audio example
-Here is an example of a track, where all impacts were composed with the Neurorack:
+The Neurorack behaves like any standard Eurorack module:
 
-<html>
-<audio controls>
-  <source src="../audio/raster_demo.wav" type="audio/wav">
-</audio></html>
+- **4 CV inputs** to control descriptors
+- **2 Gate inputs** to trigger sound and interpolation
+- **Mono audio output**
+- **1.3" OLED display** for feedback
+- **Rotary encoder** for navigation
+
+<div class="has-text-centered">
+  <img src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/interface_neurorack.png" style="max-width: 100%;">
+  <p class="is-size-7">Front panel of the Neurorack — 11hp Eurorack module.</p>
+</div>
+
+---
+
+## Under the Hood
+
+- Jetson Nano for real-time inference (128-core GPU)
+- Python multiprocessing architecture
+- Sinc-NSF neural model (source-filter inspired)
+- Fully trained on a curated impact sound dataset
+- Real-time descriptor generation & synthesis
+
+You can read about the compression strategy and lightweight modeling [here](https://ninon-io.github.io/research/phd/).
+
+---
+
+## Audio Example
+
+Here’s a track made entirely with impact sounds generated by the Neurorack:
+
+<audio controls style="width: 100%;">
+  <source src="/audio/raster_demo.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+---
+
+## Work in Progress
+
+We’re actively developing new features and iterations:
+
+- A proper menu and navigation UI on the OLED
+- Replacing the 7 descriptors with a VAE for intuitive latent space exploration
+- Removing the Jetson and running the model on CPU only
+- Exploring new models for texture, atmospheres, plucks, etc.
+
+---
+
+## Planned Hardware Improvements
+
+We’re working on a second version:
+
+- Raspberry Pi 5 + Hailo-8 AI Accelerator  
+- Internal power (no extra supply required)  
+- Cleaner internal layout  
+- Support for other synthesis models
+
+---
+
+## Recognition
+
+The project has been featured on:
+
+- [Synthtopia](https://www.synthtopia.com/content/2022/01/08/new-neurorack-module-brings-artificial-intelligence-to-your-eurorack-system/)
+- [Sonic State](https://sonicstate.com/news/2022/01/10/the-first-deep-ai-based-synthesizer/)
+- [Matrixsynth](https://www.matrixsynth.com/2022/01/acids-neurorack-first-deep-ai-based.html)
+- [Keyboards.de](https://www.keyboards.de/equipment/neurorack-synthesizer-mit-kuenstlicher-intelligenz/)
+
+---
+
+## 🎤 Exhibitions
+
+We’ve presented the Neurorack at:
+
+- **Superbooth (Berlin)**
+- **SynthFest France (Nantes)**
+- **Manifest @ IRCAM**, with Raster Noton artists
+
+Despite some prototype limitations (startup delay, external power, descriptor hard-coding), we’ve received strong and enthusiastic feedback from musicians, developers, and modular heads alike.
+
+---
+
+## Figures & Visuals
+
+Below are placeholders for model architecture and descriptor comparisons. You can replace them with actual content later.
+
+<div class="columns is-multiline">
+  <div class="column is-half">
+    <img src="/images/PLACEHOLDER_MODEL_ARCH.png">
+    <p class="is-size-7">Model architecture (placeholder)</p>
+  </div>
+  <div class="column is-half">
+    <img src="/images/PLACEHOLDER_SPECTROGRAM.png">
+    <p class="is-size-7">Spectrogram comparison (placeholder)</p>
+  </div>
+</div>
+
+---
+
+## Next Steps
+
+- Embedding FRAVE (full descriptor-based timbre model)
+- Expanding descriptor mappings to allow external training or user design
+- Showcase at **Sónar+D 2025**
+- Open-sourcing model presets and mappings
+
+---
+
+## Read More
+
+- [Full research chapter](https://ninon-io.github.io/research/phd/)
+- [Github](https://github.com/acids-ircam/neurorack)
+- [Demo audio](https://ninon-io.github.io/projects/neurorack)
+
+</div>
+</section>
 
 
 
-***************************************************************
-### Further Development
-
-We are currently working on several aspects of this project:
-- developping a nice looking menu.
-- adding a VAE ([Variational Auto Encoder](https://en.wikipedia.org/wiki/Autoencoder)) in order to navigate into its latent space to generate sounds instead of the 7 descriptors.
-- compress the model to get rid of the Jetson Nano and working CPU only.
-- developping variants with others models to generate other types of sounds. 
-
-******************************************************************
 
