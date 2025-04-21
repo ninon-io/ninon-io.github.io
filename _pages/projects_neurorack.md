@@ -2,18 +2,18 @@
 title: "Neurorack"
 layout: single
 permalink: /projects/neurorack
-author_profile: false # Keep sidebar clean for project focus
-classes: wide # Use wide layout for better content flow
+author_profile: false
+classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/neurorizontal.jpeg # Keep your header image
+  overlay_image: /images/neurorizontal.jpeg
 excerpt: "Bridging deep learning and modular synthesis: A real-time AI-based Eurorack synthesizer for expressive sound design."
 toc: true
 toc_label: "On This Page"
-toc_sticky: true # Keep TOC visible while scrolling
+toc_sticky: true
 sidebar:
-  nav: "projects" # Assumes you have a _data/navigation.yml with a "projects" section
+  nav: "projects"
 ---
 
 # Neurorack: AI Synthesis Meets Modular Control
