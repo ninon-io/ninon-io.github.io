@@ -1,60 +1,108 @@
 ---
-title: "Ninon Devis | Deep Learning, Music, Research" # Or keep blank: title: ""
+title: "Ninon Devis | Deep Learning, Music, Research"
 layout: single
 permalink: /
-author_profile: true # Make sure your _config.yml or front matter includes author details for the sidebar
+author_profile: true
 classes: wide
 header:
-  image: /images/header.jpg # Keep your header image
-  # Optional: Add overlay for better text visibility on dark themes if needed
-  # overlay_color: "#333"
-  # overlay_filter: "0.5"
-  # caption: "Photo credit: [**Unsplash**](https://unsplash.com)" # Optional caption
+  image: /images/header.jpg
 ---
 
-Welcome! I'm Ninon Devis, working at the intersection of academic research and industry innovation in **deep learning applied to music**.
+<style>
+blockquote.contact {
+  font-style: normal;
+  background: rgba(255, 255, 255, 0.04);
+  border-left: 4px solid #888;
+  padding: 1rem 1.25rem;
+  margin: 2.5rem 0;
+  color: #ccc;
+  border-radius: 4px;
+  line-height: 1.6;
+}
 
-My goal is to explore and create new possibilities for musical expression and interaction through technology.
+.author__avatar {
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  max-width: 140px;
+  margin: 1rem auto;
+  display: block;
+}
 
-### Core Activities
+.author__name,
+.author__bio {
+  color: #ccc !important;
+}
 
-* **PhD Research @ [IRCAM](http://www.ircam.fr):** Within the [ACIDS research group](http://acids.ircam.fr) ([Analysis Synthesis Team](http://anasynth.ircam.fr/home/english)), focusing on real-time neural audio synthesis and interactive AI-powered instruments. Explore my [**Research Projects**]({{ site.baseurl }}{% link _pages/research.md %}).
-* **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/):** Applying deep learning techniques within the Audio Research Team to develop next-generation music technology solutions.
-* **Teaching @ [ATIAM](http://atiam.ircam.fr) / UPMC:** Instructing Master's students in [Ableton]({{ site.baseurl }}{% link _pages/teaching/ableton.md %}) and [Pure Data]({{ site.baseurl }}{% link _pages/teaching/puredata.md %}). Hear student projects on [SoundCloud](https://soundcloud.com/atiam-ircam/sets).
+.sidebar__right {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  border-radius: 8px;
+}
+</style>
+
+Welcome! I'm **Ninon Devis**, working at the intersection of academic research and industry innovation in **deep learning applied to music**.
+
+My work explores new possibilities for musical expression and interaction through AI-driven tools and real-time systems.
+
+---
+
+## Core Activities
+
+- **PhD Research @ [IRCAM](http://www.ircam.fr):**  
+  Member of the [ACIDS research group](http://acids.ircam.fr) (within the [Analysis Synthesis Team](http://anasynth.ircam.fr/home/english)). My research focuses on neural audio synthesis and model-driven instruments.  
+  → Explore my [**Research Projects**](/research/)
+
+- **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/):**  
+  Applying deep learning to sound technology within the Audio Research Team.
+
+- **Teaching @ [ATIAM](http://atiam.ircam.fr) / UPMC:**  
+  Courses on [Ableton](/teaching/ableton/) and [Pure Data](/teaching/puredata/).  
+  → Hear student projects on [SoundCloud](https://soundcloud.com/atiam-ircam/sets)
+
+---
 
 ## Research Interests
 
-My research centers on enhancing musical creativity by merging human artistry with intelligent systems:
+1. **Real-time Neural Audio Synthesis**  
+   Deep generative models for responsive, expressive sound generation.
 
-1.  **Real-time Neural Audio Synthesis:** Developing expressive, real-time deep generative models for audio synthesis that respond intuitively to human interaction.
-2.  **Interactive AI Instruments:** Creating novel musical instruments where AI model controls empower musicians to explore unique sonic territories.
-3.  **Interface & Hardware Integration:** Designing user-friendly interfaces and embedding advanced synthesis models seamlessly into hardware for an improved creative workflow.
-4.  **AI's Artistic Role:** Reflecting on the artistic applications of AI in music, informed by discussions and interviews with artists navigating this evolving landscape.
+2. **AI-Controlled Instruments**  
+   Instruments where musicians modulate latent space or descriptors.
 
-## Explore Further
+3. **Interface & Hardware Integration**  
+   Embedding intelligent systems directly into modular and hardware setups.
 
-Dive deeper into my work through these sections:
-
-* [**Publications & Presentations**]({{ site.baseurl }}{% link _pages/publications.md %})
-* [**Detailed Project Descriptions**]({{ site.baseurl }}{% link _pages/projects.md %})
-* [**Teaching Materials**]({{ site.baseurl }}{% link _pages/teaching.md %})
-
-## Beyond Research
-
-Outside of my technical work, I'm passionate about **electronic music creation**. I believe strongly in the power of shared creativity and welcome opportunities for collaboration in related fields.
+4. **AI's Artistic Role**  
+   Investigating the aesthetic and societal implications of AI in music creation.
 
 ---
 
-### Get In Touch
+## Explore Further
 
-**Ninon Devis**
+- [**Publications & Presentations**](/publications/)
+- [**Main Projects**](/projects/)
+- [**Teaching Materials**](/teaching/)
 
-*Research Engineer* - Native Instruments
-*PhD Candidate* - IRCAM / Sorbonne Université
-*Lecturer* - ATIAM / UPMC
+---
 
-c/o IRCAM  
-1, Place Igor Stravinsky  
-F-75004 Paris, France
+## Beyond Research
 
-**Email:** [ninon.devis@ircam.fr](mailto:ninon.devis@ircam.fr)
+I also create electronic music influenced by deep techno and modular synthesis. I believe in the power of shared creativity and am always open to collaborations—artistic, academic, or hybrid.
+
+---
+
+## Contact
+
+> You can reach me for academic, artistic, or collaborative inquiries:
+
+<blockquote class="contact">
+
+**Ninon Devis**  
+*PhD Candidate* – IRCAM / Sorbonne Université  
+*Research Engineer* – Native Instruments  
+*Lecturer* – UPMC / ATIAM Master  
+
+📧 ninon.devis@ircam.fr  
+📍 Paris & Berlin  
+</blockquote>
+
