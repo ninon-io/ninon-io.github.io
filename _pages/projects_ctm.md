@@ -1,11 +1,10 @@
 ---
 title: "Ninon & Jun Suzuki @ Wilding AI Lab (CTM 2025)"
 layout: single
-permalink: /projects/wilding-ai-lab/ # Suggestion for permalink
+permalink: /projects/ctm
 author_profile: false
 classes: wide
 header:
-  # Consider using an image from MONOM, CTM, or an abstract AI/sound visual
   overlay_image: /images/ctm_header.jpg
   overlay_color: "#000"
   overlay_filter: "0.6"
