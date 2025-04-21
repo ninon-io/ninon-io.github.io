@@ -34,3 +34,9 @@ teaching:
     url: https://ninon-io.github.io/teaching/cryptology
   - title: "Java"
     url: https://ninon-io.github.io/teaching/java
+
+projects:
+  - title: "Neurorack"
+    url: https://ninon-io.github.io/projects/neurorack
+  - title: "Wilding AI - CTM"
+    url: https://ninon-io.github.io/projects/ctm
