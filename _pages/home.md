@@ -8,7 +8,7 @@ header:
   image: /images/header.jpg
 ---
 
-Welcome! I'm **Ninon Devis**, working at the intersection of academic research and industry innovation in **deep learning applied to music**.
+I am working at the intersection of academic research and industry innovation in **deep learning applied to music**.
 
 My work explores new possibilities for musical expression and interaction through AI-driven tools and real-time systems.
 
@@ -23,7 +23,7 @@ My work explores new possibilities for musical expression and interaction throug
 - **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/):**  
   Applying deep learning to sound technology within the Audio Research Team.
 
-- **Teaching @ [ATIAM](http://atiam.ircam.fr) / UPMC:**  
+- **Teaching @ [ATIAM](http://atiam.ircam.fr):**  
   Courses on [Ableton](/teaching/ableton/) and [Pure Data](/teaching/puredata/).  
   → Hear student projects on [SoundCloud](https://soundcloud.com/atiam-ircam/sets)
 
@@ -55,7 +55,7 @@ My work explores new possibilities for musical expression and interaction throug
 
 ## Beyond Research
 
-I also create electronic music influenced by deep techno and modular synthesis. I believe in the power of shared creativity and am always open to collaborations—artistic, academic, or hybrid.
+I also create electronic music influenced by cinematic deep techno and modular synthesis. I believe in the power of shared creativity and am always open to collaborations—artistic, academic, or hybrid.
 
 ---
 
