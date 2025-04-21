@@ -6,7 +6,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/project2.jpeg
+  overlay_image: /images/neurorizontal.jpeg
 excerpt: "AI-based Eurorack synthesizer"
 toc: true
 toc_label: "Contents"
