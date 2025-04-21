@@ -1,5 +1,5 @@
 ---
-title: "Ninon Devis | Deep Learning, Music, Research"
+title: ""
 layout: single
 permalink: /
 author_profile: true
