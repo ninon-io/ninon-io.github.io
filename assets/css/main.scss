@@ -11,29 +11,132 @@
    CUSTOM STYLES - START
    ========================================================================== */
 
-// Headings styling for subtle separation on dark backgrounds
-h1, h2, h3 {
-  font-weight: 600; // Semi-bold for emphasis
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05); // Subtle white underline
-  padding-bottom: 0.3rem; // Space between text and underline
-  margin-top: 2.5rem; // Increase top margin for section separation
+/* --- Base Typography & Links --- */
+
+body { // Or target a more specific main content container if your theme uses one
+  line-height: 1.65; /* NEW */ // Improves readability for longer text passages
+  color: #ddd; /* NEW */ // Slightly softer default text color than pure white, good contrast on dark needed. Adjust if needed.
 }
 
-// Adjust spacing around lists
+a {
+  color: #8ab4f8; /* NEW */ // Example: A pleasant, accessible blue for links on dark backgrounds. Adjust to your preference or use theme variable $link-color.
+  text-decoration: none; /* NEW */ // Remove default underline
+  transition: color 0.2s ease, background-color 0.2s ease, text-decoration 0.2s ease; /* NEW */ // Smooth transition for hover effects
+}
+
+a:hover {
+  color: #a7c7fc; /* NEW */ // Slightly brighter on hover
+  text-decoration: underline; /* NEW */ // Add underline on hover for clarity
+}
+
+/* Basic focus style for accessibility */
+a:focus, button:focus, input:focus, textarea:focus, select:focus { /* NEW */
+  outline: 2px solid #8ab4f8; // Use the link color for the outline
+  outline-offset: 2px; // Add some space between element and outline
+  box-shadow: none; // Remove default browser focus shadows if desired
+}
+
+
+/* --- Headings, Lists, Blockquotes (As before, check blockquote color contrast) --- */
+
+h1, h2, h3 {
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.3rem;
+  margin-top: 3rem; // Or 2.5rem if preferred
+}
+
 ul {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
 
-// Custom blockquote styling for elegance
 blockquote {
   font-style: italic;
-  background: rgba(255, 255, 255, 0.05); // Subtle light background tint
-  border-left: 4px solid #666; // Medium-dark grey left border
-  padding: 1rem 1.25rem; // Inner spacing
-  margin: 2rem 0; // Outer spacing
-  color: #aaa; // Muted text color - CHECK CONTRAST against your background! Consider #ccc or #ddd if too low.
-  border-radius: 4px; // Slightly rounded corners
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #666;
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+  color: #aaa; // CHECK CONTRAST! Consider #ccc or #ddd.
+  border-radius: 4px;
+}
+
+/* --- Images --- */
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); /* MODIFIED */ // Softer, slightly more spread-out shadow
+  margin: 2rem auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* MODIFIED */ // Also transition shadow
+}
+
+img:hover {
+  transform: scale(1.015);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* MODIFIED */ // Slightly enhance shadow on hover
+}
+
+/* --- Audio Player --- */
+
+audio {
+  width: 100%;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+/* --- Tables --- */
+
+table {
+  font-size: 0.95rem;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  color: #ccc;
+}
+
+table th,
+table td {
+  border: 1px solid #333;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* --- Code Blocks (Optional - if you display code) --- */
+
+pre { /* NEW */ // Container for code blocks
+  background: rgba(0, 0, 0, 0.2); // Darker background for code blocks
+  padding: 1rem;
+  border-radius: 6px; // Rounded corners
+  margin: 2rem 0;
+  overflow-x: auto; // Enable horizontal scrolling for long lines
+  border: 1px solid rgba(255, 255, 255, 0.05); // Subtle border
+}
+
+code { /* NEW */ // Inline code and code within pre blocks
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; // Monospace font stack
+  font-size: 0.9em; // Slightly smaller font size for code
+  background: rgba(255, 255, 255, 0.08); // Subtle background for inline code
+  padding: 0.2em 0.4em; // Padding for inline code
+  border-radius: 3px; // Rounded corners for inline code
+}
+
+pre code { /* NEW */ // Reset background/padding for code inside pre blocks
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  color: #c9d1d9; // Example code text color for dark background - adjust as needed
+}
+
+/* --- Horizontal Rule --- */
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.1), rgba(255,255,255,0));
+  margin: 2.5rem 0;
 }
 
 /* ==========================================================================
