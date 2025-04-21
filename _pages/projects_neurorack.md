@@ -11,6 +11,8 @@ excerpt: "AI-based Eurorack synthesizer"
 toc: true
 toc_label: "Contents"
 toc_sticky: true
+sidebar:
+  nav: "projects"
 ---
 
 # Neurorack
