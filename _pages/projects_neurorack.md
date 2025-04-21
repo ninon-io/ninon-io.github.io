@@ -173,6 +173,43 @@ NVIDIA article: [Jetson Project of the Month](https://developer.nvidia.com/blog/
 
 Developed by Ninon (IRCAAM/EPFL), Philippe Esling, Martin Vert, Corentin Vercoustre.
 
+<style>
+audio {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+img {
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  margin: 1.5rem auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  font-size: 0.95rem;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+
+blockquote {
+  font-style: italic;
+  background: rgba(255,255,255,0.03);
+  border-left: 4px solid #aaa;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+</style>
+
 
 
 
