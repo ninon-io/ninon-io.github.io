@@ -8,38 +8,6 @@ header:
   image: /images/header.jpg
 ---
 
-<style>
-blockquote.contact {
-  font-style: normal;
-  background: rgba(255, 255, 255, 0.04);
-  border-left: 4px solid #888;
-  padding: 1rem 1.25rem;
-  margin: 2.5rem 0;
-  color: #ccc;
-  border-radius: 4px;
-  line-height: 1.6;
-}
-
-.author__avatar {
-  border-radius: 50%;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-  max-width: 140px;
-  margin: 1rem auto;
-  display: block;
-}
-
-.author__name,
-.author__bio {
-  color: #ccc !important;
-}
-
-.sidebar__right {
-  background: rgba(0, 0, 0, 0.25);
-  padding: 1rem;
-  border-radius: 8px;
-}
-</style>
-
 Welcome! I'm **Ninon Devis**, working at the intersection of academic research and industry innovation in **deep learning applied to music**.
 
 My work explores new possibilities for musical expression and interaction through AI-driven tools and real-time systems.
