@@ -18,8 +18,8 @@ music:
 dj:
   - image_path: /images/Nin_and_Jun.jpg
     alt: "DJ"
-    title: "CTM - MONOM"
-    excerpt: 'Under construction'
+    title: "Wilding AI - CTM"
+    excerpt: 'At MONOM'
     url: "projects/ctm"
     btn_label: "Read More"
     btn_class: "btn--primary"
