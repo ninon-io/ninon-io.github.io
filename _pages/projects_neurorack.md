@@ -1,11 +1,11 @@
 ---
-title: "Neurorack"
+title: ""
 layout: single
 permalink: /projects/neurorack
 author_profile: false
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0.0"
   overlay_image: /images/neurorizontal.png
 excerpt: "Bridging deep learning and modular synthesis: A real-time AI-based Eurorack synthesizer for expressive sound design."
 toc: true
