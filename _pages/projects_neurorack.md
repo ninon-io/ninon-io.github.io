@@ -18,7 +18,9 @@ sidebar:
 
 # Neurorack: AI Synthesis Meets Modular Control
 
-The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](http://www.ircam.fr) within the [ACIDS group](http://acids.ircam.fr), Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware — no laptop required.
+The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](http://www.ircam.fr) within the [ACIDS group](http://acids.ircam.fr), the Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware — no laptop required.
+
+The spirit of **The Neurorack** lies in its modularity not just physically, but also computationally: it supports model switching, allowing different AI models to be trained and embedded for various synthesis goals. This means users can adapt the module to generate entirely different types of sounds depending on the trained model, all within the same hardware platform.
 
 This page documents the instrument's philosophy, design challenges, technical implementation, creative potential, and ongoing evolution.
 
@@ -28,10 +30,10 @@ This page documents the instrument's philosophy, design challenges, technical im
 
 Modern deep generative models can produce incredibly realistic audio, but often require significant computational power (GPUs, large memory) and processing time, making them unsuitable for the strict constraints of musical instruments, especially compact Eurorack modules.
 
-Neurorack tackles this challenge head-on:
+The Neurorack tackles this challenge head-on:
 
 1.  **Real-Time Performance:** Achieving low-latency audio generation suitable for live performance and interaction.
-2.  **Embedded Constraints:** Operating within the limited power, size (3U height, variable HP width), and computational resources of the Eurorack format, typically powered by +/-12V rails.
+2.  **Embedded Constraints:** Operating within the limited power, size (3U height, variable HP width), and computational resources of the Eurorack format.
 3.  **Musical Expressivity:** Providing intuitive, high-level control over complex timbres using standard Control Voltage (CV) and Gate signals.
 
 Our design philosophy centers on balancing **model accuracy** with **lightweight efficiency** and **meaningful user interaction**.
@@ -49,13 +51,19 @@ The computational core is the **[NVIDIA Jetson Nano](https://developer.nvidia.co
 
 This allows us to run optimized deep learning models directly within the Eurorack module. The hardware module itself occupies **11hp** width in a standard 3U Eurorack case.
 
-![Hardware & Software Architecture Overview](/images/neurorack/architecture_overview.png "Diagram showing CV/Gate inputs interfacing with Jetson Nano running the synthesis model")
+The **Neurorack** is a deep learning-driven instrument that incorporates advanced audio synthesis techniques within a modular synthesizer environment. It’s composed of two main parts: a hardware module that interfaces with other Eurorack systems via Control Voltage (CV) and Gate inputs, and an embedded Jetson Nano board that handles real-time audio computation.
 
 ![NVIDIA Jetson Nano Board](/images/jetson.png "The NVIDIA Jetson Nano Developer Kit used in Neurorack")
 
-### Sound Synthesis: Descriptor-Driven Sinc-NSF
+The hardware is responsible for capturing and interpreting CV/Gate signals, while the Jetson Nano processes those in real time using a deep neural network to generate audio. This modular split keeps interaction intuitive and performance-friendly, while offloading the heavy lifting to the embedded AI system.
 
-Neurorack specializes in generating **impact sounds** – complex, transient-rich, often cinematic sounds like deep kicks or resonant hits, which are notoriously difficult to create convincingly with traditional synthesis methods.
+![Hardware & Software Architecture Overview](/images/neurorack/architecture_overview.jpg "The diagram shows the interaction between the hardware (left) and software (right) components.")
+
+
+### Sound Synthesis: Descriptor-Driven Sinc-NSF (First Model)
+
+
+This model specializes in generating **impact sounds** – complex, transient-rich, often cinematic sounds like deep kicks or resonant hits, which are notoriously difficult to create convincingly with traditional synthesis methods.
 
 * **Dataset:** Trained on a curated dataset of 3,500 high-quality impact samples (44.1kHz) sourced from [Splice](https://splice.com/), normalized and trimmed.
 * **Model:** Uses a highly adapted **Sinc-NSF (Neural Source-Filter)** model. Inspired by speech synthesis and DSP, this model separates sound into harmonic and noise components, generated in a single pass for real-time efficiency. Key features include:
@@ -63,9 +71,7 @@ Neurorack specializes in generating **impact sounds** – complex, transient-ric
     * **SincNet Filters:** Employs trainable, DSP-inspired Sinc filters for efficient and interpretable spectral shaping, replacing generic convolutions.
     * **Spectral Loss:** Optimized using a multi-resolution spectral loss to capture both transient details and overall timbral character.
 
-![Adapted Sinc-NSF Model Architecture](/images/neurorack/sinc_nsf_diagram.png "Diagram of the Sinc-NSF model showing descriptor input, source generation, and filter blocks")
-
-![Spectrogram Comparison](/images/neurorack/spectrogram_comparison.png "Comparison of original impact sound spectrogram vs. Neurorack generated spectrogram")
+![Adapted Sinc-NSF Model Architecture](/images/neurorack/neurorack_nsf.png "Diagram of the Sinc-NSF model showing descriptor input, source generation, and filter blocks")
 
 * **Descriptor Generation (VAE):** To explore the timbral space and generate new sounds, a Variational Autoencoder (VAE) was trained on the descriptor curves from the dataset. This allows sampling or interpolating in a low-dimensional latent space to create novel, coherent descriptor sets that drive the Sinc-NSF model.
 
@@ -81,7 +87,7 @@ The Neurorack faceplate provides immediate tactile control, integrated seamlessl
 * **4 CV Inputs:** Modulating synthesis parameters.
 * **1 Mono Audio Output:** Standard Eurorack level output.
 
-![Neurorack Faceplate Interface](/images/interface_neurorack.png "Close-up of the Neurorack V1 faceplate showing display, encoder, and jacks")
+![Neurorack Faceplate Interface](/images/neurorack/faceplate.png)
 
 ### CV & Gate Mapping for Creative Expression
 
@@ -117,7 +123,7 @@ Hear the kinds of sounds Neurorack can produce:
 
 **Video Teaser:**
 <div class="embed-responsive embed-responsive-16by9" style="margin: 2rem 0;">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOUTUBE_TEASER_VIDEO_ID" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=64VpQenCHVs" allowfullscreen></iframe>
 </div>
 
 ---
@@ -131,16 +137,12 @@ The first version successfully demonstrated real-time embedded AI synthesis but 
 * Model "burn-in" required on startup.
 * Fixed descriptor sets required code changes for customization.
 
-![First Neurorack Prototype](/images/neurorack/neurorack_faceplate_v1.png "Image of the first Neurorack prototype hardware")
-
 ### V2 Prototype: Refinements & Future Directions
 Developed with Corentin Vercoustre, V2 addressed key issues:
 * **Redesigned Faceplate:** Sleeker, more robust, better internal wiring.
 * **Improved Stability:** Internalized connections for better reliability.
 * **New Model Integration:** Work began on integrating **FRAVE**, a different generative model (from Chapter 4 of the PhD) focused on continuous timbral control via latent space exploration.
 * **Future:** Ongoing work focuses on enhancing responsiveness, parameter mapping, and exploring new models. V2 (with FRAVE) aims for presentation at [Sónar+D 2025](https://www.sonar.es/en/programme/sonar-d).
-
-![Second Neurorack Prototype Faceplate](/images/front_croped.jpg "Faceplate of the refined second prototype")
 
 ---
 
@@ -149,7 +151,7 @@ Developed with Corentin Vercoustre, V2 addressed key issues:
 Neurorack has been presented at major industry events and recognized by the tech community:
 
 * **Showcases:**
-    * [**IRCAM Manifeste**](https://manifeste.ircam.fr/en/) (Paris): Presented to artists from [Raster-Noton](https://raster-media.net/).
+    * [**IRCAM Manifeste**](https://manifeste.ircam.fr/en/) (Paris): Presented to the label [Raster-Noton](https://raster-media.net/).
     * [**Superbooth**](https://www.superbooth.com/en/) (Berlin): Dedicated booth at one of the world's largest synthesizer trade show.
         * [**SynthFest France**](https://www.synthfestfrance.com/) (Nantes) ([Video Link Placeholder](https://www.youtube.com/watch?v=YOUTUBE_SYNTHFEST_VIDEO_ID))
         * **Awards & Features:**
