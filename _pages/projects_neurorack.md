@@ -149,13 +149,15 @@ Developed with Corentin Vercoustre, V2 addressed key issues:
 
 Neurorack has been presented at major industry events and recognized by the tech community:
 
+**[NVIDIA Jetson Project of the Month](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/)**: Recognized for innovative use of the Jetson platform. ([Community Project Page](https://developer.nvidia.com/embedded/community/jetson-projects/neurorack))
+
 * **Showcases:**
     * [**IRCAM Manifeste**](https://manifeste.ircam.fr/en/) (Paris): Presented to the label [Raster-Noton](https://raster-media.net/).
     * [**Superbooth**](https://www.superbooth.com/en/) (Berlin): Dedicated booth at one of the world's largest synthesizer trade show.
         * [**SynthFest France**](https://www.synthfestfrance.com/) (Nantes) ([Video Link Placeholder](https://www.youtube.com/watch?v=YOUTUBE_SYNTHFEST_VIDEO_ID))
-        * **Awards & Features:**
-    * 🏆 **[NVIDIA Jetson Project of the Month](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/)**: Recognized for innovative use of the Jetson platform. ([Community Project Page](https://developer.nvidia.com/embedded/community/jetson-projects/neurorack))
-    * 📰 **Media Coverage:** Featured on [Synthtopia](https://www.synthtopia.com/content/2022/01/08/new-neurorack-module-brings-artificial-intelligence-to-your-eurorack-system/), [Sonic State](https://sonicstate.com/news/2022/01/10/the-first-deep-ai-based-synthesizer/) ([Talk Video Link Placeholder](https://www.youtube.com/watch?v=YOUTUBE_SONIC_STATE_VIDEO_ID)), [Keyboards.de](https://www.keyboards.de/equipment/neurorack-synthesizer-mit-kuenstlicher-intelligenz/), Matrixsynth, Geeky Gadgets.
+
+
+* 📰 **Media Coverage:** Featured on [Synthtopia](https://www.synthtopia.com/content/2022/01/08/new-neurorack-module-brings-artificial-intelligence-to-your-eurorack-system/), [Sonic State](https://sonicstate.com/news/2022/01/10/the-first-deep-ai-based-synthesizer/) ([Talk Video Link Placeholder](https://www.youtube.com/watch?v=YOUTUBE_SONIC_STATE_VIDEO_ID)), [Keyboards.de](https://www.keyboards.de/equipment/neurorack-synthesizer-mit-kuenstlicher-intelligenz/), Matrixsynth, Geeky Gadgets.
 
 ---
 
