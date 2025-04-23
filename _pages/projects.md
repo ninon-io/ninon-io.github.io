@@ -30,5 +30,4 @@ dj:
 
 {% include feature_row id="dj" type="right" %}
 
-{% include feature_row id="cat" type="left" %}
 
