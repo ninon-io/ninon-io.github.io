@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "   "
 layout: single
 permalink: /projects/neurorack
 author_profile: false
