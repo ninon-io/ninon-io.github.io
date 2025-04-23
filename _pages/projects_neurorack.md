@@ -70,7 +70,7 @@ This model specializes in generating **impact sounds** – complex, transient-ri
     * **SincNet Filters:** Employs trainable, DSP-inspired Sinc filters for efficient and interpretable spectral shaping, replacing generic convolutions.
     * **Spectral Loss:** Optimized using a multi-resolution spectral loss to capture both transient details and overall timbral character.
 
-![Adapted Sinc-NSF Model Architecture](/images/neurorack/neurorack_nsf.png "Diagram of the Sinc-NSF model showing descriptor input, source generation, and filter blocks")
+![Adapted Sinc-NSF Model Architecture](/images/neurorack/neurorack-nsf.jpg "Diagram of the Sinc-NSF model showing descriptor input, source generation, and filter blocks, BP and LP stand for Band-Pass and Low-Pass filters")
 
 * **Descriptor Generation (VAE):** To explore the timbral space and generate new sounds, a Variational Autoencoder (VAE) was trained on the descriptor curves from the dataset. This allows sampling or interpolating in a low-dimensional latent space to create novel, coherent descriptor sets that drive the Sinc-NSF model.
 
