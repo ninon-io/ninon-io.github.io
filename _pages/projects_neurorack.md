@@ -7,7 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.0"
   overlay_image: /images/neurorizontal.png
-excerpt: "Bridging deep learning and modular synthesis: A real-time AI-based Eurorack synthesizer for expressive sound design."
+excerpt: "   "
 toc: true
 toc_label: "On This Page"
 toc_sticky: true
@@ -15,7 +15,7 @@ sidebar:
   nav: "projects"
 ---
 
-# Neurorack: AI Synthesis Meets Modular Control
+# Bridging deep learning and modular synthesis: A real-time AI-based Eurorack synthesizer for expressive sound design.
 
 The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](http://www.ircam.fr) within the [ACIDS group](http://acids.ircam.fr), the Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware — no laptop required.
 
