@@ -13,9 +13,9 @@ header:
 
 <hr>
 
-## The Dialogue: Art, Research, and Innovation
+## Art, Research, and Innovation
 
-**I work at the crossroads of industrial techno, experimental music, and generative art, pioneering new forms of musical expression through deep learning.**
+**I work at the crossroads of techno, experimental music, and generative art, pioneering new forms of musical expression through deep learning.**
 
 My practice is a dynamic dialogue: sound is a physical force, sculpted through machines and algorithms, while my research explores how creative AI can unlock new worlds of sonic expression while preserving the singularity of the artist's touch.
 
@@ -23,11 +23,16 @@ My practice is a dynamic dialogue: sound is a physical force, sculpted through m
 
 ## Core Focus
 
-I apply advanced **deep learning to music** to create innovative tools and real-time systems.
+I apply advanced **deep learning to music** to create innovative tools and real-time systems across three core domains:
 
-| **Academic Research** | **Industry Innovation** | **Artistic Practice** |
-| :--- | :--- | :--- |
-| **PhD Research @ [IRCAM](http://www.ircam.fr)**, ACIDS Group. Focus on neural audio synthesis and model-driven instruments, including the **Neurorack** project. | **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/)**, Audio Research Team. Applying deep learning to next-generation sound technology. | **Producer & Sound Artist**. Creating electronic music influenced by cinematic deep techno and modular synthesis. |
+* ### Industry Innovation
+    **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/)**, Audio Research Team. I am dedicated to applying deep learning to next-generation sound technology and developing innovative product features.
+
+* ### Artistic Practice
+    **Producer & Sound Artist**. I create electronic music influenced by **cinematic deep techno** and **modular synthesis**.
+
+  * ### Academic Research
+    **PhD Doctorate @ [IRCAM](http://www.ircam.fr)**, ACIDS Group. My focus is on **neural audio synthesis** and **model-driven instruments**, including the creation of the **Neurorack**—the first Eurorack modular synthesizer powered by deep neural synthesis.
 
 ---
 
@@ -47,8 +52,6 @@ I am dedicated to making AI a tangible, expressive partner for musicians. My res
 ---
 
 ## Teaching & Education
-
-As a Lecturer, I share my passion for sonic creativity and technology:
 
 * **[ATIAM](http://atiam.ircam.fr):** Courses on **[Ableton](/teaching/ableton/)** and **[Pure Data](/teaching/puredata/)** at IRCAM / Sorbonne Université.
 * → Hear student work on **[SoundCloud](https://soundcloud.com/atiam-ircam/sets)**.
