@@ -27,7 +27,7 @@ I apply advanced **deep learning to music** to create innovative tools and real-
 
 | **Academic Research** | **Industry Innovation** | **Artistic Practice** |
 | :--- | :--- | :--- |
-| **PhD Research @ [IRCAM](http://www.ircam.fr)**, ACIDS Group. Focus on neural audio synthesis and model-driven instruments, including the **Neurorack** project. | **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/)**, Audio Research Team. Applying deep learning to next-generation sound technology. | **Producer & Sound Artist**. Creating electronic music influenced by cinematic deep techno and modular synthesis. **[Listen to my music](#beyond-research)** |
+| **PhD Research @ [IRCAM](http://www.ircam.fr)**, ACIDS Group. Focus on neural audio synthesis and model-driven instruments, including the **Neurorack** project. | **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/)**, Audio Research Team. Applying deep learning to next-generation sound technology. | **Producer & Sound Artist**. Creating electronic music influenced by cinematic deep techno and modular synthesis. |
 
 ---
 
@@ -57,8 +57,6 @@ As a Lecturer, I share my passion for sonic creativity and technology:
 
 ## Beyond Research
 
-As a producer and sound artist, my live performances are intense, immersive rituals exploring the powerful tension between repetition, dissonance, and rhythm. I create soundscapes from concrete textures, cinematic atmospheres, and disembodied voices.
-
 **I am always open to collaborations—artistic, academic, or hybrid.**
 
 ---
@@ -67,9 +65,10 @@ As a producer and sound artist, my live performances are intense, immersive ritu
 
 > You can reach me for academic, artistic, or collaborative inquiries.
 <blockquote class="contact">
-**Ninon Devis** *PhD Candidate* – IRCAM / Sorbonne Université  
-*Research Engineer* – Native Instruments  
-*Lecturer* – UPMC / ATIAM Master  
+Ninon Devis 
+PhD Doctorate – IRCAM / Sorbonne Université  
+Research Engineer – Native Instruments  
+Lecturer – UPMC / ATIAM Master  
 📧 ninon.devis@ircam.fr  
 📍 Paris & Berlin  
 </blockquote>
