@@ -1,76 +1,75 @@
 ---
-title: ""
+title: "Ninon Devis"
 layout: single
 permalink: /
 author_profile: true
 classes: wide
 header:
-  image: /images/header.jpg
+  # Assuming you want to keep the header image, or perhaps use a more artistic one.
+  image: /images/header.jpg 
 ---
 
-I am working at the intersection of academic research and industry innovation in **deep learning applied to music**.
+# Ninon Devis
 
-My work explores new possibilities for musical expression and interaction through AI-driven tools and real-time systems.
+<hr>
 
----
+## The Dialogue: Art, Research, and Innovation
 
-## Core Activities
+**I work at the crossroads of industrial techno, experimental music, and generative art, pioneering new forms of musical expression through deep learning.**
 
-- **PhD Research @ [IRCAM](http://www.ircam.fr):**  
-  Member of the [ACIDS research group](http://acids.ircam.fr) (within the [Analysis Synthesis Team](http://anasynth.ircam.fr/home/english)). My research focuses on neural audio synthesis and model-driven instruments.  
-  → Explore my [**Research Projects**](/research/)
-
-- **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/):**  
-  Applying deep learning to sound technology within the Audio Research Team.
-
-- **Teaching @ [ATIAM](http://atiam.ircam.fr):**  
-  Courses on [Ableton](/teaching/ableton/) and [Pure Data](/teaching/puredata/).  
-  → Hear student projects on [SoundCloud](https://soundcloud.com/atiam-ircam/sets)
+My practice is a dynamic dialogue: sound is a physical force, sculpted through machines and algorithms, while my research explores how creative AI can unlock new worlds of sonic expression while preserving the singularity of the artist's touch.
 
 ---
 
-## Research Interests
+## Core Focus
 
-1. **Real-time Neural Audio Synthesis**  
-   Deep generative models for responsive, expressive sound generation.
+I apply advanced **deep learning to music** to create innovative tools and real-time systems.
 
-2. **AI-Controlled Instruments**  
-   Instruments where musicians modulate latent space or descriptors.
-
-3. **Interface & Hardware Integration**  
-   Embedding intelligent systems directly into modular and hardware setups.
-
-4. **AI's Artistic Role**  
-   Investigating the aesthetic and societal implications of AI in music creation.
+| **Academic Research** | **Industry Innovation** | **Artistic Practice** |
+| :--- | :--- | :--- |
+| **PhD Research @ [IRCAM](http://www.ircam.fr)**, ACIDS Group. Focus on neural audio synthesis and model-driven instruments, including the **Neurorack** project. | **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/)**, Audio Research Team. Applying deep learning to next-generation sound technology. | **Producer & Sound Artist**. Creating electronic music influenced by cinematic deep techno and modular synthesis. **[Listen to my music](#beyond-research)** |
 
 ---
 
-## Explore Further
+## Research & Projects
 
-- [**Publications & Presentations**](/publications/)
-- [**Main Projects**](/projects/)
-- [**Teaching Materials**](/teaching/)
+### Current Interests
+
+I am dedicated to making AI a tangible, expressive partner for musicians. My research explores:
+
+1.  **Real-time Neural Audio Synthesis:** Creating deep generative models for responsive and expressive sound generation.
+2.  **AI-Controlled Instruments:** Developing new interfaces where musicians modulate latent space or high-level descriptors.
+3.  **Interface & Hardware Integration:** Embedding intelligent systems directly into modular and professional hardware setups.
+4.  **AI's Artistic Role:** Investigating the aesthetic and societal implications of AI in music creation.
+
+→ Explore my **[Publications & Presentations](/publications/)** and **[Main Projects](/projects/)**
+
+---
+
+## Teaching & Education
+
+As a Lecturer, I share my passion for sonic creativity and technology:
+
+* **[ATIAM](http://atiam.ircam.fr):** Courses on **[Ableton](/teaching/ableton/)** and **[Pure Data](/teaching/puredata/)** at IRCAM / Sorbonne Université.
+* → Hear student work on **[SoundCloud](https://soundcloud.com/atiam-ircam/sets)**.
 
 ---
 
 ## Beyond Research
 
-I also create electronic music influenced by cinematic deep techno and modular synthesis. I believe in the power of shared creativity and am always open to collaborations—artistic, academic, or hybrid.
+As a producer and sound artist, my live performances are intense, immersive rituals exploring the powerful tension between repetition, dissonance, and rhythm. I create soundscapes from concrete textures, cinematic atmospheres, and disembodied voices.
+
+**I am always open to collaborations—artistic, academic, or hybrid.**
 
 ---
 
 ## Contact
 
-> You can reach me for academic, artistic, or collaborative inquiries:
-
+> You can reach me for academic, artistic, or collaborative inquiries.
 <blockquote class="contact">
-
-**Ninon Devis**  
-*PhD Candidate* – IRCAM / Sorbonne Université  
+**Ninon Devis** *PhD Candidate* – IRCAM / Sorbonne Université  
 *Research Engineer* – Native Instruments  
 *Lecturer* – UPMC / ATIAM Master  
-
 📧 ninon.devis@ircam.fr  
 📍 Paris & Berlin  
 </blockquote>
-
