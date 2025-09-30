@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ninon Devis"
+title                    : "Ninon Devis Salvy"
 title_separator          : "-"
-subtitle                 : "Researcher-Teacher"
-name                     : "Ninon Devis"
-description              : "AI applied to music at IRCAM & Sorbonne University"
+subtitle                 : "Artiste-Researcher"
+name                     : "Ninon Devis Salvy"
+description              : "AI applied to music"
 url                      : "https://ninon-io.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ninon-io/ninon-io.github.io"
@@ -96,8 +96,8 @@ analytics:
 author:
   name             : "Ninon Devis"
   avatar           : "/images/Ninon.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Researcher in AI applied to music Teacher at IRCAM & SU"
-  location         : "IRCAM, Paris"
+  bio              : "Researcher in creative Deep Learning applied to music"
+  location         : "Berlin / Paris"
   email            : 
   links:
     - label: "Email"
@@ -117,7 +117,7 @@ author:
       url: "https://github.com/ninon-io"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/ninon.devis/?hl=fr"
+      url: "https://www.instagram.com/ninon.dvslv/?hl=fr"
 
 # Site Footer
 footer:
