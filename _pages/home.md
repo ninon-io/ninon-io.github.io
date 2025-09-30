@@ -9,10 +9,6 @@ header:
   image: /images/header.jpg 
 ---
 
-# Ninon Devis
-
-<hr>
-
 ## Art, Research, and Innovation
 
 **I work at the crossroads of techno, experimental music, and generative art, pioneering new forms of musical expression through deep learning.**
