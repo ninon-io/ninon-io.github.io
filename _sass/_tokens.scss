@@ -1,0 +1,109 @@
+// ============================================================================
+// Design tokens
+// ----------------------------------------------------------------------------
+// Palette variant B, "Brass". Derived from the colours already chosen by hand in
+// the old dark skin (#8E1A27 oxblood, #d5b110 / #EAC67A gold, #078dab / #155765
+// blue, #f5f2f0 warm off-white) and disciplined into one signal plus two sparing
+// semantic tones.
+//
+// Gold is the only accent that appears routinely. Oxblood and blue behave like
+// markings on an instrument panel: they identify a kind of thing, they never
+// decorate. Nothing here is a brand stripe.
+//
+// Every pairing used for text clears WCAG 2.2 AA in both modes.
+// Re-check with:  python3 tools/palette-check.py
+// ============================================================================
+
+:root {
+  // ---- surface ------------------------------------------------------------
+  --ground:    #121110;  // page
+  --panel:     #1A1917;  // raised block, code, table head
+  --panel-2:   #221F1C;  // inline code, chips
+  --rule:      #2C2A26;  // hairline
+  --rule-soft: #201E1B;  // fainter hairline inside blocks
+
+  // ---- ink ----------------------------------------------------------------
+  --ink:       #F0EBE3;  // body            15.90:1
+  --ink-dim:   #C8C2B7;  // secondary prose
+  --muted:     #A29B8F;  // metadata         6.85:1
+  --faint:     #726C62;  // labels, indices  3.63:1  (large/UI only)
+
+  // ---- signal -------------------------------------------------------------
+  --gold:      #C9A227;  // the accent       7.80:1
+  --gold-dim:  #8A6F1B;  // gold hairlines, pressed states
+  --oxblood:   #C2604C;  // semantic         4.55:1
+  --blue:      #6E97BE;  // semantic         6.14:1
+
+  --focus:     var(--gold);
+  --selection-bg: var(--gold);
+  --selection-fg: #121110;
+
+  // ---- type ---------------------------------------------------------------
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body:    "Newsreader", Georgia, "Times New Roman", serif;
+  --f-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  // Fixed scale. Nothing sits between these steps.
+  --t-xs:   0.6875rem;   // mono labels
+  --t-sm:   0.8125rem;   // mono data
+  --t-base: 0.9375rem;   // small prose
+  --t-body: 1.0625rem;   // body
+  --t-lg:   1.25rem;     // lede
+  --t-xl:   1.65rem;     // h3
+  --t-2xl:  2.4rem;      // h2
+  --t-3xl:  3.4rem;      // h1
+  --t-4xl:  5.25rem;     // index hero
+
+  --lh-tight: 1.08;
+  --lh-snug:  1.35;
+  --lh-body:  1.62;
+
+  --track-tight: -0.03em;
+  --track-hero:  -0.045em;
+  --track-mono:  0.13em;
+
+  // ---- layout -------------------------------------------------------------
+  --measure: 68ch;
+  --field:   1180px;
+  --rail:    8.5rem;
+  --gutter:  clamp(1.25rem, 4vw, 3.5rem);
+
+  // 8px rhythm
+  --s1: 0.5rem;  --s2: 1rem;   --s3: 1.5rem;  --s4: 2rem;
+  --s5: 3rem;    --s6: 4rem;   --s7: 6rem;    --s8: 8rem;
+
+  --band-y:  clamp(3.5rem, 8vw, 7rem);
+
+  --dur:  180ms;
+  --ease: cubic-bezier(0.2, 0, 0.2, 1);
+
+  color-scheme: dark;
+}
+
+// ---- light mode ------------------------------------------------------------
+// Designed, not inverted: the ground keeps the same warm bias, gold darkens to a
+// bronze that holds 5.54:1 on paper, and the two semantic tones deepen rather
+// than simply flipping lightness.
+@media (prefers-color-scheme: light) {
+  :root {
+    --ground:    #F5F2EB;
+    --panel:     #FFFFFF;
+    --panel-2:   #EAE5DA;
+    --rule:      #DAD3C6;
+    --rule-soft: #E6E0D4;
+
+    --ink:       #1A1815;  // 15.85:1
+    --ink-dim:   #3A362F;
+    --muted:     #5E584E;  //  6.30:1
+    --faint:     #8B857A;  //  3.28:1
+
+    --gold:      #7E5B0C;  //  5.54:1
+    --gold-dim:  #B99A3E;
+    --oxblood:   #94301F;  //  6.95:1
+    --blue:      #2C5578;  //  7.01:1
+
+    --selection-fg: #F5F2EB;
+
+    color-scheme: light;
+  }
+}

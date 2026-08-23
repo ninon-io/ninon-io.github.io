@@ -1,44 +1,35 @@
 ---
-title: "Ninon & Jun Suzuki @ Wilding AI Lab (CTM 2025)"
-layout: single
+layout: project-single
 permalink: /projects/ctm/
-author_profile: false
-classes: wide
-header:
-  overlay_image: /assets/media/projects/wilding-ai/images/ctm-header.jpg
-  overlay_color: "#000"
-  overlay_filter: "0.6"
-  caption: "Design: Vojd"
-excerpt: "Exploring generative AI, spatial audio, and text within the Wilding AI Lab residency at MONOM/4DSOUND during CTM Festival 2025."
+title: Ninon & Jun Suzuki @ Wilding AI Lab (CTM 2025)
+eyebrow: MONOM / 4DSOUND · CTM Festival
+excerpt: Exploring generative AI, spatial audio and text within the Wilding AI Lab residency at MONOM / 4DSOUND during CTM Festival 2025.
+kind: Residency
+years: '2025'
 toc: true
-toc_label: "Contents"
-toc_sticky: true
-sidebar:
-  nav: "projects"
+has_player: true
 
-# ── Photographs ──────────────────────────────────────────────────────────────
-# To add more event photography: drop the files into
+# Portraits. To add more, drop files into
 #   assets/media/projects/wilding-ai/images/
-# then append an entry below. The layout adapts on its own —
-# 1 image renders full width, 2 side by side, 3 or more in a grid.
+# and append an entry. The gallery reflows on its own:
+# 1 image full width, 2 side by side, 3 or more in a grid.
 gallery:
   - url: /assets/media/projects/wilding-ai/images/ninon-and-jun.jpg
     image_path: /assets/media/projects/wilding-ai/images/ninon-and-jun.jpg
-    alt: "Portraits of Ninon and Jun Suzuki"
-    title: "Ninon & Jun Suzuki. Photos: @atelieroz and @omwh_ite / @manifest.io.berlin"
+    alt: Portraits of Ninon and Jun Suzuki
+    title: 'Ninon & Jun Suzuki. Photos: @atelieroz and @omwh_ite / @manifest.io.berlin'
 
-# Working-session photographs from inside the lab. Same rules as `gallery` above:
-# drop files into assets/media/projects/wilding-ai/images/ and append entries.
+# Working-session photographs from inside the lab. Same rules as `gallery` above.
 session_gallery:
   - url: /assets/media/projects/wilding-ai/images/ninon-jun-monom.png
     image_path: /assets/media/projects/wilding-ai/images/ninon-jun-monom.png
-    alt: "Ninon and Jun Suzuki working at a desk of laptops and modular gear inside the MONOM 4DSOUND room"
-    title: "Ninon & Jun Suzuki working in the 4DSOUND room at MONOM, January 2025"
+    alt: Ninon and Jun Suzuki working at a desk of laptops and modular gear inside the MONOM 4DSOUND room
+    title: Ninon & Jun Suzuki working in the 4DSOUND room at MONOM, January 2025
 
-# ── Spatialized sound sketch ─────────────────────────────────────────────────
-# The Listen section below stays hidden until this value is set.
-# Drop the file at the path shown, then uncomment the line.
-spatial_sketch: # /assets/media/projects/wilding-ai/audio/ninon-jun-spatial-sketch.wav
+# The Listen section stays hidden until this is set. Drop the file at
+#   assets/media/projects/wilding-ai/audio/ninon-jun-spatial-sketch.mp3
+# (320 kbps MP3, per the audio policy) then uncomment the line below.
+spatial_sketch: # /assets/media/projects/wilding-ai/audio/ninon-jun-spatial-sketch.mp3
 ---
 
 ## Ninon & Jun Suzuki x Wilding AI Lab
@@ -47,7 +38,7 @@ We were thrilled to share our first collaboration with and **Jun Suzuki** ([@ein
 
 Selected alongside nine other talented artists, we joined this unique workshop-residency exploring the creative frontiers of AI systems involving text, audio, and sound spatialization. The lab was guided by facilitators Beth Coleman, Maurice Jones, Portrait XO, and Alexandre Saunier.
 
-{% include gallery caption="Ninon & Jun Suzuki ([@einleit](https://www.instagram.com/einleit/)) at the Wilding AI Lab, [MONOM](https://monom.studios/) Berlin, January 2025. Photos: Ninon by [@atelieroz](https://www.instagram.com/atelieroz/), Jun Suzuki by [@omwh_ite](https://www.instagram.com/omwh_ite/) / [@manifest.io.berlin](https://www.instagram.com/manifest.io.berlin/)." %}
+{% include site/gallery.html caption="Ninon & Jun Suzuki ([@einleit](https://www.instagram.com/einleit/)) at the Wilding AI Lab, [MONOM](https://monom.studios/) Berlin, January 2025. Photos: Ninon by [@atelieroz](https://www.instagram.com/atelieroz/), Jun Suzuki by [@omwh_ite](https://www.instagram.com/omwh_ite/) / [@manifest.io.berlin](https://www.instagram.com/manifest.io.berlin/)." %}
 
 ---
 
@@ -77,7 +68,7 @@ The intensive four-day lab (Jan 23-26, 2025) combined morning skill-sharing work
 * **Day 3 (Space):** AI-driven sound spatialization in the 4DSOUND environment (Alexandre Saunier).
 * **Day 4 (Open Lab):** Public presentation of prototypes and processes.
 
-{% include gallery id="session_gallery" caption="Working in the 4DSOUND room at MONOM during the lab." %}
+{% include site/gallery.html id="session_gallery" caption="Working in the 4DSOUND room at MONOM during the lab." %}
 
 ---
 
@@ -90,9 +81,7 @@ The residency culminated in the **Wilding AI Open Lab** on Sunday, January 26th 
 
 ## Listen: Spatialized Sound Sketch
 
-<audio controls style="width: 100%; margin: 1.5rem 0;">
-  <source src="{{ page.spatial_sketch }}" type="audio/wav"> Your browser does not support the audio element. Please update your browser or <a href="{{ page.spatial_sketch }}">download the track</a>.
-</audio>
+{% include site/player.html src=page.spatial_sketch title="Spatialized sound sketch" meta="Wilding AI Lab · MONOM 4DSOUND" %}
 {% endif %}
 
 ---

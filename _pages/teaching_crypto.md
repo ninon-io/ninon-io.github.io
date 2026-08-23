@@ -1,20 +1,13 @@
 ---
-title: "Cryptology"
-layout: single
+layout: prose
 permalink: /teaching/cryptology/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/teaching/images/cryptology.jpg
-  actions:
-    - label: "Have fun here"
-      url: "https://overthewire.org/wargames/"
-excerpt: "Cryptologie Romantique et Introduction à la sécurité"
+title: Cryptology
+lang: fr
+eyebrow: L3 / M1 · en français
+excerpt: Cryptologie Romantique et Introduction à la sécurité
+rail_label: Cryptologie
+archive_note: Supports de cours, 2021. Conservés en ligne pour les anciens étudiants ; les liens ci-dessous fonctionnent toujours.
 toc: true
-toc_label: "Table of Contents"
-sidebar:
-  nav: "teaching"
 ---
 
 ## Cryptologie Romantique - L3

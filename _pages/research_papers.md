@@ -1,17 +1,11 @@
 ---
-title: "Scientific Papers"
-layout: single
+layout: prose
 permalink: /research/papers/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/research/images/papers-header.jpg
-excerpt: "Publications sorted by date"
+title: Scientific Papers
+eyebrow: Published as Ninon Devis
+excerpt: Publications sorted by date
+rail_label: Papers
 toc: true
-toc_label: "Publications"
-sidebar:
-  nav: "research"
 ---
 
 ## Generating Sample-Based Musical Instruments Using Neural Audio Codec Language Models

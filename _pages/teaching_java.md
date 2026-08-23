@@ -1,20 +1,13 @@
 ---
-title: "JAVA"
-layout: single
+layout: prose
 permalink: /teaching/java/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/teaching/images/java-header.jpg
-  actions:
-    - label: "Download"
-      url: "https://www.eclipse.org/downloads/"
-excerpt: "Recommanded IDE for Java"
+title: JAVA
+lang: fr
+eyebrow: L3 · en français
+excerpt: Recommanded IDE for Java
+rail_label: Java
+archive_note: Supports de cours, 2021. Conservés en ligne pour les anciens étudiants ; les liens ci-dessous fonctionnent toujours.
 toc: true
-toc_label: "Table of Contents"
-sidebar:
-  nav: "teaching"
 ---
 
 ## Cours magistraux

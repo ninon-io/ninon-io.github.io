@@ -1,20 +1,12 @@
 ---
-title: "Pure Data"
-layout: single
+layout: prose
 permalink: /teaching/puredata/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/teaching/images/pure-data-header.jpg
-  actions:
-    - label: "Download"
-      url: "https://puredata.info/downloads"
-excerpt: "First, get your Pure Data"
+title: Pure Data
+eyebrow: ATIAM master · IRCAM / Sorbonne Université
+excerpt: First, get your Pure Data
+rail_label: Pure Data
+archive_note: Course material for the ATIAM master, 2022. Kept online for former students; the links below still work.
 toc: true
-toc_label: "Table of Contents"
-sidebar:
-  nav: "teaching"
 ---
 
 ### Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}

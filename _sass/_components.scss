@@ -1,0 +1,330 @@
+// ============================================================================
+// Components
+// ============================================================================
+
+// ---- prose -----------------------------------------------------------------
+// Applied to rendered Markdown. Spacing comes from flow, not per-element margins.
+.prose {
+  display: flow-root;
+
+  > * + * { margin-top: var(--s3); }
+
+  > h2 {
+    font-size: var(--t-2xl);
+    line-height: var(--lh-tight);
+    max-width: 22ch;
+    margin-top: var(--s6);
+    padding-bottom: var(--s1);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  > h3 {
+    font-size: var(--t-xl);
+    line-height: var(--lh-snug);
+    margin-top: var(--s5);
+  }
+
+  > h4 {
+    font-size: var(--t-body);
+    margin-top: var(--s4);
+  }
+
+  > h2:first-child, > h3:first-child { margin-top: 0; }
+
+  p, li { max-width: var(--measure); }
+
+  ul, ol {
+    padding-left: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s1);
+  }
+
+  li::marker { color: var(--faint); }
+
+  blockquote {
+    border-left: 2px solid var(--gold-dim);
+    padding-left: var(--s3);
+    color: var(--ink-dim);
+    font-style: normal;
+    max-width: var(--measure);
+  }
+
+  figure { margin-block: var(--s4); }
+
+  figcaption {
+    margin-top: var(--s2);
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: var(--faint);
+    max-width: var(--measure);
+
+    a { border-bottom-color: var(--rule); }
+  }
+
+  img { border: 1px solid var(--rule); }
+
+  // Wide content scrolls inside its own container; the page never scrolls sideways.
+  .table-scroll { overflow-x: auto; }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--f-mono);
+  font-size: var(--t-sm);
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+
+  th, td {
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid var(--rule-soft);
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--panel);
+    color: var(--faint);
+    font-weight: 500;
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+  }
+
+  tr:last-child td { border-bottom: 0; }
+}
+
+// ---- page head -------------------------------------------------------------
+// Replaces the old scrim-over-photo hero. Typographic by default; an image, when
+// there is a real one, sits beside the type rather than under it.
+.page-head {
+  border-bottom: 1px solid var(--rule);
+  padding-block: clamp(2.5rem, 6vw, 5rem) var(--band-y);
+
+  &__eyebrow { margin-bottom: var(--s3); display: block; }
+
+  &__title {
+    font-size: var(--t-3xl);
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: var(--track-hero);
+    max-width: 18ch;
+  }
+
+  &__lede {
+    margin-top: var(--s3);
+    max-width: 54ch;
+    font-size: var(--t-lg);
+    line-height: var(--lh-snug);
+    font-weight: 300;
+    color: var(--ink-dim);
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s1) var(--s4);
+    margin-top: var(--s4);
+    padding-top: var(--s3);
+    border-top: 1px solid var(--rule-soft);
+
+    div { min-width: 0; }
+    dt {
+      font-family: var(--f-mono); font-size: var(--t-xs);
+      text-transform: uppercase; letter-spacing: var(--track-mono);
+      color: var(--faint); margin: 0 0 0.3rem;
+    }
+    dd { margin: 0; font-family: var(--f-mono); font-size: var(--t-sm); color: var(--ink-dim); }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2);
+    margin-top: var(--s4);
+  }
+}
+
+// ---- index rows ------------------------------------------------------------
+// Work is a ruled index, never a card grid. It stays a list at every width.
+.index {
+  border-top: 1px solid var(--rule);
+}
+
+.index__row {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr) auto;
+  gap: var(--s3);
+  align-items: baseline;
+  padding-block: var(--s2);
+  border-bottom: 1px solid var(--rule);
+  border-left: 0;
+  transition: background var(--dur) var(--ease);
+
+  &:hover { background: var(--panel); }
+
+  &__ix {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    letter-spacing: 0.06em;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__title {
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: var(--t-body);
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    border-bottom: 0;
+    display: block;
+    transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+  }
+
+  &__desc {
+    display: block;
+    margin-top: 0.2rem;
+    font-family: var(--f-body);
+    font-size: var(--t-base);
+    color: var(--muted);
+    max-width: var(--measure);
+  }
+
+  &__tag {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    white-space: nowrap;
+  }
+
+  &:hover &__title,
+  &:focus-within &__title { transform: translateX(5px); color: var(--gold); }
+
+  // Semantic tone by kind — a marking, not a colour scheme.
+  &[data-kind="instrument"] &__tag { color: var(--gold); }
+  &[data-kind="residency"]  &__tag { color: var(--oxblood); }
+  &[data-kind="paper"]      &__tag { color: var(--blue); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .index__row:hover .index__row__title { transform: none; }
+}
+
+// ---- buttons ---------------------------------------------------------------
+// The teaching archive uses these heavily; kept square and quiet.
+.btn {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--track-mono);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--rule);
+  color: var(--ink-dim);
+  background: transparent;
+  cursor: pointer;
+
+  &:hover { border-color: var(--gold); color: var(--gold); }
+
+  &--primary { border-color: var(--gold-dim); color: var(--ink); }
+
+  // Alias kept so the existing kramdown attribute lists on the archive pages
+  // ({: .btn .btn--light-outline}) keep styling without touching that content.
+  &--light-outline { border-color: var(--rule); }
+}
+
+// ---- gallery ---------------------------------------------------------------
+// Adapts to however many images exist, so adding photography needs no layout change.
+.gallery {
+  display: grid;
+  gap: var(--s2);
+  grid-template-columns: 1fr;
+  margin-block: var(--s4);
+
+  &[data-count="2"] { grid-template-columns: repeat(2, 1fr); }
+  &[data-count="3"],
+  &[data-count="4"],
+  &[data-count="5"],
+  &[data-count="6"] { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+  a { border-bottom: 0; }
+  img { border: 1px solid var(--rule); width: 100%; }
+}
+
+@media (max-width: 620px) {
+  .gallery[data-count] { grid-template-columns: 1fr; }
+}
+
+// ---- notice / archive banner ----------------------------------------------
+.notice {
+  border-left: 2px solid var(--blue);
+  background: var(--panel);
+  padding: var(--s2) var(--s3);
+  font-size: var(--t-base);
+  color: var(--ink-dim);
+  max-width: var(--measure);
+
+  &--archive { border-left-color: var(--oxblood); }
+
+  .eyebrow { display: block; margin-bottom: 0.35rem; }
+  p { margin: 0; }
+}
+
+// ---- table of contents -----------------------------------------------------
+.toc {
+  border-left: 1px solid var(--rule);
+  padding-left: var(--s2);
+
+  &__title {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    margin-bottom: var(--s1);
+  }
+
+  ol, ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+
+  a {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    color: var(--muted);
+    border-bottom: 0;
+    line-height: 1.45;
+
+    &:hover { color: var(--gold); }
+  }
+}
+
+// ---- responsive video ------------------------------------------------------
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  margin-block: var(--s4);
+
+  iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+}
+
+// ---- plain third-party audio ----------------------------------------------
+// Deliberately unstyled and secondary. These are citations, not releases.
+.ref-audio {
+  margin-block: var(--s2);
+
+  audio { width: 100%; max-width: 32rem; }
+
+  &__label {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    color: var(--faint);
+    margin-bottom: 0.35rem;
+  }
+}

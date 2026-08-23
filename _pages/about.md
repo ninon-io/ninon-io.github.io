@@ -1,8 +1,9 @@
 ---
-title: "About"
-layout: single
+layout: prose
 permalink: /about/
-classes: wide
+title: About
+eyebrow: Biography, CV and chronology
+rail_label: About
 ---
 
 <p align="center">

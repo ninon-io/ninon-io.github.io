@@ -1,17 +1,11 @@
 ---
-title: "Thesis Companion"
-layout: single
+layout: prose
 permalink: /research/manuscript/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.7"
-  overlay_image: /assets/media/research/thesis/images/listening-header.webp
-excerpt: "Listening references and additional material for the thesis"
+title: Thesis Companion
+eyebrow: Listening references
+excerpt: Listening references and additional material for the thesis
+rail_label: Companion
 toc: true
-toc_label: "Table of Contents"
-sidebar:
-  nav: "research"
 ---
 
 > This page is continuously updated, don't hesitate to come back !
@@ -22,61 +16,37 @@ sidebar:
 
 Rrose - Waterfall
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/rrose-waterfall.mp3" type="audio/mp3">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/rrose-waterfall.mp3" %}
 
 > Chapter 3
 
 Max Mathews - Daisy Bell
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/mathews-daisy-bell.flac" type="audio/flac">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/mathews-daisy-bell.mp3" %}
 
 Max Mathews - Numerology
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/mathews-numerology.mp3" type="audio/mp3">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/mathews-numerology.mp3" %}
 
 Clara Roockmore - The Swan (The art of the Theremin)
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/saint-saens-the-swan.mp3" type="audio/mp3">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/saint-saens-the-swan.mp3" %}
 
 Wendy Carlos - Air on a G String (Switched-On Bach)
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/wendy-carlos-air-on-a-g-string.mp3" type="audio/mp3">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/wendy-carlos-air-on-a-g-string.mp3" %}
 
 Jean-Claude Risset - Mutations
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/risset-mutations-1977.mp3" type="audio/mp3">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/risset-mutations-1977.mp3" %}
 
 John Chowning - Stria
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/chowning-stria.flac" type="audio/flac">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/chowning-stria.mp3" %}
 
 Iannis Xanakis - Concrete PH
 
-<html>
-<audio controls>
-  <source src="/assets/media/research/thesis/audio/xenakis-concret-ph.mp3" type="audio/mp3">
-</audio></html>
+{% include site/ref-audio.html src="/assets/media/research/thesis/audio/xenakis-concret-ph.mp3" %}
 
 ## Additional material for F-Rave
 

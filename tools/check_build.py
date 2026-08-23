@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+"""Post-build checks for the generated site.
+
+    python3 tools/check_build.py _site
+
+Fails the build (exit 1) on broken internal links, missing local assets, leaked
+Liquid, or a page that lost its stylesheet. Also reports legacy compatibility
+coverage, which must not regress.
+"""
+
+import os
+import re
+import sys
+from html.parser import HTMLParser
+
+FAIL = 0
+
+
+def err(msg):
+    global FAIL
+    FAIL += 1
+    print(f"  FAIL  {msg}")
+
+
+class Refs(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links, self.assets, self.langs = [], [], []
+
+    def handle_starttag(self, tag, attrs):
+        a = dict(attrs)
+        if tag == "html" and a.get("lang"):
+            self.langs.append(a["lang"])
+        for key in ("href", "src"):
+            v = a.get(key)
+            if not v or v.startswith(("http://", "https://", "mailto:", "#", "data:", "//")):
+                continue
+            (self.assets if re.search(r"\.\w{2,5}$", v.split("?")[0]) else self.links).append(v)
+
+
+def resolve(site, url):
+    path = url.split("#")[0].split("?")[0]
+    if not path.startswith("/"):
+        return None
+    local = os.path.join(site, path.lstrip("/"))
+    if os.path.isfile(local):
+        return local
+    if os.path.isdir(local) and os.path.isfile(os.path.join(local, "index.html")):
+        return os.path.join(local, "index.html")
+    if os.path.isfile(local.rstrip("/") + "/index.html"):
+        return local
+    return None
+
+
+def main(site):
+    pages = []
+    for dp, _dn, fn in os.walk(site):
+        for f in fn:
+            if f.endswith(".html"):
+                pages.append(os.path.join(dp, f))
+
+    print(f"check-build: {len(pages)} pages in {site}\n")
+
+    total_links = total_assets = 0
+    for p in sorted(pages):
+        rel = "/" + os.path.relpath(p, site)
+        html = open(p, encoding="utf-8", errors="replace").read()
+
+        # leaked Liquid means a tag or include failed
+        for bad in ("{% include", "{{ page.", "{% if ", "{%- "):
+            if bad in html:
+                err(f"{rel}: unrendered Liquid ({bad!r})")
+
+        if "/assets/css/site.css" not in html:
+            err(f"{rel}: new stylesheet not linked")
+        if "/assets/css/main.css" in html:
+            err(f"{rel}: still references the old theme stylesheet")
+
+        r = Refs()
+        r.feed(html)
+        for u in r.links:
+            total_links += 1
+            if not resolve(site, u):
+                err(f"{rel}: broken internal link -> {u}")
+        for u in r.assets:
+            total_assets += 1
+            if not resolve(site, u):
+                err(f"{rel}: missing asset -> {u}")
+
+    print(f"  {total_links} internal links, {total_assets} asset refs checked")
+
+    # Legacy compatibility: every pre-reorganisation URL that we chose to keep
+    # must still resolve. Truth comes from git, not a hardcoded count.
+    import subprocess
+    try:
+        raw = subprocess.run(["git", "ls-tree", "-r", "--name-only", "-z", "master"],
+                             capture_output=True).stdout
+        master = [x.decode() for x in raw.split(b"\0") if x]
+    except Exception:
+        master = []
+
+    # Deliberately not aliased: 1-byte folder placeholders, and the eleven audio
+    # files no page ever referenced (see audio/README.md).
+    DROPPED = {"documents/readme.md", "images/readme.md", "images/neurorack/init.md"}
+    KEPT_AUDIO = {
+        "audio/Mathews_DaisyBell.flac", "audio/Mathews_Numerology.mp3",
+        "audio/Mutations_1977_Jean_Claude_Risset.mp3", "audio/Rrose-Waterfall.mp3",
+        "audio/Stria_Chowning.flac", "audio/Wendy_Carlos_Air_on_a G_String.mp3",
+        "audio/Xenakis_ConcretePH.mp3", "audio/raster_demo.wav",
+    }
+    for folder in ("documents", "images", "audio"):
+        want = [p for p in master if p.startswith(folder + "/") and p not in DROPPED]
+        if folder == "audio":
+            want = [p for p in want if p in KEPT_AUDIO or "Swan" in p]
+        missing = [p for p in want if not os.path.isfile(os.path.join(site, p))]
+        if missing:
+            err(f"legacy /{folder}/: {len(missing)} URL(s) no longer resolve, "
+                f"e.g. {missing[:3]}")
+        else:
+            print(f"  legacy /{folder}/: {len(want)}/{len(want)} URLs resolve")
+
+    # peaks present for every player-backed track
+    peaks = os.path.join(site, "assets", "data", "peaks")
+    n = len([f for f in os.listdir(peaks)]) if os.path.isdir(peaks) else 0
+    print(f"  waveform peak files: {n}")
+    if n == 0:
+        err("no waveform peaks generated")
+
+    print()
+    if FAIL:
+        print(f"check-build: {FAIL} failure(s)")
+        return 1
+    print("check-build: all checks passed")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "_site"))

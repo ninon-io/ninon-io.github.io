@@ -1,0 +1,30 @@
+{%- comment -%}
+Custom player — for Ninon's own work only.
+  {% include player.html src="/assets/media/projects/neurorack/audio/raster-demo.mp3"
+                         title="Impact study" meta="Neurorack · 2022" %}
+The peaks slug is derived from the src, matching tools/generate-peaks.py.
+Third-party listening references use {% include ref-audio.html %} instead.
+{%- endcomment -%}
+{%- assign rel = include.src | remove_first: '/assets/media/' | split: '.' | first -%}
+{%- assign slug = rel | replace: '/audio/', '/' | replace: '/', '-' -%}
+<div class="player" data-state="paused" data-peaks="{{ '/assets/data/peaks/' | append: slug | append: '.json' | relative_url }}">
+  <div class="player__head">
+    <span class="player__title">{{ include.title }}</span>
+    {%- if include.meta %}<span class="player__meta">{{ include.meta }}</span>{% endif %}
+  </div>
+  <div class="player__body">
+    <button type="button" class="player__toggle" aria-label="Play">
+      <svg class="icon-play" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0l12 7-12 7z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 12 14" aria-hidden="true"><path d="M0 0h4v14H0zM8 0h4v14H8z"/></svg>
+    </button>
+    <button type="button" class="player__wave" role="slider"
+            aria-label="Seek {{ include.title | escape }}"
+            aria-valuemin="0" aria-valuenow="0" aria-valuetext="0:00">
+      <canvas aria-hidden="true"></canvas>
+    </button>
+    <span class="player__time" aria-live="off">0:00 / --:--</span>
+  </div>
+  <div class="player__fallback">
+    <audio controls preload="metadata" src="{{ include.src | relative_url }}"></audio>
+  </div>
+</div>

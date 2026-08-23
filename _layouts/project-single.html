@@ -1,0 +1,23 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+<article class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      {%- if page.kind %}<span class="rail__num">{{ page.kind }}</span>{% endif %}
+      <span class="rail__label">{{ page.years | default: page.rail_label | default: 'Project' }}</span>
+      {%- if page.toc %}{% include site/toc.html %}{% endif %}
+    </div>
+    <div class="col">
+      <div class="prose">{{ content }}</div>
+      {%- if page.credits %}
+      <section>
+        <h2 id="credits">Credits</h2>
+        <div class="prose"><ul>{% for c in page.credits %}<li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul></div>
+      </section>
+      {%- endif %}
+    </div>
+  </div>
+</article>

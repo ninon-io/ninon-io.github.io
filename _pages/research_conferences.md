@@ -1,16 +1,10 @@
 ---
-title: "Talks & Media"
-layout: single
+layout: prose
 permalink: /research/conferences/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/research/images/conferences-header.webp
+title: Talks & Media
+eyebrow: Seminars, panels, interviews
+rail_label: Talks
 toc: true
-toc_label: "On This Page"
-sidebar:
-  nav: "research"
 ---
 
 ## Can AI create Art ?

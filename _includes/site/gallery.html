@@ -1,0 +1,17 @@
+{%- comment -%}
+Adapts to however many images the page declares, so adding photography later
+needs no layout change. Pass id= to use a gallery other than page.gallery.
+{%- endcomment -%}
+{%- if include.id %}{% assign items = page[include.id] %}{% else %}{% assign items = page.gallery %}{% endif -%}
+{%- if items and items.size > 0 -%}
+<figure>
+  <div class="gallery" data-count="{{ items.size }}">
+    {%- for img in items %}
+    {%- if img.url %}<a href="{{ img.url | relative_url }}"{% if img.title %} title="{{ img.title | escape }}"{% endif %}>{% endif %}
+    <img src="{{ img.image_path | relative_url }}" alt="{{ img.alt | default: '' | escape }}" loading="lazy" decoding="async">
+    {%- if img.url %}</a>{% endif %}
+    {%- endfor %}
+  </div>
+  {%- if include.caption %}<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>{% endif %}
+</figure>
+{%- endif -%}

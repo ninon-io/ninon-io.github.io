@@ -1,0 +1,23 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+<article class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      {%- if page.rail_num %}<span class="rail__num">{{ page.rail_num }}</span>{% endif %}
+      <span class="rail__label">{{ page.rail_label | default: page.title }}</span>
+      {%- if page.toc %}{% include site/toc.html %}{% endif %}
+    </div>
+    <div class="col">
+      {%- if page.archive_note %}
+      <div class="notice notice--archive">
+        <span class="eyebrow">Archived</span>
+        <p>{{ page.archive_note }}</p>
+      </div>
+      {%- endif %}
+      <div class="prose">{{ content }}</div>
+    </div>
+  </div>
+</article>

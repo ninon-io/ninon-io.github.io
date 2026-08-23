@@ -1,20 +1,12 @@
 ---
-title: "Ableton"
-layout: single
+layout: prose
 permalink: /teaching/ableton/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.6"
-  overlay_image: /assets/media/teaching/images/ableton-header.jpg
-  actions:
-    - label: "Here"
-      url: "https://www.ableton.com/en/trial/"
-excerpt: "Download the trial version of Ableton Live 11"
+title: Ableton
+eyebrow: ATIAM master · IRCAM / Sorbonne Université
+excerpt: Download the trial version of Ableton Live 11
+rail_label: Ableton
+archive_note: Course material for the ATIAM master, 2022–23. Kept online for former students; the links below still work.
 toc: true
-toc_label: "Table of Contents"
-sidebar:
-  nav: "teaching"
 ---
 
 ### Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}

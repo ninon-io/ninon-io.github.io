@@ -1,0 +1,14 @@
+{%- comment -%}Builds a TOC from the page's h2 headings, no plugin needed.{%- endcomment -%}
+{%- assign heads = content | split: '<h2 id="' -%}
+{%- if heads.size > 1 -%}
+<nav class="toc" aria-label="On this page">
+  <div class="toc__title">On this page</div>
+  <ul>
+  {%- for h in heads offset:1 %}
+    {%- assign id = h | split: '"' | first -%}
+    {%- assign label = h | split: '>' | slice: 1 | first | split: '</h2' | first | strip_html -%}
+    <li><a href="#{{ id }}">{{ label }}</a></li>
+  {%- endfor %}
+  </ul>
+</nav>
+{%- endif -%}

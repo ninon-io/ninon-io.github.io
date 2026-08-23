@@ -1,22 +1,11 @@
 ---
-title: "Doctoral Thesis"
-layout: single
+layout: prose
 permalink: /research/phd/
-author_profile: false
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/research/thesis/images/thesis-header.webp
-  actions:
-    - label: "Read the thesis (HAL)"
-      url: "https://theses.hal.science/tel-05307879v1"
-    - label: "Defence video"
-      url: "https://youtube.com/live/4KoAmbZw6Xg"
-excerpt: "Creative Deep Learning on Real Time Embedded Architectures — defended 12 May 2025"
+title: Doctoral Thesis
+eyebrow: Doctoral thesis · Sorbonne Université
+excerpt: Creative Deep Learning on Real Time Embedded Architectures — defended 12 May 2025
+rail_label: Thesis
 toc: true
-toc_label: "Table of Contents"
-sidebar:
-  nav: "research"
 ---
 
 ## Creative Deep Learning on Real Time Embedded Architectures

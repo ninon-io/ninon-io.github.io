@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="field site-footer__inner">
+    <span>© {{ site.time | date: '%Y' }} {{ site.social.name | default: site.name }}</span>
+    <div class="site-footer__links">
+      {%- for l in site.footer.links %}{% if l.url %}
+      <a href="{{ l.url }}"{% unless l.url contains 'mailto' %} rel="me noopener"{% endunless %}>{{ l.label }}</a>
+      {%- endif %}{% endfor %}
+    </div>
+  </div>
+</footer>

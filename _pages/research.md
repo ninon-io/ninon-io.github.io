@@ -1,50 +1,33 @@
 ---
-title: "Research"
-layout: splash
+layout: listing
 permalink: /research/
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/media/research/images/research-header.webp
-excerpt: "All items linked to my research in creative musical AI"
-PhD:
-  - image_path: /assets/media/research/thesis/images/thesis-header.webp
-    alt: "PhD"
-    title: "Doctoral Thesis"
-    excerpt: 'Creative Deep Learning on Real Time Embedded Architectures. Defended May 2025 — thesis and defence video.'
-    url: "/research/phd/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-Manuscript:
-  - image_path: /assets/media/research/thesis/images/manuscript-header.webp
-    alt: "Manuscript"
-    title: "Thesis Companion"
-    excerpt: 'Listening references and additional material for the thesis'
-    url: "/research/manuscript/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-conferences:
-  - image_path: /assets/media/research/images/conferences-header.webp
-    alt: "Conferences"
-    title: "Talks & Media"
-    excerpt: 'Seminars, panels and conference talks, plus interviews and press.'
-    url: "/research/conferences/"
-    btn_label: "Enter"
-    btn_class: "btn--primary"
-papers:
-  - image_path: /assets/media/research/images/papers-card.webp
-    alt: "Papers"
-    title: "Papers"
-    excerpt: 'List of publications'
-    url: "/research/papers/"
-    btn_label: "Enter"
-    btn_class: "btn--primary"
+title: "Research"
+eyebrow: "Neural audio synthesis"
+excerpt: "The doctoral thesis, the publication record, and public talks and press."
+rail_label: "Research"
+entries:
+  - title: "Doctoral Thesis"
+    description: "Creative Deep Learning on Real Time Embedded Architectures. Defended May 2025 — thesis and defence video."
+    url: /research/phd/
+    year: "2025"
+    kind: "Thesis"
+  - title: "Scientific Papers"
+    description: "Peer-reviewed publications, preprints and writing, published under the name Ninon Devis."
+    url: /research/papers/
+    year: "2020—"
+    kind: "Paper"
+  - title: "Talks & Media"
+    description: "Seminars, panels and conference talks, plus interviews and press."
+    url: /research/conferences/
+    year: "2021—"
+    kind: "Talks"
+  - title: "Thesis Companion"
+    description: "Listening references and additional material for the thesis."
+    url: /research/manuscript/
+    kind: "Companion"
+  - title: "Teaching"
+    description: "Archived course material — Ableton, Pure Data, Cryptology and Java."
+    url: /teaching/
+    year: "2021—23"
+    kind: "Archive"
 ---
-
-{% include feature_row id="PhD" type="left" %}
-
-{% include feature_row id="Manuscript" type="right" %}
-
-{% include feature_row id="conferences" type="left" %}
-
-{% include feature_row id="papers" type="right" %}

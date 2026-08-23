@@ -1,0 +1,23 @@
+{%- comment -%}
+Typographic page head. No stock photo, no scrim. Where genuine documentation
+exists it is placed in the body, beside the type — never underneath it.
+{%- endcomment -%}
+<div class="page-head">
+  <div class="field">
+    {%- if page.eyebrow %}<span class="eyebrow page-head__eyebrow">{{ page.eyebrow }}</span>{% endif %}
+    <h1 class="page-head__title">{{ page.title }}</h1>
+    {%- if page.excerpt and page.excerpt != '' %}
+    <p class="page-head__lede">{{ page.excerpt | markdownify | strip_html | strip }}</p>
+    {%- endif %}
+    {%- if page.meta %}
+    <dl class="page-head__meta">
+      {%- for m in page.meta %}<div><dt>{{ m.label }}</dt><dd>{{ m.value }}</dd></div>{% endfor %}
+    </dl>
+    {%- endif %}
+    {%- if page.actions %}
+    <div class="page-head__actions">
+      {%- for a in page.actions %}<a class="btn{% if forloop.first %} btn--primary{% endif %}" href="{{ a.url }}">{{ a.label }}</a>{% endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</div>

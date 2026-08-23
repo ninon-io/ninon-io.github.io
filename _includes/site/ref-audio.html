@@ -1,0 +1,8 @@
+{%- comment -%}
+Third-party / historical listening reference. Deliberately plain and visually
+secondary — a citation, not one of Ninon's releases.
+{%- endcomment -%}
+<div class="ref-audio">
+  {%- if include.label %}<div class="ref-audio__label">{{ include.label }}</div>{% endif %}
+  <audio controls preload="none" src="{{ include.src | relative_url }}"></audio>
+</div>
