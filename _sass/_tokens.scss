@@ -31,8 +31,9 @@
   // ---- signal -------------------------------------------------------------
   --gold:      #C9A227;  // the accent       7.80:1
   --gold-dim:  #8A6F1B;  // gold hairlines, pressed states
-  --oxblood:   #C2604C;  // semantic         4.55:1
-  --blue:      #6E97BE;  // semantic         6.14:1
+  --oxblood:   #C2604C;  // live / performance   4.55:1
+  --blue:      #6E97BE;  // research output      6.14:1
+  --plum:      #A98BB0;  // thesis               6.29:1
 
   --focus:     var(--gold);
   --selection-bg: var(--gold);
@@ -43,16 +44,18 @@
   --f-body:    "Newsreader", Georgia, "Times New Roman", serif;
   --f-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
 
-  // Fixed scale. Nothing sits between these steps.
-  --t-xs:   0.6875rem;   // mono labels
-  --t-sm:   0.8125rem;   // mono data
-  --t-base: 0.9375rem;   // small prose
-  --t-body: 1.0625rem;   // body
-  --t-lg:   1.25rem;     // lede
-  --t-xl:   1.65rem;     // h3
-  --t-2xl:  2.4rem;      // h2
-  --t-3xl:  3.4rem;      // h1
-  --t-4xl:  5.25rem;     // index hero
+  // Fixed scale. Nothing sits between these steps. Raised across the board in
+  // Phase 3: reading comfort beats extreme minimalism, and the mono utility
+  // layer in particular was too small to scan.
+  --t-xs:   0.8125rem;   // mono labels        was 0.6875
+  --t-sm:   0.9375rem;   // mono data          was 0.8125
+  --t-base: 1.0625rem;   // small prose        was 0.9375
+  --t-body: 1.1875rem;   // body               was 1.0625
+  --t-lg:   1.4375rem;   // lede               was 1.25
+  --t-xl:   1.8rem;      // h3                 was 1.65
+  --t-2xl:  2.6rem;      // h2                 was 2.4
+  --t-3xl:  3.6rem;      // h1                 was 3.4
+  --t-4xl:  5.5rem;      // index hero         was 5.25
 
   --lh-tight: 1.08;
   --lh-snug:  1.35;
@@ -60,7 +63,7 @@
 
   --track-tight: -0.03em;
   --track-hero:  -0.045em;
-  --track-mono:  0.13em;
+  --track-mono:  0.11em;
 
   // ---- layout -------------------------------------------------------------
   --measure: 68ch;
@@ -80,10 +83,21 @@
   color-scheme: dark;
 }
 
+// Display sizes step down on narrow screens; body and utility text do not —
+// they are already at their comfortable minimum.
+@media (max-width: 620px) {
+  :root {
+    --t-xl:  1.55rem;
+    --t-2xl: 2rem;
+    --t-3xl: 2.5rem;
+    --t-4xl: 3rem;
+  }
+}
+
 // ---- light mode ------------------------------------------------------------
 // Designed, not inverted: the ground keeps the same warm bias, gold darkens to a
-// bronze that holds 5.54:1 on paper, and the two semantic tones deepen rather
-// than simply flipping lightness.
+// bronze that holds 5.54:1 on paper, and the semantic tones deepen rather than
+// simply flipping lightness.
 @media (prefers-color-scheme: light) {
   :root {
     --ground:    #F5F2EB;

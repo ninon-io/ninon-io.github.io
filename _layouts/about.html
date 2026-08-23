@@ -1,0 +1,63 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">01</span><span class="rail__label">Bio</span></div>
+    <div class="col about__intro">
+      <div class="prose">{{ content }}</div>
+      {%- if page.portrait %}
+      <figure class="fig fig--portrait about__portrait">
+        <img src="{{ page.portrait.src | relative_url }}" alt="{{ page.portrait.alt | escape }}" loading="lazy" decoding="async">
+        {%- if page.portrait.credit %}<figcaption>Photo: {{ page.portrait.credit }}</figcaption>{% endif %}
+      </figure>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">02</span><span class="rail__label">Chronology</span></div>
+    <div class="col">
+      {%- for block in page.chronology %}
+      <section class="chrono">
+        <h2 class="chrono__heading">{{ block.heading }}</h2>
+        <ul class="chrono__list">
+          {%- for i in block.items %}<li>{{ i | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}
+        </ul>
+      </section>
+      {%- endfor %}
+      {%- if page.cv %}
+      <p><a class="btn btn--primary" href="{{ page.cv.url | relative_url }}">{{ page.cv.label }}</a></p>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">03</span><span class="rail__label">Elsewhere</span></div>
+    <div class="col">
+      <div class="profiles">
+        {%- for p in page.profiles %}<a class="btn" href="{{ p.url }}" rel="me noopener">{{ p.label }}</a>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">04</span><span class="rail__label">Contact</span></div>
+    <div class="col">
+      <dl class="credits__list">
+        {%- for c in page.contact %}
+        <div><dt>{{ c.label }}</dt><dd><a href="mailto:{{ c.email }}">{{ c.email }}</a></dd></div>
+        {%- endfor %}
+        <div><dt>Based in</dt><dd>Berlin</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,79 @@
+# Talks, seminars, workshops and press. `type` groups them:
+#   talk / workshop / interview
+
+- title: "Composing possibilities: digital instrumentality and generative models"
+  year: 2026
+  host: "FSMP"
+  city: "France"
+  type: talk
+
+- title: "Creative AI for Music Composition"
+  year: 2026
+  host: "Berklee College of Music Valencia"
+  type: workshop
+
+- title: "AI as Instrument: Generative Models for MIDI"
+  year: 2026
+  host: "Max Planck Institute for Empirical Aesthetics"
+  type: workshop
+
+- title: "Beyond Automation: AI for Musicians"
+  year: 2025
+  host: "Hyperlinear"
+  type: workshop
+
+- title: "« On peut faire des choses puissantes, inspirantes, sans démesure technologique »"
+  year: 2025
+  host: "Fisheye Immersive"
+  detail: "interview by Maxime Delcourt"
+  type: interview
+  lang: fr
+  url: "https://fisheyeimmersive.com/article/ninon-devis-on-peut-faire-des-choses-puissantes-inspirantes-sans-demesure-technologique/"
+
+- title: "L'intelligence artificielle peut-elle servir la création musicale ?"
+  year: 2025
+  host: "RTS"
+  type: interview
+  lang: fr
+  url: "https://www.rts.ch/audio-podcast/2025/audio/l-intelligence-artificielle-peut-elle-servir-la-creation-musicale-interview-de-ninon-devis-28933095.html"
+
+- title: "Ninon Devis : IA & musique"
+  year: 2025
+  host: "Précédemment !"
+  detail: "podcast"
+  type: interview
+  lang: fr
+  url: "https://podcloud.fr/podcast/precedemment-dans/episode/ninon-devis-ia-et-musique"
+
+- title: "Can AI create Art?"
+  year: 2024
+  host: "Sorbonne Université"
+  detail: "with Arte and France Inter"
+  type: talk
+  url: "https://www.sorbonne-universite.fr/evenements/lia-peut-elle-creer-de-lart"
+
+- title: "The Art Intelligence Seminar"
+  year: 2022
+  host: "The University of the Arts"
+  type: talk
+
+- title: "Neurorack for Raster-Noton"
+  year: 2021
+  host: "IRCAM Manifeste"
+  city: "Paris"
+  type: talk
+  url: "https://www.youtube.com/watch?v=_00pHC5LTQQ"
+
+- title: "Intelligence artificielle — Musique — Incarnation"
+  year: 2021
+  host: "Collegium Musicae & SCAI"
+  type: talk
+  lang: fr
+  url: "https://scai.sorbonne-universite.fr/public/events/view/0d80ac1a8656ee823101/1"
+
+- title: "Intelligence artificielle, Art et Créativité"
+  year: 2021
+  host: "CIS — CNRS"
+  type: talk
+  lang: fr
+  url: "https://cis.cnrs.fr/sem-ia-art-philippe-esling-et-ninon-devis/"

@@ -1,0 +1,9 @@
+{%- comment -%}VideoPress embed (video.wordpress.com), used for documentation hosted by collaborators.{%- endcomment -%}
+<figure class="fig">
+  <div class="video">
+    <iframe src="https://video.wordpress.com/embed/{{ include.id }}?cover=1&autoPlay=0&controls=1&loop=0&muted=0&persistVolume=1&playsinline=0&preloadContent=metadata&useAverageColor=1"
+            title="{{ include.title | default: 'Video' | escape }}"
+            loading="lazy" allowfullscreen></iframe>
+  </div>
+  {%- if include.caption %}<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}</figcaption>{% endif %}
+</figure>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare candidate palettes against WCAG 2.2 AA.
+"""Check the live palette against WCAG 2.2 AA.
 
 Derived from the colours Ninon had already chosen in _sass/minimal-mistakes/skins/_dark.scss:
   #8E1A27 oxblood · #EAC67A / #d5b110 gold · #078dab / #155765 blue · #f5f2f0 warm off-white
@@ -24,30 +24,14 @@ def ratio(a, b):
     return (hi + 0.05) / (lo + 0.05)
 
 
-VARIANTS = {
-    "A — Panel (neutral graphite, ochre signal)": {
-        "dark": dict(ground="#101113", panel="#17181B", rule="#282A2E", ink="#EDE9E3",
-                     muted="#A09B93", faint="#6E6A64", accent="#D2A64B",
-                     oxblood="#C56A5C", blue="#7FA3C4"),
-        "light": dict(ground="#F4F2EE", panel="#FFFFFF", rule="#D8D3CA", ink="#16171A",
-                      muted="#5D5952", faint="#8A857D", accent="#8A6410",
-                      oxblood="#9B3124", blue="#2F5A80"),
-    },
+LIVE = {
     "B — Brass (warm ground, richer gold)": {
         "dark": dict(ground="#121110", panel="#1A1917", rule="#2C2A26", ink="#F0EBE3",
                      muted="#A29B8F", faint="#726C62", accent="#C9A227",
-                     oxblood="#C2604C", blue="#6E97BE"),
+                     oxblood="#C2604C", blue="#6E97BE", plum="#A98BB0"),
         "light": dict(ground="#F5F2EB", panel="#FFFFFF", rule="#DAD3C6", ink="#1A1815",
                       muted="#5E584E", faint="#8B857A", accent="#7E5B0C",
-                      oxblood="#94301F", blue="#2C5578"),
-    },
-    "C — Ink (cool near-black, blue more present)": {
-        "dark": dict(ground="#0C0D10", panel="#141619", rule="#252932", ink="#E9E9EC",
-                     muted="#989CA4", faint="#686C75", accent="#C6A052",
-                     oxblood="#C2645C", blue="#8AAFD4"),
-        "light": dict(ground="#F1F2F4", panel="#FFFFFF", rule="#D2D5DB", ink="#101216",
-                      muted="#565B63", faint="#848992", accent="#836011",
-                      oxblood="#98352A", blue="#2B5686"),
+                      oxblood="#94301F", blue="#2C5578", plum="#6A4A73"),
     },
 }
 
@@ -61,12 +45,14 @@ CHECKS = [
     ("accent on panel",  "accent",  "panel",  4.5),
     ("oxblood as text",  "oxblood", "ground", 4.5),
     ("blue as text",     "blue",    "ground", 4.5),
+    ("plum as text",     "plum",    "ground", 4.5),
+    ("plum on panel",    "plum",    "panel",  4.5),
     ("hairline rule*",   "rule",    "ground", 1.2),
 ]
 
 print("WCAG 2.2 AA — * = large-text/UI threshold (3.0), rules exempt (decorative)\n")
 summary = {}
-for name, modes in VARIANTS.items():
+for name, modes in LIVE.items():
     print("=" * 78)
     print(name)
     fails_total = 0

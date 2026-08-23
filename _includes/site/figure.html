@@ -1,0 +1,17 @@
+{%- comment -%}
+One image with structured credit. Adapts to the source material instead of
+forcing every photograph into the same aspect ratio:
+  variant="wide"     full column width  (default)
+  variant="portrait" constrained width, never cropped to landscape
+  variant="bleed"    edges out past the measure for the strongest images
+{%- endcomment -%}
+<figure class="fig fig--{{ include.variant | default: 'wide' }}">
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"
+       loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  {%- if include.caption or include.credit %}
+  <figcaption>
+    {%- if include.caption %}{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+    {%- if include.credit %} <span class="fig__credit">Photo: {{ include.credit }}</span>{% endif %}
+  </figcaption>
+  {%- endif %}
+</figure>

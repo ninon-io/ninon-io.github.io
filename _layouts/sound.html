@@ -1,0 +1,81 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+{%- if page.lead %}
+<figure class="lead-figure"{% if page.lead.focus %} style="--lead-focus: {{ page.lead.focus }}"{% endif %}>
+  <img src="{{ page.lead.src | relative_url }}" alt="{{ page.lead.alt | escape }}" loading="eager" decoding="async">
+  <figcaption class="field">{% if page.lead.caption %}{{ page.lead.caption }} {% endif %}{% if page.lead.credit %}Photo: {{ page.lead.credit }}{% endif %}</figcaption>
+</figure>
+{%- endif %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">01</span><span class="rail__label">Listen</span></div>
+    <div class="col">
+      <div class="prose">{{ content }}</div>
+      <div class="profiles">
+        {%- for p in page.profiles %}
+        <a class="btn" href="{{ p.url }}" rel="me noopener">{{ p.label }}</a>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- assign up = site.data.sound.upcoming %}
+{%- if up and up.size > 0 %}
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">02</span><span class="rail__label">Upcoming</span></div>
+    <div class="col">
+      <div class="index">
+        {%- for d in up %}
+        <div class="index__row index__row--static" data-kind="{{ d.kind | slugify }}">
+          <span class="index__row__ix">{{ d.display }}</span>
+          <span>
+            <span class="index__row__title">{{ d.venue }}</span>
+            <span class="index__row__desc">{{ d.city }}{% if d.note %} · {{ d.note }}{% endif %}</span>
+          </span>
+          <span class="index__row__tag">{{ d.kind }}</span>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">03</span><span class="rail__label">Selected</span></div>
+    <div class="col">
+      <div class="index">
+        {%- assign past = site.data.sound.selected | sort: 'date' | reverse %}
+        {%- for d in past %}
+        {%- if d.url %}<a class="index__row" href="{{ d.url | relative_url }}" data-kind="{{ d.kind | slugify }}">
+        {%- else %}<div class="index__row index__row--static" data-kind="{{ d.kind | slugify }}">{% endif %}
+          <span class="index__row__ix">{{ d.display }}</span>
+          <span>
+            <span class="index__row__title">{{ d.venue }}</span>
+            <span class="index__row__desc">{{ d.city }}{% if d.note %} · {{ d.note }}{% endif %}</span>
+          </span>
+          <span class="index__row__tag">{{ d.kind }}</span>
+        {%- if d.url %}</a>{% else %}</div>{% endif %}
+        {%- endfor %}
+      </div>
+      <p class="note-inline">Full history on <a href="https://ra.co/dj/ninon" rel="noopener">Resident Advisor</a>. Earlier festival appearances include Ozora, Château Perché, Coucool, Nataraja, Forest Soul Gathering and Planète Sauvage; clubs include Or Club (Tokyo), Glazart and Le Chinois (Paris).</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail"><span class="rail__num">04</span><span class="rail__label">Documentation</span></div>
+    <div class="col">
+      {% include site/gallery.html caption="La Station — Gare des Mines, Paris. Photos: Romain Guede." %}
+      {% include site/figure.html src="/assets/media/sound/sound-metaphor/sound-metaphor-tv.png" alt="Ninon playing a DJ set in a room lined floor to ceiling with records, for a Sound Metaphor TV session" caption="Streamed session for Sound Metaphor TV." %}
+    </div>
+  </div>
+</section>

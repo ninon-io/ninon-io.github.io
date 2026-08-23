@@ -1,0 +1,44 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      <span class="rail__num">{{ site.data.work | size }}</span>
+      <span class="rail__label">{{ page.rail_label | default: 'Index' }}</span>
+    </div>
+    <div class="col">
+      {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
+
+      {%- comment -%}
+      Filter is progressive enhancement: without JavaScript every row is present
+      and the control simply never appears.
+      {%- endcomment -%}
+      {%- assign kinds = site.data.work | map: 'kind' | uniq | sort %}
+      <div class="filter" data-filter hidden>
+        <span class="filter__label">Type</span>
+        <button type="button" class="filter__btn" data-kind="all" aria-pressed="true">All</button>
+        {%- for k in kinds %}
+        <button type="button" class="filter__btn" data-kind="{{ k | slugify }}" aria-pressed="false">{{ k }}</button>
+        {%- endfor %}
+      </div>
+
+      <div class="index" data-index>
+        {%- assign items = site.data.work | sort: 'sort' | reverse %}
+        {%- for e in items %}
+        <a class="index__row" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
+          <span class="index__row__ix">{{ e.year }}</span>
+          <span>
+            <span class="index__row__title">{{ e.title }}</span>
+            <span class="index__row__desc">{{ e.description }}</span>
+          </span>
+          <span class="index__row__tag">{{ e.kind }}</span>
+        </a>
+        {%- endfor %}
+      </div>
+      <p class="filter__empty" data-empty hidden>Nothing of that type yet.</p>
+    </div>
+  </div>
+</section>

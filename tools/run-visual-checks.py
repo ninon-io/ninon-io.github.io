@@ -18,11 +18,14 @@ import sys
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 VIEWPORTS = [390, 768, 1440]
 PAGES = [
-    "/", "/projects/", "/projects/neurorack/", "/projects/ctm/",
-    "/research/", "/research/phd/", "/research/papers/",
-    "/research/conferences/", "/research/manuscript/",
-    "/teaching/", "/teaching/ableton/", "/teaching/puredata/",
-    "/teaching/cryptology/", "/teaching/java/", "/about/",
+    "/", "/work/", "/work/n-v/", "/work/neurorack/",
+    "/work/absynth-preset-explorer/", "/work/wilding-ai/", "/work/frave/",
+    "/sound/",
+    "/research/", "/research/thesis/", "/research/thesis/companion/",
+    "/research/publications/", "/research/talks/",
+    "/research/teaching/", "/research/teaching/ableton/",
+    "/research/teaching/pure-data/", "/research/teaching/cryptology/",
+    "/research/teaching/java/", "/about/",
 ]
 
 

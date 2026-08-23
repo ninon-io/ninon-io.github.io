@@ -2,8 +2,9 @@
 layout: base
 ---
 {%- comment -%}
-Homepage. Statement, selected work, now, contact. Driven entirely by front
-matter so Phase 3 can reshape it without touching this file.
+Homepage. Selection over explanation: a small number of entries pulled from the
+Work archive plus one live entry, so the hybrid practice reads without being
+described. Photography leads because there is now real photography.
 {%- endcomment -%}
 <div class="page-head">
   <div class="field">
@@ -13,41 +14,56 @@ matter so Phase 3 can reshape it without touching this file.
   </div>
 </div>
 
-{%- if page.selected %}
+{%- if page.lead %}
+<figure class="lead-figure"{% if page.lead.focus %} style="--lead-focus: {{ page.lead.focus }}"{% endif %}>
+  <img src="{{ page.lead.src | relative_url }}" alt="{{ page.lead.alt | escape }}" loading="eager" decoding="async">
+</figure>
+{%- endif %}
+
 <section class="band">
   <div class="field band__grid">
     <div class="rail"><span class="rail__num">01</span><span class="rail__label">Selected</span></div>
     <div class="col">
       <div class="index">
-        {%- for e in page.selected %}
-        <a class="index__row" href="{{ e.url | relative_url }}"{% if e.kind %} data-kind="{{ e.kind | downcase }}"{% endif %}>
-          <span class="index__row__ix">{{ forloop.index | prepend: '0' | slice: -2, 2 }}{% if e.year %} / {{ e.year }}{% endif %}</span>
+        {%- assign featured = site.data.work | where: "featured", true | sort: "sort" | reverse %}
+        {%- for e in featured %}
+        <a class="index__row" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
+          <span class="index__row__ix">{{ e.year }}</span>
           <span>
             <span class="index__row__title">{{ e.title }}</span>
-            {%- if e.description %}<span class="index__row__desc">{{ e.description }}</span>{% endif %}
+            <span class="index__row__desc">{{ e.description }}</span>
           </span>
-          {%- if e.kind %}<span class="index__row__tag">{{ e.kind }}</span>{% endif %}
+          <span class="index__row__tag">{{ e.kind }}</span>
         </a>
         {%- endfor %}
+        <a class="index__row" href="{{ '/sound/' | relative_url }}" data-kind="live">
+          <span class="index__row__ix">2026</span>
+          <span>
+            <span class="index__row__title">Live &amp; DJ</span>
+            <span class="index__row__desc">Säule at Berghain in September; La Station, MONOM, Alte Münze, STUDIO1111.</span>
+          </span>
+          <span class="index__row__tag">Sound</span>
+        </a>
+        <a class="index__row" href="{{ '/research/thesis/' | relative_url }}" data-kind="thesis">
+          <span class="index__row__ix">2025</span>
+          <span>
+            <span class="index__row__title">Creative Deep Learning on Real Time Embedded Architectures</span>
+            <span class="index__row__desc">Doctoral thesis, Sorbonne Université. Defended May 2025.</span>
+          </span>
+          <span class="index__row__tag">Thesis</span>
+        </a>
       </div>
+      <div class="prose">{{ content }}</div>
     </div>
-  </div>
-</section>
-{%- endif %}
-
-<section class="band">
-  <div class="field band__grid">
-    <div class="rail"><span class="rail__num">02</span><span class="rail__label">Now</span></div>
-    <div class="col"><div class="prose">{{ content }}</div></div>
   </div>
 </section>
 
 {%- if page.contact %}
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">03</span><span class="rail__label">Contact</span></div>
+    <div class="rail"><span class="rail__num">02</span><span class="rail__label">Contact</span></div>
     <div class="col">
-      <dl class="page-head__meta" style="margin-top:0;padding-top:0;border-top:0">
+      <dl class="credits__list">
         {%- for c in page.contact %}
         <div><dt>{{ c.label }}</dt><dd><a href="mailto:{{ c.email }}">{{ c.email }}</a></dd></div>
         {%- endfor %}

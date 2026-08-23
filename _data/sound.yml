@@ -1,0 +1,38 @@
+# Live and DJ activity. `kind` distinguishes a live electronic set from a DJ set —
+# they are different practices and the site must not blur them.
+
+upcoming:
+  - date: "2026-09-24"
+    display: "24 September 2026"
+    venue: "Säule, Berghain"
+    city: "Berlin"
+    kind: "Live"
+
+selected:
+  - date: "2026-04-03"
+    display: "April 2026"
+    venue: "La Station — Gare des Mines"
+    city: "Paris"
+    kind: "DJ set"
+    note: "Dreamachine"
+  - date: "2025-01-26"
+    display: "January 2025"
+    venue: "MONOM"
+    city: "Berlin"
+    kind: "Live"
+    note: "Wilding AI, CTM Festival"
+    url: /work/wilding-ai/
+  - date: "2025-09-03"
+    display: "September 2025"
+    venue: "STUDIO1111"
+    city: "Berlin"
+    kind: "Live"
+    note: "N / V, opening of Berlin New Media Week"
+    url: /work/n-v/
+  - date: "2025-01-01"
+    display: "2025"
+    venue: "Alte Münze"
+    city: "Berlin"
+    kind: "Live"
+    note: "N / V, Blank Page series"
+    url: /work/n-v/

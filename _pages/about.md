@@ -1,42 +1,82 @@
 ---
-layout: prose
+layout: about
 permalink: /about/
-title: About
-eyebrow: Biography, CV and chronology
-rail_label: About
+title: "About"
+eyebrow: "Ninon Devis Salvy — Berlin"
+excerpt: "Audio researcher and electronic musician. Research engineer at Native Instruments, PhD from IRCAM, performing as Ninon."
+rail_label: "About"
+
+portrait:
+  src: /assets/media/about/ninon-studio.jpg
+  alt: "Ninon Devis Salvy seated in the studio beside a modular synthesiser"
+
+cv:
+  url: /assets/documents/cv/ninon-devis-salvy-cv-2026.pdf
+  label: "CV (PDF, 2026)"
+
+profiles:
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=AbCme8wAAAAJ"
+  - label: "dblp"
+    url: "https://dblp.org/pid/271/4373.html"
+  - label: "HAL"
+    url: "https://theses.hal.science/tel-05307879v1"
+  - label: "GitHub"
+    url: "https://github.com/ninon-io"
+  - label: "SoundCloud"
+    url: "https://soundcloud.com/ninon-dvslv"
+  - label: "Resident Advisor"
+    url: "https://ra.co/dj/ninon"
+  - label: "Instagram"
+    url: "https://www.instagram.com/ninon.dvslv/"
+
+contact:
+  - label: "Music, bookings & collaborations"
+    email: "ninon.musicproject@gmail.com"
+  - label: "Research & technical"
+    email: "ninon.devis.ircam@gmail.com"
+
+chronology:
+  - heading: "Positions"
+    items:
+      - "2024— · Audio Research Engineer, Native Instruments, Berlin"
+      - "2023 · Invited Student Researcher, Google Brain / Magenta — control of generative models, real-time audio synthesis. Paris and Tokyo"
+      - "2020 · Research intern, Squarp Instruments — AI MIDI melody generation for a hardware sequencer, Paris"
+  - heading: "Education"
+    items:
+      - "2020—2025 · PhD, IRCAM / SCAI, Sorbonne Université"
+      - "2019—2020 · Master ATIAM, IRCAM — signal processing, acoustics and computer science applied to music"
+      - "1997—2008 · Piano and music theory, Conservatoire Charles Munch, Paris"
+  - heading: "Teaching"
+    items:
+      - "2026 · Workshop, Berklee College of Music Valencia — Creative AI for Music Composition"
+      - "2026 · Workshop, Max Planck Institute for Empirical Aesthetics — AI as Instrument: Generative Models for MIDI"
+      - "2025 · Workshop, Hyperlinear — Beyond Automation: AI for Musicians"
+      - "2019—2023 · Lecturer, ATIAM master (M2), IRCAM — Pure Data, Ableton Live, musical machine learning"
+  - heading: "Awards & grants"
+    items:
+      - "2023 · JSPS Fellowship, University of Tokyo"
+      - "2022 · NVIDIA Jetson Project of the Month, for the Neurorack"
+      - "2020—2025 · Sorbonne doctoral grant"
 ---
 
-<p align="center">
-  <img width="500" height="370" src="/assets/media/about/ninon-back.png" alt="Ninon Devis Salvy, photographed from behind at a mixing desk">
-</p>
+I am **Ninon Devis Salvy**. I publish scientific work as **Ninon Devis**, the name
+all my papers and my thesis appear under, and I release and perform music as
+**Ninon**.
 
-*****************************************************
-<p align="center">
-Passionate about music and sciences. 
-</p>
+I work between three things that are really one thing: research into creative
+machine learning for music, the design of instruments that make those models
+playable, and a performance practice rooted in techno and experimental
+electronics. The research asks what it takes to give a musician real control over
+a generative system; the instruments are the answer, tested in public.
 
-I am **Ninon Devis Salvy**. I publish my scientific work as **Ninon Devis**, the
-name under which all my papers and my thesis appear, and I release and perform
-music as **Ninon**.
+Since 2024 I have been an Audio Research Engineer on the research team at
+**Native Instruments** in Berlin, working on deep-learning-based music software —
+most recently the [Absynth 6 Preset Explorer](/work/absynth-preset-explorer/). I
+hold a PhD from **IRCAM / Sorbonne Université**, where I built the
+[Neurorack](/work/neurorack/), the first Eurorack module to run a deep generative
+model entirely on embedded hardware. In 2023 I was an invited student researcher
+with **Google Brain's Magenta team**, working on control of generative models.
 
-You can find my CV [here](/assets/documents/cv/ninon-devis-salvy-cv-2026.pdf){: .btn .btn--light-outline}
-
-> Sciences:
-- 2024 - Today: Audio Research Engineer at Native Instruments (Berlin), Deep Learning applied to music
-- 2020 - 2025: PhD, *Creative Deep Learning on Real Time Embedded Architectures* — IRCAM / Sorbonne Université, [defended 12 May 2025](/research/phd/)
-- 2019 - 2020: Master Degree at IRCAM (*Signal Processing, Acoustic and Computer Science apply to music*)
-- 2016 - 2017: High school teacher at Lycée Dorian in Paris 
-               Physic-chemistry and applied physics teacher (*10 and 11 grade Higher Technical Certificate levels*)
-- 2014 - 2015: Master Degree at ESTP (Special School for Public Work)
-- 2012 - 2014: Engineering School ESTP
-- 2009 - 2012: Preparatory Classes at Lycée Condorcet (*Dominant of physics and chemistry*)
-
-> Music:
-- 2021: First AI based modular synth crafting
-- 2020: Professional training with certification on Max MSP at IRCAM
-- 2019: Workshop and mini-training in composition, mixing and mastering in Berlin
-- 2018: Intensive Ableton Live training in Melbourne
-- 2013 - 2019: Djs gig at several festival (*Ozora, Nataraja, Chateau Perché, Taka Tuka, Forest Soul Gathering...*)
-- 2013 - 2017: Resident DJ at Keller in Zurich
-- 1998 - 2008: piano and music theory training at the music conservatory in Paris
-
+I perform live electronics and DJ across Europe and Japan, most recently as one
+half of the audiovisual duo [N / V](/work/n-v/) with Victor Calvi.

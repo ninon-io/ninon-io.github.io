@@ -1,0 +1,77 @@
+# Publication record. Authors appear exactly as published — under the former
+# name "Ninon Devis". `type` drives grouping: peer-reviewed / preprint / thesis /
+# writing. Abstracts are deliberately not stored here; the archive is an index.
+
+- title: "Creative Deep Learning on Real Time Embedded Architectures"
+  authors: "Ninon Devis"
+  year: 2025
+  venue: "PhD thesis, Sorbonne Université"
+  type: thesis
+  hal: "https://theses.hal.science/tel-05307879v1"
+  video: "https://youtube.com/live/4KoAmbZw6Xg"
+  page: /research/thesis/
+
+- title: "Generating Sample-Based Musical Instruments Using Neural Audio Codec Language Models"
+  authors: "Shahan Nercessian, Johannes Imort, Ninon Devis, Frederik Blang"
+  year: 2024
+  venue: "ISMIR"
+  type: peer-reviewed
+  arxiv: "https://arxiv.org/abs/2407.15641"
+  pdf: "https://arxiv.org/pdf/2407.15641"
+
+- title: "Continuous descriptor-based control for deep audio synthesis"
+  authors: "Ninon Devis, Nils Demerlé, Sarah Nabi, David Genova, Philippe Esling"
+  year: 2023
+  venue: "ICASSP"
+  type: peer-reviewed
+  doi: "10.1109/ICASSP49357.2023.10095710"
+  arxiv: "https://arxiv.org/abs/2302.13542"
+  companion: "https://neurorave.github.io/neurorave/"
+  page: /work/frave/
+
+- title: "The ACIDS Research project"
+  authors: "Giovanni Bindi, Antoine Caillon, Axel Chemla--Romeu-Santos, Nils Demerlé, Ninon Devis, Constance Douwes, Philippe Esling, David Genova, Sarah Nabi"
+  year: 2023
+  venue: "VDT Magazin"
+  type: writing
+  link: "https://tonmeister.org/de/magazin/2023/2/"
+
+- title: "Neurorack: deep audio learning in hardware synthesizers"
+  authors: "Ninon Devis, Philippe Esling"
+  year: 2021
+  venue: "EPFL PhD Seminar"
+  type: peer-reviewed
+  link: "https://infoscience.epfl.ch/record/291222"
+  page: /work/neurorack/
+
+- title: "L'avenir de la créativité musicale sera-t-il artificiel ?"
+  authors: "Ninon Devis"
+  year: 2021
+  venue: "The Conversation"
+  type: writing
+  lang: fr
+  link: "https://theconversation.com/lavenir-de-la-creativite-musicale-sera-t-il-artificiel-157443"
+
+- title: "Ultra-light deep MIR by trimming lottery tickets"
+  authors: "Philippe Esling, Théis Bazin, Adrien Bitton, Tristan Carsault, Ninon Devis"
+  year: 2020
+  venue: "ISMIR"
+  type: peer-reviewed
+  arxiv: "https://arxiv.org/abs/2007.16187"
+  pdf: "https://arxiv.org/pdf/2007.16187.pdf"
+
+- title: "Diet deep generative audio models with structured lottery"
+  authors: "Philippe Esling, Ninon Devis, Adrien Bitton, Antoine Caillon, Axel Chemla--Romeu-Santos, Constance Douwes"
+  year: 2020
+  venue: "DAFx"
+  type: peer-reviewed
+  arxiv: "https://arxiv.org/abs/2007.16170"
+  pdf: "https://arxiv.org/pdf/2007.16170.pdf"
+
+- title: "Creativity in the era of artificial intelligence"
+  authors: "Philippe Esling, Ninon Devis"
+  year: 2020
+  venue: "JIM — keynote article"
+  type: preprint
+  arxiv: "https://arxiv.org/abs/2008.05959"
+  pdf: "https://arxiv.org/pdf/2008.05959.pdf"

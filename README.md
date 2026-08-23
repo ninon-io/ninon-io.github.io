@@ -55,7 +55,7 @@ To publish: merge into `master`. There is no other path to production.
 | What | Where |
 |---|---|
 | Pages | `_pages/*.md` — one file per page, `permalink` sets the URL |
-| Layouts | `_layouts/` — `base`, `index`, `prose`, `project-single`, `listing` |
+| Layouts | `_layouts/` — `base`, `index`, `work-index`, `project-single`, `listing`, `sound`, `publications`, `talks`, `about`, `prose` |
 | Components | `_includes/site/` |
 | Styles | `_sass/` — `_tokens` first, then `_base`, `_layout`, `_components`, `_player` |
 | Navigation | `_data/navigation.yml` |
@@ -66,10 +66,31 @@ To publish: merge into `master`. There is no other path to production.
 
 | To add | Put it in | Then |
 |---|---|---|
-| A new CV | `assets/documents/cv/ninon-devis-salvy-cv-<year>.pdf` | update the link in `_pages/about.md` and the note in `assets/documents/cv/README.md` |
-| Project photographs | `assets/media/projects/<project>/images/` | append an entry to that page's `gallery:` |
-| Project audio | `assets/media/projects/<project>/audio/` | run `tools/generate-peaks.py`, then reference it with the player include |
+| A new CV | `assets/documents/cv/ninon-devis-salvy-cv-<year>.pdf` | update `cv:` in `_pages/about.md` and the note in `assets/documents/cv/README.md` |
+| A new Work project | `_pages/work/<slug>.md` | add an entry to `_data/work.yml` — that drives the index, the filter and the homepage |
+| Project photographs | `assets/media/work/<slug>/images/` | append to that page's `gallery:`, or set `lead:` for the hero |
+| Project audio | `assets/media/work/<slug>/audio/` | run `tools/generate-peaks.py`, then use the player include |
+| A gig | `_data/sound.yml` under `upcoming:` or `selected:` | nothing else; `/sound/` renders it |
+| A publication | `_data/publications.yml` | nothing else; grouping and BibTeX are generated |
+| A talk or workshop | `_data/talks.yml` | nothing else |
 | Course documents | `assets/documents/teaching/<course>/` | link it from the course page |
+
+### Content model
+
+Structured data rather than prose, so nothing has to be kept consistent by hand:
+
+- `_data/work.yml` — the Work archive. `kind` drives the filter *and* the
+  semantic colour. Colour families: gold = playable or usable, oxblood = live,
+  blue = research output, plum = the thesis. Four tones for six types, so the
+  index never becomes a rainbow.
+- `_data/sound.yml` — live and DJ dates. `kind` keeps live sets distinct from DJ
+  sets; they are different practices.
+- `_data/publications.yml`, `_data/talks.yml` — the research record.
+- Per-page `credits:` (see `_includes/site/credits.html`) — role, collaborators,
+  venues, photography. Credits are never written into prose.
+
+Images adapt to their source: `{% include site/figure.html variant="portrait" %}`
+keeps a portrait photograph portrait instead of cropping it into a landscape box.
 
 Filenames are lowercase ASCII with hyphens — no spaces, no accents. Reference
 assets from Markdown with an absolute path (`/assets/media/...`).
@@ -98,6 +119,13 @@ everything. If ffmpeg is missing the script exits cleanly and the player falls
 back to a flat progress bar.
 
 ---
+
+## URLs
+
+`WORK · SOUND · RESEARCH · ABOUT`. Every pre-Phase-3 URL redirects to its new
+home via `jekyll-redirect-from` (`redirect_from:` in the page front matter) —
+`/projects/*`, `/research/phd`, `/research/papers`, `/research/conferences`,
+`/research/manuscript` and `/teaching/*` all still resolve.
 
 ## Legacy compatibility folders — do not delete
 

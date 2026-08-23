@@ -3,6 +3,15 @@ layout: base
 ---
 {% include site/page-head.html %}
 
+{%- if page.lead %}
+<figure class="lead-figure"{% if page.lead.focus %} style="--lead-focus: {{ page.lead.focus }}"{% endif %}>
+  <img src="{{ page.lead.src | relative_url }}" alt="{{ page.lead.alt | escape }}" loading="eager" decoding="async">
+  {%- if page.lead.credit or page.lead.caption %}
+  <figcaption class="field">{% if page.lead.caption %}{{ page.lead.caption }} {% endif %}{% if page.lead.credit %}Photo: {{ page.lead.credit }}{% endif %}</figcaption>
+  {%- endif %}
+</figure>
+{%- endif %}
+
 <article class="band">
   <div class="field band__grid">
     <div class="rail">
@@ -12,12 +21,7 @@ layout: base
     </div>
     <div class="col">
       <div class="prose">{{ content }}</div>
-      {%- if page.credits %}
-      <section>
-        <h2 id="credits">Credits</h2>
-        <div class="prose"><ul>{% for c in page.credits %}<li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul></div>
-      </section>
-      {%- endif %}
+      {% include site/credits.html %}
     </div>
   </div>
 </article>

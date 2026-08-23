@@ -1,0 +1,64 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+{%- assign groups = "thesis,peer-reviewed,preprint,writing" | split: "," %}
+{%- assign labels = "Thesis,Peer-reviewed,Preprints,Writing" | split: "," %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      <span class="rail__num">{{ site.data.publications | size }}</span>
+      <span class="rail__label">Publications</span>
+    </div>
+    <div class="col">
+      {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
+
+      {%- for g in groups %}
+      {%- assign items = site.data.publications | where: "type", g | sort: "year" | reverse %}
+      {%- if items.size > 0 %}
+      <section class="pubs" data-type="{{ g }}">
+        <h2 id="{{ g }}" class="pubs__heading">{{ labels[forloop.index0] }}</h2>
+        <ol class="pubs__list">
+          {%- for p in items %}
+          <li class="pub">
+            <span class="pub__year">{{ p.year }}</span>
+            <span class="pub__body">
+              <span class="pub__title">{{ p.title }}{% if p.lang %} <span class="pub__lang">{{ p.lang | upcase }}</span>{% endif %}</span>
+              <span class="pub__authors">{{ p.authors }}</span>
+              <span class="pub__venue">{{ p.venue }}</span>
+              <span class="pub__links">
+                {%- if p.doi %}<a href="https://doi.org/{{ p.doi }}" rel="noopener">DOI</a>{% endif %}
+                {%- if p.arxiv %}<a href="{{ p.arxiv }}" rel="noopener">arXiv</a>{% endif %}
+                {%- if p.hal %}<a href="{{ p.hal }}" rel="noopener">HAL</a>{% endif %}
+                {%- if p.pdf %}<a href="{{ p.pdf }}" rel="noopener">PDF</a>{% endif %}
+                {%- if p.companion %}<a href="{{ p.companion }}" rel="noopener">Companion</a>{% endif %}
+                {%- if p.code %}<a href="{{ p.code }}" rel="noopener">Code</a>{% endif %}
+                {%- if p.video %}<a href="{{ p.video }}" rel="noopener">Video</a>{% endif %}
+                {%- if p.link %}<a href="{{ p.link }}" rel="noopener">Link</a>{% endif %}
+                {%- if p.page %}<a href="{{ p.page | relative_url }}">On this site</a>{% endif %}
+              </span>
+            </span>
+          </li>
+          {%- endfor %}
+        </ol>
+      </section>
+      {%- endif %}
+      {%- endfor %}
+
+      <details class="bibtex">
+        <summary>BibTeX for the peer-reviewed entries</summary>
+        <pre><code>{% for p in site.data.publications %}{% if p.type == "peer-reviewed" or p.type == "thesis" %}@{% if p.type == "thesis" %}phdthesis{% else %}inproceedings{% endif %}{ devis{{ p.year }}{{ p.title | slugify | split: "-" | first }},
+  title     = { {{- p.title -}} },
+  author    = { {{- p.authors | replace: ", ", " and " -}} },
+  year      = { {{- p.year -}} },
+  {% if p.type == "thesis" %}school{% else %}booktitle{% endif %}    = { {{- p.venue -}} }{% if p.doi %},
+  doi       = { {{- p.doi -}} }{% endif %}
+}
+
+{% endif %}{% endfor %}</code></pre>
+      </details>
+    </div>
+  </div>
+</section>

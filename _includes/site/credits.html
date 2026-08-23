@@ -1,0 +1,55 @@
+{%- comment -%}
+Structured credits. Every page declares them as front-matter data rather than
+burying them in prose, so photographer / collaborator / venue / year / role stay
+consistent and machine-readable.
+
+  credits:
+    role:          "Sound design, AI models, live performance"
+    collaborators:
+      - name: "Victor Calvi"
+        role: "Visual systems"
+        url:  "https://victorcalvi.com/"
+    venues:
+      - name: "Alte Münze"
+        detail: "Blank Page series"
+        city: "Berlin"
+        year: "2025"
+    photography:
+      - name: "Romain Guede"
+        detail: "live photographs"
+{%- endcomment -%}
+{%- assign c = page.credits -%}
+{%- if c -%}
+<section class="credits">
+  <h2 id="credits">Credits</h2>
+  <dl class="credits__list">
+    {%- if c.role %}
+    <div><dt>Role</dt><dd>{{ c.role }}</dd></div>
+    {%- endif %}
+    {%- if c.collaborators %}
+    <div><dt>With</dt><dd>
+      {%- for p in c.collaborators %}
+      <span class="credits__person">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}{% if p.role %} <span class="credits__role">{{ p.role }}</span>{% endif %}</span>
+      {%- endfor %}
+    </dd></div>
+    {%- endif %}
+    {%- if c.venues %}
+    <div><dt>Presented</dt><dd>
+      {%- for v in c.venues %}
+      <span class="credits__person">{% if v.url %}<a href="{{ v.url }}" rel="noopener">{{ v.name }}</a>{% else %}{{ v.name }}{% endif %}{% if v.detail %} <span class="credits__role">{{ v.detail }}</span>{% endif %}{% if v.city or v.year %} <span class="credits__role">{{ v.city }}{% if v.city and v.year %}, {% endif %}{{ v.year }}</span>{% endif %}</span>
+      {%- endfor %}
+    </dd></div>
+    {%- endif %}
+    {%- if c.photography %}
+    <div><dt>Photography</dt><dd>
+      {%- for p in c.photography %}
+      <span class="credits__person">{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}{% if p.detail %} <span class="credits__role">{{ p.detail }}</span>{% endif %}</span>
+      {%- endfor %}
+    </dd></div>
+    {%- endif %}
+    {%- if c.support %}
+    <div><dt>Support</dt><dd>{{ c.support }}</dd></div>
+    {%- endif %}
+  </dl>
+</section>
+{%- endif -%}

@@ -1,36 +1,10 @@
 # main links
 main:
+  - title: "Work"
+    url: /work/
+  - title: "Sound"
+    url: /sound/
   - title: "Research"
     url: /research/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "Projects"
-    url: /projects/
   - title: "About"
     url: /about/
-
-research:
-  - title: "Doctoral Thesis"
-    url: /research/phd/
-  - title: "Thesis Companion"
-    url: /research/manuscript/
-  - title: "Talks & Media"
-    url: /research/conferences/
-  - title: "Scientific Papers"
-    url: /research/papers/
-
-teaching:
-  - title: "Ableton"
-    url: /teaching/ableton/
-  - title: "Pure Data"
-    url: /teaching/puredata/
-  - title: "Cryptology"
-    url: /teaching/cryptology/
-  - title: "Java"
-    url: /teaching/java/
-
-projects:
-  - title: "Neurorack"
-    url: /projects/neurorack/
-  - title: "Wilding AI - CTM"
-    url: /projects/ctm/

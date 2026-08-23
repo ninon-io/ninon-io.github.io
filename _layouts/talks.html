@@ -1,0 +1,39 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+
+{%- assign groups = "workshop,talk,interview" | split: "," %}
+{%- assign labels = "Workshops & masterclasses,Talks & seminars,Interviews & press" | split: "," %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      <span class="rail__num">{{ site.data.talks | size }}</span>
+      <span class="rail__label">Talks</span>
+    </div>
+    <div class="col">
+      {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
+      {%- for g in groups %}
+      {%- assign items = site.data.talks | where: "type", g | sort: "year" | reverse %}
+      {%- if items.size > 0 %}
+      <section class="pubs">
+        <h2 id="{{ g }}" class="pubs__heading">{{ labels[forloop.index0] }}</h2>
+        <ol class="pubs__list">
+          {%- for t in items %}
+          <li class="pub">
+            <span class="pub__year">{{ t.year }}</span>
+            <span class="pub__body">
+              <span class="pub__title">{{ t.title }}{% if t.lang %} <span class="pub__lang">{{ t.lang | upcase }}</span>{% endif %}</span>
+              <span class="pub__venue">{{ t.host }}{% if t.city %}, {{ t.city }}{% endif %}{% if t.detail %} — {{ t.detail }}{% endif %}</span>
+              {%- if t.url %}<span class="pub__links"><a href="{{ t.url }}" rel="noopener">{% if t.type == "interview" %}Read / listen{% else %}Details{% endif %}</a></span>{% endif %}
+            </span>
+          </li>
+          {%- endfor %}
+        </ol>
+      </section>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>

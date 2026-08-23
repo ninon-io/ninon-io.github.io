@@ -4,7 +4,7 @@
 title: Ninon Devis Salvy
 name: Ninon Devis Salvy
 description: Audio researcher and electronic musician. Real-time neural audio synthesis, embedded instruments including the Neurorack, and live electronic performance.
-url: https://ninon-io.github.io/
+url: https://ninon-io.github.io
 baseurl: null
 repository: ninon-io/ninon-io.github.io
 locale: en-US
@@ -113,24 +113,12 @@ plugins:
 - jekyll-feed
 - jekyll-sitemap
 - jekyll-include-cache
+- jekyll-redirect-from
 defaults:
 - scope:
     path: ''
   values:
     layout: prose
-og_image: null
-paginate: 5
-paginate_path: /page:num/
-collections:
-  my_collection:
-    output: true
-    permalink: /:collection/:name/
-whitelist:
-- jekyll-paginate
-- jekyll-sitemap
-- jekyll-gist
-- jekyll-feed
-- jekyll-include-cache
 compress_html:
   clippings: all
   ignore:

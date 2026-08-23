@@ -205,10 +205,22 @@ table {
   &:hover &__title,
   &:focus-within &__title { transform: translateX(5px); color: var(--gold); }
 
-  // Semantic tone by kind — a marking, not a colour scheme.
-  &[data-kind="instrument"] &__tag { color: var(--gold); }
-  &[data-kind="residency"]  &__tag { color: var(--oxblood); }
-  &[data-kind="paper"]      &__tag { color: var(--blue); }
+  // Semantic tone by kind — a marking on a panel, not a colour scheme.
+  // Four tones grouped by what a thing is, so six types never read as a rainbow:
+  //   gold    things you can play or use
+  //   oxblood things that happened live
+  //   blue    research outputs
+  //   plum    the thesis, singular
+  &[data-kind="instrument"]      &__tag { color: var(--gold); }
+  &[data-kind="product-r-d"]     &__tag { color: var(--gold); }
+  &[data-kind="a-v-performance"] &__tag { color: var(--oxblood); }
+  &[data-kind="residency"]       &__tag { color: var(--oxblood); }
+  &[data-kind="live"]            &__tag { color: var(--oxblood); }
+  &[data-kind="dj-set"]          &__tag { color: var(--oxblood); }
+  &[data-kind="paper"]           &__tag { color: var(--blue); }
+  &[data-kind="research-system"] &__tag { color: var(--blue); }
+  &[data-kind="talks"]           &__tag { color: var(--blue); }
+  &[data-kind="thesis"]          &__tag { color: var(--plum); }
 }
 
 @media (max-width: 620px) {
@@ -339,3 +351,306 @@ table {
     margin-bottom: 0.35rem;
   }
 }
+
+// ---- structured credits ----------------------------------------------------
+.credits {
+  margin-top: var(--s6);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--rule);
+
+  h2 { font-size: var(--t-xl); margin-bottom: var(--s3); border: 0; padding: 0; }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: var(--s2) var(--s3);
+    margin: 0;
+
+    > div { display: contents; }
+
+    dt {
+      font-family: var(--f-mono);
+      font-size: var(--t-xs);
+      text-transform: uppercase;
+      letter-spacing: var(--track-mono);
+      color: var(--faint);
+      padding-top: 0.15rem;
+    }
+
+    dd {
+      margin: 0;
+      font-size: var(--t-base);
+      color: var(--ink-dim);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      max-width: min(var(--measure), 100%);
+    }
+  }
+
+  &__role {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    color: var(--faint);
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 620px) {
+  .credits__list { grid-template-columns: 1fr; gap: 0.2rem; }
+  .credits__list > div { display: block; margin-bottom: var(--s2); }
+}
+
+// ---- figures ---------------------------------------------------------------
+// The layout adapts to the source material; portrait photographs are never
+// cropped into a landscape box.
+.fig {
+  margin-block: var(--s5);
+
+  img { border: 1px solid var(--rule); width: 100%; }
+
+  &--portrait {
+    max-width: 30rem;
+
+    img { width: 100%; }
+  }
+
+  &--bleed {
+    // Reaches past the reading measure without leaving the field.
+    margin-inline: 0;
+
+    img { width: 100%; }
+  }
+
+  figcaption {
+    margin-top: var(--s2);
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    line-height: 1.65;
+    color: var(--faint);
+    max-width: min(var(--measure), 100%);
+
+    a { border-bottom-color: var(--rule); }
+  }
+
+  &__credit { white-space: nowrap; }
+}
+
+// ---- lead image on a project page -----------------------------------------
+.lead-figure {
+  border-bottom: 1px solid var(--rule);
+
+  img {
+    width: 100%;
+    border: 0;
+    display: block;
+    // Full-bleed photographs are the point, but a 5:4 source at 1440px is over
+    // 1100px tall and buries everything under it. Cap the height and crop from
+    // the edges rather than shrinking the image.
+    max-height: min(76vh, 780px);
+    object-fit: cover;
+    object-position: var(--lead-focus, center);
+  }
+
+  figcaption {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    color: var(--faint);
+    padding-block: var(--s2);
+  }
+}
+
+// ---- work filter -----------------------------------------------------------
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s1) var(--s2);
+  padding-bottom: var(--s2);
+
+  &__label {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    margin-right: var(--s1);
+  }
+
+  &__btn {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    color: var(--muted);
+    padding: 0.2rem 0;
+    cursor: pointer;
+
+    &:hover { color: var(--ink); }
+    &[aria-pressed="true"] { color: var(--gold); border-bottom-color: var(--gold); }
+  }
+
+  &__empty {
+    font-family: var(--f-mono);
+    font-size: var(--t-sm);
+    color: var(--faint);
+    padding-top: var(--s3);
+  }
+}
+
+// Rows that are records rather than links (dates with no page of their own).
+.index__row--static { cursor: default; &:hover { background: transparent; } }
+
+.profiles { display: flex; flex-wrap: wrap; gap: var(--s2); }
+
+.note-inline {
+  margin-top: var(--s3);
+  font-size: var(--t-base);
+  color: var(--muted);
+  max-width: min(var(--measure), 100%);
+}
+
+// ---- publications ----------------------------------------------------------
+// Dense and scannable. No abstracts: the archive is an index, not a reader.
+.pubs {
+  &__heading {
+    font-size: var(--t-xl);
+    padding-bottom: var(--s1);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: var(--s2);
+  }
+
+  &__list { list-style: none; margin: 0 0 var(--s5); padding: 0; }
+}
+
+.pub {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: var(--s2);
+  padding-block: var(--s2);
+  border-bottom: 1px solid var(--rule-soft);
+
+  &__year {
+    font-family: var(--f-mono);
+    font-size: var(--t-sm);
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__body { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
+
+  &__title {
+    font-family: var(--f-display);
+    font-weight: 600;
+    font-size: var(--t-base);
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  &__lang {
+    font-family: var(--f-mono);
+    font-size: 0.72em;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    vertical-align: 0.15em;
+  }
+
+  &__authors { font-size: var(--t-base); color: var(--muted); }
+
+  &__venue {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    letter-spacing: 0.02em;
+    color: var(--faint);
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s2);
+    margin-top: 0.3rem;
+
+    a {
+      font-family: var(--f-mono);
+      font-size: var(--t-xs);
+      text-transform: uppercase;
+      letter-spacing: var(--track-mono);
+      color: var(--blue);
+      border-bottom: 1px solid transparent;
+
+      &:hover { color: var(--gold); border-bottom-color: var(--gold); }
+    }
+  }
+}
+
+.bibtex {
+  margin-top: var(--s4);
+
+  summary {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    cursor: pointer;
+
+    &:hover { color: var(--gold); }
+  }
+
+  pre { margin-top: var(--s2); }
+}
+
+@media (max-width: 620px) {
+  .pub { grid-template-columns: 1fr; gap: 0.25rem; }
+}
+
+// ---- about -----------------------------------------------------------------
+.about__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  gap: var(--s5);
+  align-items: start;
+}
+.about__portrait { margin: 0; max-width: 100%; }
+
+@media (max-width: 900px) {
+  .about__intro { grid-template-columns: minmax(0, 1fr); }
+  .about__portrait { max-width: 22rem; }
+}
+
+.chrono {
+  &__heading {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    padding-bottom: var(--s1);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: var(--s2);
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0 0 var(--s5);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s1);
+
+    li {
+      font-size: var(--t-base);
+      color: var(--ink-dim);
+      max-width: min(var(--measure), 100%);
+      padding-left: 0;
+    }
+  }
+}
+
+// Markdown tables used as key/value blocks have no meaningful header row;
+// hide it rather than showing an empty band.
+table thead:has(th:empty) { display: none; }
