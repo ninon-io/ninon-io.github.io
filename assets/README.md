@@ -32,6 +32,13 @@ assets/
 - reference assets from Markdown with an absolute path, e.g.
   `/assets/media/projects/neurorack/images/faceplate.png`
 
+## Legacy compatibility paths
+
+`/documents/`, `/images/` and `/audio/` at the repository root are frozen
+**copies**, kept so that URLs which were public before the reorganisation still
+resolve. They are not canonical — never edit them. Each folder has its own
+README explaining what is aliased and what deliberately is not.
+
 ## Where to add new material
 
 | What | Where |
