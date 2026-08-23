@@ -2,6 +2,10 @@
 # Keyed on filename. `max` is the widest CSS pixel width at which
 # the image still renders at 2x, i.e. the point beyond which it
 # would be upscaled.
+"CNC Lab.png":
+  w: 1080
+  h: 1350
+  max: 540
 "absynth-6-key-art.jpg":
   w: 505
   h: 396
@@ -30,6 +34,10 @@
   w: 408
   h: 612
   max: 204
+"figure-9-sweet-spot.png":
+  w: 768
+  h: 320
+  max: 384
 "jetson-nano-board.png":
   w: 1280
   h: 368
@@ -142,6 +150,10 @@
   w: 1080
   h: 1920
   max: 540
+"og-image.png":
+  w: 1200
+  h: 630
+  max: 600
 "preset-explorer-map.jpg":
   w: 1240
   h: 708
