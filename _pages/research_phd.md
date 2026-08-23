@@ -1,5 +1,5 @@
 ---
-title: "PhD Subject"
+title: "Doctoral Thesis"
 layout: single
 permalink: /research/phd/
 author_profile: false
@@ -8,14 +8,33 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/media/research/thesis/images/thesis-header.webp
   actions:
-    - label: "Team Work"
-      url: "https://acids.ircam.fr/"
-excerpt: "Lightweight deep learning on real-time embedded architectures"
+    - label: "Read the thesis (HAL)"
+      url: "https://theses.hal.science/tel-05307879v1"
+    - label: "Defence video"
+      url: "https://youtube.com/live/4KoAmbZw6Xg"
+excerpt: "Creative Deep Learning on Real Time Embedded Architectures — defended 12 May 2025"
 toc: true
 toc_label: "Table of Contents"
 sidebar:
   nav: "research"
 ---
+
+## Creative Deep Learning on Real Time Embedded Architectures
+
+Doctoral thesis, **defended on 12 May 2025** at IRCAM (Salle Stravinsky), Sorbonne
+Université. Research carried out in the [ACIDS](https://acids-ircam.github.io/) group at
+IRCAM–STMS. Published under the name **Ninon Devis**.
+
+[Read the thesis (HAL)](https://theses.hal.science/tel-05307879v1){: .btn .btn--primary}
+[Watch the defence](https://youtube.com/live/4KoAmbZw6Xg){: .btn .btn--light-outline}
+
+### Jury
+
+| | |
+|---|---|
+| **Supervisors** | Charlotte Truchet, Carlos Agon |
+| **Reviewers** | Cheng-Zhi Anna Huang, Philippe Codognet |
+| **Examiners** | Joanna Demers, Laure Gonnord, Anne Alombert, Pierre Saint-Germier |
 
 ## Abstract
 

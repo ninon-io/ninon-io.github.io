@@ -10,11 +10,11 @@ main:
     url: /about/
 
 research:
-  - title: "PhD Subject"
+  - title: "Doctoral Thesis"
     url: /research/phd/
-  - title: "Manuscript Companion Page"
+  - title: "Thesis Companion"
     url: /research/manuscript/
-  - title: "Conferences"
+  - title: "Talks & Media"
     url: /research/conferences/
   - title: "Scientific Papers"
     url: /research/papers/

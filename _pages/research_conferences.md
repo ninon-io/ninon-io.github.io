@@ -1,5 +1,5 @@
 ---
-title: "Conferences & Seminars"
+title: "Talks & Media"
 layout: single
 permalink: /research/conferences/
 author_profile: false
@@ -8,7 +8,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/media/research/images/conferences-header.webp
 toc: true
-toc_label: "Conferences"
+toc_label: "On This Page"
 sidebar:
   nav: "research"
 ---
@@ -63,3 +63,32 @@ Dans le cadre de cette séance, nous allons pouvoir découvrir les divers projet
 [CIS CNRS](https://cis.cnrs.fr/sem-ia-art-philippe-esling-et-ninon-devis/)
 
 [Video](https://www.canal-u.tv/video/site_pouchet_cnrs/creativity_in_the_era_or_artificial_intelligence.59973)
+
+# Interviews & Media
+
+## « On peut faire des choses puissantes, inspirantes, sans démesure technologique »
+
+> Fisheye Immersive — 4 June 2025, interview by Maxime Delcourt (in French)
+
+A long-form interview on the Neurorack, on designing lightweight models as a
+deliberate ecological and artistic choice, and on the distinction between
+combinatory and transformational creativity in AI-assisted music.
+
+[Read the interview](https://fisheyeimmersive.com/article/ninon-devis-on-peut-faire-des-choses-puissantes-inspirantes-sans-demesure-technologique/){: .btn .btn--light-outline}
+
+## L'intelligence artificielle peut-elle servir la création musicale ?
+
+> RTS — 2025 (in French)
+
+Radio interview for Swiss public broadcasting on artificial intelligence in
+musical creation.
+
+[Listen](https://www.rts.ch/audio-podcast/2025/audio/l-intelligence-artificielle-peut-elle-servir-la-creation-musicale-interview-de-ninon-devis-28933095.html){: .btn .btn--light-outline}
+
+## Ninon Devis : IA & musique
+
+> Précédemment ! — podcast episode (in French)
+
+A conversation on artificial intelligence and music.
+
+[Listen](https://podcloud.fr/podcast/precedemment-dans/episode/ninon-devis-ia-et-musique){: .btn .btn--light-outline}

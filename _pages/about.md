@@ -14,11 +14,15 @@ classes: wide
 Passionate about music and sciences. 
 </p>
 
-You can find my resume [here](/assets/documents/cv/ninon-devis-cv-2024.pdf){: .btn .btn--light-outline}
+I am **Ninon Devis Salvy**. I publish my scientific work as **Ninon Devis**, the
+name under which all my papers and my thesis appear, and I release and perform
+music as **Ninon**.
+
+You can find my CV [here](/assets/documents/cv/ninon-devis-salvy-cv-2026.pdf){: .btn .btn--light-outline}
 
 > Sciences:
 - 2024 - Today: Audio Research Engineer at Native Instruments (Berlin), Deep Learning applied to music
-- 2020 - 2023: PhD on AI applied to music
+- 2020 - 2025: PhD, *Creative Deep Learning on Real Time Embedded Architectures* — IRCAM / Sorbonne Université, [defended 12 May 2025](/research/phd/)
 - 2019 - 2020: Master Degree at IRCAM (*Signal Processing, Acoustic and Computer Science apply to music*)
 - 2016 - 2017: High school teacher at Lycée Dorian in Paris 
                Physic-chemistry and applied physics teacher (*10 and 11 grade Higher Technical Certificate levels*)

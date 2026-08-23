@@ -17,7 +17,7 @@ sidebar:
 
 # Bridging deep learning and modular synthesis: A real-time AI-based Eurorack synthesizer for expressive sound design.
 
-The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](http://www.ircam.fr) within the [ACIDS group](http://acids.ircam.fr), the Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware — no laptop required.
+The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](https://www.ircam.fr) within the [ACIDS group](https://acids-ircam.github.io/), the Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware — no laptop required.
 
 The spirit of **The Neurorack** lies in its modularity not just physically, but also computationally: it supports model switching, allowing different AI models to be trained and embedded for various synthesis goals. This means users can adapt the module to generate entirely different types of sounds depending on the trained model, all within the same hardware platform.
 
@@ -136,8 +136,8 @@ The first version successfully demonstrated real-time embedded AI synthesis but 
 Developed with Corentin Vercoustre, V2 addressed key issues:
 * **Redesigned Faceplate:** Sleeker, more robust, better internal wiring.
 * **Improved Stability:** Internalized connections for better reliability.
-* **New Model Integration:** Work began on integrating **FRAVE**, a different generative model (from Chapter 4 of the PhD) focused on continuous timbral control via latent space exploration.
-* **Future:** Ongoing work focuses on enhancing responsiveness, parameter mapping, and exploring new models. V2 (with FRAVE) aims for presentation at [Sónar+D 2025](https://www.sonar.es/en/programme/sonar-d).
+* **New Model Integration:** Work began on integrating **FRAVE**, a different generative model (from Chapter 4 of the [thesis](/research/phd/)) focused on continuous timbral control via latent space exploration.
+* **Future:** Ongoing work focuses on enhancing responsiveness, parameter mapping, and exploring new models.
 
 ---
 
@@ -168,7 +168,7 @@ Neurorack has been presented at major industry events and recognized by the tech
 ## Credits
 
 A collaborative project by:
-* **Ninon Devis** ([IRCAM](http://www.ircam.fr) / [Native Instruments](https://www.native-instruments.com/en/))
+* **Ninon Devis Salvy** ([IRCAM](https://www.ircam.fr) / [Native Instruments](https://www.native-instruments.com/en/))
 * Martin Vert (Hardware V1)
 * Corentin Vercoustre (Hardware V2)
 * Valentin Lageard (Hardware V2)

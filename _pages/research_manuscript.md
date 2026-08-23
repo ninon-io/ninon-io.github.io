@@ -1,5 +1,5 @@
 ---
-title: "PhD Companion Page"
+title: "Thesis Companion"
 layout: single
 permalink: /research/manuscript/
 author_profile: false
@@ -7,7 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.7"
   overlay_image: /assets/media/research/thesis/images/listening-header.webp
-excerpt: "Additional Material relative to my PhD manuscript"
+excerpt: "Listening references and additional material for the thesis"
 toc: true
 toc_label: "Table of Contents"
 sidebar:

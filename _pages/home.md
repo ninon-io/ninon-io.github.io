@@ -25,10 +25,10 @@ I apply advanced **deep learning to music** to create innovative tools and real-
     **Research Engineering @ [Native Instruments](https://www.native-instruments.com/en/)**, Audio Research Team. I am dedicated to applying deep learning to next-generation sound technology and developing innovative product features.
 
 * ### Artistic Practice
-    **Producer & Sound Artist**. I create electronic music influenced by **cinematic deep techno** and **modular synthesis**.
+    **Producer, performer and DJ**, under the name **Ninon**. I create electronic music influenced by **cinematic deep techno** and **modular synthesis**.
 
   * ### Academic Research
-    **PhD Doctorate @ [IRCAM](http://www.ircam.fr)**, ACIDS Group. My focus is on **neural audio synthesis** and **model-driven instruments**, including the creation of the **Neurorack**—the first Eurorack modular synthesizer powered by deep neural synthesis.
+    **PhD, [IRCAM](https://www.ircam.fr) / Sorbonne Université**, ACIDS Group — [*Creative Deep Learning on Real Time Embedded Architectures*](/research/phd/), defended in May 2025. The work covers **neural audio synthesis** and **model-driven instruments**, including the **Neurorack**, the first Eurorack modular synthesizer powered by deep neural synthesis.
 
 ---
 
@@ -49,7 +49,7 @@ I am dedicated to making AI a tangible, expressive partner for musicians. My res
 
 ## Teaching & Education
 
-* **[ATIAM](http://atiam.ircam.fr):** Courses on **[Ableton](/teaching/ableton/)** and **[Pure Data](/teaching/puredata/)** at IRCAM / Sorbonne Université.
+* **[ATIAM](https://atiam.ircam.fr):** Courses on **[Ableton](/teaching/ableton/)** and **[Pure Data](/teaching/puredata/)** at IRCAM / Sorbonne Université.
 * → Hear student work on **[SoundCloud](https://soundcloud.com/atiam-ircam/sets)**.
 
 ---
@@ -64,10 +64,10 @@ I am dedicated to making AI a tangible, expressive partner for musicians. My res
 
 > You can reach me for academic, artistic, or collaborative inquiries.
 <blockquote class="contact">
-Ninon Devis 
-PhD Doctorate – IRCAM / Sorbonne Université  
-Research Engineer – Native Instruments  
-Lecturer – UPMC / ATIAM Master  
+Ninon Devis Salvy  
+PhD, IRCAM / Sorbonne Université  
+Audio Research Engineer – Native Instruments  
+Lecturer – ATIAM Master, Sorbonne Université  
 📧 ninon.devis@ircam.fr  
-📍 Paris & Berlin  
+📍 Paris &amp; Berlin  
 </blockquote>

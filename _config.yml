@@ -20,7 +20,7 @@ title                    : "Ninon Devis Salvy"
 title_separator          : "-"
 subtitle                 : "Artist-Researcher"
 name                     : "Ninon Devis Salvy"
-description              : "AI applied to music"
+description              : "Audio researcher and electronic musician. Real-time neural audio synthesis, embedded instruments including the Neurorack, and live electronic performance."
 url                      : "https://ninon-io.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ninon-io/ninon-io.github.io"
@@ -73,16 +73,27 @@ naver_site_verification  :
 twitter:
   username               :
 facebook:
-  username               : ninondevis
+  username               :
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+# Structured data (schema.org Person). `name` is the canonical identity;
+# `alternate_names` carries the publication name and the artist name so search
+# engines and citation indexes resolve all three to one person.
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : "Person"
+  name                   : "Ninon Devis Salvy"
+  alternate_names:
+    - "Ninon Devis"
+    - "Ninon"
+  links:
+    - "https://github.com/ninon-io"
+    - "https://scholar.google.com/citations?user=AbCme8wAAAAJ"
+    - "https://dblp.org/pid/271/4373.html"
+    - "https://theses.hal.science/tel-05307879v1"
+    - "https://ra.co/dj/ninon"
+    - "https://soundcloud.com/ninon-dvslv"
+    - "https://www.instagram.com/ninon.dvslv/"
 
 # Analytics
 analytics:
@@ -94,52 +105,52 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ninon Devis"
-  avatar           : "/assets/media/about/ninon-portrait.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Researcher in creative Deep Learning applied to music"
+  name             : "Ninon Devis Salvy"
+  avatar           : "/assets/media/about/ninon-portrait.jpg"
+  bio              : "Audio researcher and electronic musician — neural synthesis, embedded instruments, live electronics."
   location         : "Berlin / Paris"
-  email            : 
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:ninon.devis@ircam.fr"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://www.facebook.com/ninon.devis/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/ninon-io"
+      url: "https://github.com/ninon-io"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=AbCme8wAAAAJ"
+    - label: "dblp"
+      icon: "fas fa-fw fa-book"
+      url: "https://dblp.org/pid/271/4373.html"
+    - label: "SoundCloud"
+      icon: "fab fa-fw fa-soundcloud"
+      url: "https://soundcloud.com/ninon-dvslv"
+    - label: "Resident Advisor"
+      icon: "fas fa-fw fa-compact-disc"
+      url: "https://ra.co/dj/ninon"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/ninon.dvslv/?hl=fr"
+      url: "https://www.instagram.com/ninon.dvslv/"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/ninon-io"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=AbCme8wAAAAJ"
+    - label: "SoundCloud"
+      icon: "fab fa-fw fa-soundcloud"
+      url: "https://soundcloud.com/ninon-dvslv"
+    - label: "Resident Advisor"
+      icon: "fas fa-fw fa-compact-disc"
+      url: "https://ra.co/dj/ninon"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/ninon.dvslv/"
 
 
 # Reading Files
