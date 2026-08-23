@@ -103,17 +103,32 @@ def main(site):
 
     # Legacy compatibility: every pre-reorganisation URL that we chose to keep
     # must still resolve. Truth comes from git, not a hardcoded count.
+    # The reference is the PRE-REORGANISATION tree, pinned by commit — not
+    # "whatever master is now". Using a moving branch made this check
+    # self-referential: once master carried the maintainer READMEs that the build
+    # deliberately excludes, it started demanding them in _site.
     import subprocess
-    try:
-        raw = subprocess.run(["git", "ls-tree", "-r", "--name-only", "-z", "master"],
-                             capture_output=True).stdout
-        master = [x.decode() for x in raw.split(b"\0") if x]
-    except Exception:
-        master = []
+    PRE_REORG = "3f59f58270b0746726f60a01f68626111d1ae5ca"
+    master = []
+    for ref in (PRE_REORG, "origin/" + PRE_REORG):
+        try:
+            r = subprocess.run(["git", "ls-tree", "-r", "--name-only", "-z", ref],
+                               capture_output=True)
+            if r.returncode == 0 and r.stdout:
+                master = [x.decode() for x in r.stdout.split(b"\0") if x]
+                break
+        except Exception:
+            pass
+    if not master:
+        print("  legacy check skipped: pre-reorganisation tree not available "
+              "(shallow clone?)")
 
     # Deliberately not aliased: 1-byte folder placeholders, and the eleven audio
     # files no page ever referenced (see audio/README.md).
-    DROPPED = {"documents/readme.md", "images/readme.md", "images/neurorack/init.md"}
+    # Never public URLs: 1-byte folder placeholders, and the maintainer READMEs
+    # added later, which _config.yml excludes from the build on purpose.
+    DROPPED = {"documents/readme.md", "images/readme.md", "images/neurorack/init.md",
+               "audio/README.md"}
     KEPT_AUDIO = {
         "audio/Mathews_DaisyBell.flac", "audio/Mathews_Numerology.mp3",
         "audio/Mutations_1977_Jean_Claude_Risset.mp3", "audio/Rrose-Waterfall.mp3",
@@ -121,7 +136,9 @@ def main(site):
         "audio/Xenakis_ConcretePH.mp3", "audio/raster_demo.wav",
     }
     for folder in ("documents", "images", "audio"):
-        want = [p for p in master if p.startswith(folder + "/") and p not in DROPPED]
+        want = [p for p in master
+                if p.startswith(folder + "/") and p not in DROPPED
+                and not p.endswith("/README.md")]
         if folder == "audio":
             want = [p for p in want if p in KEPT_AUDIO or "Swan" in p]
         missing = [p for p in want if not os.path.isfile(os.path.join(site, p))]
