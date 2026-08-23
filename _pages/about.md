@@ -58,6 +58,7 @@ chronology:
       - "2023 · JSPS Fellowship, University of Tokyo"
       - "2022 · NVIDIA Jetson Project of the Month, for the Neurorack"
       - "2020—2025 · Sorbonne doctoral grant"
+description: "Ninon Devis Salvy — Audio Research Engineer at Native Instruments, PhD from IRCAM, performing as Ninon. Biography, CV and contact."
 ---
 
 {{ site.data.bio.medium | markdownify }}

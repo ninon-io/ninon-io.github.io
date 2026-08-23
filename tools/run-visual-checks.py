@@ -26,6 +26,7 @@ PAGES = [
     "/research/teaching/", "/research/teaching/ableton/",
     "/research/teaching/pure-data/", "/research/teaching/cryptology/",
     "/research/teaching/java/", "/about/", "/about/press/",
+    "/research/singularity-and-creation/", "/research/aux-abords-de-labime/", "/404.html",
 ]
 
 

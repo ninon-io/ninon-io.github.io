@@ -11,6 +11,7 @@ toc: true
 lead:
   src: /assets/media/work/n-v/images/n-v-silhouettes.png
   alt: "Ninon and Victor Calvi in silhouette behind a desk of laptops and controllers, backlit by a large generative projection"
+  present: bleed
 
 credits:
   role: "Sound design, live performance, hardware synthesis and generative models"

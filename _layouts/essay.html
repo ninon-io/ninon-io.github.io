@@ -1,0 +1,54 @@
+---
+layout: base
+---
+{%- comment -%}
+Long-form reading. Narrower measure, larger body, no gallery furniture — the page
+exists to be read. The original-publication block is stated up front so the
+provenance of the English version is never ambiguous.
+{%- endcomment -%}
+<div class="page-head page-head--essay">
+  <div class="field">
+    <span class="eyebrow page-head__eyebrow">{{ page.eyebrow }}</span>
+    <h1 class="page-head__title">{{ page.title }}</h1>
+    {%- if page.subtitle %}<p class="essay__subtitle">{{ page.subtitle }}</p>{% endif %}
+    {%- if page.excerpt %}<p class="page-head__lede">{{ page.excerpt }}</p>{% endif %}
+  </div>
+</div>
+
+{%- if page.lead %}
+<div class="field home-lead">
+  {% include site/img.html src=page.lead.src alt=page.lead.alt present="wide" loading="eager" credit=page.lead.credit %}
+</div>
+{%- endif %}
+
+<article class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      <span class="rail__num">{{ page.years }}</span>
+      <span class="rail__label">Essay</span>
+      {%- if page.toc %}{% include site/toc.html %}{% endif %}
+    </div>
+    <div class="col">
+      {%- if page.original %}
+      <aside class="origin">
+        <span class="eyebrow">Originally published</span>
+        <p lang="{{ page.original.lang }}" class="origin__title">{{ page.original.original_title | default: page.original_title }}</p>
+        <p>Published in French by <strong>{{ page.original.publisher }}</strong>, {{ page.original.date }}.
+        The English version below is presented on this site and was not published by {{ page.original.publisher }}.</p>
+        <a class="btn btn--primary" href="{{ page.original.url }}" rel="noopener" hreflang="{{ page.original.lang }}">Read the French original</a>
+      </aside>
+      {%- endif %}
+
+      <div class="prose prose--essay">{{ content }}</div>
+
+      <p class="essay__sign">Ninon Devis Salvy</p>
+
+      {%- if page.references %}
+      <section class="refs">
+        <h2 id="references">Further reading</h2>
+        <ul>{% for r in page.references %}<li>{{ r | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>
+      </section>
+      {%- endif %}
+    </div>
+  </div>
+</article>

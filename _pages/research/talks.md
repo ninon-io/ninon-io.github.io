@@ -7,4 +7,5 @@ excerpt: "Invited workshops and masterclasses, conference and seminar talks, and
 redirect_from:
   - /research/conferences/
   - /research/conferences
+description: "Invited workshops and masterclasses, conference and seminar talks, and interviews with Ninon Devis Salvy."
 ---

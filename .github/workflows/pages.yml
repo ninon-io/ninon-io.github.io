@@ -41,6 +41,12 @@ jobs:
       - name: Generate waveform peaks
         run: python3 tools/generate-peaks.py
 
+      - name: Index image dimensions and build responsive derivatives
+        run: |
+          python3 -m pip install --quiet --disable-pip-version-check Pillow
+          python3 tools/index-images.py
+          python3 tools/build-images.py
+
       - name: Build site
         run: bundle exec jekyll build --trace
         env:

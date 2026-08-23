@@ -37,10 +37,23 @@ sharply. Nothing is upscaled, and no per-image exceptions are hard-coded.
     {%- assign cap = meta.max -%}
   {%- endif -%}
 {%- endif -%}
+{%- comment -%}
+Derivatives come from tools/build-images.py. The original stays as the <img src>
+fallback, so every legacy URL and older browser still resolves. `sizes` reflects
+what the layout actually renders: full viewport below the 820px breakpoint,
+capped at the resolution ceiling above it.
+{%- endcomment -%}
+{%- assign base = key | split: "." | first -%}
 <figure class="img img--{{ present }}"{% if cap %} style="--img-max: {{ cap }}px;{% if include.focus %} --img-focus: {{ include.focus }};{% endif %}"{% endif %}>
-  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"
-       {%- if meta %} width="{{ meta.w }}" height="{{ meta.h }}"{% endif %}
-       loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  <picture>
+    {%- if meta.srcw %}{%- for f in meta.srcf %}
+    <source type="image/{{ f }}" sizes="(max-width: 820px) calc(100vw - 2.5rem), {{ cap }}px"
+            srcset="{% for w in meta.srcw %}{{ '/assets/media/derived/' | append: base | append: '-' | append: w | append: '.' | append: f | relative_url }} {{ w }}w{% unless forloop.last %}, {% endunless %}{% endfor %}">
+    {%- endfor %}{% endif %}
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"
+         {%- if meta %} width="{{ meta.w }}" height="{{ meta.h }}"{% endif %}
+         loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  </picture>
   {%- if include.caption or include.credit %}
   <figcaption>
     {%- if include.caption %}{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}

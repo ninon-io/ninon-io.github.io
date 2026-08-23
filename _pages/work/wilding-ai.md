@@ -21,6 +21,7 @@ lead:
   src: /assets/media/work/wilding-ai/images/monom-4dsound.jpg
   alt: "The MONOM studio: a large dark room ringed by the 4DSOUND speaker array on vertical poles"
   caption: "MONOM, Berlin — home of the original 4DSOUND system."
+  present: bleed
 credits:
   role: Max for Live interaction, AI models, sound design, live performance
   collaborators:

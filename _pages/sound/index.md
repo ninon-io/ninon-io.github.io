@@ -21,8 +21,7 @@ profiles:
     url: "https://ra.co/dj/ninon"
   - label: "Instagram"
     url: "https://www.instagram.com/ninon.dvslv/"
-
-
+description: "Ninon: live electronic performance, DJ sets and production. Upcoming dates, selected performances and documentation."
 ---
 
 I release and perform as **Ninon**. The live sets are built from hardware

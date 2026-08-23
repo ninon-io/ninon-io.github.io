@@ -31,6 +31,13 @@ class Refs(HTMLParser):
         a = dict(attrs)
         if tag == "html" and a.get("lang"):
             self.langs.append(a["lang"])
+        # <picture><source srcset> must be validated: if a source matches and
+        # 404s, the browser does NOT fall back to the <img src>.
+        if tag == "source" and a.get("srcset"):
+            for cand in a["srcset"].split(","):
+                u = cand.strip().split(" ")[0]
+                if u and not u.startswith(("http", "data:")):
+                    self.assets.append(u)
         for key in ("href", "src"):
             v = a.get(key)
             if not v or v.startswith(("http://", "https://", "mailto:", "#", "data:", "//")):

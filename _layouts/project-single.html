@@ -3,13 +3,15 @@ layout: base
 ---
 {% include site/page-head.html %}
 
+{%- comment -%}
+The lead is presented at whatever scale the source honestly supports, in its own
+aspect ratio. `present` may be set per page: wide for a big landscape source,
+natural for a portrait one. Nothing is cropped to a fixed band.
+{%- endcomment -%}
 {%- if page.lead %}
-<figure class="lead-figure"{% if page.lead.focus %} style="--lead-focus: {{ page.lead.focus }}"{% endif %}>
-  <img src="{{ page.lead.src | relative_url }}" alt="{{ page.lead.alt | escape }}" loading="eager" decoding="async">
-  {%- if page.lead.credit or page.lead.caption %}
-  <figcaption class="field">{% if page.lead.caption %}{{ page.lead.caption }} {% endif %}{% if page.lead.credit %}Photo: {{ page.lead.credit }}{% endif %}</figcaption>
-  {%- endif %}
-</figure>
+<div class="field home-lead">
+  {% include site/img.html src=page.lead.src alt=page.lead.alt present=page.lead.present loading="eager" credit=page.lead.credit caption=page.lead.caption %}
+</div>
 {%- endif %}
 
 <article class="band">

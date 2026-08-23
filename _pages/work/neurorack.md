@@ -15,6 +15,7 @@ lead:
   src: /assets/media/work/neurorack/images/neurorack-hero-enzo-leclercq.png
   alt: A hand patching a Eurorack case; the Neurorack module's amber indicator LEDs and small display are lit
   credit: Enzo Leclercq
+  present: wide
 credits:
   role: Concept, deep learning models, embedded implementation, interface design
   collaborators:

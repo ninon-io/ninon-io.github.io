@@ -2,6 +2,26 @@
 # name "Ninon Devis". `type` drives grouping: peer-reviewed / preprint / thesis /
 # writing. Abstracts are deliberately not stored here; the archive is an index.
 
+- title: "Singularité et Création à l'Ère de l'Intelligence Artificielle"
+  authors: "Ninon Devis Salvy, Jun Suzuki"
+  year: 2026
+  venue: "CNC Lab — Centre national du cinéma et de l'image animée"
+  type: peer-reviewed
+  lang: fr
+  pdf: "https://www.cnc.fr/documents/36995/2568943/CNC+Lab+-+Singularit%C3%A9+et+Cr%C3%A9ation+%C3%A0+l%E2%80%99%C3%88re+de+l%E2%80%99Intelligence+Artificielle+-+Ninon+Devis+Salvy%2C+Jun+Suzuki.pdf/feeb200e-2502-4512-fe27-91ec422befc0?t=1775143018736"
+  link: "https://www.cnc.fr/professionnels/actualites/deuxieme-appel-a-contributions-du-cnc-lab_2167679"
+  companion: "https://blog.junsuzuki.xyz/blog/singularity-controlled-divergence"
+  page: /research/singularity-and-creation/
+
+- title: "Aux abords de l'abîme : l'art à l'ère de l'IA"
+  authors: "Ninon Devis Salvy"
+  year: 2025
+  venue: "binaire / La Recherche"
+  type: writing
+  lang: fr
+  link: "https://blogbinaire.larecherche.fr/2025/10/17/aux-abords-de-labime-lart-a-lere-de-lia/"
+  page: /research/aux-abords-de-labime/
+
 - title: "Creative Deep Learning on Real Time Embedded Architectures"
   authors: "Ninon Devis"
   year: 2025

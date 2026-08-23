@@ -29,4 +29,5 @@ entries:
     url: /research/teaching/java/
     year: "2021"
     kind: "Archive"
+description: "Archived course material from the ATIAM master at IRCAM / Sorbonne Université and earlier undergraduate teaching."
 ---

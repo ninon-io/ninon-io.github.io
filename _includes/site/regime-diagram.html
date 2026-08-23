@@ -1,0 +1,51 @@
+{%- comment -%}
+The temperature-regime finding, drawn in the site's own visual language rather
+than reproduced from the paper's own plot. Every value shown — the plateau below
+1.2, the singularity zone between 1.2 and 1.4, the rupture from 1.5 — comes from
+the experiment described in the paper. Nothing here is estimated.
+
+Inline SVG so it inherits the palette and works in both themes.
+{%- endcomment -%}
+<figure class="fig-diagram">
+  <svg viewBox="0 0 760 220" role="img" aria-labelledby="regime-title regime-desc"
+       xmlns="http://www.w3.org/2000/svg">
+    <title id="regime-title">Three regimes across the temperature range of a language model</title>
+    <desc id="regime-desc">A horizontal scale from temperature 0 to 2. Below 1.2 is the
+      plateau, where output stays coherent but predictable. Between 1.2 and 1.4 is the
+      singularity zone, where output diverges while remaining readable. From 1.5 upward
+      is the rupture regime, where coherence collapses.</desc>
+
+    <!-- bands -->
+    <rect x="40"  y="60" width="416" height="52" class="d-band d-band--plateau"/>
+    <rect x="456" y="60" width="76"  height="52" class="d-band d-band--zone"/>
+    <rect x="532" y="60" width="188" height="52" class="d-band d-band--rupture"/>
+
+    <!-- band edges -->
+    <line x1="456" y1="52" x2="456" y2="120" class="d-edge"/>
+    <line x1="532" y1="52" x2="532" y2="120" class="d-edge"/>
+
+    <!-- axis -->
+    <line x1="40" y1="140" x2="720" y2="140" class="d-axis"/>
+    {%- assign ticks = "0,0.5,1.0,1.2,1.4,1.5,2.0" | split: "," -%}
+    {%- assign xs = "40,210,380,456,524,566,720" | split: "," -%}
+    {%- for t in ticks %}
+    <line x1="{{ xs[forloop.index0] }}" y1="140" x2="{{ xs[forloop.index0] }}" y2="147" class="d-axis"/>
+    <text x="{{ xs[forloop.index0] }}" y="166" class="d-tick" text-anchor="middle">{{ t }}</text>
+    {%- endfor %}
+    <text x="40" y="196" class="d-axis-label">Temperature — GPT-4.1, swept 0 to 2 in steps of 0.1</text>
+
+    <!-- labels -->
+    <text x="248" y="42" class="d-label" text-anchor="middle">Plateau</text>
+    <text x="494" y="42" class="d-label d-label--zone" text-anchor="middle">Singularity zone</text>
+    <text x="626" y="42" class="d-label d-label--rupture" text-anchor="middle">Rupture</text>
+
+    <text x="248" y="92" class="d-note" text-anchor="middle">coherent, predictable</text>
+    <text x="494" y="92" class="d-note d-note--zone" text-anchor="middle">1.2 — 1.4</text>
+    <text x="626" y="92" class="d-note" text-anchor="middle">coherence collapses</text>
+  </svg>
+  <figcaption>
+    The band worth working in is narrow, and sits immediately before the model breaks.
+    Values are those measured on GPT-4.1; other models have their own zone, but the
+    shape holds.
+  </figcaption>
+</figure>

@@ -1,5 +1,12 @@
 # Site configuration — ninon-io.github.io
 # Built and deployed by .github/workflows/pages.yml (Jekyll 4, GitHub Actions).
+#
+# assets/media/archive is excluded from the build on purpose: it holds
+# superseded stock headers and eleven audio files that no page has ever
+# referenced and that were never publicly linked. They stay in the repository as
+# archive; they do not need to be served. This removes ~124 MB from _site.
+# The legacy compatibility folders (/documents, /images, /audio) are NOT excluded
+# — those are deliberate public URLs.
 
 title: Ninon Devis Salvy
 name: Ninon Devis Salvy
@@ -89,6 +96,7 @@ exclude:
 - documents/README.md
 - images/README.md
 - audio/README.md
+- assets/media/archive
 encoding: utf-8
 markdown: kramdown
 highlighter: rouge

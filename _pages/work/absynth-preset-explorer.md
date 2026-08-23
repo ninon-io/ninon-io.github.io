@@ -11,6 +11,7 @@ toc: true
 lead:
   src: /assets/media/work/absynth-preset-explorer/images/preset-explorer-map.jpg
   alt: "The Absynth 6 Preset Explorer: hundreds of coloured dots clustered into an organic map, with a preset list to the right and type filters to the left"
+  present: wide
 
 credits:
   role: "Research engineering — audio analysis, preset organisation, and the spatial and kinetic logic behind the map"

@@ -85,7 +85,9 @@ Structured data rather than prose, so nothing has to be kept consistent by hand:
   index never becomes a rainbow.
 - `_data/sound.yml` — live and DJ dates. `kind` keeps live sets distinct from DJ
   sets; they are different practices.
-- `_data/publications.yml`, `_data/talks.yml` — the research record.
+- `_data/publications.yml`, `_data/talks.yml`, `_data/press.yml` — the research
+  and press record.
+- `_data/bio.yml` — the short and medium bios, written once and reused.
 - Per-page `credits:` (see `_includes/site/credits.html`) — role, collaborators,
   venues, photography. Credits are never written into prose.
 
@@ -108,6 +110,25 @@ her own work uses `site/player.html`.
 ```
 
 Set `has_player: true` in the page's front matter so the JavaScript loads.
+
+### Responsive images
+
+`tools/index-images.py` records every image's intrinsic size into
+`_data/imagemeta.yml`. `tools/build-images.py` then writes WebP derivatives at
+480/760/1024/1440/1960 px into `assets/media/derived/`, skipping any width larger
+than the source and skipping diagrams and small UI captures entirely. EXIF
+orientation is applied before resizing.
+
+`_includes/site/img.html` emits a `<picture>` with `srcset` and `sizes`, keeps the
+original as the `<img src>` fallback, and caps the rendered width at half the
+intrinsic width so nothing is ever upscaled. CI runs both scripts before the
+Jekyll build.
+
+Two traps worth remembering. A directory named `_derived` is invisible to Jekyll —
+anything under a leading-underscore path never reaches `_site`, and because
+`<picture>` does not fall back to `<img>` once a `<source>` matches, every image
+silently breaks. And `tools/check_build.py` must validate `srcset` URLs, not only
+`<img src>`, or it will not catch that.
 
 ### Waveform peaks
 
@@ -152,6 +173,8 @@ verifies the coverage on every build and fails if it regresses.
 | `tools/check-build.sh _site` | broken internal links, missing assets, unrendered Liquid, legacy URL coverage, peaks present |
 | `tools/run-visual-checks.py` | drives headless Chrome over every page at 390/768/1440 px: horizontal overflow, missing alt text, heading order, visible focus |
 | `tools/palette-check.py` | WCAG 2.2 AA contrast for the palette in both modes |
+| `tools/index-images.py` | records intrinsic image sizes into `_data/imagemeta.yml` |
+| `tools/build-images.py` | generates responsive WebP derivatives |
 
 `run-visual-checks.py` renders each page inside a fixed-width iframe. Headless
 Chrome clamps its own layout viewport at about 485 px, so `--window-size` cannot

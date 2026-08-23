@@ -5,7 +5,8 @@
 <meta name="description" content="{{ desc | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-<meta property="og:type" content="website">
+{%- assign is_article = false %}{% if page.kind == "Essay" or page.kind == "Paper" %}{% assign is_article = true %}{% endif %}
+<meta property="og:type" content="{% if is_article %}article{% else %}website{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title | strip_html }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ desc | escape }}">
@@ -19,6 +20,32 @@
 <link rel="preload" href="/assets/fonts/newsreader-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 <link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
+
+{%- comment -%}Article / scholarly metadata where the page is a piece of writing.{%- endcomment -%}
+{%- if is_article %}
+<meta property="article:author" content="{{ site.social.name }}">
+{%- if page.original %}<meta property="article:published_time" content="{{ page.original.date }}">{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if page.kind == 'Paper' %}ScholarlyArticle{% else %}Article{% endif %}",
+  "headline": {{ page.title | jsonify }},
+  {%- if page.original_title %}"alternativeHeadline": {{ page.original_title | jsonify }},{% endif %}
+  "description": {{ page.excerpt | strip_html | strip | jsonify }},
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": {{ site.social.name | jsonify }},
+    "alternateName": {{ site.social.alternate_names | jsonify }}
+  },
+  "url": {{ page.url | absolute_url | jsonify }}
+  {%- if page.original %},
+  "isBasedOn": {{ page.original.url | jsonify }},
+  "publisher": { "@type": "Organization", "name": {{ page.original.publisher | jsonify }} }
+  {%- endif %}
+}
+</script>
+{%- endif %}
 
 <script type="application/ld+json">
 {

@@ -3,7 +3,7 @@ layout: listing
 permalink: /research/
 title: "Research"
 eyebrow: "Neural audio synthesis, embedded instruments"
-excerpt: "The doctoral thesis, the publication record, talks and workshops, and the archived teaching material. Published under the name Ninon Devis."
+excerpt: "The thesis, individual research pieces, the full publication record, talks and workshops, and the archived teaching material. Earlier work is published under the name Ninon Devis."
 rail_label: "Research"
 entries:
   - title: "Doctoral Thesis"
@@ -11,11 +11,21 @@ entries:
     url: /research/thesis/
     year: "2025"
     kind: "Thesis"
+  - title: "Singularity and Creation in the Age of AI"
+    description: "Where originality lives when the model averages everything it has seen. With Jun Suzuki, for the CNC Lab."
+    url: /research/singularity-and-creation/
+    year: "2026"
+    kind: "Paper"
+  - title: "At the Edge of the Abyss"
+    description: "Art in the age of AI. English version of the essay published by binaire / La Recherche."
+    url: /research/aux-abords-de-labime/
+    year: "2025"
+    kind: "Essay"
   - title: "Publications"
-    description: "Peer-reviewed papers, preprints and writing, with DOIs, arXiv, code and BibTeX."
+    description: "The full record — peer-reviewed papers, preprints, essays and the thesis, with DOIs, arXiv, PDFs and BibTeX."
     url: /research/publications/
     year: "2020—"
-    kind: "Paper"
+    kind: "Archive"
   - title: "Talks & Workshops"
     description: "Seminars, panels, invited workshops and press."
     url: /research/talks/
@@ -26,4 +36,5 @@ entries:
     url: /research/teaching/
     year: "2019—23"
     kind: "Archive"
+description: "Doctoral thesis, research papers, essays, talks and workshops by Ninon Devis Salvy, on creative machine learning for music."
 ---
