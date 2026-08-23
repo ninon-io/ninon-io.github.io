@@ -22,9 +22,31 @@ described. Photography leads because there is now real photography.
 
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">01</span><span class="rail__label">Selected</span></div>
+    <div class="rail">
+      <span class="rail__num">01</span>
+      <span class="rail__label">Selected</span>
+      {%- comment -%}
+      Rail Signal (prototype). The initial state is rendered server-side so the
+      markup is complete at first paint: no layout shift, and with JavaScript off
+      it stays a truthful "01 / n" plus the first entry's type. signal.js only
+      ever updates these three nodes.
+      {%- endcomment -%}
+      {%- if page.has_signal %}
+      {%- assign n = site.data.home | size %}
+      {%- assign first = site.data.home | first %}
+      {%- if first.work %}{% assign fe = site.data.work | where: "slug", first.work | first %}{% else %}{% assign fe = first %}{% endif %}
+      <span class="rail__signal" data-signal aria-hidden="true">
+        <span class="rail__signal__val" data-signal-val>01&#8202;/&#8202;{{ n | prepend: '0' | slice: -2, 2 }}</span>
+        <span class="rail__signal__kind" data-signal-kind>{{ fe.kind }}</span>
+        <span class="rail__signal__track" data-signal-track>
+          {%- for i in (1..n) %}<i></i>{% endfor %}
+          <b data-signal-mark style="--signal-x: 0%"></b>
+        </span>
+      </span>
+      {%- endif %}
+    </div>
     <div class="col">
-      <div class="index">
+      <div class="index" data-signal-index>
         {%- comment -%}
         Order comes from _data/home.yml. An entry either names a Work slug or
         carries its own fields, so Sound and the thesis can sit between projects

@@ -890,3 +890,91 @@ table thead:has(th:empty) { display: none; }
 @media (max-width: 620px) {
   .index__row__meta { grid-column: 1 / -1; justify-content: flex-start; }
 }
+
+// ---- Rail Signal (prototype, homepage only) --------------------------------
+// A readout in the Selected rail: value, type, calibration mark. Uses the
+// existing gold accent and no new colour. Motion is short and mechanical —
+// no overshoot, no spring. Remove by deleting this block, assets/js/signal.js,
+// the rail__signal markup in _layouts/index.html and the has_signal flag.
+.rail__signal {
+  display: block;
+  margin-top: var(--s2);
+  padding-top: var(--s1);
+  border-top: 1px solid var(--rule);
+
+  --signal-dur: 160ms;
+  --signal-ease: cubic-bezier(0.35, 0, 0.15, 1);
+
+  &__val {
+    display: block;
+    font-family: var(--f-mono);
+    font-size: var(--t-sm);
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+  }
+
+  &__kind {
+    display: block;
+    margin-top: 0.15rem;
+    min-height: 1.2em;                 // reserved, so a longer type never shifts
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    transition: color var(--signal-dur) var(--signal-ease);
+  }
+
+  // Calibration scale: one faint notch per entry, one gold mark that steps
+  // between them. Not a progress line — it never spans the page.
+  //
+  // Flex slots rather than `repeat(var(--n), 1fr)`, and the mark is placed by a
+  // plain percentage that JS computes. Both `repeat()` with a var() count and
+  // division by a var() inside calc() are invalid, and fail silently.
+  &__track {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 5.5rem;
+    height: 10px;
+    margin-top: var(--s1);
+
+    i {
+      flex: 1 1 0;
+      height: 4px;
+      align-self: flex-end;
+      border-left: 1px solid var(--rule);
+    }
+
+    b {
+      position: absolute;
+      bottom: 0;
+      width: 2px;
+      height: 10px;
+      background: var(--gold);
+      left: var(--signal-x, 0%);
+      transition: left var(--signal-dur) var(--signal-ease);
+    }
+  }
+
+  // While previewing a row under the pointer or keyboard the type reads a shade
+  // brighter, so a provisional value is distinguishable from the settled one.
+  &[data-preview="true"] .rail__signal__kind { color: var(--muted); }
+}
+
+// Mobile: the rail stops being sticky and scrolls away with the content, so the
+// readout would only ever be on screen at the top of the list — where it always
+// reads 01 / 05. A value that is visible only when it cannot change is not a
+// signal, so the whole thing is dropped below the breakpoint rather than kept as
+// a number that never moves. Nothing is lost: every row already prints its own
+// type, and the rail is decorative (aria-hidden) in the first place.
+@media (max-width: 620px) {
+  .rail__signal { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail__signal__track b,
+  .rail__signal__kind { transition: none; }   // value and mark jump, nothing is lost
+}
