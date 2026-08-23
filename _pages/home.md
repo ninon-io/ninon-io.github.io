@@ -62,12 +62,17 @@ I am dedicated to making AI a tangible, expressive partner for musicians. My res
 
 ## Contact
 
-> You can reach me for academic, artistic, or collaborative inquiries.
+> Two addresses, depending on what you are writing about.
 <blockquote class="contact">
 Ninon Devis Salvy  
 PhD, IRCAM / Sorbonne Université  
 Audio Research Engineer – Native Instruments  
 Lecturer – ATIAM Master, Sorbonne Université  
-📧 ninon.devis@ircam.fr  
+<br>
+<strong>Music, bookings &amp; collaborations</strong><br>
+📧 <a href="mailto:ninon.musicproject@gmail.com">ninon.musicproject@gmail.com</a><br>
+<strong>Research &amp; technical</strong><br>
+📧 <a href="mailto:ninon.devis.ircam@gmail.com">ninon.devis.ircam@gmail.com</a>  
+<br>
 📍 Paris &amp; Berlin  
 </blockquote>

@@ -111,9 +111,12 @@ author:
   location         : "Berlin / Paris"
   email            :
   links:
-    - label: "Email"
+    - label: "Music & bookings"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:ninon.devis@ircam.fr"
+      url: "mailto:ninon.musicproject@gmail.com"
+    - label: "Research"
+      icon: "fas fa-fw fa-envelope-open-text"
+      url: "mailto:ninon.devis.ircam@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ninon-io"
