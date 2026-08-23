@@ -9,7 +9,7 @@ archive_note: Course material for the ATIAM master, 2022–23. Kept online for f
 toc: true
 ---
 
-### Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
+## Compositions from previous students: [ATIAM Tunes](https://soundcloud.com/atiam-ircam/sets){: .btn .btn--light-outline}
 
 ## Courses
 

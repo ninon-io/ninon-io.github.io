@@ -58,7 +58,7 @@ Dans le cadre de cette séance, nous allons pouvoir découvrir les divers projet
 
 [Video](https://www.canal-u.tv/video/site_pouchet_cnrs/creativity_in_the_era_or_artificial_intelligence.59973)
 
-# Interviews & Media
+## Interviews & Media
 
 ## « On peut faire des choses puissantes, inspirantes, sans démesure technologique »
 

@@ -1,16 +1,14 @@
 ---
 layout: project-single
 permalink: /projects/neurorack/
-title: '   '
+title: Neurorack
 eyebrow: IRCAM · ACIDS
-excerpt: '   '
+excerpt: Bridging deep learning and modular synthesis — a real-time AI-based Eurorack synthesizer for expressive sound design.
 kind: Instrument
 years: 2021—
 toc: true
 has_player: true
 ---
-
-# Bridging deep learning and modular synthesis: A real-time AI-based Eurorack synthesizer for expressive sound design.
 
 The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](https://www.ircam.fr) within the [ACIDS group](https://acids-ircam.github.io/), the Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware — no laptop required.
 

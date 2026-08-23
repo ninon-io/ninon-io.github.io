@@ -12,7 +12,7 @@
   > h2 {
     font-size: var(--t-2xl);
     line-height: var(--lh-tight);
-    max-width: 22ch;
+    max-width: min(22ch, 100%);
     margin-top: var(--s6);
     padding-bottom: var(--s1);
     border-bottom: 1px solid var(--rule);
@@ -31,7 +31,7 @@
 
   > h2:first-child, > h3:first-child { margin-top: 0; }
 
-  p, li { max-width: var(--measure); }
+  p, li { max-width: min(var(--measure), 100%); }
 
   ul, ol {
     padding-left: 1.15rem;
@@ -47,7 +47,7 @@
     padding-left: var(--s3);
     color: var(--ink-dim);
     font-style: normal;
-    max-width: var(--measure);
+    max-width: min(var(--measure), 100%);
   }
 
   figure { margin-block: var(--s4); }
@@ -59,7 +59,7 @@
     line-height: 1.6;
     letter-spacing: 0.02em;
     color: var(--faint);
-    max-width: var(--measure);
+    max-width: min(var(--measure), 100%);
 
     a { border-bottom-color: var(--rule); }
   }
@@ -110,12 +110,12 @@ table {
     font-weight: 700;
     line-height: 0.98;
     letter-spacing: var(--track-hero);
-    max-width: 18ch;
+    max-width: min(18ch, 100%);
   }
 
   &__lede {
     margin-top: var(--s3);
-    max-width: 54ch;
+    max-width: min(54ch, 100%);
     font-size: var(--t-lg);
     line-height: var(--lh-snug);
     font-weight: 300;
@@ -190,7 +190,7 @@ table {
     font-family: var(--f-body);
     font-size: var(--t-base);
     color: var(--muted);
-    max-width: var(--measure);
+    max-width: min(var(--measure), 100%);
   }
 
   &__tag {
@@ -209,6 +209,17 @@ table {
   &[data-kind="instrument"] &__tag { color: var(--gold); }
   &[data-kind="residency"]  &__tag { color: var(--oxblood); }
   &[data-kind="paper"]      &__tag { color: var(--blue); }
+}
+
+@media (max-width: 620px) {
+  .index__row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    row-gap: 0.35rem;
+
+    &__ix { grid-column: 1; }
+    &__tag { grid-column: 2; grid-row: 1; }
+    > span:nth-child(2) { grid-column: 1 / -1; }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -267,7 +278,7 @@ table {
   padding: var(--s2) var(--s3);
   font-size: var(--t-base);
   color: var(--ink-dim);
-  max-width: var(--measure);
+  max-width: min(var(--measure), 100%);
 
   &--archive { border-left-color: var(--oxblood); }
 

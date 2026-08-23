@@ -9,7 +9,7 @@
   border-left: 2px solid var(--gold-dim);
   background: var(--panel);
   margin-block: var(--s4);
-  max-width: var(--measure);
+  max-width: min(var(--measure), 100%);
 
   &__head {
     display: flex;

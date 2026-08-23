@@ -7,7 +7,7 @@ rail_label: About
 ---
 
 <p align="center">
-  <img width="500" height="370" src="/assets/media/about/ninon-back.png">
+  <img width="500" height="370" src="/assets/media/about/ninon-back.png" alt="Ninon Devis Salvy, photographed from behind at a mixing desk">
 </p>
 
 *****************************************************
