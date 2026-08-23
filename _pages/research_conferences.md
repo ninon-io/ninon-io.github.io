@@ -6,7 +6,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/conference.webp
+  overlay_image: /assets/media/research/images/conferences-header.webp
 toc: true
 toc_label: "Conferences"
 sidebar:
@@ -25,7 +25,7 @@ Est-ce que l’art généré par l’IA est-il de l’art ? Quel impact a-t-elle
 
 Projection du documentaire "L’IA peut-elle créer de l’art ?" de Dennis Wagner, en partenariat avec Arte et débat d'experts animé par Daniel Fiévet, journaliste à France Inter.
 
-[Description]([https://www.sorbonne-universite.fr/evenements/lia-peut-elle-creer-de-lart]){: .btn .btn--light-outline}
+[Description](https://www.sorbonne-universite.fr/evenements/lia-peut-elle-creer-de-lart){: .btn .btn--light-outline}
 
 ## Neurorack Project for Raster-Noton
 

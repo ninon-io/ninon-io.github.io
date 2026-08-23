@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 header:
   # Assuming you want to keep the header image, or perhaps use a more artistic one.
-  image: /images/header.jpg 
+  image: /assets/media/site/home-header.jpg 
 ---
 
 ## Art, Research, and Innovation
@@ -43,7 +43,7 @@ I am dedicated to making AI a tangible, expressive partner for musicians. My res
 3.  **Interface & Hardware Integration:** Embedding intelligent systems directly into modular and professional hardware setups.
 4.  **AI's Artistic Role:** Investigating the aesthetic and societal implications of AI in music creation.
 
-→ Explore my **[Publications & Presentations](/publications/)** and **[Main Projects](/projects/)**
+→ Explore my **[Publications & Presentations](/research/papers/)** and **[Main Projects](/projects/)**
 
 ---
 

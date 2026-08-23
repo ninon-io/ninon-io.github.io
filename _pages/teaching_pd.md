@@ -6,7 +6,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/puredataheader.jpeg
+  overlay_image: /assets/media/teaching/images/pure-data-header.jpg
   actions:
     - label: "Download"
       url: "https://puredata.info/downloads"
@@ -56,9 +56,9 @@ The first course aims to introduce the basic concepts of **PD**, while providing
 - Keyboard control
 - Subpatches
 
-> PDF associated with this course [Here](/documents/PD01_2022.pdf){: .btn .btn--light-outline}
+> PDF associated with this course [Here](/assets/documents/teaching/pure-data/pd-01-2022.pdf){: .btn .btn--light-outline}
 
-> Used zipped patches [Here](/documents/patches1.zip){: .btn .btn--light-outline}
+> Used zipped patches [Here](/assets/documents/teaching/pure-data/patches-1.zip){: .btn .btn--light-outline}
 
 
 ### Advanced Notions
@@ -74,9 +74,9 @@ The second course presents more advanced techniques to build complicated patches
 - Building a kick drum with presets
 - Courses about externals (given by P. Esling)
 
-> PDF associated with this course [Here](/documents/PD02_2022.pdf){: .btn .btn--light-outline}
+> PDF associated with this course [Here](/assets/documents/teaching/pure-data/pd-02-2022.pdf){: .btn .btn--light-outline}
 
-> Used zipped patches [Here](/documents/patches_2.zip){: .btn .btn--light-outline}
+> Used zipped patches [Here](/assets/documents/teaching/pure-data/patches-2.zip){: .btn .btn--light-outline}
 
 ## Project
 
@@ -88,16 +88,16 @@ Post-processing, mixing, or mastering are not allowed unless you attach a README
 
 No Max MSP is allowed, but any creative experiment will be valued.
 
-> Full subject [Here](/documents/PD_Project_2022.pdf){: .btn .btn--light-outline}
+> Full subject [Here](/assets/documents/teaching/pure-data/pd-project-2022.pdf){: .btn .btn--light-outline}
 
 ## Externals
 
 Moreover, you can find useful literature to build your own externals for Pd:
 
-[How to write externals](/documents/Project_Annex_HowTo.pdf){: .btn .btn--light-outline}
+[How to write externals](/assets/documents/teaching/pure-data/pd-project-annex-howto.pdf){: .btn .btn--light-outline}
 
-[Annexes](/documents/Project_Annex_PD.pdf){: .btn .btn--light-outline}
+[Annexes](/assets/documents/teaching/pure-data/pd-project-annex.pdf){: .btn .btn--light-outline}
 
-[The optional project](/documents/ProjectPhilippe.pdf){: .btn .btn--light-outline}
+[The optional project](/assets/documents/teaching/pure-data/pd-project-philippe.pdf){: .btn .btn--light-outline}
 
-[Compressed externals available for download from Philippe](/documents/pd_externals.zip){: .btn .btn--light-outline}
+[Compressed externals available for download from Philippe](/assets/documents/teaching/pure-data/pd-externals.zip){: .btn .btn--light-outline}

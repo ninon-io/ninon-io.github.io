@@ -1,36 +1,36 @@
 # main links
 main:
   - title: "Research"
-    url: https://ninon-io.github.io/research
+    url: /research/
   - title: "Teaching"
-    url: https://ninon-io.github.io/teaching
+    url: /teaching/
   - title: "Projects"
-    url: https://ninon-io.github.io/projects
+    url: /projects/
   - title: "About"
-    url: https://ninon-io.github.io/about
+    url: /about/
 
 research:
   - title: "PhD Subject"
-    url: https://ninon-io.github.io/research/phd
+    url: /research/phd/
   - title: "Manuscript Companion Page"
-    url: https://ninon-io.github.io/research/manuscript
+    url: /research/manuscript/
   - title: "Conferences"
-    url: https://ninon-io.github.io/research/conferences
+    url: /research/conferences/
   - title: "Scientific Papers"
-    url: https://ninon-io.github.io/research/papers
+    url: /research/papers/
 
 teaching:
   - title: "Ableton"
-    url: https://ninon-io.github.io/teaching/ableton
+    url: /teaching/ableton/
   - title: "Pure Data"
-    url: https://ninon-io.github.io/teaching/puredata
+    url: /teaching/puredata/
   - title: "Cryptology"
-    url: https://ninon-io.github.io/teaching/cryptology
+    url: /teaching/cryptology/
   - title: "Java"
-    url: https://ninon-io.github.io/teaching/java
+    url: /teaching/java/
 
 projects:
   - title: "Neurorack"
-    url: https://ninon-io.github.io/projects/neurorack
+    url: /projects/neurorack/
   - title: "Wilding AI - CTM"
-    url: https://ninon-io.github.io/projects/ctm
+    url: /projects/ctm/

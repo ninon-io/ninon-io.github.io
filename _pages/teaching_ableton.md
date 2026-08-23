@@ -1,12 +1,12 @@
 ---
 title: "Ableton"
 layout: single
-permalink: /teaching/ableton
+permalink: /teaching/ableton/
 author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.6"
-  overlay_image: /images/particles.jpg
+  overlay_image: /assets/media/teaching/images/ableton-header.jpg
   actions:
     - label: "Here"
       url: "https://www.ableton.com/en/trial/"
@@ -57,7 +57,7 @@ The first course aims at introducing the basic concepts of **Ableton**, while gi
   - A dive into the audio effects and particularly Eq and Compressor
   - How to export your track
  
-  > PDF associated to this course [Here](/documents/Ableton01_2023.pdf){: .btn .btn--light-outline}
+  > PDF associated to this course [Here](/assets/documents/teaching/ableton/ableton-01-2023.pdf){: .btn .btn--light-outline}
 
 ### Advanced Notions
 
@@ -75,7 +75,7 @@ The second course presents deeper technics to compose your music, especially how
   - Plug-in
   - Recording and resampling
  
-> PDF associated to this course [Here](/documents/Ableton02_2022.pdf){: .btn .btn--light-outline}
+> PDF associated to this course [Here](/assets/documents/teaching/ableton/ableton-02-2022.pdf){: .btn .btn--light-outline}
 
 ## Project
 
@@ -87,4 +87,4 @@ You must provide a .wav file of your creation alongside the Ableton project and 
 
 Any creative experiment will be valued.
 
-> Full subject [Here](/documents/Ableton_project.pdf){: .btn .btn--light-outline}
+> Full subject [Here](/assets/documents/teaching/ableton/ableton-project.pdf){: .btn .btn--light-outline}

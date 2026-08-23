@@ -6,7 +6,7 @@ author_profile: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/crypto.jpg
+  overlay_image: /assets/media/teaching/images/cryptology.jpg
   actions:
     - label: "Have fun here"
       url: "https://overthewire.org/wargames/"
@@ -20,7 +20,7 @@ sidebar:
 ## Cryptologie Romantique - L3
 
 
-[Enoncé](/documents/td1-etu_compressed.pdf){: .btn .btn--primary}
+[Enoncé](/assets/documents/teaching/cryptology/crypto-romantique-td1-enonce.pdf){: .btn .btn--primary}
 
 ### TD 1 & 2
 
@@ -33,14 +33,14 @@ sidebar:
 - Indice de coïncidence
 - Test de Kasiski
 
-[Corrections](/documents/Crypto_Romantique_TD1&2.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/crypto-romantique-td1-2-corrections.pdf){: .btn .btn--light-outline}
 
 ### TD 3
 
 - Indice de coïncidence mutuelle
 - Inversion modulaire
 
-[Corrections](/documents/Crypto_Romantique_TD3.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/crypto-romantique-td3-corrections.pdf){: .btn .btn--light-outline}
 
 ### TD 4
 
@@ -50,7 +50,7 @@ sidebar:
 - Vigenère autoclave
 - Cryptanalyse de Vigenère
 
-[Corrections](/documents/Crypto_Romantique_TD4.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/crypto-romantique-td4-corrections.pdf){: .btn .btn--light-outline}
 
 ### TD 5
 
@@ -59,70 +59,68 @@ sidebar:
 - Sur le PGCD et son calcul
 - Questions de cours
 
-[Corrections](/documents/Crypto_Romantique_TD5.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/crypto-romantique-td5-corrections.pdf){: .btn .btn--light-outline}
 
 ## Introduction à la sécurité - M1
 
 ### TD 1
 
-[Exercices faciles](/documents/TD1Simple.pdf){: .btn .btn--primary}
-[Exercices avancés](/documents/TD1_ISEC_2021.pdf){: .btn .btn--primary}
+[Exercices faciles](/assets/documents/teaching/cryptology/isec-td1-simple.pdf){: .btn .btn--primary}
+[Exercices avancés](/assets/documents/teaching/cryptology/isec-td1-avance.pdf){: .btn .btn--primary}
 
 - Taille des clefs (Q.1-6 + 9-10)
 - Modes opératoires et propriétés de sécurité
 
-[Exercices guidés](/documents/TD1_details.pdf){: .btn .btn--primary}
+[Exercices guidés](/assets/documents/teaching/cryptology/isec-td1-guide.pdf){: .btn .btn--primary}
 
-[Corrections](/documents/ISEC_TD1.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/isec-td1-corrections.pdf){: .btn .btn--light-outline}
 
 ### TD 2
 
-[Enoncé](/documents/TD1_ISEC_2021.pdf){: .btn .btn--primary}
+[Enoncé](/assets/documents/teaching/cryptology/isec-td1-avance.pdf){: .btn .btn--primary}
 
 - Modes opératoires et propriétés de sécurité (fin)
 - Mode opératoire CBC*
 - Attaque sur CBC avec padding RFC2040
 
-[Exercices guidés](/documents/TD2_details.pdf){: .btn .btn--primary}
+[Exercices guidés](/assets/documents/teaching/cryptology/isec-td2-guide.pdf){: .btn .btn--primary}
 
-% [Corrections](/documents/ISEC_TD2_PDF_correct.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/isec-td2-corrections.pdf){: .btn .btn--light-outline}
 
 
 ### TD 3
 
-[Enoncé](/documents/TD2_ISEC_2021.pdf){: .btn .btn--primary}
+[Enoncé](/assets/documents/teaching/cryptology/isec-td2-enonce.pdf){: .btn .btn--primary}
 
 - Chiffrement avec blanchiment
 - Double chiffrement
 - Multicollisions pour les fonctions de hachage itérées
 - Chiffrement par bloc et fonction de compression
 
-[Exercices guidés](/documents/TD3_details.pdf){: .btn .btn--primary}
-
-[Corrections](/documents/TD3_Correction.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/isec-td3-corrections.pdf){: .btn .btn--light-outline}
 
 
 ### TD 4
 
-[Exercices faciles](/documents/TD4simple.pdf){: .btn .btn--primary}
-[Exercices avancés](/documents/TD3_ISEC_2021.pdf){: .btn .btn--primary}
+[Exercices faciles](/assets/documents/teaching/cryptology/isec-td4-simple.pdf){: .btn .btn--primary}
+[Exercices avancés](/assets/documents/teaching/cryptology/isec-td3-enonce.pdf){: .btn .btn--primary}
 
 - Construction de Merkle Damgard
 - Cryptographie asymétrique
 - Sécurité de la construction de Matyas-Meyer-Oseas avec le DES
 - Attaque en collision contre les fonctions de hachage concaténées
 
-[Exercices guidés](/documents/TD4_details.pdf){: .btn .btn--primary}
+[Exercices guidés](/assets/documents/teaching/cryptology/isec-td4-guide.pdf){: .btn .btn--primary}
 
-[Corrections](/documents/ISEC_TD4_PDF.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/isec-td4-corrections.pdf){: .btn .btn--light-outline}
 
 ### TD 5
 
-[Enoncé](/documents/TD4_ISEC_2021.pdf){: .btn .btn--primary}
+[Enoncé](/assets/documents/teaching/cryptology/isec-td5-enonce.pdf){: .btn .btn--primary}
 
 - Multi-exponentiation
 - Algorithme de Shanks
 - Sécurité du RSA naïf
 
-[Corrections](/documents/ISEC_TD5_Corrigé.pdf){: .btn .btn--light-outline}
+[Corrections](/assets/documents/teaching/cryptology/isec-td5-corrections.pdf){: .btn .btn--light-outline}
 

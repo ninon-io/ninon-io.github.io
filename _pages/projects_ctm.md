@@ -1,11 +1,11 @@
 ---
 title: "Ninon & Jun Suzuki @ Wilding AI Lab (CTM 2025)"
 layout: single
-permalink: /projects/ctm
+permalink: /projects/ctm/
 author_profile: false
 classes: wide
 header:
-  overlay_image: /images/ctm_header.jpg
+  overlay_image: /assets/media/projects/wilding-ai/images/ctm-header.jpg
   overlay_color: "#000"
   overlay_filter: "0.6"
   caption: "Design: Vojd"
@@ -15,6 +15,22 @@ toc_label: "Contents"
 toc_sticky: true
 sidebar:
   nav: "projects"
+
+# ── Photographs ──────────────────────────────────────────────────────────────
+# To add more event photography: drop the files into
+#   assets/media/projects/wilding-ai/images/
+# then append an entry below. The layout adapts on its own —
+# 1 image renders full width, 2 side by side, 3 or more in a grid.
+gallery:
+  - url: /assets/media/projects/wilding-ai/images/ninon-and-jun.jpg
+    image_path: /assets/media/projects/wilding-ai/images/ninon-and-jun.jpg
+    alt: "Ninon and Jun Suzuki during the Wilding AI Lab"
+    title: "Ninon & Jun Suzuki — Wilding AI Lab, MONOM Berlin, January 2025"
+
+# ── Spatialized sound sketch ─────────────────────────────────────────────────
+# The Listen section below stays hidden until this value is set.
+# Drop the file at the path shown, then uncomment the line.
+spatial_sketch: # /assets/media/projects/wilding-ai/audio/ninon-jun-spatial-sketch.wav
 ---
 
 ## Ninon & Jun Suzuki x Wilding AI Lab
@@ -23,11 +39,7 @@ We were thrilled to share our first collaboration with and **Jun Suzuki** ([@ein
 
 Selected alongside nine other talented artists, we joined this unique workshop-residency exploring the creative frontiers of AI systems involving text, audio, and sound spatialization. The lab was guided by facilitators Beth Coleman, Maurice Jones, Portrait XO, and Alexandre Saunier.
 
-<figure class="half">
-    <a href="/images/projects/wilding-ai/ninon_devis_credit_atelieroz.jpg"><img src="/images/projects/wilding-ai/ninon_devis_credit_atelieroz.jpg" alt="Ninon Devis Portrait"></a>
-    <a href="/images/projects/wilding-ai/jun_suzuki_credit_omwhite_manifest.jpg"><img src="/images/projects/wilding-ai/jun_suzuki_credit_omwhite_manifest.jpg" alt="Jun Suzuki Portrait"></a>
-    <figcaption>Left: Ninon Devis (Photo: <a href="https://www.instagram.com/atelieroz/">@atelieroz</a>). Right: Jun Suzuki (Photo: <a href="https://www.instagram.com/omwh_ite/">@omwh_ite</a> / <a href="https://www.instagram.com/manifest.io.berlin/">@manifest.io.berlin</a>).</figcaption>
-</figure>
+{% include gallery caption="Ninon & Jun Suzuki ([@einleit](https://www.instagram.com/einleit/)) at the Wilding AI Lab, [MONOM](https://monom.studios/) Berlin, January 2025." %}
 
 ---
 
@@ -43,7 +55,7 @@ Spearheaded by artists and researchers the initiative gathers participants to en
 
 For its Berlin iteration ahead of [CTM Festival 2025](https://www.ctm-festival.de/) ([@ctmfestival](https://www.instagram.com/ctmfestival/)), the Wilding AI Lab landed in the unique environment of [MONOM, Berlin's Centre for Spatial Sound](https://monom.studios/) ([@monomstudios](https://www.instagram.com/monomstudios/)).
 
-![MONOM Studios 4DSOUND Space](/images/monom.jpg "MONOM Studios featuring the 4DSOUND system - Photo: [monomsound.com]")
+![MONOM Studios 4DSOUND Space](/assets/media/projects/wilding-ai/images/monom-4dsound.jpg "MONOM Studios featuring the 4DSOUND system - Photo: [monomsound.com]")
 
 ### MONOM & The 4DSOUND System
 
@@ -63,13 +75,15 @@ The intensive four-day lab (Jan 23-26, 2025) combined morning skill-sharing work
 
 The residency culminated in the **Wilding AI Open Lab** on Sunday, January 26th (13:00–17:00), where all participating artists shared processes, prototypes, and artistic interventions developed during the week.
 
+{% if page.spatial_sketch %}
 ---
 
 ## Listen: Spatialized Sound Sketch
 
 <audio controls style="width: 100%; margin: 1.5rem 0;">
-  <source src="/audio/projects/wilding-ai/ninon_jun_spatial_sketch.wav" type="audio/wav"> Your browser does not support the audio element. Please update your browser or <a href="/audio/projects/wilding-ai/ninon_jun_spatial_sketch.wav">download the track</a>.
+  <source src="{{ page.spatial_sketch }}" type="audio/wav"> Your browser does not support the audio element. Please update your browser or <a href="{{ page.spatial_sketch }}">download the track</a>.
 </audio>
+{% endif %}
 
 ---
 

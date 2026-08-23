@@ -1,42 +1,42 @@
 ---
 title: "Research"
 layout: splash
-permalink: /research
+permalink: /research/
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /images/research_header2.webp
+  overlay_image: /assets/media/research/images/research-header.webp
 excerpt: "All items linked to my research in creative musical AI"
 PhD:
-  - image_path: /images/phd2.webp
+  - image_path: /assets/media/research/thesis/images/thesis-header.webp
     alt: "PhD"
     title: "PhD Subject"
     excerpt: 'Lightweight deep learning on real-time embedded architectures.'
-    url: "research/phd"
+    url: "/research/phd/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 Manuscript:
-  - image_path: /images/manuscript.webp
+  - image_path: /assets/media/research/thesis/images/manuscript-header.webp
     alt: "Manuscript"
     title: "Manuscript Companion"
     excerpt: 'Additional material for my manuscript'
-    url: "research/manuscript"
+    url: "/research/manuscript/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 conferences:
-  - image_path: /images/conference.webp
+  - image_path: /assets/media/research/images/conferences-header.webp
     alt: "Conferences"
     title: "Conferences and Seminars"
     excerpt: 'Links to the **descriptions and videos** of various speaking intervention'
-    url: "research/conferences"
+    url: "/research/conferences/"
     btn_label: "Enter"
     btn_class: "btn--primary"
 papers:
-  - image_path: /images/paper.webp
+  - image_path: /assets/media/research/images/papers-card.webp
     alt: "Papers"
     title: "Papers"
     excerpt: 'List of publications'
-    url: "research/papers"
+    url: "/research/papers/"
     btn_label: "Enter"
     btn_class: "btn--primary"
 ---

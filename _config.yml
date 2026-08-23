@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "Ninon Devis"
-  avatar           : "/images/Ninon.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/media/about/ninon-portrait.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Researcher in creative Deep Learning applied to music"
   location         : "Berlin / Paris"
   email            : 

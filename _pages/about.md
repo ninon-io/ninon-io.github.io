@@ -1,12 +1,12 @@
 ---
 title: "About"
 layout: single
-permalink: /about
+permalink: /about/
 classes: wide
 ---
 
 <p align="center">
-  <img width="500" height="370" src="https://raw.githubusercontent.com/ninon-io/ninon-io.github.io/master/images/ninon_dos2.png">
+  <img width="500" height="370" src="/assets/media/about/ninon-back.png">
 </p>
 
 *****************************************************
@@ -14,7 +14,7 @@ classes: wide
 Passionate about music and sciences. 
 </p>
 
-You can find my resume [here](/documents/CV2024.pdf){: .btn .btn--light-outline}
+You can find my resume [here](/assets/documents/cv/ninon-devis-cv-2024.pdf){: .btn .btn--light-outline}
 
 > Sciences:
 - 2024 - Today: Audio Research Engineer at Native Instruments (Berlin), Deep Learning applied to music

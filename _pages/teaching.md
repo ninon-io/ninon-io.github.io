@@ -1,39 +1,39 @@
 ---
 title: "Teaching"
 layout: splash
-permalink: /teaching
+permalink: /teaching/
 header:
   overlay_color: "#000"
   overlay_filter: "0.7"
-  overlay_image: /images/teaching_header.jpg
+  overlay_image: /assets/media/teaching/images/teaching-header.jpg
 excerpt: ""
 
 feature_row:
-  - image_path: /images/abletonlive.jpg
+  - image_path: /assets/media/teaching/images/ableton-card.jpg
     alt: "Ableton Live"
     title: "Ableton Live"
     excerpt: "PDF files and projects for **M2 - ATIAM**"
-    url: "teaching/ableton"
+    url: "/teaching/ableton/"
     btn_label: "Enter"
     btn_class: "btn--primary"
-  - image_path: /images/patchpd.jpeg
+  - image_path: /assets/media/teaching/images/pure-data-card.jpg
     alt: "Pure Data"
     title: "Pure Data"
     excerpt: "PDF files and projects for **M2 - ATIAM**"
-    url: "teaching/puredata"
+    url: "/teaching/puredata/"
     btn_label: "Enter"
     btn_class: "btn--primary"
-  - image_path: /images/crypto.jpg
+  - image_path: /assets/media/teaching/images/cryptology.jpg
     alt: "Crypto"
     title: "Cryptology"
     excerpt: "Exercices and corrections for **L3** and **M1**"
-    url: "teaching/cryptology"
+    url: "/teaching/cryptology/"
     btn_label: "Enter"
     btn_class: "btn--primary"
-  - image_path: /images/java.png
+  - image_path: /assets/media/teaching/images/java-card.png
     title: "JAVA"
     excerpt: "PDF files and project for **L3**"
-    url: "teaching/java"
+    url: "/teaching/java/"
     btn_label: "Enter"
     btn_class: "btn--primary"
     
