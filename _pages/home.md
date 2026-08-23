@@ -4,7 +4,7 @@ permalink: /
 title: ""
 eyebrow: "Ninon Devis Salvy — Berlin"
 
-statement: "I build instruments, systems and performances for electronic sound."
+statement: "I think and compose music through machines."
 lede: "Some of it ends up in a rack, some of it ships in software, some of it only exists for the length of a set. Research engineer at Native Instruments, PhD from IRCAM, performing as Ninon."
 
 # Presented at natural ratio and capped by its own resolution — a 2013px source

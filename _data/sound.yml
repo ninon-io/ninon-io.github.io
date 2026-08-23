@@ -1,5 +1,14 @@
-# Live and DJ activity. `kind` distinguishes a live electronic set from a DJ set —
-# they are different practices and the site must not blur them.
+# Live and recorded activity.
+#
+# `kind` is the distinction that matters and is deliberately small:
+#   DJ set  — records played
+#   Live    — electronic performance
+#   A/V     — audiovisual collaboration (the visual half is someone else's work)
+#   Stream  — recorded session or mix
+#
+# An entry only carries a `url` when that destination is genuinely about the
+# performance. Linking a venue straight into a project page whose photography is
+# from a different night is more confusing than not linking it at all.
 
 upcoming:
   - date: "2026-09-24"
@@ -15,24 +24,37 @@ selected:
     city: "Paris"
     kind: "DJ set"
     note: "Dreamachine"
+    url: /sound/la-station/
+    cta: "Photographs"
+  - date: "2026-02-01"
+    display: "2026"
+    venue: "Sound Metaphor TV"
+    city: "Stream"
+    kind: "Stream"
+    note: "Recorded DJ session"
+    video: "4Ttl4iCsHis"
+    cta: "Watch"
+  - date: "2025-09-03"
+    display: "September 2025"
+    venue: "STUDIO1111"
+    city: "Berlin"
+    kind: "A/V"
+    note: "N / V with Victor Calvi — opening of Berlin New Media Week"
+    url: /work/n-v/
+    cta: "N / V project"
+  - date: "2025-06-01"
+    display: "2025"
+    venue: "Alte Münze"
+    city: "Berlin"
+    kind: "A/V"
+    note: "N / V with Victor Calvi — Blank Page series"
+    url: /work/n-v/
+    cta: "N / V project"
   - date: "2025-01-26"
     display: "January 2025"
     venue: "MONOM"
     city: "Berlin"
     kind: "Live"
-    note: "Wilding AI, CTM Festival"
+    note: "Wilding AI, CTM Festival — 4DSOUND"
     url: /work/wilding-ai/
-  - date: "2025-09-03"
-    display: "September 2025"
-    venue: "STUDIO1111"
-    city: "Berlin"
-    kind: "Live"
-    note: "N / V, opening of Berlin New Media Week"
-    url: /work/n-v/
-  - date: "2025-01-01"
-    display: "2025"
-    venue: "Alte Münze"
-    city: "Berlin"
-    kind: "Live"
-    note: "N / V, Blank Page series"
-    url: /work/n-v/
+    cta: "Residency"

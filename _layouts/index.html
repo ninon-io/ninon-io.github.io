@@ -25,8 +25,15 @@ described. Photography leads because there is now real photography.
     <div class="rail"><span class="rail__num">01</span><span class="rail__label">Selected</span></div>
     <div class="col">
       <div class="index">
-        {%- assign featured = site.data.work | where_exp: "w", "w.home" | sort: "home" %}
-        {%- for e in featured %}
+        {%- comment -%}
+        Order comes from _data/home.yml. An entry either names a Work slug or
+        carries its own fields, so Sound and the thesis can sit between projects
+        without duplicating their descriptions.
+        {%- endcomment -%}
+        {%- for item in site.data.home %}
+        {%- if item.work %}{% assign e = site.data.work | where: "slug", item.work | first %}
+        {%- else %}{% assign e = item %}{% endif %}
+        {%- if e %}
         <a class="index__row" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
           <span class="index__row__ix">{{ e.year }}</span>
           <span>
@@ -35,23 +42,8 @@ described. Photography leads because there is now real photography.
           </span>
           <span class="index__row__tag">{{ e.kind }}</span>
         </a>
+        {%- endif %}
         {%- endfor %}
-        <a class="index__row" href="{{ '/sound/' | relative_url }}" data-kind="live">
-          <span class="index__row__ix">2026</span>
-          <span>
-            <span class="index__row__title">Live &amp; DJ</span>
-            <span class="index__row__desc">Säule at Berghain in September; La Station, MONOM, Alte Münze, STUDIO1111.</span>
-          </span>
-          <span class="index__row__tag">Sound</span>
-        </a>
-        <a class="index__row" href="{{ '/research/thesis/' | relative_url }}" data-kind="thesis">
-          <span class="index__row__ix">2025</span>
-          <span>
-            <span class="index__row__title">Creative Deep Learning on Real Time Embedded Architectures</span>
-            <span class="index__row__desc">Doctoral thesis, Sorbonne Université. Defended May 2025.</span>
-          </span>
-          <span class="index__row__tag">Thesis</span>
-        </a>
       </div>
       <div class="prose">{{ content }}</div>
     </div>

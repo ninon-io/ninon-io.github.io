@@ -12,7 +12,7 @@ lead:
   src: /assets/media/sound/station/la-station-0243-romain-guede.jpg
   alt: "The room at La Station: red beams cutting through haze over a dense crowd, the booth lit at the far end"
   credit: "Romain Guede"
-  caption: "La Station — Gare des Mines, Paris."
+  caption: "During a DJ set at La Station — Gare des Mines, Paris, April 2026."
 
 profiles:
   - label: "SoundCloud"

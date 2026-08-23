@@ -11,16 +11,16 @@ entries:
     url: /research/thesis/
     year: "2025"
     kind: "Thesis"
-  - title: "Singularity and Creation in the Age of AI"
-    description: "Where originality lives when the model averages everything it has seen. With Jun Suzuki, for the CNC Lab."
-    url: /research/singularity-and-creation/
-    year: "2026"
-    kind: "Paper"
   - title: "At the Edge of the Abyss"
     description: "Art in the age of AI. English version of the essay published by binaire / La Recherche."
     url: /research/aux-abords-de-labime/
     year: "2025"
     kind: "Essay"
+  - title: "Singularity and Creation in the Age of AI"
+    description: "Where originality lives when the model averages everything it has seen. With Jun Suzuki, for the CNC Lab."
+    url: /research/singularity-and-creation/
+    year: "2026"
+    kind: "Paper"
   - title: "Publications"
     description: "The full record — peer-reviewed papers, preprints, essays and the thesis, with DOIs, arXiv, PDFs and BibTeX."
     url: /research/publications/

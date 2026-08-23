@@ -1,0 +1,32 @@
+---
+layout: base
+---
+{%- comment -%}
+A performance record: photographs at real scale, minimal furniture. Lighter than
+a Work project, because the night is the subject rather than a body of work.
+{%- endcomment -%}
+{% include site/page-head.html %}
+
+{%- if page.lead %}
+{%- assign shooter = page.credits.photography | first %}
+<div class="field home-lead">
+  {% include site/img.html src=page.lead.src alt=page.lead.alt present=page.lead.present loading="eager" credit=shooter.name %}
+</div>
+{%- endif %}
+
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      <span class="rail__num">{{ page.years }}</span>
+      <span class="rail__label">{{ page.kind }}</span>
+    </div>
+    <div class="col">
+      <div class="prose">{{ content }}</div>
+      {%- for img in page.gallery %}
+      {% include site/img.html src=img.src alt=img.alt present=img.present %}
+      {%- endfor %}
+      {% include site/credits.html %}
+      <p><a class="btn" href="{{ '/sound/' | relative_url }}">← All performances</a></p>
+    </div>
+  </div>
+</section>

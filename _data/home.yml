@@ -1,0 +1,20 @@
+# Homepage selection and order. Explicit rather than derived, because the first
+# impression is an editorial decision, not a sort.
+#
+# Neurorack leads; the current music practice appears immediately after it; the
+# Native Instruments work is prominent; N / V stays visible but no longer defines
+# the opening; research closes the sequence.
+
+- work: neurorack
+- title: "Live & DJ"
+  url: /sound/
+  year: "2026"
+  kind: "Sound"
+  description: "Säule at Berghain in September. La Station, MONOM, Alte Münze, STUDIO1111."
+- work: absynth-preset-explorer
+- work: n-v
+- title: "Creative Deep Learning on Real Time Embedded Architectures"
+  url: /research/thesis/
+  year: "2025"
+  kind: "Thesis"
+  description: "Doctoral thesis, Sorbonne Université. Defended May 2025."

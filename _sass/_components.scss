@@ -854,3 +854,39 @@ table thead:has(th:empty) { display: none; }
 }
 
 .img picture { display: block; }
+
+// ---- sound rows ------------------------------------------------------------
+// Each row states its destination, so a venue never navigates somewhere the
+// label did not lead you to expect.
+.index__row__meta {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s2);
+  justify-content: flex-end;
+}
+
+.index__row__cta {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--track-mono);
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+.index__row:hover .index__row__cta,
+.index__row:focus-within .index__row__cta { color: var(--gold); }
+
+.index__row--static .index__row__cta { display: none; }
+
+.sound-video {
+  padding-block: var(--s3);
+  border-bottom: 1px solid var(--rule);
+
+  .video { margin-block: 0; max-width: min(var(--measure), 100%); }
+  .fig { margin-block: 0; }
+}
+
+@media (max-width: 620px) {
+  .index__row__meta { grid-column: 1 / -1; justify-content: flex-start; }
+}

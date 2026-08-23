@@ -50,18 +50,30 @@ layout: base
   <div class="field band__grid">
     <div class="rail"><span class="rail__num">03</span><span class="rail__label">Selected</span></div>
     <div class="col">
+      {%- comment -%}
+      Each row states where it goes. A venue never navigates somewhere the
+      visitor would not expect from its label.
+      {%- endcomment -%}
       <div class="index">
         {%- assign past = site.data.sound.selected | sort: 'date' | reverse %}
         {%- for d in past %}
-        {%- if d.url %}<a class="index__row" href="{{ d.url | relative_url }}" data-kind="{{ d.kind | slugify }}">
-        {%- else %}<div class="index__row index__row--static" data-kind="{{ d.kind | slugify }}">{% endif %}
+        {%- if d.url %}<a class="index__row index__row--sound" href="{{ d.url | relative_url }}" data-kind="{{ d.kind | slugify }}">
+        {%- else %}<div class="index__row index__row--sound index__row--static" data-kind="{{ d.kind | slugify }}">{% endif %}
           <span class="index__row__ix">{{ d.display }}</span>
           <span>
             <span class="index__row__title">{{ d.venue }}</span>
             <span class="index__row__desc">{{ d.city }}{% if d.note %} · {{ d.note }}{% endif %}</span>
           </span>
-          <span class="index__row__tag">{{ d.kind }}</span>
+          <span class="index__row__meta">
+            {%- if d.cta and d.url %}<span class="index__row__cta">{{ d.cta }} →</span>{% endif %}
+            <span class="index__row__tag">{{ d.kind }}</span>
+          </span>
         {%- if d.url %}</a>{% else %}</div>{% endif %}
+        {%- if d.video %}
+        <div class="sound-video">
+          {% include site/video.html id=d.video title=d.venue %}
+        </div>
+        {%- endif %}
         {%- endfor %}
       </div>
       <p class="note-inline">Full history on <a href="https://ra.co/dj/ninon" rel="noopener">Resident Advisor</a>. Earlier festival appearances include Ozora, Château Perché, Coucool, Nataraja, Forest Soul Gathering and Planète Sauvage; clubs include Or Club (Tokyo), Glazart and Le Chinois (Paris).</p>
@@ -73,13 +85,8 @@ layout: base
   <div class="field band__grid">
     <div class="rail"><span class="rail__num">04</span><span class="rail__label">Documentation</span></div>
     <div class="col">
-      {% include site/img.html src="/assets/media/sound/station/la-station-0041-romain-guede.jpg" present="natural" alt="Ninon behind the decks in red and magenta light, the frame streaked with the motion of the mix" caption="La Station — Gare des Mines, Paris." credit="Romain Guede" %}
-      <div class="photo-pair">
-        {% include site/img.html src="/assets/media/sound/station/la-station-0265-romain-guede.jpg" alt="Ninon side-lit at the mixer, concentrating on a transition" %}
-        {% include site/img.html src="/assets/media/sound/station/la-station-0391-romain-guede.jpg" alt="Close view of Ninon at the decks, horizontal red neon bars behind, the crowd beyond" %}
-      </div>
-      <p class="note-inline">La Station — Gare des Mines, Paris. Photographs by Romain Guede.</p>
-      {% include site/img.html src="/assets/media/sound/sound-metaphor/sound-metaphor-tv.png" present="wide" alt="Ninon playing a DJ set in a room lined floor to ceiling with records, for a Sound Metaphor TV session" caption="Streamed session for Sound Metaphor TV." %}
+      {% include site/img.html src="/assets/media/sound/station/la-station-0041-romain-guede.jpg" present="natural" alt="Ninon behind the decks in red and magenta light, the frame streaked with the motion of the mix" caption="La Station — Gare des Mines, Paris, April 2026. [See more from the night](/sound/la-station/)." credit="Romain Guede" %}
+      {% include site/img.html src="/assets/media/sound/sound-metaphor/sound-metaphor-tv.png" present="wide" alt="Ninon playing a DJ set in a room lined floor to ceiling with records, for a Sound Metaphor TV session" caption="Recorded session for Sound Metaphor TV." %}
     </div>
   </div>
 </section>

@@ -20,7 +20,7 @@ VIEWPORTS = [390, 768, 1440]
 PAGES = [
     "/", "/work/", "/work/n-v/", "/work/neurorack/",
     "/work/absynth-preset-explorer/", "/work/wilding-ai/", "/work/frave/",
-    "/sound/",
+    "/sound/", "/sound/la-station/",
     "/research/", "/research/thesis/", "/research/thesis/companion/",
     "/research/publications/", "/research/talks/",
     "/research/teaching/", "/research/teaching/ableton/",
