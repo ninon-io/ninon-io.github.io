@@ -26,7 +26,7 @@ layout: base
       </div>
 
       <div class="index" data-index>
-        {%- assign items = site.data.work | sort: 'sort' | reverse %}
+        {%- assign items = site.data.work | sort: 'order' %}
         {%- for e in items %}
         <a class="index__row" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
           <span class="index__row__ix">{{ e.year }}</span>

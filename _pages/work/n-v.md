@@ -5,7 +5,7 @@ title: "N / V"
 eyebrow: "Audiovisual duo · with Victor Calvi"
 excerpt: "Sound and generative image built as a single evolving environment, played live and pushed toward the point where structure gives way."
 kind: "A/V Performance"
-years: "2025–26"
+years: "2025–2026"
 toc: true
 
 lead:

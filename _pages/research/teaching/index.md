@@ -2,7 +2,7 @@
 layout: listing
 permalink: /research/teaching/
 title: "Teaching archive"
-eyebrow: "Course material, 2019—2023"
+eyebrow: "Course material, 2019–2023"
 excerpt: "Material from the ATIAM master at IRCAM / Sorbonne Université and earlier undergraduate teaching, kept online for former students. Recent workshops and masterclasses are listed under Talks & Workshops."
 rail_label: "Archive"
 redirect_from:
@@ -12,7 +12,7 @@ entries:
   - title: "Ableton Live"
     description: "Composition, sound design and mixing. M2 — ATIAM."
     url: /research/teaching/ableton/
-    year: "2022—23"
+    year: "2022–23"
     kind: "Archive"
   - title: "Pure Data"
     description: "Synthesis and patching from first principles. M2 — ATIAM."

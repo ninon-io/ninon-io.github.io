@@ -2,24 +2,16 @@
 # `kind` drives both the filter and the semantic colour (see _sass/_components.scss).
 # Colour families: gold = playable/usable, oxblood = live, blue = research output,
 # plum = the thesis.
-# `home` selects and orders the homepage. Absent = archive only. Not everything
-# belongs on the front page.
-
-- slug: n-v
-  title: "N / V"
-  url: /work/n-v/
-  year: "2025–26"
-  sort: 2025.9
-  home: 1
-  kind: "A/V Performance"
-  description: "Audiovisual duo with Victor Calvi. Sound and generative image as one evolving environment."
+#
+# `order` sets the editorial sequence of /work/. `home` sets the homepage
+# selection and order — see _data/home.yml. The two are deliberately independent:
+# the front page and the archive are different arguments.
 
 - slug: neurorack
   title: "Neurorack"
   url: /work/neurorack/
-  year: "2021—"
-  sort: 2021.5
-  home: 2
+  year: "2021–2026"
+  order: 1
   kind: "Instrument"
   description: "The first Eurorack module running a deep generative model entirely on embedded hardware."
 
@@ -27,16 +19,23 @@
   title: "Absynth 6 Preset Explorer"
   url: /work/absynth-preset-explorer/
   year: "2025"
-  sort: 2025.5
-  home: 3
+  order: 2
   kind: "Product R&D"
   description: "A spatial, physics-driven way to browse a large preset library by sound rather than by name."
+
+- slug: n-v
+  title: "N / V"
+  url: /work/n-v/
+  year: "2025–2026"
+  order: 3
+  kind: "A/V Performance"
+  description: "Audiovisual duo with Victor Calvi. Sound and generative image as one evolving environment."
 
 - slug: wilding-ai
   title: "Wilding AI"
   url: /work/wilding-ai/
   year: "2025"
-  sort: 2025.1
+  order: 4
   kind: "Residency"
   description: "Spatial audio, text and generative systems with Jun Suzuki at MONOM, CTM Festival."
 
@@ -44,6 +43,6 @@
   title: "FRAVE"
   url: /work/frave/
   year: "2023"
-  sort: 2023.0
+  order: 5
   kind: "Research System"
   description: "Fader networks applied to RAVE — a neural synthesiser whose latent space becomes a set of knobs."

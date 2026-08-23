@@ -5,7 +5,7 @@ title: Neurorack
 eyebrow: Instrument · IRCAM / ACIDS
 excerpt: Bridging deep learning and modular synthesis — a real-time AI-based Eurorack synthesizer for expressive sound design.
 kind: Instrument
-years: 2021—
+years: "2021–2026"
 toc: true
 has_player: true
 redirect_from:

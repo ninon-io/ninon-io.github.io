@@ -24,17 +24,17 @@ entries:
   - title: "Publications"
     description: "The full record — peer-reviewed papers, preprints, essays and the thesis, with DOIs, arXiv, PDFs and BibTeX."
     url: /research/publications/
-    year: "2020—"
+    year: "2020–"
     kind: "Archive"
   - title: "Talks & Workshops"
     description: "Seminars, panels, invited workshops and press."
     url: /research/talks/
-    year: "2021—"
+    year: "2021–"
     kind: "Talks"
   - title: "Teaching archive"
     description: "Course material from the ATIAM master and earlier undergraduate teaching. Kept online for former students."
     url: /research/teaching/
-    year: "2019—23"
+    year: "2019–2023"
     kind: "Archive"
 description: "Doctoral thesis, research papers, essays, talks and workshops by Ninon Devis Salvy, on creative machine learning for music."
 ---
