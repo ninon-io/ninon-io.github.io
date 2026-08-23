@@ -153,6 +153,10 @@ table {
   border-top: 1px solid var(--rule);
 }
 
+// `display: grid` here beats the user-agent [hidden] rule, so a hidden row would
+// otherwise stay on screen. The filter sets the attribute; this makes it count.
+.index__row[hidden] { display: none; }
+
 .index__row {
   display: grid;
   grid-template-columns: 6.5rem minmax(0, 1fr) auto;

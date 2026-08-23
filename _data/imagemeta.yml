@@ -14,58 +14,18 @@
   w: 641
   h: 284
   max: 320
-"ctm-header-1024.webp":
-  w: 1024
-  h: 768
-  max: 512
-"ctm-header-1440.webp":
-  w: 1440
-  h: 1080
-  max: 720
-"ctm-header-480.webp":
-  w: 480
-  h: 360
-  max: 240
-"ctm-header-760.webp":
-  w: 760
-  h: 570
-  max: 380
 "ctm-header.jpg":
   w: 1600
   h: 1200
   max: 800
   srcw: [480, 760, 1024, 1440]
   srcf: [webp]
-"defence-ninon-1024.webp":
-  w: 1024
-  h: 1280
-  max: 512
-"defence-ninon-480.webp":
-  w: 480
-  h: 600
-  max: 240
-"defence-ninon-760.webp":
-  w: 760
-  h: 950
-  max: 380
 "defence-ninon.png":
   w: 1080
   h: 1350
   max: 540
   srcw: [480, 760, 1024]
   srcf: [webp]
-"defence-room-1024.webp":
-  w: 1024
-  h: 578
-  max: 512
-"defence-room-480.webp":
-  w: 480
-  h: 271
-  max: 240
-"defence-room-760.webp":
-  w: 760
-  h: 429
-  max: 380
 "defence-room.png":
   w: 1349
   h: 761
@@ -76,14 +36,6 @@
   w: 408
   h: 612
   max: 204
-"figure-9-sweet-spot-480.webp":
-  w: 480
-  h: 200
-  max: 240
-"figure-9-sweet-spot-760.webp":
-  w: 760
-  h: 317
-  max: 380
 "figure-9-sweet-spot.png":
   w: 768
   h: 320
@@ -98,386 +50,102 @@
   w: 362
   h: 366
   max: 181
-"la-station-0018-romain-guede-1024.webp":
-  w: 1024
-  h: 1536
-  max: 512
-"la-station-0018-romain-guede-480.webp":
-  w: 480
-  h: 720
-  max: 240
-"la-station-0018-romain-guede-760.webp":
-  w: 760
-  h: 1140
-  max: 380
 "la-station-0018-romain-guede.jpg":
   w: 1365
   h: 2048
   max: 682
   srcw: [480, 760, 1024]
   srcf: [webp]
-"la-station-0041-romain-guede-1024.webp":
-  w: 1024
-  h: 1536
-  max: 512
-"la-station-0041-romain-guede-480.webp":
-  w: 480
-  h: 720
-  max: 240
-"la-station-0041-romain-guede-760.webp":
-  w: 760
-  h: 1140
-  max: 380
 "la-station-0041-romain-guede.jpg":
   w: 1365
   h: 2048
   max: 682
   srcw: [480, 760, 1024]
   srcf: [webp]
-"la-station-0068-romain-guede-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"la-station-0068-romain-guede-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"la-station-0068-romain-guede-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"la-station-0068-romain-guede-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"la-station-0068-romain-guede-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "la-station-0068-romain-guede.jpg":
   w: 2048
   h: 1365
   max: 1024
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"la-station-0097-romain-guede-1024.webp":
-  w: 1024
-  h: 1536
-  max: 512
-"la-station-0097-romain-guede-480.webp":
-  w: 480
-  h: 720
-  max: 240
-"la-station-0097-romain-guede-760.webp":
-  w: 760
-  h: 1140
-  max: 380
 "la-station-0097-romain-guede.jpg":
   w: 1365
   h: 2048
   max: 682
   srcw: [480, 760, 1024]
   srcf: [webp]
-"la-station-0184-romain-guede-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"la-station-0184-romain-guede-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"la-station-0184-romain-guede-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"la-station-0184-romain-guede-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"la-station-0184-romain-guede-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "la-station-0184-romain-guede.jpg":
   w: 2048
   h: 1365
   max: 1024
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"la-station-0243-romain-guede-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"la-station-0243-romain-guede-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"la-station-0243-romain-guede-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"la-station-0243-romain-guede-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"la-station-0243-romain-guede-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "la-station-0243-romain-guede.jpg":
   w: 2048
   h: 1365
   max: 1024
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"la-station-0254-romain-guede-1024.webp":
-  w: 1024
-  h: 1536
-  max: 512
-"la-station-0254-romain-guede-480.webp":
-  w: 480
-  h: 720
-  max: 240
-"la-station-0254-romain-guede-760.webp":
-  w: 760
-  h: 1140
-  max: 380
 "la-station-0254-romain-guede.jpg":
   w: 1365
   h: 2048
   max: 682
   srcw: [480, 760, 1024]
   srcf: [webp]
-"la-station-0265-romain-guede-1024.webp":
-  w: 1024
-  h: 1536
-  max: 512
-"la-station-0265-romain-guede-480.webp":
-  w: 480
-  h: 720
-  max: 240
-"la-station-0265-romain-guede-760.webp":
-  w: 760
-  h: 1140
-  max: 380
 "la-station-0265-romain-guede.jpg":
   w: 1365
   h: 2048
   max: 682
   srcw: [480, 760, 1024]
   srcf: [webp]
-"la-station-0296-romain-guede-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"la-station-0296-romain-guede-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"la-station-0296-romain-guede-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"la-station-0296-romain-guede-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"la-station-0296-romain-guede-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "la-station-0296-romain-guede.jpg":
   w: 2048
   h: 1365
   max: 1024
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"la-station-0316-romain-guede-1024.webp":
-  w: 1024
-  h: 1536
-  max: 512
-"la-station-0316-romain-guede-480.webp":
-  w: 480
-  h: 720
-  max: 240
-"la-station-0316-romain-guede-760.webp":
-  w: 760
-  h: 1140
-  max: 380
 "la-station-0316-romain-guede.jpg":
   w: 1365
   h: 2048
   max: 682
   srcw: [480, 760, 1024]
   srcf: [webp]
-"la-station-0369-romain-guede-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"la-station-0369-romain-guede-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"la-station-0369-romain-guede-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"la-station-0369-romain-guede-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"la-station-0369-romain-guede-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "la-station-0369-romain-guede.jpg":
   w: 2048
   h: 1365
   max: 1024
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"la-station-0391-romain-guede-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"la-station-0391-romain-guede-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"la-station-0391-romain-guede-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"la-station-0391-romain-guede-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"la-station-0391-romain-guede-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "la-station-0391-romain-guede.jpg":
   w: 2048
   h: 1365
   max: 1024
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"monom-4dsound-1024.webp":
-  w: 1024
-  h: 682
-  max: 512
-"monom-4dsound-1440.webp":
-  w: 1440
-  h: 960
-  max: 720
-"monom-4dsound-1960.webp":
-  w: 1960
-  h: 1306
-  max: 980
-"monom-4dsound-480.webp":
-  w: 480
-  h: 320
-  max: 240
-"monom-4dsound-760.webp":
-  w: 760
-  h: 507
-  max: 380
 "monom-4dsound.jpg":
   w: 2000
   h: 1333
   max: 1000
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"n-v-alte-muenze-wide-1024.webp":
-  w: 1024
-  h: 554
-  max: 512
-"n-v-alte-muenze-wide-1440.webp":
-  w: 1440
-  h: 780
-  max: 720
-"n-v-alte-muenze-wide-1960.webp":
-  w: 1960
-  h: 1061
-  max: 980
-"n-v-alte-muenze-wide-2-1024.webp":
-  w: 1024
-  h: 576
-  max: 512
-"n-v-alte-muenze-wide-2-1440.webp":
-  w: 1440
-  h: 811
-  max: 720
-"n-v-alte-muenze-wide-2-1960.webp":
-  w: 1960
-  h: 1103
-  max: 980
-"n-v-alte-muenze-wide-2-480.webp":
-  w: 480
-  h: 270
-  max: 240
-"n-v-alte-muenze-wide-2-760.webp":
-  w: 760
-  h: 428
-  max: 380
 "n-v-alte-muenze-wide-2.png":
   w: 2386
-  h: 1343
+  h: 1341
   max: 1193
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"n-v-alte-muenze-wide-480.webp":
-  w: 480
-  h: 260
-  max: 240
-"n-v-alte-muenze-wide-760.webp":
-  w: 760
-  h: 411
-  max: 380
 "n-v-alte-muenze-wide.png":
-  w: 2390
-  h: 1294
-  max: 1195
+  w: 2389
+  h: 1292
+  max: 1194
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"n-v-liquid-1024.webp":
-  w: 1024
-  h: 576
-  max: 512
-"n-v-liquid-1440.webp":
-  w: 1440
-  h: 810
-  max: 720
-"n-v-liquid-480.webp":
-  w: 480
-  h: 270
-  max: 240
-"n-v-liquid-760.webp":
-  w: 760
-  h: 428
-  max: 380
 "n-v-liquid.png":
   w: 1920
   h: 1080
   max: 960
   srcw: [480, 760, 1024, 1440]
   srcf: [webp]
-"n-v-silhouettes-1024.webp":
-  w: 1024
-  h: 575
-  max: 512
-"n-v-silhouettes-1440.webp":
-  w: 1440
-  h: 809
-  max: 720
-"n-v-silhouettes-480.webp":
-  w: 480
-  h: 270
-  max: 240
-"n-v-silhouettes-760.webp":
-  w: 760
-  h: 427
-  max: 380
 "n-v-silhouettes.png":
   w: 1842
   h: 1035
@@ -488,18 +156,6 @@
   w: 1163
   h: 431
   max: 581
-"neurorack-hero-enzo-leclercq-1024.webp":
-  w: 1024
-  h: 575
-  max: 512
-"neurorack-hero-enzo-leclercq-480.webp":
-  w: 480
-  h: 269
-  max: 240
-"neurorack-hero-enzo-leclercq-760.webp":
-  w: 760
-  h: 426
-  max: 380
 "neurorack-hero-enzo-leclercq.png":
   w: 1267
   h: 711
@@ -514,88 +170,24 @@
   w: 2464
   h: 2150
   max: 1232
-"neurorack-module-1024.webp":
-  w: 1024
-  h: 744
-  max: 512
-"neurorack-module-1440.webp":
-  w: 1440
-  h: 1047
-  max: 720
-"neurorack-module-480.webp":
-  w: 480
-  h: 349
-  max: 240
-"neurorack-module-760.webp":
-  w: 760
-  h: 552
-  max: 380
 "neurorack-module.jpg":
   w: 1486
   h: 1080
   max: 743
   srcw: [480, 760, 1024, 1440]
   srcf: [webp]
-"ninon-and-jun-1024.webp":
-  w: 1024
-  h: 775
-  max: 512
-"ninon-and-jun-1440.webp":
-  w: 1440
-  h: 1090
-  max: 720
-"ninon-and-jun-480.webp":
-  w: 480
-  h: 363
-  max: 240
-"ninon-and-jun-760.webp":
-  w: 760
-  h: 575
-  max: 380
 "ninon-and-jun.jpg":
   w: 1600
   h: 1211
   max: 800
   srcw: [480, 760, 1024, 1440]
   srcf: [webp]
-"ninon-hermannplatz-1024.webp":
-  w: 1024
-  h: 679
-  max: 512
-"ninon-hermannplatz-1440.webp":
-  w: 1440
-  h: 955
-  max: 720
-"ninon-hermannplatz-1960.webp":
-  w: 1960
-  h: 1299
-  max: 980
-"ninon-hermannplatz-480.webp":
-  w: 480
-  h: 318
-  max: 240
-"ninon-hermannplatz-760.webp":
-  w: 760
-  h: 504
-  max: 380
 "ninon-hermannplatz.jpg":
   w: 3130
   h: 2075
   max: 1565
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"ninon-jun-cnc-1024.webp":
-  w: 1024
-  h: 1280
-  max: 512
-"ninon-jun-cnc-480.webp":
-  w: 480
-  h: 600
-  max: 240
-"ninon-jun-cnc-760.webp":
-  w: 760
-  h: 950
-  max: 380
 "ninon-jun-cnc.png":
   w: 1080
   h: 1350
@@ -603,47 +195,15 @@
   srcw: [480, 760, 1024]
   srcf: [webp]
 "ninon-jun-monom.png":
-  w: 397
+  w: 396
   h: 323
   max: 198
-"ninon-live-portrait-1024.webp":
-  w: 1024
-  h: 816
-  max: 512
-"ninon-live-portrait-1440.webp":
-  w: 1440
-  h: 1147
-  max: 720
-"ninon-live-portrait-1960.webp":
-  w: 1960
-  h: 1562
-  max: 980
-"ninon-live-portrait-480.webp":
-  w: 480
-  h: 382
-  max: 240
-"ninon-live-portrait-760.webp":
-  w: 760
-  h: 606
-  max: 380
 "ninon-live-portrait.png":
   w: 2013
-  h: 1604
+  h: 1602
   max: 1006
   srcw: [480, 760, 1024, 1440, 1960]
   srcf: [webp]
-"ninon-studio-1024.webp":
-  w: 1024
-  h: 1820
-  max: 512
-"ninon-studio-480.webp":
-  w: 480
-  h: 853
-  max: 240
-"ninon-studio-760.webp":
-  w: 760
-  h: 1351
-  max: 380
 "ninon-studio.jpg":
   w: 1080
   h: 1920
@@ -654,18 +214,6 @@
   w: 1200
   h: 630
   max: 600
-"preset-explorer-map-1024.webp":
-  w: 1024
-  h: 585
-  max: 512
-"preset-explorer-map-480.webp":
-  w: 480
-  h: 274
-  max: 240
-"preset-explorer-map-760.webp":
-  w: 760
-  h: 434
-  max: 380
 "preset-explorer-map.jpg":
   w: 1240
   h: 708
@@ -676,26 +224,6 @@
   w: 710
   h: 368
   max: 355
-"sound-metaphor-tv-1024.webp":
-  w: 1024
-  h: 569
-  max: 512
-"sound-metaphor-tv-1440.webp":
-  w: 1440
-  h: 801
-  max: 720
-"sound-metaphor-tv-1960.webp":
-  w: 1960
-  h: 1090
-  max: 980
-"sound-metaphor-tv-480.webp":
-  w: 480
-  h: 267
-  max: 240
-"sound-metaphor-tv-760.webp":
-  w: 760
-  h: 423
-  max: 380
 "sound-metaphor-tv.png":
   w: 2992
   h: 1664

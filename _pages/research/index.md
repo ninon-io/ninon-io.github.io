@@ -3,7 +3,7 @@ layout: listing
 permalink: /research/
 title: "Research"
 eyebrow: "Neural audio synthesis, embedded instruments"
-excerpt: "The thesis, individual research pieces, the full publication record, talks and workshops, and the archived teaching material. Earlier work is published under the name Ninon Devis."
+excerpt: "The thesis, individual research pieces, the full publication record, talks and workshops, and the archived teaching material."
 rail_label: "Research"
 entries:
   - title: "Doctoral Thesis"

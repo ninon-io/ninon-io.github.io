@@ -15,7 +15,7 @@ redirect_from:
 
 Doctoral thesis, **defended on 12 May 2025** at IRCAM (Salle Stravinsky), Sorbonne
 Université. Research carried out in the [ACIDS](https://acids-ircam.github.io/) group at
-IRCAM–STMS. Published under the name **Ninon Devis**.
+IRCAM–STMS.
 
 [Read the thesis (HAL)](https://theses.hal.science/tel-05307879v1){: .btn .btn--primary}
 [Watch the defence](https://youtube.com/live/4KoAmbZw6Xg){: .btn .btn--light-outline}

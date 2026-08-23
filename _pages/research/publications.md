@@ -2,8 +2,8 @@
 layout: publications
 permalink: /research/publications/
 title: "Publications"
-eyebrow: "Published as Ninon Devis"
-excerpt: "Peer-reviewed papers, preprints, the thesis and other writing. All published under my former name, Ninon Devis."
+eyebrow: "Papers, preprints, essays"
+excerpt: "Peer-reviewed papers, preprints, the thesis and other writing. Author names appear exactly as published."
 redirect_from:
   - /research/papers/
   - /research/papers

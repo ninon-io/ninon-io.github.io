@@ -27,7 +27,7 @@ EXTS = (".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif")
 def main():
     rows = []
     for dirpath, _dirs, files in os.walk(MEDIA):
-        if f"{os.sep}archive{os.sep}" in dirpath + os.sep:
+        if "derived" in dirpath or f"{os.sep}archive{os.sep}" in dirpath + os.sep:
             continue
         for fn in sorted(files):
             if not fn.lower().endswith(EXTS):
