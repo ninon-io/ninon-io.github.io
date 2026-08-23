@@ -1,9 +1,9 @@
 ---
 layout: project-single
 permalink: /work/frave/
-title: "Descriptor-controlled synthesis"
+title: "FRAVE"
 eyebrow: "Research system · IRCAM / ACIDS"
-excerpt: "Continuous, knob-like control over a neural synthesiser: remove salient features from the latent space, then hand them back to the musician as parameters."
+excerpt: "Fader networks meet RAVE: a neural synthesiser whose latent space has been pulled apart so that the things a musician cares about become knobs."
 kind: "Research System"
 years: "2023"
 toc: true
@@ -17,9 +17,13 @@ credits:
   support: "ACIDS group, IRCAM–STMS. Published at ICASSP 2023."
 ---
 
+**FRAVE** is a synthesis system, not a paper. The name is the method: *fader
+networks* applied to the *RAVE* architecture.
+
 Deep generative audio models sound impressive and are almost impossible to play.
 The latent space that gives them their range is not a set of controls a musician
-can reach for; it is a coordinate system nobody asked for.
+can reach for; it is a coordinate system nobody asked for. FRAVE exists to make
+one playable.
 
 This work makes that space playable. Salient musical features are explicitly
 removed from the latent representation using an adversarial confusion criterion,
@@ -28,10 +32,16 @@ about becomes an independent parameter rather than something entangled with
 everything else. The result behaves like a synthesiser knob: continuous, direct,
 and predictable in the direction it moves.
 
-The model stays small enough to embed in hardware, which is what connects it to
-the [Neurorack](/work/neurorack/). It was evaluated across instrumental,
-percussive and speech recordings, supporting both timbre transfer and attribute
+Because it stays small enough to embed, FRAVE is the engine behind the second
+generation of the [Neurorack](/work/neurorack/) — the system moves off the bench
+and into a module a performer can patch. It was evaluated across instrumental,
+percussive and speech recordings, and supports both timbre transfer and attribute
 transfer.
+
+The argument it makes is the same one running through the
+[thesis](/research/thesis/) and through the
+[Absynth Preset Explorer](/work/absynth-preset-explorer/): a model is only useful
+to a musician at the point where it becomes controllable.
 
 [Paper (arXiv)](https://arxiv.org/abs/2302.13542){: .btn .btn--primary}
 [Companion website](https://neurorave.github.io/neurorave/){: .btn}

@@ -15,9 +15,9 @@ described. Photography leads because there is now real photography.
 </div>
 
 {%- if page.lead %}
-<figure class="lead-figure"{% if page.lead.focus %} style="--lead-focus: {{ page.lead.focus }}"{% endif %}>
-  <img src="{{ page.lead.src | relative_url }}" alt="{{ page.lead.alt | escape }}" loading="eager" decoding="async">
-</figure>
+<div class="field home-lead">
+  {% include site/img.html src=page.lead.src alt=page.lead.alt present="wide" loading="eager" credit=page.lead.credit %}
+</div>
 {%- endif %}
 
 <section class="band">
@@ -25,7 +25,7 @@ described. Photography leads because there is now real photography.
     <div class="rail"><span class="rail__num">01</span><span class="rail__label">Selected</span></div>
     <div class="col">
       <div class="index">
-        {%- assign featured = site.data.work | where: "featured", true | sort: "sort" | reverse %}
+        {%- assign featured = site.data.work | where_exp: "w", "w.home" | sort: "home" %}
         {%- for e in featured %}
         <a class="index__row" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
           <span class="index__row__ix">{{ e.year }}</span>

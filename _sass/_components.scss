@@ -654,3 +654,106 @@ table {
 // Markdown tables used as key/value blocks have no meaningful header row;
 // hide it rather than showing an empty band.
 table thead:has(th:empty) { display: none; }
+
+// ---- the image component ---------------------------------------------------
+// Presentation responds to the source. --img-max is half the intrinsic width
+// (see tools/index-images.py), so an image can never be drawn larger than it
+// can be drawn sharply. Aspect ratio comes from the width/height attributes,
+// so nothing shifts while loading and nothing is cropped by default.
+.img {
+  margin-block: var(--s5);
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: min(var(--img-max, 100%), 100%);
+    height: auto;
+    border: 1px solid var(--rule);
+  }
+
+  figcaption {
+    margin-top: var(--s2);
+    max-width: min(var(--measure), 100%);
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    line-height: 1.65;
+    color: var(--faint);
+
+    a { border-bottom-color: var(--rule); }
+  }
+
+  &__credit { white-space: nowrap; }
+
+  // Contained: the whole frame, at honest scale. The default.
+  &--natural img { margin-inline: auto; }
+
+  // Documentary scale — for material that exists but cannot carry a page.
+  &--inline {
+    margin-block: var(--s4);
+    img { max-width: min(var(--img-max, 420px), 420px); }
+  }
+
+  // Wide: takes the column, still capped by resolution.
+  &--wide img { max-width: min(var(--img-max, 100%), 100%); }
+
+  // Bleed: reclaims the rail so the image spans the full field. Only the left
+  // edge moves — the column already ends at the field edge, so a negative right
+  // margin would push the document sideways.
+  &--bleed {
+    margin-left: calc(-1 * var(--rail) - clamp(1.5rem, 4vw, 3rem));
+    margin-right: 0;
+
+    img { max-width: 100%; }
+  }
+}
+
+@media (max-width: 820px) {
+  .img--bleed { margin-left: 0; }
+}
+
+// ---- editorial photo rhythm ------------------------------------------------
+// A two-up pair for images that belong together and read better side by side.
+.photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s3);
+  margin-block: var(--s5);
+
+  .img { margin-block: 0; }
+  .img img { max-width: 100%; }
+}
+
+@media (max-width: 720px) {
+  .photo-pair { grid-template-columns: minmax(0, 1fr); }
+}
+
+.home-lead {
+  padding-top: var(--s5);
+
+  .img { margin-block: 0; }
+  .img img { margin-inline: 0; }
+}
+
+.bio-short {
+  margin-top: var(--s3);
+  max-width: min(var(--measure), 100%);
+
+  summary {
+    font-family: var(--f-mono);
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: var(--track-mono);
+    color: var(--faint);
+    cursor: pointer;
+
+    &:hover { color: var(--gold); }
+  }
+
+  p {
+    margin-top: var(--s2);
+    padding-left: var(--s2);
+    border-left: 2px solid var(--rule);
+    color: var(--ink-dim);
+    font-size: var(--t-base);
+  }
+}

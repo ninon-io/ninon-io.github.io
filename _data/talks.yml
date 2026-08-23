@@ -54,7 +54,8 @@
 
 - title: "The Art Intelligence Seminar"
   year: 2022
-  host: "The University of the Arts"
+  host: "University of the Arts"
+  city: "Calgary, Canada"
   type: talk
 
 - title: "Neurorack for Raster-Noton"

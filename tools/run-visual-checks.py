@@ -25,7 +25,7 @@ PAGES = [
     "/research/publications/", "/research/talks/",
     "/research/teaching/", "/research/teaching/ableton/",
     "/research/teaching/pure-data/", "/research/teaching/cryptology/",
-    "/research/teaching/java/", "/about/",
+    "/research/teaching/java/", "/about/", "/about/press/",
 ]
 
 

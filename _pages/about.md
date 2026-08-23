@@ -60,23 +60,11 @@ chronology:
       - "2020—2025 · Sorbonne doctoral grant"
 ---
 
-I am **Ninon Devis Salvy**. I publish scientific work as **Ninon Devis**, the name
-all my papers and my thesis appear under, and I release and perform music as
-**Ninon**.
+{{ site.data.bio.medium | markdownify }}
 
-I work between three things that are really one thing: research into creative
-machine learning for music, the design of instruments that make those models
-playable, and a performance practice rooted in techno and experimental
-electronics. The research asks what it takes to give a musician real control over
-a generative system; the instruments are the answer, tested in public.
+<details class="bio-short">
+  <summary>Short bio, for programmes and promoters (100 words)</summary>
+  <p>{{ site.data.bio.short }}</p>
+</details>
 
-Since 2024 I have been an Audio Research Engineer on the research team at
-**Native Instruments** in Berlin, working on deep-learning-based music software —
-most recently the [Absynth 6 Preset Explorer](/work/absynth-preset-explorer/). I
-hold a PhD from **IRCAM / Sorbonne Université**, where I built the
-[Neurorack](/work/neurorack/), the first Eurorack module to run a deep generative
-model entirely on embedded hardware. In 2023 I was an invited student researcher
-with **Google Brain's Magenta team**, working on control of generative models.
-
-I perform live electronics and DJ across Europe and Japan, most recently as one
-half of the audiovisual duo [N / V](/work/n-v/) with Victor Calvi.
+[Selected press](/about/press/){: .btn }

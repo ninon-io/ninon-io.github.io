@@ -8,6 +8,10 @@ kind: "Product R&D"
 years: "2025"
 toc: true
 
+lead:
+  src: /assets/media/work/absynth-preset-explorer/images/preset-explorer-map.jpg
+  alt: "The Absynth 6 Preset Explorer: hundreds of coloured dots clustered into an organic map, with a preset list to the right and type filters to the left"
+
 credits:
   role: "Research engineering — audio analysis, preset organisation, and the spatial and kinetic logic behind the map"
   collaborators:
@@ -38,6 +42,8 @@ that already exist in the library.
 That distinction is the whole design. The system does not decide what you should
 play. It arranges what is already there so that your ear can do the deciding.
 
+{% include site/video.html id="tGkGe2T70fc" title="Absynth 6 Preset Explorer" %}
+
 ## A space with physics
 
 Presets behave as particles: each is drawn toward its own sonic coordinates while
@@ -50,6 +56,8 @@ in real time as your intent sharpens.
 Absynth's creator Brian Clevinger described the effect as removing language from
 the search process — music and language, as he put it, usually occupy different
 parts of the mind.
+
+{% include site/img.html src="/assets/media/work/absynth-preset-explorer/images/absynth-6-key-art.jpg" present="inline" alt="Absynth 6 key art: the wordmark over a dark green field of fine intersecting lines" caption="Absynth 6." %}
 
 ## Why it matters to me
 

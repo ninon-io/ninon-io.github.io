@@ -18,8 +18,9 @@ redirect_from:
 - /projects/ctm/
 - /projects/ctm
 lead:
-  src: /assets/media/work/wilding-ai/images/ninon-jun-monom.png
-  alt: Ninon and Jun Suzuki working at a desk of laptops and modular gear inside the MONOM 4DSOUND room
+  src: /assets/media/work/wilding-ai/images/monom-4dsound.jpg
+  alt: "The MONOM studio: a large dark room ringed by the 4DSOUND speaker array on vertical poles"
+  caption: "MONOM, Berlin — home of the original 4DSOUND system."
 credits:
   role: Max for Live interaction, AI models, sound design, live performance
   collaborators:
@@ -43,7 +44,7 @@ We were thrilled to share our first collaboration with and **Jun Suzuki** ([@ein
 
 Selected alongside nine other talented artists, we joined this unique workshop-residency exploring the creative frontiers of AI systems involving text, audio, and sound spatialization. The lab was guided by facilitators Beth Coleman, Maurice Jones, Portrait XO, and Alexandre Saunier.
 
-{% include site/gallery.html caption="Ninon & Jun Suzuki ([@einleit](https://www.instagram.com/einleit/)) at the Wilding AI Lab, [MONOM](https://www.monomsound.com/) Berlin, January 2025. Photos: Ninon by [@atelieroz](https://www.instagram.com/atelieroz/), Jun Suzuki by [@omwh_ite](https://www.instagram.com/omwh_ite/) / [@manifest.io.berlin](https://www.instagram.com/manifest.io.berlin/)." %}
+{% include site/img.html src="/assets/media/work/wilding-ai/images/ninon-and-jun.jpg" present="inline" alt="Portraits of Ninon and Jun Suzuki side by side" caption="Ninon & Jun Suzuki ([@einleit](https://www.instagram.com/einleit/)). Photos: Ninon by [@atelieroz](https://www.instagram.com/atelieroz/), Jun Suzuki by [@omwh_ite](https://www.instagram.com/omwh_ite/) / [@manifest.io.berlin](https://www.instagram.com/manifest.io.berlin/)." %}
 
 ---
 
@@ -59,7 +60,7 @@ Spearheaded by artists and researchers the initiative gathers participants to en
 
 For its Berlin iteration ahead of [CTM Festival 2025](https://www.ctm-festival.de/) ([@ctmfestival](https://www.instagram.com/ctmfestival/)), the Wilding AI Lab landed in the unique environment of [MONOM, Berlin's Centre for Spatial Sound](https://www.monomsound.com/) ([@monomstudios](https://www.instagram.com/monomstudios/)).
 
-![MONOM Studios 4DSOUND Space](/assets/media/work/wilding-ai/images/monom-4dsound.jpg "MONOM Studios featuring the 4DSOUND system - Photo: [monomsound.com]")
+
 
 ### MONOM & The 4DSOUND System
 
@@ -72,6 +73,8 @@ The intensive four-day lab (Jan 23-26, 2025) combined morning skill-sharing work
 * **Day 2 (Sound):** Generative sound tools, data sonification (Portrait XO).
 * **Day 3 (Space):** AI-driven sound spatialization in the 4DSOUND environment (Alexandre Saunier).
 * **Day 4 (Open Lab):** Public presentation of prototypes and processes.
+
+{% include site/img.html src="/assets/media/work/wilding-ai/images/ninon-jun-monom.png" present="native" alt="Ninon and Jun Suzuki working at a desk of laptops and modular gear inside the MONOM 4DSOUND room, a projection lit behind them" caption="Working in the 4DSOUND room during the lab. Shown at the source resolution available." %}
 
 
 ---

@@ -6,9 +6,11 @@ eyebrow: "Ninon — live electronics, production, DJ"
 excerpt: "Techno, experimental music and generative sound art. Concrete textures, cinematic atmospheres and disembodied voices, built through hardware and algorithmic processes."
 rail_label: "Sound"
 
+# A landscape source presented whole; the portrait frames appear below at their
+# own ratio rather than being cropped into a banner.
 lead:
-  src: /assets/media/sound/station/la-station-0041-romain-guede.jpg
-  alt: "Ninon behind the decks in red and magenta light, the image streaked with the motion of the mix"
+  src: /assets/media/sound/station/la-station-0243-romain-guede.jpg
+  alt: "The room at La Station: red beams cutting through haze over a dense crowd, the booth lit at the far end"
   credit: "Romain Guede"
   caption: "La Station — Gare des Mines, Paris."
 
@@ -20,13 +22,7 @@ profiles:
   - label: "Instagram"
     url: "https://www.instagram.com/ninon.dvslv/"
 
-gallery:
-  - image_path: /assets/media/sound/station/la-station-0243-romain-guede.jpg
-    alt: "Wide view of the room at La Station, red beams cutting over a dense crowd"
-  - image_path: /assets/media/sound/station/la-station-0265-romain-guede.jpg
-    alt: "Ninon side-lit at the mixer, concentrating on the transition"
-  - image_path: /assets/media/sound/station/la-station-0391-romain-guede.jpg
-    alt: "Close view of Ninon at the decks, horizontal red neon bars behind, crowd beyond"
+
 ---
 
 I release and perform as **Ninon**. The live sets are built from hardware

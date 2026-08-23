@@ -4,10 +4,9 @@ layout: base
 {% include site/page-head.html %}
 
 {%- if page.lead %}
-<figure class="lead-figure"{% if page.lead.focus %} style="--lead-focus: {{ page.lead.focus }}"{% endif %}>
-  <img src="{{ page.lead.src | relative_url }}" alt="{{ page.lead.alt | escape }}" loading="eager" decoding="async">
-  <figcaption class="field">{% if page.lead.caption %}{{ page.lead.caption }} {% endif %}{% if page.lead.credit %}Photo: {{ page.lead.credit }}{% endif %}</figcaption>
-</figure>
+<div class="field home-lead">
+  {% include site/img.html src=page.lead.src alt=page.lead.alt present="wide" loading="eager" credit=page.lead.credit caption=page.lead.caption %}
+</div>
 {%- endif %}
 
 <section class="band">
@@ -74,8 +73,13 @@ layout: base
   <div class="field band__grid">
     <div class="rail"><span class="rail__num">04</span><span class="rail__label">Documentation</span></div>
     <div class="col">
-      {% include site/gallery.html caption="La Station — Gare des Mines, Paris. Photos: Romain Guede." %}
-      {% include site/figure.html src="/assets/media/sound/sound-metaphor/sound-metaphor-tv.png" alt="Ninon playing a DJ set in a room lined floor to ceiling with records, for a Sound Metaphor TV session" caption="Streamed session for Sound Metaphor TV." %}
+      {% include site/img.html src="/assets/media/sound/station/la-station-0041-romain-guede.jpg" present="natural" alt="Ninon behind the decks in red and magenta light, the frame streaked with the motion of the mix" caption="La Station — Gare des Mines, Paris." credit="Romain Guede" %}
+      <div class="photo-pair">
+        {% include site/img.html src="/assets/media/sound/station/la-station-0265-romain-guede.jpg" alt="Ninon side-lit at the mixer, concentrating on a transition" %}
+        {% include site/img.html src="/assets/media/sound/station/la-station-0391-romain-guede.jpg" alt="Close view of Ninon at the decks, horizontal red neon bars behind, the crowd beyond" %}
+      </div>
+      <p class="note-inline">La Station — Gare des Mines, Paris. Photographs by Romain Guede.</p>
+      {% include site/img.html src="/assets/media/sound/sound-metaphor/sound-metaphor-tv.png" present="wide" alt="Ninon playing a DJ set in a room lined floor to ceiling with records, for a Sound Metaphor TV session" caption="Streamed session for Sound Metaphor TV." %}
     </div>
   </div>
 </section>

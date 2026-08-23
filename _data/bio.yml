@@ -1,0 +1,34 @@
+# Three lengths, written once. Promoters and programme editors ask for the short
+# one; About uses the medium one; the chronology lives in _pages/about.md.
+# Keep them factual — no "intersection of art and technology".
+
+short: >
+  Ninon Devis Salvy is a researcher and electronic musician based in Berlin. She
+  is an Audio Research Engineer at Native Instruments and holds a PhD from IRCAM
+  / Sorbonne Université, where she built the Neurorack, the first Eurorack module
+  to run a deep generative model entirely on embedded hardware. She performs live
+  electronics and DJs as Ninon, most recently as one half of the audiovisual duo
+  N / V.
+
+medium: >
+  Ninon Devis Salvy works between research into creative machine learning for
+  music, the design of instruments that make those models playable, and a
+  performance practice rooted in techno and experimental electronics. The
+  research asks what it takes to give a musician real control over a generative
+  system; the instruments are the answer, tested in public.
+
+
+  She is an Audio Research Engineer on the research team at Native Instruments in
+  Berlin, where she worked on the Absynth 6 Preset Explorer, a spatial way of
+  browsing a preset library by sound rather than by name. She holds a PhD from
+  IRCAM / Sorbonne Université for work on real-time neural synthesis on embedded
+  hardware, which produced the Neurorack. In 2023 she was an invited student
+  researcher with Google Brain's Magenta team.
+
+
+  As Ninon she produces and performs live electronics and DJ sets across Europe
+  and Japan, with releases on Terenor Records. Her live work treats sound as a
+  physical and spatial material, built through hardware systems and algorithmic
+  processes rather than arrangement. She performs as one half of the audiovisual
+  duo N / V with Victor Calvi, and was selected for the Wilding AI residency at
+  MONOM during CTM Festival 2025. She publishes scientific work as Ninon Devis.

@@ -4,13 +4,14 @@ permalink: /
 title: ""
 eyebrow: "Ninon Devis Salvy — Berlin"
 
-statement: "I build instruments out of machine learning, and then I play them."
-lede: "Research into creative AI for music, the instruments that make those models playable, and a live practice rooted in techno and experimental electronics. Audio Research Engineer at Native Instruments; PhD from IRCAM; performing as Ninon."
+statement: "I build instruments, systems and performances for electronic sound."
+lede: "Some of it ends up in a rack, some of it ships in software, some of it only exists for the length of a set. Research engineer at Native Instruments, PhD from IRCAM, performing as Ninon."
 
+# Presented at natural ratio and capped by its own resolution — a 2013px source
+# cannot carry a full-bleed hero on a retina screen without visibly softening.
 lead:
   src: /assets/media/about/ninon-live-portrait.png
   alt: "Ninon in profile at a desk of laptops and controllers, backlit by a large generative projection"
-  focus: "60% 45%"
 
 contact:
   - label: "Music, bookings & collaborations"

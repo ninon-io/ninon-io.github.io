@@ -123,3 +123,4 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+og_image: /assets/media/site/og-image.png

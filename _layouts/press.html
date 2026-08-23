@@ -1,0 +1,28 @@
+---
+layout: base
+---
+{% include site/page-head.html %}
+<section class="band">
+  <div class="field band__grid">
+    <div class="rail">
+      <span class="rail__num">{{ site.data.press | size }}</span>
+      <span class="rail__label">Press</span>
+    </div>
+    <div class="col">
+      {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
+      <ol class="pubs__list">
+        {%- assign items = site.data.press | sort: "year" | reverse %}
+        {%- for p in items %}
+        <li class="pub">
+          <span class="pub__year">{{ p.year }}</span>
+          <span class="pub__body">
+            <span class="pub__title">{{ p.title }}{% if p.lang %} <span class="pub__lang">{{ p.lang | upcase }}</span>{% endif %}</span>
+            <span class="pub__venue">{{ p.outlet }}{% if p.detail %} — {{ p.detail }}{% endif %}</span>
+            <span class="pub__links"><a href="{{ p.url }}" rel="noopener">Read</a></span>
+          </span>
+        </li>
+        {%- endfor %}
+      </ol>
+    </div>
+  </div>
+</section>

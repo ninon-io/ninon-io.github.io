@@ -1,0 +1,50 @@
+{%- comment -%}
+The one image component. Presentation responds to the source rather than forcing
+every photograph into the same crop.
+
+  {% include site/img.html src="/assets/media/…/x.jpg" alt="…"
+                           present="natural|wide|bleed|inline"
+                           credit="Romain Guede" caption="…" focus="60% 40%" %}
+
+  natural  (default) contained, full frame visible, never wider than the source
+                     supports at 2x — this is what most photographs want
+  wide               as wide as the field allows, still capped by resolution
+  bleed              edge to edge; only chosen when the source can carry it
+  inline             small, documentary scale
+
+`max` comes from _data/imagemeta.yml (tools/index-images.py) and is half the
+intrinsic width, so an image is never displayed larger than it can be drawn
+sharply. Nothing is upscaled, and no per-image exceptions are hard-coded.
+{%- endcomment -%}
+{%- assign key = include.src | split: "/" | last -%}
+{%- assign meta = site.data.imagemeta[key] -%}
+{%- assign present = include.present | default: "natural" -%}
+{%- if meta -%}
+  {%- if present == "native" -%}
+    {%- comment -%}
+    1:1 with the source rather than 2x. Visibly soft on a retina screen, so it is
+    only chosen where the content matters more than the sharpness and no better
+    file exists. Still never larger than the source.
+    {%- endcomment -%}
+    {%- assign cap = meta.w -%}
+  {%- elsif present == "inline" -%}
+    {%- assign cap = meta.max | at_most: 420 -%}
+  {%- elsif present == "bleed" -%}
+    {%- assign cap = meta.max -%}
+  {%- elsif present == "wide" -%}
+    {%- assign cap = meta.max -%}
+  {%- else -%}
+    {%- assign cap = meta.max -%}
+  {%- endif -%}
+{%- endif -%}
+<figure class="img img--{{ present }}"{% if cap %} style="--img-max: {{ cap }}px;{% if include.focus %} --img-focus: {{ include.focus }};{% endif %}"{% endif %}>
+  <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"
+       {%- if meta %} width="{{ meta.w }}" height="{{ meta.h }}"{% endif %}
+       loading="{{ include.loading | default: 'lazy' }}" decoding="async">
+  {%- if include.caption or include.credit %}
+  <figcaption>
+    {%- if include.caption %}{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}
+    {%- if include.credit %} <span class="img__credit">Photo: {{ include.credit }}</span>{% endif %}
+  </figcaption>
+  {%- endif %}
+</figure>

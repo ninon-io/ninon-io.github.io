@@ -1,0 +1,51 @@
+# Selected press and coverage. Deliberately short — the strongest items only,
+# not a dump. Interviews Ninon gave are in _data/talks.yml; this is coverage
+# written about the work.
+
+- title: "« On peut faire des choses puissantes, inspirantes, sans démesure technologique »"
+  outlet: "Fisheye Immersive"
+  year: 2025
+  detail: "long-form interview by Maxime Delcourt"
+  lang: fr
+  url: "https://fisheyeimmersive.com/article/ninon-devis-on-peut-faire-des-choses-puissantes-inspirantes-sans-demesure-technologique/"
+
+- title: "L'intelligence artificielle peut-elle servir la création musicale ?"
+  outlet: "RTS"
+  year: 2025
+  detail: "Swiss public radio"
+  lang: fr
+  url: "https://www.rts.ch/audio-podcast/2025/audio/l-intelligence-artificielle-peut-elle-servir-la-creation-musicale-interview-de-ninon-devis-28933095.html"
+
+- title: "Ninon Devis : IA & musique"
+  outlet: "Précédemment !"
+  year: 2025
+  detail: "podcast"
+  lang: fr
+  url: "https://podcloud.fr/podcast/precedemment-dans/episode/ninon-devis-ia-et-musique"
+
+- title: "Jetson Project of the Month: Creating Intelligent Music with the Neurorack"
+  outlet: "NVIDIA"
+  year: 2022
+  detail: "developer blog"
+  url: "https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/"
+
+- title: "The First Deep AI Based Synthesizer"
+  outlet: "Sonic State"
+  year: 2022
+  url: "https://sonicstate.com/news/2022/01/10/the-first-deep-ai-based-synthesizer/"
+
+- title: "New Neurorack Module Brings Artificial Intelligence To Your Eurorack System"
+  outlet: "Synthtopia"
+  year: 2022
+  url: "https://www.synthtopia.com/content/2022/01/08/new-neurorack-module-brings-artificial-intelligence-to-your-eurorack-system/"
+
+- title: "Neurorack – Synthesizer mit künstlicher Intelligenz"
+  outlet: "Keyboards.de"
+  year: 2022
+  lang: de
+  url: "https://www.keyboards.de/equipment/neurorack-synthesizer-mit-kuenstlicher-intelligenz/"
+
+- title: "Artificial Intelligence at the Service of Musical Creation"
+  outlet: "Sorbonne Université"
+  year: 2021
+  url: "https://www.sorbonne-universite.fr/en/actualites/artificial-intelligence-service-musical-creation"

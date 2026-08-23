@@ -2,33 +2,35 @@
 # `kind` drives both the filter and the semantic colour (see _sass/_components.scss).
 # Colour families: gold = playable/usable, oxblood = live, blue = research output,
 # plum = the thesis.
+# `home` selects and orders the homepage. Absent = archive only. Not everything
+# belongs on the front page.
 
 - slug: n-v
   title: "N / V"
   url: /work/n-v/
   year: "2025—"
   sort: 2025.9
+  home: 1
   kind: "A/V Performance"
   description: "Audiovisual duo with Victor Calvi. Sound and generative image as one evolving environment."
-  featured: true
 
 - slug: neurorack
   title: "Neurorack"
   url: /work/neurorack/
   year: "2021—"
   sort: 2021.5
+  home: 2
   kind: "Instrument"
   description: "The first Eurorack module running a deep generative model entirely on embedded hardware."
-  featured: true
 
 - slug: absynth-preset-explorer
   title: "Absynth 6 Preset Explorer"
   url: /work/absynth-preset-explorer/
   year: "2025"
   sort: 2025.5
+  home: 3
   kind: "Product R&D"
   description: "A spatial, physics-driven way to browse a large preset library by sound rather than by name."
-  featured: true
 
 - slug: wilding-ai
   title: "Wilding AI"
@@ -37,13 +39,11 @@
   sort: 2025.1
   kind: "Residency"
   description: "Spatial audio, text and generative systems with Jun Suzuki at MONOM, CTM Festival."
-  featured: true
 
 - slug: frave
-  title: "Descriptor-controlled synthesis"
+  title: "FRAVE"
   url: /work/frave/
   year: "2023"
   sort: 2023.0
   kind: "Research System"
-  description: "Continuous, knob-like control of a neural synthesiser through perceptual descriptors."
-  featured: false
+  description: "Fader networks applied to RAVE — a neural synthesiser whose latent space becomes a set of knobs."

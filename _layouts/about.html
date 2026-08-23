@@ -43,6 +43,7 @@ layout: base
     <div class="col">
       <div class="profiles">
         {%- for p in page.profiles %}<a class="btn" href="{{ p.url }}" rel="me noopener">{{ p.label }}</a>{% endfor %}
+        <a class="btn" href="{{ '/about/press/' | relative_url }}">Selected press</a>
       </div>
     </div>
   </div>
