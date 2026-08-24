@@ -1,41 +1,108 @@
-// ============================================================================
-// Fonts, reset, base elements
-// ============================================================================
+// ---- type ------------------------------------------------------------------
+// Three families, each with one job.
+//
+//   Julius Sans One    the wordmark, and nothing else. A titling face: it has no
+//                      true lowercase, mapping it to small capitals instead, so
+//                      it is unusable for running text and perfect for a name.
+//   Cormorant Garamond authored content — page titles and long-form prose. Tested
+//                      at 22px/500 on the dark ground, where its high contrast
+//                      holds; it is not used below that size.
+//   Karla              the apparatus — indexes, navigation, metadata, captions,
+//                      tables. Sturdy on a dark ground and comfortable to scan.
+//
+// There is no monospace webfont. Mono was carrying metadata and labels, which is
+// what gave the site its technical-portfolio accent; Karla has tabular figures,
+// so numerals still align in columns. Code — the only place a fixed pitch is
+// actually meaningful — falls back to the reader's own system mono.
+//
+// latin and latin-ext are split on unicode-range, as Google serves them: the
+// ext file is fetched only when a page actually contains an accented character
+// (Münze, Säule, Université, l'abîme).
+
 
 @font-face {
-  font-family: "Archivo";
-  src: url("/assets/fonts/archivo-variable.woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Newsreader";
-  src: url("/assets/fonts/newsreader-variable.woff2") format("woff2-variations");
-  font-weight: 200 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Newsreader";
-  src: url("/assets/fonts/newsreader-italic-variable.woff2") format("woff2-variations");
-  font-weight: 200 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "IBM Plex Mono";
-  src: url("/assets/fonts/ibm-plex-mono-400.woff2") format("woff2");
+  font-family: "Julius Sans One";
+  src: url("/assets/fonts/julius-normal-latin.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "IBM Plex Mono";
-  src: url("/assets/fonts/ibm-plex-mono-500.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Julius Sans One";
+  src: url("/assets/fonts/julius-normal-latin-ext.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/assets/fonts/karla-normal-latin.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/assets/fonts/karla-normal-latin-ext.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/assets/fonts/karla-italic-latin.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("/assets/fonts/karla-italic-latin-ext.woff2") format("woff2-variations");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/cormorant-normal-latin.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/cormorant-normal-latin-ext.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/cormorant-italic-latin.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("/assets/fonts/cormorant-italic-latin-ext.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 // ---- reset -----------------------------------------------------------------
@@ -64,10 +131,13 @@ img, video, svg { max-width: 100%; height: auto; display: block; }
 img, video, figure, table, pre, input, button { border-radius: 0; }
 
 // ---- typography ------------------------------------------------------------
+// Cormorant is a Garamond: it wants no negative tracking (that is a grotesque
+// habit) and a lighter weight than a sans would need at the same size. 500 keeps
+// the stems solid on the dark ground without going bookish-bold.
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--f-display);
-  font-weight: 600;
-  letter-spacing: var(--track-tight);
+  font-weight: 500;
+  letter-spacing: var(--track-display);
   text-wrap: balance;
   margin: 0;
   color: var(--ink);
@@ -99,19 +169,22 @@ hr {
   margin: var(--s5) 0;
 }
 
-// ---- mono utility layer ----------------------------------------------------
+// ---- data / label layer ----------------------------------------------------
+// Formerly the mono layer. Karla's tabular figures keep columns of years and
+// counts aligned, which was the only structural reason mono was here.
 .mono {
-  font-family: var(--f-mono);
+  font-family: var(--f-body);
   font-size: var(--t-sm);
   font-variant-numeric: tabular-nums;
 }
 
+// Sentence case, near-normal tracking. This used to be uppercase at 0.11em,
+// which is the single strongest tell of a technical-portfolio template.
 .eyebrow {
-  font-family: var(--f-mono);
-  font-size: var(--t-xs);
+  font-family: var(--f-body);
+  font-size: var(--t-base);
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: var(--track-mono);
+  letter-spacing: var(--track-label);
   color: var(--muted);
 }
 

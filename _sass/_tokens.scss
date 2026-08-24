@@ -35,35 +35,51 @@
   --blue:      #6E97BE;  // research output      6.14:1
   --plum:      #A98BB0;  // thesis               6.29:1
 
+  // The accent that leads a section. Gold stays the interaction colour
+  // everywhere; --lead is compositional and shows up in one or two details per
+  // section, which is a different job from marking a database category.
+  --lead:      var(--gold);
+
   --focus:     var(--gold);
   --selection-bg: var(--gold);
   --selection-fg: #121110;
 
   // ---- type ---------------------------------------------------------------
-  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
-  --f-body:    "Newsreader", Georgia, "Times New Roman", serif;
-  --f-mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  // --f-mark is the wordmark alone. --f-display and --f-prose are the same
+  // family at different jobs (titles / running prose) and are kept as separate
+  // tokens so either can be changed without disturbing the other.
+  --f-mark:    "Julius Sans One", "Optima", Palatino, serif;
+  --f-display: "Cormorant Garamond", Palatino, Georgia, serif;
+  --f-prose:   "Cormorant Garamond", Palatino, Georgia, serif;
+  --f-body:    "Karla", "Helvetica Neue", Arial, sans-serif;
+  --f-mono:    ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   // Fixed scale. Nothing sits between these steps. Raised across the board in
   // Phase 3: reading comfort beats extreme minimalism, and the mono utility
   // layer in particular was too small to scan.
-  --t-xs:   0.8125rem;   // mono labels        was 0.6875
-  --t-sm:   0.9375rem;   // mono data          was 0.8125
+  --t-xs:   0.875rem;    // small labels
+  --t-sm:   0.9375rem;   // data, metadata
   --t-base: 1.0625rem;   // small prose        was 0.9375
   --t-body: 1.1875rem;   // body               was 1.0625
   --t-lg:   1.4375rem;   // lede               was 1.25
-  --t-xl:   1.8rem;      // h3                 was 1.65
-  --t-2xl:  2.6rem;      // h2                 was 2.4
-  --t-3xl:  3.6rem;      // h1                 was 3.4
-  --t-4xl:  5.5rem;      // index hero         was 5.25
+  // Cormorant has a small x-height, so a given px reads smaller than the old
+  // Archivo did. Display steps are raised to compensate; text steps are not.
+  --t-xl:   2rem;        // h3
+  --t-2xl:  2.9rem;      // h2
+  --t-3xl:  4rem;        // h1
+  --t-4xl:  6rem;        // index hero
+  --t-prose: 1.375rem;   // long-form body, Cormorant only
 
   --lh-tight: 1.08;
   --lh-snug:  1.35;
   --lh-body:  1.62;
 
-  --track-tight: -0.03em;
-  --track-hero:  -0.045em;
-  --track-mono:  0.11em;
+  --track-tight:   -0.03em;   // retained for the few sans display uses
+  --track-hero:    -0.01em;
+  --track-display:  0;        // a Garamond wants its own fit, not tightening
+  --track-label:    0.015em;  // was 0.11em uppercase; now near-normal
+  --track-mark:     0.06em;   // the wordmark, which is genuinely capitals
+  --track-mono:     0.11em;   // kept for code only
 
   // ---- layout -------------------------------------------------------------
   --measure: 68ch;
@@ -87,10 +103,11 @@
 // they are already at their comfortable minimum.
 @media (max-width: 620px) {
   :root {
-    --t-xl:  1.55rem;
-    --t-2xl: 2rem;
-    --t-3xl: 2.5rem;
-    --t-4xl: 3rem;
+    --t-xl:  1.7rem;
+    --t-2xl: 2.15rem;
+    --t-3xl: 2.7rem;
+    --t-4xl: 3.2rem;
+    --t-prose: 1.3rem;
   }
 }
 
@@ -121,3 +138,11 @@
     color-scheme: light;
   }
 }
+
+// ---- lead accent by section -------------------------------------------------
+// One hue leads each part of the site. This replaces per-row colouring by
+// data-kind, where four hues appeared side by side in a single list and read as
+// a legend rather than as a choice.
+[data-section="sound"]    { --lead: var(--oxblood); }
+[data-section="research"] { --lead: var(--blue); }
+[data-section="about"]    { --lead: var(--plum); }
