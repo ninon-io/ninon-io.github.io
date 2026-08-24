@@ -4,7 +4,6 @@ permalink: /research/teaching/ableton/
 title: Ableton
 eyebrow: ATIAM master · IRCAM / Sorbonne Université
 excerpt: Download the trial version of Ableton Live 11
-rail_label: Ableton
 archive_note: Course material for the ATIAM master, 2022–23. Kept online for former students; the links below still work.
 toc: true
 redirect_from:

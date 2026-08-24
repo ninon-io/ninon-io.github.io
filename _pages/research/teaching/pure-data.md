@@ -4,7 +4,6 @@ permalink: /research/teaching/pure-data/
 title: Pure Data
 eyebrow: ATIAM master · IRCAM / Sorbonne Université
 excerpt: First, get your Pure Data
-rail_label: Pure Data
 archive_note: Course material for the ATIAM master, 2022. Kept online for former students; the links below still work.
 toc: true
 redirect_from:

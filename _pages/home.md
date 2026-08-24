@@ -2,7 +2,7 @@
 layout: index
 permalink: /
 title: ""
-eyebrow: "Ninon Devis Salvy — Berlin"
+eyebrow: "Berlin"
 
 statement: "I think and compose music through machines."
 lede: "Some of it ends up in a rack, some of it ships in software, some of it only exists for the length of a set. Research engineer at Native Instruments, PhD from IRCAM, performing as Ninon."

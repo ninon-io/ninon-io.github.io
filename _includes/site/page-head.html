@@ -6,7 +6,12 @@ exists it is placed in the body, beside the type — never underneath it.
   <div class="field">
     {%- if page.eyebrow %}<span class="eyebrow page-head__eyebrow">{{ page.eyebrow }}</span>{% endif %}
     <h1 class="page-head__title">{{ page.title }}</h1>
-    {%- if page.excerpt and page.excerpt != '' %}
+    {%- comment -%}
+    `opening: direct` suppresses the lede. The excerpt is still set — search and
+    the index rows use it — it simply is not restated to the reader who has just
+    arrived on the page it describes.
+    {%- endcomment -%}
+    {%- if page.excerpt and page.excerpt != '' and page.opening != 'direct' %}
     <p class="page-head__lede">{{ page.excerpt | markdownify | strip_html | strip }}</p>
     {%- endif %}
     {%- if page.meta %}

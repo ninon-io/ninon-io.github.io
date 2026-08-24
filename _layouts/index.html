@@ -21,8 +21,12 @@ described. Photography leads because there is now real photography.
 {%- endif %}
 
 <section class="band">
-  <div class="field band__grid">
-    <div class="rail"><span class="rail__num">01</span><span class="rail__label">Selected</span></div>
+  {%- comment -%}
+  No rail here. The homepage IS the selection, and the paragraph below the list
+  already says so — a margin label reading "Selected" over the only list on the
+  page was labelling the obvious.
+  {%- endcomment -%}
+  <div class="field band__grid band__grid--full">
     <div class="col">
       <div class="index">
         {%- comment -%}
@@ -34,7 +38,12 @@ described. Photography leads because there is now real photography.
         {%- if item.work %}{% assign e = site.data.work | where: "slug", item.work | first %}
         {%- else %}{% assign e = item %}{% endif %}
         {%- if e %}
-        <a class="index__row" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
+        {%- comment -%}
+        The first entry leads. Giving one row more weight breaks the uniform
+        grammar just enough that the list reads as a selection with a first
+        choice, rather than five equivalent database records.
+        {%- endcomment -%}
+        <a class="index__row{% if forloop.first %} index__row--lead{% endif %}" href="{{ e.url | relative_url }}" data-kind="{{ e.kind | slugify }}">
           <span class="index__row__ix">{{ e.year }}</span>
           <span>
             <span class="index__row__title">{{ e.title }}</span>
@@ -53,7 +62,7 @@ described. Photography leads because there is now real photography.
 {%- if page.contact %}
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">02</span><span class="rail__label">Contact</span></div>
+    <div class="rail"><span class="rail__label">Contact</span></div>
     <div class="col">
       <dl class="credits__list">
         {%- for c in page.contact %}

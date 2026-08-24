@@ -9,13 +9,13 @@
 
   > * + * { margin-top: var(--s3); }
 
+  // A heading does not need a line under it to be a heading. Size and the space
+  // above it already separate the section.
   > h2 {
     font-size: var(--t-2xl);
     line-height: var(--lh-tight);
     max-width: min(22ch, 100%);
     margin-top: var(--s6);
-    padding-bottom: var(--s1);
-    border-bottom: 1px solid var(--rule);
   }
 
   > h3 {
@@ -43,7 +43,7 @@
   li::marker { color: var(--faint); }
 
   blockquote {
-    border-left: 2px solid var(--gold-dim);
+    border-left: 2px solid var(--lead);
     padding-left: var(--s3);
     color: var(--ink-dim);
     font-style: normal;
@@ -54,7 +54,7 @@
 
   figcaption {
     margin-top: var(--s2);
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     line-height: 1.6;
     letter-spacing: 0.02em;
@@ -73,7 +73,7 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--f-mono);
+  font-family: var(--f-body);
   font-size: var(--t-sm);
   font-variant-numeric: tabular-nums;
   text-align: left;
@@ -89,8 +89,7 @@ table {
     color: var(--faint);
     font-weight: 500;
     font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
   }
 
   tr:last-child td { border-bottom: 0; }
@@ -100,17 +99,22 @@ table {
 // Replaces the old scrim-over-photo hero. Typographic by default; an image, when
 // there is a real one, sits beside the type rather than under it.
 .page-head {
-  border-bottom: 1px solid var(--rule);
   padding-block: clamp(2.5rem, 6vw, 5rem) var(--band-y);
 
-  &__eyebrow { margin-bottom: var(--s3); display: block; }
+  // The first mark on the page carries the section's accent. This is the whole
+  // of the colour system on most pages — one word, once.
+  &__eyebrow {
+    margin-bottom: var(--s3);
+    display: block;
+    color: var(--lead);
+  }
 
   &__title {
     font-size: var(--t-3xl);
-    font-weight: 700;
-    line-height: 0.98;
+    font-weight: 500;
+    line-height: 1.0;
     letter-spacing: var(--track-hero);
-    max-width: min(18ch, 100%);
+    max-width: min(20ch, 100%);
   }
 
   &__lede {
@@ -118,7 +122,7 @@ table {
     max-width: min(54ch, 100%);
     font-size: var(--t-lg);
     line-height: var(--lh-snug);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--ink-dim);
   }
 
@@ -132,11 +136,12 @@ table {
 
     div { min-width: 0; }
     dt {
-      font-family: var(--f-mono); font-size: var(--t-xs);
-      text-transform: uppercase; letter-spacing: var(--track-mono);
-      color: var(--faint); margin: 0 0 0.3rem;
+      font-family: var(--f-body); font-size: var(--t-sm);
+      letter-spacing: var(--track-label);
+      color: var(--faint); margin: 0 0 0.2rem;
     }
-    dd { margin: 0; font-family: var(--f-mono); font-size: var(--t-sm); color: var(--ink-dim); }
+    dd { margin: 0; font-family: var(--f-body); font-size: var(--t-base);
+         font-variant-numeric: tabular-nums; color: var(--ink-dim); }
   }
 
   &__actions {
@@ -147,10 +152,32 @@ table {
   }
 }
 
+// ---- rhythm modes ----------------------------------------------------------
+// The 8px scale underneath is unchanged. These are three named departures from
+// the default rhythm, each tied to what the page is for, so that variation is a
+// decision rather than an assortment of one-off margins.
+//
+//   default     everything not listed below
+//   .rhythm-read   long-form prose: tighter blocks, the eye is reading
+//                  (applied by .prose--essay)
+//   .rhythm-open   pages built around images: more air around figures
+//   .rhythm-tight  reference lists: archives, press, publications
+.rhythm-open {
+  .prose figure { margin-block: var(--s6); }
+  .prose > * + * { margin-top: var(--s4); }
+  .img + .img { margin-top: var(--s5); }
+}
+
+.rhythm-tight {
+  .index__row { padding-block: var(--s1); }
+  .pub { padding-block: var(--s2); }
+  .prose > * + * { margin-top: var(--s2); }
+}
+
 // ---- index rows ------------------------------------------------------------
 // Work is a ruled index, never a card grid. It stays a list at every width.
 .index {
-  border-top: 1px solid var(--rule);
+  border-top: 1px solid var(--rule-soft);
 }
 
 // `display: grid` here beats the user-agent [hidden] rule, so a hidden row would
@@ -163,25 +190,29 @@ table {
   gap: var(--s3);
   align-items: baseline;
   padding-block: var(--s2);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule-soft);
   border-left: 0;
   transition: background var(--dur) var(--ease);
 
   &:hover { background: var(--panel); }
 
+  // Formerly "01 / 2025": an ordinal that ranked nothing, glued to a year that
+  // does mean something. The ordinal is gone and this is now a year column.
   &__ix {
-    font-family: var(--f-mono);
-    font-size: var(--t-xs);
-    letter-spacing: 0.06em;
+    font-family: var(--f-body);
+    font-size: var(--t-sm);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     font-variant-numeric: tabular-nums;
   }
 
+  // Titles in the index stay in Karla: a list is scanned, not read, and the
+  // grotesque holds up better at this size than a high-contrast Garamond.
   &__title {
-    font-family: var(--f-display);
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: var(--t-body);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.005em;
     color: var(--ink);
     border-bottom: 0;
     display: block;
@@ -197,11 +228,13 @@ table {
     max-width: min(var(--measure), 100%);
   }
 
+  // Sentence case, no tracking, no colour. INSTRUMENT / A/V PERFORMANCE in
+  // tracked mono caps was the loudest thing in a quiet row and turned a list of
+  // works into a database readout.
   &__tag {
-    font-family: var(--f-mono);
-    font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    font-family: var(--f-body);
+    font-size: var(--t-sm);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     white-space: nowrap;
   }
@@ -209,23 +242,34 @@ table {
   &:hover &__title,
   &:focus-within &__title { transform: translateX(5px); color: var(--gold); }
 
-  // Semantic tone by kind — a marking on a panel, not a colour scheme.
-  // Four tones grouped by what a thing is, so six types never read as a rainbow:
-  //   gold    things you can play or use
-  //   oxblood things that happened live
-  //   blue    research outputs
-  //   plum    the thesis, singular
-  &[data-kind="instrument"]      &__tag { color: var(--gold); }
-  &[data-kind="product-r-d"]     &__tag { color: var(--gold); }
-  &[data-kind="a-v-performance"] &__tag { color: var(--oxblood); }
-  &[data-kind="residency"]       &__tag { color: var(--oxblood); }
-  &[data-kind="live"]            &__tag { color: var(--oxblood); }
-  &[data-kind="dj-set"]          &__tag { color: var(--oxblood); }
-  &[data-kind="paper"]           &__tag { color: var(--blue); }
-  &[data-kind="research-system"] &__tag { color: var(--blue); }
-  &[data-kind="talks"]           &__tag { color: var(--blue); }
-  &[data-kind="essay"]           &__tag { color: var(--plum); }
-  &[data-kind="thesis"]          &__tag { color: var(--plum); }
+  // Colour used to be applied per data-kind, so every row advertised its
+  // database category and the four hues read as a legend. The kinds are still on
+  // the element (the Work filter reads them) but they no longer paint anything.
+  //
+  // Colour now leads at the level of a page or a section instead: --lead is set
+  // once per section and surfaces in one or two details, so a hue is a choice
+  // about hierarchy rather than a type marker. Gold remains the interaction
+  // colour everywhere, which is the one meaning worth keeping constant.
+}
+
+// The lead entry in a selection gets room and a larger title. Everything else in
+// the row grammar is unchanged, so the list still reads as one family.
+.index__row--lead {
+  padding-block: var(--s4) var(--s4);
+
+  .index__row__title {
+    font-family: var(--f-display);
+    font-size: var(--t-xl);
+    font-weight: 500;
+    letter-spacing: var(--track-display);
+  }
+
+  .index__row__desc {
+    margin-top: var(--s1);
+    font-size: var(--t-body);
+    color: var(--ink-dim);
+    max-width: min(46ch, 100%);
+  }
 }
 
 @media (max-width: 620px) {
@@ -247,10 +291,9 @@ table {
 // The teaching archive uses these heavily; kept square and quiet.
 .btn {
   display: inline-block;
-  font-family: var(--f-mono);
+  font-family: var(--f-body);
   font-size: var(--t-xs);
-  text-transform: uppercase;
-  letter-spacing: var(--track-mono);
+  letter-spacing: var(--track-label);
   padding: 0.5rem 0.9rem;
   border: 1px solid var(--rule);
   color: var(--ink-dim);
@@ -309,10 +352,9 @@ table {
   padding-left: var(--s2);
 
   &__title {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     margin-bottom: var(--s1);
   }
@@ -320,7 +362,7 @@ table {
   ol, ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
 
   a {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     color: var(--muted);
     border-bottom: 0;
@@ -350,7 +392,7 @@ table {
   audio { width: 100%; max-width: 32rem; }
 
   &__label {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     color: var(--faint);
     margin-bottom: 0.35rem;
@@ -374,10 +416,9 @@ table {
     > div { display: contents; }
 
     dt {
-      font-family: var(--f-mono);
+      font-family: var(--f-body);
       font-size: var(--t-xs);
-      text-transform: uppercase;
-      letter-spacing: var(--track-mono);
+      letter-spacing: var(--track-label);
       color: var(--faint);
       padding-top: 0.15rem;
     }
@@ -394,7 +435,7 @@ table {
   }
 
   &__role {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     color: var(--faint);
     letter-spacing: 0.02em;
@@ -429,7 +470,7 @@ table {
 
   figcaption {
     margin-top: var(--s2);
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     line-height: 1.65;
     color: var(--faint);
@@ -451,19 +492,17 @@ table {
   padding-bottom: var(--s2);
 
   &__label {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     margin-right: var(--s1);
   }
 
   &__btn {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     background: transparent;
     border: 0;
     border-bottom: 1px solid transparent;
@@ -476,7 +515,7 @@ table {
   }
 
   &__empty {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-sm);
     color: var(--faint);
     padding-top: var(--s3);
@@ -516,7 +555,7 @@ table {
   border-bottom: 1px solid var(--rule-soft);
 
   &__year {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-sm);
     color: var(--faint);
     font-variant-numeric: tabular-nums;
@@ -533,9 +572,9 @@ table {
   }
 
   &__lang {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: 0.72em;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     vertical-align: 0.15em;
   }
@@ -543,7 +582,7 @@ table {
   &__authors { font-size: var(--t-base); color: var(--muted); }
 
   &__venue {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     letter-spacing: 0.02em;
     color: var(--faint);
@@ -556,10 +595,9 @@ table {
     margin-top: 0.3rem;
 
     a {
-      font-family: var(--f-mono);
+      font-family: var(--f-body);
       font-size: var(--t-xs);
-      text-transform: uppercase;
-      letter-spacing: var(--track-mono);
+      letter-spacing: var(--track-label);
       color: var(--blue);
       border-bottom: 1px solid transparent;
 
@@ -571,11 +609,11 @@ table {
 .bibtex {
   margin-top: var(--s4);
 
+  // The disclosure label is UI, not code — only the entry itself stays mono.
   summary {
-    font-family: var(--f-mono);
-    font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    font-family: var(--f-body);
+    font-size: var(--t-sm);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     cursor: pointer;
 
@@ -605,11 +643,10 @@ table {
 
 .chrono {
   &__heading {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     padding-bottom: var(--s1);
     border-bottom: 1px solid var(--rule);
@@ -656,7 +693,7 @@ table thead:has(th:empty) { display: none; }
   figcaption {
     margin-top: var(--s2);
     max-width: min(var(--measure), 100%);
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     line-height: 1.65;
     color: var(--faint);
@@ -709,6 +746,13 @@ table thead:has(th:empty) { display: none; }
   .photo-pair { grid-template-columns: minmax(0, 1fr); }
 }
 
+// When the image opens the page it sits directly under the masthead and needs
+// its own top space; otherwise it inherits the page head's bottom padding.
+.home-lead--opening {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
 .home-lead {
   padding-top: var(--s5);
 
@@ -721,10 +765,9 @@ table thead:has(th:empty) { display: none; }
   max-width: min(var(--measure), 100%);
 
   summary {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     color: var(--faint);
     cursor: pointer;
 
@@ -774,40 +817,60 @@ table thead:has(th:empty) { display: none; }
 }
 
 // ---- long-form essay -------------------------------------------------------
-// A reading page. Narrower measure and a slightly larger body than the rest of
-// the site; everything else gets out of the way.
+// A reading page, and the one place the site is set in a serif for running text.
+//
+// Cormorant is a Garamond with a small x-height and high stroke contrast, so it
+// cannot simply be dropped in at the body size used elsewhere — it would read a
+// size smaller and go thin on the dark ground. It is set at 1.375rem / 500,
+// which was tested against Karla at 19px on both grounds: at that size the stems
+// hold and the page reads like a book rather than a website.
+//
+// Rhythm mode: denser than the rest of the site. Long prose wants tighter
+// paragraph spacing than an index does — the eye is reading, not scanning.
 .prose--essay {
-  --measure: 62ch;
-  font-size: calc(var(--t-body) * 1.06);
-  line-height: 1.72;
+  --measure: 66ch;
+  font-family: var(--f-prose);
+  font-size: var(--t-prose);
+  font-weight: 500;
+  line-height: 1.58;
 
-  > * + * { margin-top: var(--s4); }
+  > * + * { margin-top: var(--s3); }
 
   > h2 {
-    margin-top: var(--s7);
+    margin-top: var(--s6);
     font-size: var(--t-2xl);
     max-width: min(20ch, 100%);
+    // No rule under an essay heading. In a page of continuous prose the change
+    // of size and the space above it are already unambiguous.
+    border-bottom: 0;
+    padding-bottom: 0;
   }
+
+  > h3 { margin-top: var(--s5); }
 
   p { max-width: min(var(--measure), 100%); }
 
-  em { font-style: italic; }
+  blockquote { font-size: 0.96em; border-left-width: 1px; }
+
+  em, i { font-style: italic; }
 }
 
 .essay__subtitle {
   margin-top: var(--s2);
   font-family: var(--f-display);
+  font-style: italic;
   font-weight: 400;
   font-size: var(--t-lg);
-  letter-spacing: -0.02em;
+  letter-spacing: var(--track-display);
   color: var(--muted);
 }
 
 .essay__sign {
   margin-top: var(--s5);
-  font-family: var(--f-mono);
-  font-size: var(--t-sm);
-  letter-spacing: 0.06em;
+  font-family: var(--f-prose);
+  font-style: italic;
+  font-size: var(--t-base);
+  letter-spacing: var(--track-display);
   color: var(--muted);
 }
 
@@ -866,10 +929,9 @@ table thead:has(th:empty) { display: none; }
 }
 
 .index__row__cta {
-  font-family: var(--f-mono);
+  font-family: var(--f-body);
   font-size: var(--t-xs);
-  text-transform: uppercase;
-  letter-spacing: var(--track-mono);
+  letter-spacing: var(--track-label);
   color: var(--faint);
   white-space: nowrap;
 }

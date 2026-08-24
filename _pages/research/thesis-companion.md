@@ -4,7 +4,6 @@ permalink: /research/thesis/companion/
 title: Thesis Companion
 eyebrow: Listening references
 excerpt: Listening references and additional material for the thesis
-rail_label: Companion
 toc: true
 redirect_from:
 - /research/manuscript/

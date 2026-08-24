@@ -4,6 +4,7 @@ permalink: /work/absynth-preset-explorer/
 title: "Absynth 6 Preset Explorer"
 eyebrow: "Native Instruments · shipped"
 excerpt: "A way to browse a large preset library by sound rather than by name — presets positioned by what they actually sound like, in a space you move through."
+opening: image-first   # a product surface — show it before describing it
 kind: "Product R&D"
 years: "2025"
 toc: true

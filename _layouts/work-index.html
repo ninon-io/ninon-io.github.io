@@ -4,11 +4,12 @@ layout: base
 {% include site/page-head.html %}
 
 <section class="band">
-  <div class="field band__grid">
+  <div class="field band__grid{% unless page.rail_label %} band__grid--full{% endunless %}">
+    {%- if page.rail_label %}
     <div class="rail">
-      <span class="rail__num">{{ site.data.work | size }}</span>
-      <span class="rail__label">{{ page.rail_label | default: 'Index' }}</span>
+      <span class="rail__label">{{ page.rail_label }}</span>
     </div>
+    {%- endif %}
     <div class="col">
       {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
 

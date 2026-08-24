@@ -5,7 +5,7 @@ layout: base
 
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">01</span><span class="rail__label">Bio</span></div>
+    <div class="rail"><span class="rail__label">Bio</span></div>
     <div class="col about__intro">
       <div class="prose">{{ content }}</div>
       {%- if page.portrait %}
@@ -20,7 +20,7 @@ layout: base
 
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">02</span><span class="rail__label">Chronology</span></div>
+    <div class="rail"><span class="rail__label">Chronology</span></div>
     <div class="col">
       {%- for block in page.chronology %}
       <section class="chrono">
@@ -39,7 +39,7 @@ layout: base
 
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">03</span><span class="rail__label">Elsewhere</span></div>
+    <div class="rail"><span class="rail__label">Elsewhere</span></div>
     <div class="col">
       <div class="profiles">
         {%- for p in page.profiles %}<a class="btn" href="{{ p.url }}" rel="me noopener">{{ p.label }}</a>{% endfor %}
@@ -51,7 +51,7 @@ layout: base
 
 <section class="band">
   <div class="field band__grid">
-    <div class="rail"><span class="rail__num">04</span><span class="rail__label">Contact</span></div>
+    <div class="rail"><span class="rail__label">Contact</span></div>
     <div class="col">
       <dl class="credits__list">
         {%- for c in page.contact %}

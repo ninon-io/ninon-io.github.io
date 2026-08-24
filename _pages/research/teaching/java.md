@@ -5,7 +5,6 @@ title: JAVA
 lang: fr
 eyebrow: L3 · en français
 excerpt: Recommanded IDE for Java
-rail_label: Java
 archive_note: Supports de cours, 2021. Conservés en ligne pour les anciens étudiants ; les liens ci-dessous fonctionnent toujours.
 toc: true
 redirect_from:

@@ -4,7 +4,6 @@ permalink: /sound/
 title: "Sound"
 eyebrow: "Ninon — live electronics, production, DJ"
 excerpt: "Techno, experimental music and generative sound art. Concrete textures, cinematic atmospheres and disembodied voices, built through hardware and algorithmic processes."
-rail_label: "Sound"
 
 # A landscape source presented whole; the portrait frames appear below at their
 # own ratio rather than being cropped into a banner.

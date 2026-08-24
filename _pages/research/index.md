@@ -4,7 +4,6 @@ permalink: /research/
 title: "Research"
 eyebrow: "Neural audio synthesis, embedded instruments"
 excerpt: "The thesis, individual research pieces, the full publication record, talks and workshops, and the archived teaching material."
-rail_label: "Research"
 entries:
   - title: "Doctoral Thesis"
     description: "Creative Deep Learning on Real Time Embedded Architectures. Defended May 2025 — manuscript and defence video."

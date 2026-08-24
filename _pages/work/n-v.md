@@ -4,6 +4,7 @@ permalink: /work/n-v/
 title: "N / V"
 eyebrow: "Audiovisual duo · with Victor Calvi"
 excerpt: "Sound and generative image built as a single evolving environment, played live and pushed toward the point where structure gives way."
+opening: image-first   # an audiovisual duo: the image is the argument
 kind: "A/V Performance"
 years: "2025–2026"
 toc: true

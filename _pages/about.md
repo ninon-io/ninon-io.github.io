@@ -4,7 +4,6 @@ permalink: /about/
 title: "About"
 eyebrow: "Ninon Devis Salvy — Berlin"
 excerpt: "Audio researcher and electronic musician. Research engineer at Native Instruments, PhD from IRCAM, performing as Ninon."
-rail_label: "About"
 
 portrait:
   src: /assets/media/about/ninon-studio.jpg

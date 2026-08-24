@@ -5,7 +5,6 @@ title: Cryptology
 lang: fr
 eyebrow: L3 / M1 · en français
 excerpt: Cryptologie Romantique et Introduction à la sécurité
-rail_label: Cryptologie
 archive_note: Supports de cours, 2021. Conservés en ligne pour les anciens étudiants ; les liens ci-dessous fonctionnent toujours.
 toc: true
 redirect_from:

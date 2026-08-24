@@ -27,9 +27,10 @@
 
   &__name {
     font-family: var(--f-display);
-    font-weight: 600;
-    font-size: var(--t-base);
-    letter-spacing: var(--track-tight);
+    font-family: var(--f-mark);
+    font-weight: 400;
+    font-size: var(--t-lg);
+    letter-spacing: var(--track-mark);
     border-bottom: 0;
 
     &:hover { color: var(--gold); }
@@ -43,10 +44,10 @@
   gap: var(--s3);
 
   a {
-    font-family: var(--f-mono);
-    font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    font-family: var(--f-body);
+    font-size: var(--t-base);
+    font-weight: 500;
+    letter-spacing: var(--track-label);
     color: var(--muted);
     border-bottom: 1px solid transparent;
     padding-bottom: 2px;
@@ -57,13 +58,19 @@
 }
 
 // ---- band + rail -----------------------------------------------------------
-// The rail is the one structural idea: a sticky mono index in the margin,
-// behaving like the silkscreened labels on a rack panel.
+// The rail marks where you are in a long page. It used to be a gold ordinal over
+// a rule over a tracked uppercase label — three devices doing one job, which is
+// what made every page read as an interface panel.
+//
+// It is now a single quiet section name. The ordinal is gone (it numbered things
+// that were never a sequence); the rule is gone (the band already has one); the
+// uppercase is gone. Where a rail still carries a figure it is because the figure
+// is real data — a count, a span of years — not a position in a list.
+// No rule between bands. --band-y is between 3.5 and 7rem of space, which is
+// already an unmistakable break; the hairline on top of it was the single most
+// repeated mark on the site and did no work the space was not already doing.
 .band {
-  border-bottom: 1px solid var(--rule);
   padding-block: var(--band-y);
-
-  &:last-of-type { border-bottom: 0; }
 }
 
 .band__grid {
@@ -79,26 +86,36 @@
 
   &__num {
     display: block;
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-sm);
-    font-weight: 500;
-    color: var(--gold);
-    letter-spacing: 0.06em;
+    font-weight: 400;
+    color: var(--faint);
+    letter-spacing: var(--track-label);
     font-variant-numeric: tabular-nums;
   }
 
   &__label {
     display: block;
-    margin-top: var(--s1);
-    padding-top: var(--s1);
-    border-top: 1px solid var(--rule);
-    font-family: var(--f-mono);
-    font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
-    color: var(--faint);
+    font-family: var(--f-body);
+    font-size: var(--t-base);
+    font-weight: 500;
+    letter-spacing: var(--track-label);
+    color: var(--muted);
   }
+
+  // When both are present the figure is secondary to the name, not the reverse.
+  &__num + &__label { margin-top: 0.15rem; }
 }
+
+// A band with nothing worth putting in the margin gives the column the full
+// measure instead of holding an empty rail open.
+.band__grid--full {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+// The essay rail carries only a table of contents; it needs no label styling and
+// should not reserve space when there is no TOC to show.
+.rail--quiet:empty { display: none; }
 
 .col {
   min-width: 0;
@@ -128,11 +145,10 @@
   }
 
   a, span {
-    font-family: var(--f-mono);
-    font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
-    color: var(--faint);
+    font-family: var(--f-body);
+    font-size: var(--t-base);
+    letter-spacing: var(--track-label);
+    color: var(--muted);
   }
 
   a { border-bottom: 0; &:hover { color: var(--gold); } }

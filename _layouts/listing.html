@@ -8,17 +8,23 @@ becomes the /work/ index in Phase 3 without rework. Never a card grid.
 {% include site/page-head.html %}
 
 <section class="band">
-  <div class="field band__grid">
+  <div class="field band__grid{% unless page.rail_label %} band__grid--full{% endunless %}">
+    {%- if page.rail_label %}
     <div class="rail">
-      <span class="rail__num">{{ page.entries | size }}</span>
-      <span class="rail__label">{{ page.rail_label | default: 'Index' }}</span>
+      <span class="rail__label">{{ page.rail_label }}</span>
     </div>
+    {%- endif %}
     <div class="col">
       {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
       <div class="index">
         {%- for e in page.entries %}
         <a class="index__row" href="{{ e.url | relative_url }}"{% if e.kind %} data-kind="{{ e.kind | downcase }}"{% endif %}>
-          <span class="index__row__ix">{{ e.index | default: forloop.index | prepend: '0' | slice: -2, 2 }}{% if e.year %} / {{ e.year }}{% endif %}</span>
+          {%- comment -%}
+          Was "01 / 2025". The ordinal ranked nothing — these lists are ordered by
+          editorial judgement, not by rank — so only the year, which is real, is
+          left. Entries without a year simply leave the column empty.
+          {%- endcomment -%}
+          <span class="index__row__ix">{{ e.year }}</span>
           <span>
             <span class="index__row__title">{{ e.title }}</span>
             {%- if e.description %}<span class="index__row__desc">{{ e.description }}</span>{% endif %}

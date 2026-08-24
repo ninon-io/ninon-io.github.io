@@ -4,7 +4,6 @@ permalink: /research/teaching/
 title: "Teaching archive"
 eyebrow: "Course material, 2019–2023"
 excerpt: "Material from the ATIAM master at IRCAM / Sorbonne Université and earlier undergraduate teaching, kept online for former students. Recent workshops and masterclasses are listed under Talks & Workshops."
-rail_label: "Archive"
 redirect_from:
   - /teaching/
   - /teaching

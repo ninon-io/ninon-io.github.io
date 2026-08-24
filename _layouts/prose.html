@@ -4,12 +4,15 @@ layout: base
 {% include site/page-head.html %}
 
 <article class="band">
-  <div class="field band__grid">
-    <div class="rail">
-      {%- if page.rail_num %}<span class="rail__num">{{ page.rail_num }}</span>{% endif %}
-      <span class="rail__label">{{ page.rail_label | default: page.title }}</span>
-      {%- if page.toc %}{% include site/toc.html %}{% endif %}
-    </div>
+  {%- comment -%}
+  A prose page gets a margin only when there is a table of contents to put in it.
+  Every one of these pages previously carried a rail label that repeated the page
+  title a few centimetres to the right of it.
+  {%- endcomment -%}
+  <div class="field band__grid{% unless page.toc %} band__grid--full{% endunless %}">
+    {%- if page.toc %}
+    <div class="rail rail--quiet">{% include site/toc.html %}</div>
+    {%- endif %}
     <div class="col">
       {%- if page.archive_note %}
       <div class="notice notice--archive">

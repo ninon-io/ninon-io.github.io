@@ -23,9 +23,13 @@ provenance of the English version is never ambiguous.
 
 <article class="band">
   <div class="field band__grid">
-    <div class="rail">
-      <span class="rail__num">{{ page.years }}</span>
-      <span class="rail__label">Essay</span>
+    {%- comment -%}
+    An essay does not need the same margin apparatus as a project index. The year
+    is already in the head, and a label reading "Essay" under an eyebrow that
+    says "Essay · English version" was saying it twice. Only the table of
+    contents earns its place here, because it actually does something.
+    {%- endcomment -%}
+    <div class="rail rail--quiet">
       {%- if page.toc %}{% include site/toc.html %}{% endif %}
     </div>
     <div class="col">

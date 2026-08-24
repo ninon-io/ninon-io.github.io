@@ -27,10 +27,9 @@
   }
 
   &__meta {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--track-mono);
+    letter-spacing: var(--track-label);
     color: var(--faint);
   }
 
@@ -86,7 +85,7 @@
   }
 
   &__time {
-    font-family: var(--f-mono);
+    font-family: var(--f-body);
     font-size: var(--t-xs);
     color: var(--muted);
     font-variant-numeric: tabular-nums;

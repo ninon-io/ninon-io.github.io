@@ -4,6 +4,7 @@ permalink: /research/singularity-and-creation/
 title: "Singularity and Creation in the Age of AI"
 eyebrow: "CNC Lab · with Jun Suzuki"
 excerpt: "Where does originality live when the model producing it averages everything it has seen? Two experiments, one on text and one on images, locating the narrow band in which a generative system diverges without falling apart."
+opening: direct   # provenance block already opens the page
 kind: "Paper"
 years: "2026"
 toc: true

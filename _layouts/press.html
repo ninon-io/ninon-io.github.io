@@ -2,12 +2,9 @@
 layout: base
 ---
 {% include site/page-head.html %}
-<section class="band">
-  <div class="field band__grid">
-    <div class="rail">
-      <span class="rail__num">{{ site.data.press | size }}</span>
-      <span class="rail__label">Press</span>
-    </div>
+<section class="band rhythm-tight">
+  {%- comment -%} No rail: the page title already names this section. {%- endcomment -%}
+  <div class="field band__grid band__grid--full">
     <div class="col">
       {%- if content and content != '' %}<div class="prose">{{ content }}</div>{% endif %}
       <ol class="pubs__list">

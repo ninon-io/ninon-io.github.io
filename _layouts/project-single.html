@@ -1,23 +1,35 @@
 ---
 layout: base
 ---
-{% include site/page-head.html %}
-
 {%- comment -%}
+Opening order is a per-page decision, not a house style.
+
+  opening: image-first   the work arrives before any words about it. For pages
+                         whose subject is visual — N / V, the Absynth explorer —
+                         a photograph is a better first argument than a sentence.
+  (default)              title, then the object.
+
 The lead is presented at whatever scale the source honestly supports, in its own
 aspect ratio. `present` may be set per page: wide for a big landscape source,
 natural for a portrait one. Nothing is cropped to a fixed band.
 {%- endcomment -%}
-{%- if page.lead %}
+{%- if page.lead and page.opening == 'image-first' %}
+<div class="field home-lead home-lead--opening">
+  {% include site/img.html src=page.lead.src alt=page.lead.alt present=page.lead.present loading="eager" credit=page.lead.credit caption=page.lead.caption %}
+</div>
+{%- endif %}
+
+{% include site/page-head.html %}
+
+{%- if page.lead and page.opening != 'image-first' %}
 <div class="field home-lead">
   {% include site/img.html src=page.lead.src alt=page.lead.alt present=page.lead.present loading="eager" credit=page.lead.credit caption=page.lead.caption %}
 </div>
 {%- endif %}
 
-<article class="band">
+<article class="band rhythm-open">
   <div class="field band__grid">
     <div class="rail">
-      {%- if page.kind %}<span class="rail__num">{{ page.kind }}</span>{% endif %}
       <span class="rail__label">{{ page.years | default: page.rail_label | default: 'Project' }}</span>
       {%- if page.toc %}{% include site/toc.html %}{% endif %}
     </div>
