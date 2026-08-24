@@ -98,8 +98,11 @@ table {
 // ---- page head -------------------------------------------------------------
 // Replaces the old scrim-over-photo hero. Typographic by default; an image, when
 // there is a real one, sits beside the type rather than under it.
+// The head no longer carries a rule, so it no longer needs its own bottom
+// padding: the band beneath already opens with --band-y. Keeping both stacked
+// two full band gaps into one void.
 .page-head {
-  padding-block: clamp(2.5rem, 6vw, 5rem) var(--band-y);
+  padding-block: clamp(2.5rem, 6vw, 5rem) 0;
 
   // The first mark on the page carries the section's accent. This is the whole
   // of the colour system on most pages — one word, once.

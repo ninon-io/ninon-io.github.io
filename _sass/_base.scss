@@ -18,6 +18,12 @@
 // latin and latin-ext are split on unicode-range, as Google serves them: the
 // ext file is fetched only when a page actually contains an accented character
 // (Münze, Säule, Université, l'abîme).
+//
+// The variable faces are declared format("woff2"), not format("woff2-variations").
+// The latter is a non-standard hint that was dropped from the spec in favour of
+// tech(variations); a browser that does not recognise a format hint skips that
+// source entirely, which would silently drop the whole family to a fallback.
+// Plain woff2 is understood everywhere and the weight axes still work.
 
 
 @font-face {
@@ -39,7 +45,7 @@
 
 @font-face {
   font-family: "Karla";
-  src: url("/assets/fonts/karla-normal-latin.woff2") format("woff2-variations");
+  src: url("/assets/fonts/karla-normal-latin.woff2") format("woff2");
   font-weight: 200 800;
   font-style: normal;
   font-display: swap;
@@ -47,7 +53,7 @@
 
 @font-face {
   font-family: "Karla";
-  src: url("/assets/fonts/karla-normal-latin-ext.woff2") format("woff2-variations");
+  src: url("/assets/fonts/karla-normal-latin-ext.woff2") format("woff2");
   font-weight: 200 800;
   font-style: normal;
   font-display: swap;
@@ -56,7 +62,7 @@
 
 @font-face {
   font-family: "Karla";
-  src: url("/assets/fonts/karla-italic-latin.woff2") format("woff2-variations");
+  src: url("/assets/fonts/karla-italic-latin.woff2") format("woff2");
   font-weight: 200 800;
   font-style: italic;
   font-display: swap;
@@ -64,7 +70,7 @@
 
 @font-face {
   font-family: "Karla";
-  src: url("/assets/fonts/karla-italic-latin-ext.woff2") format("woff2-variations");
+  src: url("/assets/fonts/karla-italic-latin-ext.woff2") format("woff2");
   font-weight: 200 800;
   font-style: italic;
   font-display: swap;
@@ -73,7 +79,7 @@
 
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("/assets/fonts/cormorant-normal-latin.woff2") format("woff2-variations");
+  src: url("/assets/fonts/cormorant-normal-latin.woff2") format("woff2");
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
@@ -81,7 +87,7 @@
 
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("/assets/fonts/cormorant-normal-latin-ext.woff2") format("woff2-variations");
+  src: url("/assets/fonts/cormorant-normal-latin-ext.woff2") format("woff2");
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
@@ -90,7 +96,7 @@
 
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("/assets/fonts/cormorant-italic-latin.woff2") format("woff2-variations");
+  src: url("/assets/fonts/cormorant-italic-latin.woff2") format("woff2");
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;
@@ -98,7 +104,7 @@
 
 @font-face {
   font-family: "Cormorant Garamond";
-  src: url("/assets/fonts/cormorant-italic-latin-ext.woff2") format("woff2-variations");
+  src: url("/assets/fonts/cormorant-italic-latin-ext.woff2") format("woff2");
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;

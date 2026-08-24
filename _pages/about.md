@@ -2,7 +2,7 @@
 layout: about
 permalink: /about/
 title: "About"
-eyebrow: "Ninon Devis Salvy — Berlin"
+eyebrow: "Berlin"
 excerpt: "Audio researcher and electronic musician. Research engineer at Native Instruments, PhD from IRCAM, performing as Ninon."
 
 portrait:
