@@ -1,16 +1,20 @@
 # Homepage selection and order. Explicit rather than derived, because the first
 # impression is an editorial decision, not a sort.
 #
-# Neurorack leads; the current music practice appears immediately after it; the
-# Native Instruments work is prominent; N / V stays visible but no longer defines
-# the opening; research closes the sequence.
+# Neurorack leads; the Säule set follows it, as the most substantial recent
+# performance and the one that puts the research on a dancefloor; the Native
+# Instruments work is prominent; N / V stays visible but no longer defines the
+# opening; research closes the sequence.
+#
+# The full live and DJ record stays one click away under Sound, rather than
+# occupying a slot here as a list of venue names.
 
 - work: neurorack
-- title: "Live & DJ"
-  url: /sound/
+- title: "Säule, Berghain"
+  url: /sound/saule/
   year: "2026"
-  kind: "Sound"
-  description: "Säule at Berghain in September. La Station, MONOM, Alte Münze, STUDIO1111."
+  kind: "Live"
+  description: "A live set composed for the room, using the low frequencies its architecture reinforces as musical material, with the Neurorack."
 - work: absynth-preset-explorer
 - work: n-v
 - title: "Creative Deep Learning on Real Time Embedded Architectures"

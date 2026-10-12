@@ -4,7 +4,7 @@
 # plum = the thesis.
 #
 # `order` sets the editorial sequence of /work/. `home` sets the homepage
-# selection and order — see _data/home.yml. The two are deliberately independent:
+# selection and order, see _data/home.yml. The two are deliberately independent:
 # the front page and the archive are different arguments.
 
 - slug: neurorack
@@ -45,4 +45,4 @@
   year: "2023"
   order: 5
   kind: "Research System"
-  description: "Fader networks applied to RAVE — a neural synthesiser whose latent space becomes a set of knobs."
+  description: "Fader networks applied to RAVE: a neural synthesiser whose latent space becomes a set of knobs."

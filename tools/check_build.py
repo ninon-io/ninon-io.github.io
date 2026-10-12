@@ -101,9 +101,38 @@ def main(site):
 
     print(f"  {total_links} internal links, {total_assets} asset refs checked")
 
+    # Responsive-image coverage.
+    #
+    # tools/index-images.py rewrites _data/imagemeta.yml from scratch, and the
+    # srcw/srcf keys that drive every <source srcset> are written by
+    # tools/build-images.py. Running index-images.py on its own therefore strips
+    # them, and the site silently falls back to serving full-size originals with
+    # no srcset at all. Nothing else here notices: the markup stays valid and
+    # every asset still resolves, so the build passes while every photograph on
+    # the site has quietly lost its responsive variants.
+    #
+    # If the metadata says derivatives exist, the built pages have to use them.
+    # The truth is the derivative files on disk, not imagemeta.yml. When
+    # index-images.py strips srcw, the metadata and the markup lose their srcsets
+    # together, so comparing those two against each other can never detect it.
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    derived = os.path.join(root, "assets", "media", "derived")
+    on_disk = 0
+    if os.path.isdir(derived):
+        on_disk = len([f for f in os.listdir(derived) if f.endswith(".webp")])
+    emitted = 0
+    for p in sorted(pages):
+        emitted += open(p, encoding="utf-8", errors="replace").read().count("srcset=")
+    if on_disk and not emitted:
+        err(f"{on_disk} derivative file(s) exist under assets/media/derived/ but the "
+            f"build emits no srcset at all. imagemeta.yml has probably lost its "
+            f"srcw keys: re-run tools/build-images.py")
+    else:
+        print(f"  responsive images: {on_disk} derivative file(s), {emitted} srcset ref(s) emitted")
+
     # Legacy compatibility: every pre-reorganisation URL that we chose to keep
     # must still resolve. Truth comes from git, not a hardcoded count.
-    # The reference is the PRE-REORGANISATION tree, pinned by commit — not
+    # The reference is the PRE-REORGANISATION tree, pinned by commit, not
     # "whatever master is now". Using a moving branch made this check
     # self-referential: once master carried the maintainer READMEs that the build
     # deliberately excludes, it started demanding them in _site.

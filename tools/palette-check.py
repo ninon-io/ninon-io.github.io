@@ -25,7 +25,7 @@ def ratio(a, b):
 
 
 LIVE = {
-    "B — Brass (warm ground, richer gold)": {
+    "B. Brass (warm ground, richer gold)": {
         "dark": dict(ground="#121110", panel="#1A1917", rule="#2C2A26", ink="#F0EBE3",
                      muted="#A29B8F", faint="#726C62", accent="#C9A227",
                      oxblood="#C2604C", blue="#6E97BE", plum="#A98BB0"),
@@ -50,7 +50,7 @@ CHECKS = [
     ("hairline rule*",   "rule",    "ground", 1.2),
 ]
 
-print("WCAG 2.2 AA — * = large-text/UI threshold (3.0), rules exempt (decorative)\n")
+print("WCAG 2.2 AA. * = large-text/UI threshold (3.0), rules exempt (decorative)\n")
 summary = {}
 for name, modes in LIVE.items():
     print("=" * 78)

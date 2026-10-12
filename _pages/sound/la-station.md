@@ -1,10 +1,10 @@
 ---
 layout: performance
 permalink: /sound/la-station/
-title: "La Station — Gare des Mines"
+title: "La Station, Gare des Mines"
 eyebrow: "DJ set · Paris · April 2026"
-excerpt: "Contemporary techno alongside landmark electroacoustic recordings — the oldest from around 1956, the newest released the day before."
-description: "A DJ set at La Station — Gare des Mines, Paris, moving between contemporary techno and landmark electronic and electroacoustic recordings. Photographs by Romain Guede."
+excerpt: "Contemporary techno alongside landmark electroacoustic recordings. The oldest from around 1956, the newest released the day before."
+description: "A DJ set at La Station, Gare des Mines, Paris, moving between contemporary techno and landmark electronic and electroacoustic recordings. Photographs by Romain Guede."
 kind: "DJ set"
 years: "2026"
 
@@ -16,7 +16,7 @@ lead:
 credits:
   role: "DJ set"
   venues:
-    - name: "La Station — Gare des Mines"
+    - name: "La Station, Gare des Mines"
       detail: "Dreamachine"
       city: "Paris"
       year: "2026"
@@ -49,16 +49,16 @@ gallery:
     present: natural
 ---
 
-A DJ set at [La Station — Gare des Mines](https://www.lastation.paris/) in the
+A DJ set at [La Station, Gare des Mines](https://www.lastation.paris/) in the
 north of Paris, for Dreamachine, moving between contemporary techno and landmark
-electronic and electroacoustic recordings — Éliane Radigue and Iannis Xenakis
+electronic and electroacoustic recordings: Éliane Radigue and Iannis Xenakis
 alongside records released the same week. The oldest material dates from around
 1956; the newest arrived the day before the show.
 
 Texture, density, spatial character and recording quality carried the set the way
 a key change carries another one: tape noise against a mastered kick, a long
 drone opening underneath a tight modern rhythm. Not nostalgia, and not
-eclecticism for its own sake — the interest was in where those recordings meet.
+eclecticism for its own sake. The interest was in where those recordings meet.
 
 Watching a room dance to pieces written for a concert hall was the best part of
 the night.

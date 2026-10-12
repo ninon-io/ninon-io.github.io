@@ -25,7 +25,7 @@ layout: base
             <span class="pub__year">{{ t.year }}</span>
             <span class="pub__body">
               <span class="pub__title">{{ t.title }}{% if t.lang %} <span class="pub__lang">{{ t.lang | upcase }}</span>{% endif %}</span>
-              <span class="pub__venue">{{ t.host }}{% if t.city %}, {{ t.city }}{% endif %}{% if t.detail %} — {{ t.detail }}{% endif %}</span>
+              <span class="pub__venue">{{ t.host }}{% if t.city %}, {{ t.city }}{% endif %}{% if t.detail %} · {{ t.detail }}{% endif %}</span>
               {%- if t.url %}<span class="pub__links"><a href="{{ t.url }}" rel="noopener">{% if t.type == "interview" %}Read / listen{% else %}Details{% endif %}</a></span>{% endif %}
             </span>
           </li>

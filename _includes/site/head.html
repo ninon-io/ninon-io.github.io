@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {%- assign desc = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 -%}
-<title>{% if page.title and page.title != '' %}{{ page.title | strip_html }} — {% endif %}{{ site.title }}</title>
+<title>{% if page.title and page.title != '' %}{{ page.title | strip_html }} · {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ desc | escape }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 

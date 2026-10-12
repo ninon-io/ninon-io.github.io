@@ -1,6 +1,6 @@
 # ninon-io.github.io
 
-Source for **ninon-io.github.io**, the personal site of Ninon Devis Salvy —
+Source for **ninon-io.github.io**, the personal site of Ninon Devis Salvy,
 audio research, instruments and music.
 
 Static site built with Jekyll 4 and deployed to GitHub Pages by GitHub Actions.
@@ -41,7 +41,7 @@ bundle exec jekyll build
 ## Deployment
 
 `.github/workflows/pages.yml` builds **every** branch and pull request, so
-breakage surfaces immediately — but **only `master` is deployed**. Pushing
+breakage surfaces immediately, but **only `master` is deployed**. Pushing
 `phase-2-design-system` or any other working branch cannot replace the live site;
 both the artifact upload and the deploy job are guarded on
 `github.ref == 'refs/heads/master'`.
@@ -54,12 +54,12 @@ To publish: merge into `master`. There is no other path to production.
 
 | What | Where |
 |---|---|
-| Pages | `_pages/*.md` — one file per page, `permalink` sets the URL |
-| Layouts | `_layouts/` — `base`, `index`, `work-index`, `project-single`, `listing`, `sound`, `publications`, `talks`, `about`, `prose` |
+| Pages | `_pages/*.md`: one file per page, `permalink` sets the URL |
+| Layouts | `_layouts/`: `base`, `index`, `work-index`, `project-single`, `listing`, `sound`, `publications`, `talks`, `about`, `prose` |
 | Components | `_includes/site/` |
-| Styles | `_sass/` — `_tokens` first, then `_base`, `_layout`, `_components`, `_player` |
+| Styles | `_sass/`: `_tokens` first, then `_base`, `_layout`, `_components`, `_player` |
 | Navigation | `_data/navigation.yml` |
-| Fonts | `assets/fonts/` — self-hosted WOFF2, no CDN |
+| Fonts | `assets/fonts/`: self-hosted WOFF2, no CDN |
 | Build scripts | `tools/` |
 
 ### Adding content
@@ -67,7 +67,7 @@ To publish: merge into `master`. There is no other path to production.
 | To add | Put it in | Then |
 |---|---|---|
 | A new CV | `assets/documents/cv/ninon-devis-salvy-cv-<year>.pdf` | update `cv:` in `_pages/about.md` and the note in `assets/documents/cv/README.md` |
-| A new Work project | `_pages/work/<slug>.md` | add an entry to `_data/work.yml` — that drives the index, the filter and the homepage |
+| A new Work project | `_pages/work/<slug>.md` | add an entry to `_data/work.yml`, which drives the index, the filter and the homepage |
 | Project photographs | `assets/media/work/<slug>/images/` | append to that page's `gallery:`, or set `lead:` for the hero |
 | Project audio | `assets/media/work/<slug>/audio/` | run `tools/generate-peaks.py`, then use the player include |
 | A gig | `_data/sound.yml` under `upcoming:` or `selected:` | nothing else; `/sound/` renders it |
@@ -79,22 +79,22 @@ To publish: merge into `master`. There is no other path to production.
 
 Structured data rather than prose, so nothing has to be kept consistent by hand:
 
-- `_data/work.yml` — the Work archive. `kind` drives the filter *and* the
+- `_data/work.yml`: the Work archive. `kind` drives the filter *and* the
   semantic colour. Colour families: gold = playable or usable, oxblood = live,
   blue = research output, plum = the thesis. Four tones for six types, so the
   index never becomes a rainbow.
-- `_data/sound.yml` — live and DJ dates. `kind` keeps live sets distinct from DJ
+- `_data/sound.yml`: live and DJ dates. `kind` keeps live sets distinct from DJ
   sets; they are different practices.
-- `_data/publications.yml`, `_data/talks.yml`, `_data/press.yml` — the research
+- `_data/publications.yml`, `_data/talks.yml`, `_data/press.yml`: the research
   and press record.
-- `_data/bio.yml` — the short and medium bios, written once and reused.
-- Per-page `credits:` (see `_includes/site/credits.html`) — role, collaborators,
+- `_data/bio.yml`: the short and medium bios, written once and reused.
+- Per-page `credits:` (see `_includes/site/credits.html`): role, collaborators,
   venues, photography. Credits are never written into prose.
 
 Images adapt to their source: `{% include site/figure.html variant="portrait" %}`
 keeps a portrait photograph portrait instead of cropping it into a landscape box.
 
-Filenames are lowercase ASCII with hyphens — no spaces, no accents. Reference
+Filenames are lowercase ASCII with hyphens, no spaces, no accents. Reference
 assets from Markdown with an absolute path (`/assets/media/...`).
 
 ### Audio policy
@@ -124,7 +124,7 @@ original as the `<img src>` fallback, and caps the rendered width at half the
 intrinsic width so nothing is ever upscaled. CI runs both scripts before the
 Jekyll build.
 
-Two traps worth remembering. A directory named `_derived` is invisible to Jekyll —
+Two traps worth remembering. A directory named `_derived` is invisible to Jekyll:
 anything under a leading-underscore path never reaches `_site`, and because
 `<picture>` does not fall back to `<img>` once a `<source>` matches, every image
 silently breaks. And `tools/check_build.py` must validate `srcset` URLs, not only
@@ -144,16 +144,16 @@ back to a flat progress bar.
 ## URLs
 
 `WORK · SOUND · RESEARCH · ABOUT`. Every pre-Phase-3 URL redirects to its new
-home via `jekyll-redirect-from` (`redirect_from:` in the page front matter) —
+home via `jekyll-redirect-from` (`redirect_from:` in the page front matter),
 `/projects/*`, `/research/phd`, `/research/papers`, `/research/conferences`,
 `/research/manuscript` and `/teaching/*` all still resolve.
 
-## Legacy compatibility folders — do not delete
+## Legacy compatibility folders: do not delete
 
 `documents/`, `images/` and `audio/` at the repository root look like duplicates
 of `assets/`. **They are deliberate.** They are frozen byte-identical copies that
 keep URLs public before the August 2026 reorganisation returning 200 instead of
-404 — course PDFs that students bookmarked and search engines indexed.
+404. Course PDFs that students bookmarked and search engines indexed.
 
 GitHub Pages performs no server-side redirection, and a redirect stub named
 `*.pdf` would be served with a PDF content type, so physical copies are the only
@@ -178,13 +178,13 @@ verifies the coverage on every build and fails if it regresses.
 
 `run-visual-checks.py` renders each page inside a fixed-width iframe. Headless
 Chrome clamps its own layout viewport at about 485 px, so `--window-size` cannot
-test real phone widths — the iframe can.
+test real phone widths. The iframe can.
 
 ## Design system
 
 Palette, type scale and spacing live in `_sass/_tokens.scss`. Colours descend
 from the ones chosen by hand in the previous site: gold is the single accent,
-with oxblood and blue used sparingly as semantic markings — the way markings sit
+with oxblood and blue used sparingly as semantic markings, in the way markings sit
 on an instrument panel, not as branding. Dark-first with a separately designed
 light mode via `prefers-color-scheme`. Border radius is 0 everywhere; there are
 no gradients, glass or drop shadows.

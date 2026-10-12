@@ -2,7 +2,7 @@
 layout: sound
 permalink: /sound/
 title: "Sound"
-eyebrow: "Ninon — live electronics, production, DJ"
+eyebrow: "Ninon: live electronics, production, DJ"
 excerpt: "Techno, experimental music and generative sound art. Concrete textures, cinematic atmospheres and disembodied voices, built through hardware and algorithmic processes."
 rail_label: "Sound"
 
@@ -12,7 +12,7 @@ lead:
   src: /assets/media/sound/station/la-station-0243-romain-guede.jpg
   alt: "The room at La Station: red beams cutting through haze over a dense crowd, the booth lit at the far end"
   credit: "Romain Guede"
-  caption: "During a DJ set at La Station — Gare des Mines, Paris, April 2026."
+  caption: "During a DJ set at La Station, Gare des Mines, Paris, April 2026."
 
 profiles:
   - label: "SoundCloud"
@@ -25,7 +25,7 @@ description: "Ninon: live electronic performance, DJ sets and production. Upcomi
 ---
 
 I release and perform as **Ninon**. The live sets are built from hardware
-systems and algorithmic processes rather than arrangements — dense texture,
+systems and algorithmic processes rather than arrangements: dense texture,
 cinematic atmosphere and fragmented voice, assembled in the room. The DJ sets are
 as texturally detailed as the productions, and go harder.
 

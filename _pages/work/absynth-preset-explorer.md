@@ -3,7 +3,7 @@ layout: project-single
 permalink: /work/absynth-preset-explorer/
 title: "Absynth 6 Preset Explorer"
 eyebrow: "Native Instruments · shipped"
-excerpt: "A way to browse a large preset library by sound rather than by name — presets positioned by what they actually sound like, in a space you move through."
+excerpt: "A way to browse a large preset library by sound rather than by name: presets positioned by what they actually sound like, in a space you move through."
 kind: "Product R&D"
 years: "2025"
 toc: true
@@ -14,7 +14,7 @@ lead:
   present: wide
 
 credits:
-  role: "Research engineering — audio analysis, preset organisation, and the spatial and kinetic logic behind the map"
+  role: "Research engineering: audio analysis, preset organisation, and the spatial and kinetic logic behind the map"
   collaborators:
     - name: "Eric Oake"
       role: "Product Design, interaction prototyping"
@@ -26,7 +26,7 @@ credits:
 Absynth has an enormous preset library, and for most of its life the only way in
 was a list of names. Names are a poor index for sound: they tell you what someone
 called a patch, not what it does. The Preset Explorer replaces the list with a
-map, where position means something — presets sit near the sounds they resemble.
+map, where position means something: presets sit near the sounds they resemble.
 
 I worked on this from the early research prototypes through to the shipped
 feature, on the audio analysis and preset organisation, and on the spatial and
@@ -34,8 +34,8 @@ kinetic logic that turns that analysis into something you can move through.
 
 ## Listening instead of generating
 
-The analysis extracts each patch's perceptual character — brightness, sustain,
-noisiness and related qualities — and uses it to place the patch. Nothing here
+The analysis extracts each patch's perceptual character (brightness, sustain,
+noisiness and related qualities) and uses it to place the patch. Nothing here
 generates audio. As the article puts it, rather than using AI to generate sound,
 we use it to *listen*: analysing and organising presets to reveal relationships
 that already exist in the library.
@@ -55,7 +55,7 @@ mode for fast previewing, turns browsing into listening. Filters narrow the fiel
 in real time as your intent sharpens.
 
 Absynth's creator Brian Clevinger described the effect as removing language from
-the search process — music and language, as he put it, usually occupy different
+the search process. Music and language, as he put it, usually occupy different
 parts of the mind.
 
 {% include site/img.html src="/assets/media/work/absynth-preset-explorer/images/absynth-6-key-art.jpg" present="inline" alt="Absynth 6 key art: the wordmark over a dark green field of fine intersecting lines" caption="Absynth 6." %}

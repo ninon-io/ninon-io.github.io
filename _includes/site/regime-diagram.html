@@ -1,7 +1,7 @@
 {%- comment -%}
 The temperature-regime finding, drawn in the site's own visual language rather
-than reproduced from the paper's own plot. Every value shown — the plateau below
-1.2, the singularity zone between 1.2 and 1.4, the rupture from 1.5 — comes from
+than reproduced from the paper's own plot. Every value shown (the plateau below
+1.2, the singularity zone between 1.2 and 1.4, the rupture from 1.5) comes from
 the experiment described in the paper. Nothing here is estimated.
 
 Inline SVG so it inherits the palette and works in both themes.
@@ -32,7 +32,7 @@ Inline SVG so it inherits the palette and works in both themes.
     <line x1="{{ xs[forloop.index0] }}" y1="140" x2="{{ xs[forloop.index0] }}" y2="147" class="d-axis"/>
     <text x="{{ xs[forloop.index0] }}" y="166" class="d-tick" text-anchor="middle">{{ t }}</text>
     {%- endfor %}
-    <text x="40" y="196" class="d-axis-label">Temperature — GPT-4.1, swept 0 to 2 in steps of 0.1</text>
+    <text x="40" y="196" class="d-axis-label">Temperature · GPT-4.1, swept 0 to 2 in steps of 0.1</text>
 
     <!-- labels -->
     <text x="248" y="42" class="d-label" text-anchor="middle">Plateau</text>
@@ -40,7 +40,7 @@ Inline SVG so it inherits the palette and works in both themes.
     <text x="626" y="42" class="d-label d-label--rupture" text-anchor="middle">Rupture</text>
 
     <text x="248" y="92" class="d-note" text-anchor="middle">coherent, predictable</text>
-    <text x="494" y="92" class="d-note d-note--zone" text-anchor="middle">1.2 — 1.4</text>
+    <text x="494" y="92" class="d-note d-note--zone" text-anchor="middle">1.2–1.4</text>
     <text x="626" y="92" class="d-note" text-anchor="middle">coherence collapses</text>
   </svg>
   <figcaption>

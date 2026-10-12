@@ -1,10 +1,10 @@
 # Live and recorded activity.
 #
 # `kind` is the distinction that matters and is deliberately small:
-#   DJ set  — records played
-#   Live    — electronic performance
-#   A/V     — audiovisual collaboration (the visual half is someone else's work)
-#   Stream  — recorded session or mix
+#   DJ set: records played
+#   Live:   electronic performance
+#   A/V:    audiovisual collaboration (the visual half is someone else's work)
+#   Stream: recorded session or mix
 #
 # An entry only carries a `url` when that destination is genuinely about the
 # performance. Linking a venue straight into a project page whose photography is
@@ -24,7 +24,7 @@ selected:
     cta: "Read"
   - date: "2026-04-03"
     display: "April 2026"
-    venue: "La Station — Gare des Mines"
+    venue: "La Station, Gare des Mines"
     city: "Paris"
     kind: "DJ set"
     note: "Dreamachine"
@@ -43,7 +43,7 @@ selected:
     venue: "STUDIO1111"
     city: "Berlin"
     kind: "A/V"
-    note: "N / V with Victor Calvi — opening of Berlin New Media Week"
+    note: "N / V with Victor Calvi, opening of Berlin New Media Week"
     url: /work/n-v/
     cta: "N / V project"
   - date: "2025-06-01"
@@ -51,7 +51,7 @@ selected:
     venue: "Alte Münze"
     city: "Berlin"
     kind: "A/V"
-    note: "N / V with Victor Calvi — Blank Page series"
+    note: "N / V with Victor Calvi, Blank Page series"
     url: /work/n-v/
     cta: "N / V project"
   - date: "2025-01-26"
@@ -59,6 +59,6 @@ selected:
     venue: "MONOM"
     city: "Berlin"
     kind: "Live"
-    note: "Wilding AI, CTM Festival — 4DSOUND"
+    note: "Wilding AI at CTM Festival, 4DSOUND"
     url: /work/wilding-ai/
     cta: "Residency"

@@ -1,6 +1,6 @@
 # Fonts
 
-Self-hosted WOFF2, latin subset. No Google Fonts or other CDN request is made —
+Self-hosted WOFF2, latin subset. No Google Fonts or other CDN request is made,
 visitor IPs are never sent to a third party.
 
 | File | Family | Notes |
@@ -15,13 +15,13 @@ All three families are licensed under the **SIL Open Font License 1.1**, which
 permits web embedding and redistribution provided the licence travels with the
 files. Full text: <https://scripts.sil.org/OFL>
 
-- Archivo — Omnibus-Type. <https://github.com/Omnibus-Type/Archivo>
-- Newsreader — Production Type. <https://github.com/productiontype/Newsreader>
-- IBM Plex Mono — IBM. <https://github.com/IBM/plex>
+- Archivo: Omnibus-Type. <https://github.com/Omnibus-Type/Archivo>
+- Newsreader: Production Type. <https://github.com/productiontype/Newsreader>
+- IBM Plex Mono: IBM. <https://github.com/IBM/plex>
 
 ## Updating
 
 Fetch the latin subset from the Google Fonts CSS API with a modern browser
 User-Agent (it serves WOFF2 only to browsers that support it), then save the
 files here. Google returns one variable file per family, so several declared
-weights resolve to the same file — dedupe by content hash before committing.
+weights resolve to the same file, dedupe by content hash before committing.

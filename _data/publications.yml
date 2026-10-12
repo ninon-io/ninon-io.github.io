@@ -1,11 +1,11 @@
-# Publication record. Authors appear exactly as published — under the former
+# Publication record. Authors appear exactly as published, under the former
 # name "Ninon Devis". `type` drives grouping: peer-reviewed / preprint / thesis /
 # writing. Abstracts are deliberately not stored here; the archive is an index.
 
 - title: "Singularité et Création à l'Ère de l'Intelligence Artificielle"
   authors: "Ninon Devis Salvy, Jun Suzuki"
   year: 2026
-  venue: "CNC Lab — Centre national du cinéma et de l'image animée"
+  venue: "CNC Lab, Centre national du cinéma et de l'image animée"
   type: peer-reviewed
   lang: fr
   pdf: "https://www.cnc.fr/documents/36995/2568943/CNC+Lab+-+Singularit%C3%A9+et+Cr%C3%A9ation+%C3%A0+l%E2%80%99%C3%88re+de+l%E2%80%99Intelligence+Artificielle+-+Ninon+Devis+Salvy%2C+Jun+Suzuki.pdf/feeb200e-2502-4512-fe27-91ec422befc0?t=1775143018736"
@@ -91,7 +91,7 @@
 - title: "Creativity in the era of artificial intelligence"
   authors: "Philippe Esling, Ninon Devis"
   year: 2020
-  venue: "JIM — keynote article"
+  venue: "JIM, keynote article"
   type: preprint
   arxiv: "https://arxiv.org/abs/2008.05959"
   pdf: "https://arxiv.org/pdf/2008.05959.pdf"

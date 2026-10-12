@@ -209,7 +209,7 @@ table {
   &:hover &__title,
   &:focus-within &__title { transform: translateX(5px); color: var(--gold); }
 
-  // Semantic tone by kind — a marking on a panel, not a colour scheme.
+  // Semantic tone by kind, a marking on a panel, not a colour scheme.
   // Four tones grouped by what a thing is, so six types never read as a rainbow:
   //   gold    things you can play or use
   //   oxblood things that happened live
@@ -669,7 +669,7 @@ table thead:has(th:empty) { display: none; }
   // Contained: the whole frame, at honest scale. The default.
   &--natural img { margin-inline: auto; }
 
-  // Documentary scale — for material that exists but cannot carry a page.
+  // Documentary scale, for material that exists but cannot carry a page.
   &--inline {
     margin-block: var(--s4);
     img { max-width: min(var(--img-max, 420px), 420px); }
@@ -679,7 +679,7 @@ table thead:has(th:empty) { display: none; }
   &--wide img { max-width: min(var(--img-max, 100%), 100%); }
 
   // Bleed: reclaims the rail so the image spans the full field. Only the left
-  // edge moves — the column already ends at the field edge, so a negative right
+  // edge moves, the column already ends at the field edge, so a negative right
   // margin would push the document sideways.
   &--bleed {
     margin-left: calc(-1 * var(--rail) - clamp(1.5rem, 4vw, 3rem));

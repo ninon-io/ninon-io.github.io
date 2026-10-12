@@ -1,7 +1,7 @@
 # Site assets
 
 Everything under this folder is Ninon's own material. The two sibling folders
-`css/` and `js/` belong to the vendored Minimal Mistakes theme — leave those alone.
+`css/` and `js/` belong to the vendored Minimal Mistakes theme: leave those alone.
 
 ```
 assets/
@@ -36,14 +36,14 @@ assets/
 
 `/documents/`, `/images/` and `/audio/` at the repository root are frozen
 **copies**, kept so that URLs which were public before the reorganisation still
-resolve. They are not canonical — never edit them. Each folder has its own
+resolve. They are not canonical: never edit them. Each folder has its own
 README explaining what is aliased and what deliberately is not.
 
 ## Where to add new material
 
 | What | Where |
 |---|---|
-| New CV | `assets/documents/cv/` — then update the link in `_pages/about.md` |
+| New CV | `assets/documents/cv/`, then update the link in `_pages/about.md` |
 | Wilding AI spatial sketch | `assets/media/projects/wilding-ai/audio/ninon-jun-spatial-sketch.wav` |
 | More Wilding AI photos | `assets/media/projects/wilding-ai/images/` + add a `gallery:` entry in `_pages/projects_ctm.md` |
 | A new project's audio | `assets/media/projects/<project>/audio/` |

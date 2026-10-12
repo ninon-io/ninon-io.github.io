@@ -31,7 +31,7 @@ except ImportError:
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MEDIA = os.path.join(ROOT, "assets", "media")
 
-# Content where a border may be meaningful — never touched.
+# Content where a border may be meaningful. Never touched.
 SKIP = ("architecture-overview", "sinc-nsf", "jetson-nano", "neurorack-banner",
         "neurorack-interface", "neurorack-logo", "acids-logo", "faceplate",
         "og-image", "absynth-6-key-art", "preset-explorer-map", "figure-")

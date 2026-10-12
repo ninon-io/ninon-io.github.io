@@ -7,7 +7,7 @@ excerpt: "The thesis, individual research pieces, the full publication record, t
 rail_label: "Research"
 entries:
   - title: "Doctoral Thesis"
-    description: "Creative Deep Learning on Real Time Embedded Architectures. Defended May 2025 — manuscript and defence video."
+    description: "Creative Deep Learning on Real Time Embedded Architectures. Defended May 2025. Manuscript and defence video."
     url: /research/thesis/
     year: "2025"
     kind: "Thesis"
@@ -22,7 +22,7 @@ entries:
     year: "2026"
     kind: "Paper"
   - title: "Publications"
-    description: "The full record — peer-reviewed papers, preprints, essays and the thesis, with DOIs, arXiv, PDFs and BibTeX."
+    description: "The full record: peer-reviewed papers, preprints, essays and the thesis, with DOIs, arXiv, PDFs and BibTeX."
     url: /research/publications/
     year: "2020–"
     kind: "Archive"

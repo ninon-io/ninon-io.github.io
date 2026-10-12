@@ -10,12 +10,12 @@ redirect_from:
   - /teaching
 entries:
   - title: "Ableton Live"
-    description: "Composition, sound design and mixing. M2 — ATIAM."
+    description: "Composition, sound design and mixing. M2, ATIAM."
     url: /research/teaching/ableton/
     year: "2022–23"
     kind: "Archive"
   - title: "Pure Data"
-    description: "Synthesis and patching from first principles. M2 — ATIAM."
+    description: "Synthesis and patching from first principles. M2, ATIAM."
     url: /research/teaching/pure-data/
     year: "2022"
     kind: "Archive"

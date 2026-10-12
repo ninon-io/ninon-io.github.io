@@ -27,13 +27,13 @@ one playable.
 
 This work makes that space playable. Salient musical features are explicitly
 removed from the latent representation using an adversarial confusion criterion,
-then reintroduced as separate conditioning information — so the feature you care
+then reintroduced as separate conditioning information, so the feature you care
 about becomes an independent parameter rather than something entangled with
 everything else. The result behaves like a synthesiser knob: continuous, direct,
 and predictable in the direction it moves.
 
 Because it stays small enough to embed, FRAVE is the engine behind the second
-generation of the [Neurorack](/work/neurorack/) — the system moves off the bench
+generation of the [Neurorack](/work/neurorack/): the system moves off the bench
 and into a module a performer can patch. It was evaluated across instrumental,
 percussive and speech recordings, and supports both timbre transfer and attribute
 transfer.

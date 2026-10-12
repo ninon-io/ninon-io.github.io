@@ -2,7 +2,7 @@
  * Custom audio player.
  *
  * Waveforms are drawn from peak data precomputed at build time by
- * tools/generate-peaks.sh — no large file is ever decoded in the browser.
+ * tools/generate-peaks.sh, no large file is ever decoded in the browser.
  * Only one source plays at a time. Fully keyboard operable.
  */
 (function () {

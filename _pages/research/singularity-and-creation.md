@@ -14,7 +14,7 @@ lead:
   present: natural
 
 credits:
-  role: "Co-author — experiment design, text and image experiments, analysis"
+  role: "Co-author: experiment design, text and image experiments, analysis"
   collaborators:
     - name: "Jun Suzuki"
       role: "Co-author"
@@ -28,7 +28,7 @@ that look like images. For summarising a document or answering a question that i
 exactly what you want. For anything creative it is a ceiling.
 
 *Singularité et Création à l'Ère de l'Intelligence Artificielle* asks where
-originality can live under that condition. Philosophy offers several ways in —
+originality can live under that condition. Philosophy offers several ways in:
 intuition under algorithms, the algorithmic image, art after aesthetics. We took
 the empirical route instead: two experiments, one on language and one on images,
 looking for the settings at which a model stops returning its own centre.
@@ -45,7 +45,7 @@ it and the model reaches for less likely words. Raise it far enough and it stops
 meaning anything at all.
 
 We swept the full range GPT-4.1 exposes, 0 to 2 in steps of 0.1, across three
-kinds of input — a synopsis, a dialogue, a storyboard description — with ten
+kinds of input (a synopsis, a dialogue, a storyboard description) with ten
 outputs at every setting. Each output was measured three ways: whether it was
 still valid language, how varied its vocabulary was, and how close it stayed to
 the meaning of the prompt.
@@ -57,7 +57,7 @@ Three regimes appeared.
 Below 1.2 the model sits on a **plateau**: coherent, competent, and leaving most
 of the variation it is capable of untouched. Between 1.2 and 1.4 is the
 **singularity zone**, where the output genuinely departs from the default and
-remains readable. From 1.5 the model **ruptures** — languages mix, tokens are
+remains readable. From 1.5 the model **ruptures**: languages mix, tokens are
 invented, meaning drifts away from the prompt and does not come back.
 
 The same opening line at three settings makes the shape concrete. At temperature
@@ -68,7 +68,7 @@ sentence.
 
 The zone is narrow, and it sits immediately before the collapse. Its exact
 position belongs to the model we tested; what generalises is not the numbers but
-the shape — a thin band just before the break. Worth noting that newer models
+the shape, a thin band just before the break. Worth noting that newer models
 increasingly do not expose the dial at all. Every hidden parameter is one fewer
 lever for pushing a system past its defaults.
 
@@ -86,10 +86,10 @@ than what the model wants to give you by default?
 
 Those two goals pull against each other. Hold to the prompt and the image comes
 back average. Push for difference and it drifts off the brief. Only a narrow set
-of settings satisfies both — in optimisation the shape has a name, a **Pareto
+of settings satisfies both. In optimisation the shape has a name, a **Pareto
 frontier**, a set of trade-offs rather than a single correct answer.
 
-{% include site/img.html src="/assets/media/research/cnc-singularity/images/figure-9-sweet-spot.png" present="bleed" alt="A generated image from the sweet-spot regime: a face in close-up, dissolving into beaded, liquid texture — evoked rather than illustrated" caption="From the sweet-spot regime. The baseline illustrates the brief; chaos is unusable; this sits between the two — evoked rather than illustrated." %}
+{% include site/img.html src="/assets/media/research/cnc-singularity/images/figure-9-sweet-spot.png" present="bleed" alt="A generated image from the sweet-spot regime: a face in close-up, dissolving into beaded, liquid texture, evoked rather than illustrated" caption="From the sweet-spot regime. The baseline illustrates the brief; chaos is unusable; this sits between the two, evoked rather than illustrated." %}
 
 One honest limit, which the paper states plainly: the frontier is measured, but
 the labels along it are aesthetic judgements. LPIPS, the metric used, captures how
@@ -109,7 +109,7 @@ and choosing a favourite from four returns. It is shaping the space those return
 come out of: which parameters, held in what range, under which constraints, from
 what seed. The image or the paragraph is downstream of that shaping. The paper's
 term for this is the **architect of generative conditions** rather than the author
-of generated results — authorship moves upstream of the output.
+of generated results. Authorship moves upstream of the output.
 
 ## Against frictionless iteration
 
@@ -123,7 +123,7 @@ made it.
 
 Against this the paper proposes **methodical friction**: constrain the loop on
 purpose. Fixed iteration budgets. Locked seeds. Choices you cannot take back.
-Rules you have to live inside. The claim runs against intuition — friction is what
+Rules you have to live inside. The claim runs against intuition: friction is what
 makes a gesture a gesture, and removing all of it leaves curation at best.
 
 This is not only true of work made with generative models. It applies wherever the

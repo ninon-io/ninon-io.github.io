@@ -33,7 +33,7 @@ credits:
 ---
 
 **N / V** is an audiovisual duo with the visual artist
-[Victor Calvi](https://victorcalvi.com/). The two media are not layered — sound
+[Victor Calvi](https://victorcalvi.com/). The two media are not layered. Sound
 and generative image are built as one environment and played together, in real
 time, on custom tools.
 
@@ -43,7 +43,7 @@ keeping is whatever emerges at that edge. I play the sound: hardware synthesis,
 processing, and generative models handled as instruments rather than as
 generators. Victor drives the visual system, which moves at the same tempo.
 
-{% include site/img.html src="/assets/media/work/n-v/images/n-v-alte-muenze-wide.png" present="bleed" alt="Wide view of Alte Münze: two performers on a low stage in front of a wall-sized projection of a bright particle field, audience in the foreground" caption="Alte Münze, Berlin — Blank Page." %}
+{% include site/img.html src="/assets/media/work/n-v/images/n-v-alte-muenze-wide.png" present="bleed" alt="Wide view of Alte Münze: two performers on a low stage in front of a wall-sized projection of a bright particle field, audience in the foreground" caption="Alte Münze, Berlin. Blank Page." %}
 
 ## The set
 

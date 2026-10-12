@@ -3,7 +3,7 @@ layout: prose
 permalink: /research/thesis/
 title: Doctoral Thesis
 eyebrow: Doctoral thesis · Sorbonne Université
-excerpt: Creative Deep Learning on Real Time Embedded Architectures — defended 12 May 2025
+excerpt: Creative Deep Learning on Real Time Embedded Architectures, defended 12 May 2025
 rail_label: Thesis
 toc: true
 redirect_from:

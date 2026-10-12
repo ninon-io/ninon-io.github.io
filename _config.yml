@@ -1,4 +1,4 @@
-# Site configuration — ninon-io.github.io
+# Site configuration for ninon-io.github.io
 # Built and deployed by .github/workflows/pages.yml (Jekyll 4, GitHub Actions).
 #
 # assets/media/archive is excluded from the build on purpose: it holds
@@ -6,7 +6,7 @@
 # referenced and that were never publicly linked. They stay in the repository as
 # archive; they do not need to be served. This removes ~124 MB from _site.
 # The legacy compatibility folders (/documents, /images, /audio) are NOT excluded
-# — those are deliberate public URLs.
+# Those are deliberate public URLs.
 
 title: Ninon Devis Salvy
 name: Ninon Devis Salvy
@@ -20,7 +20,7 @@ search: false
 author:
   name: Ninon Devis Salvy
   avatar: /assets/media/about/ninon-portrait.jpg
-  bio: Audio researcher and electronic musician — neural synthesis, embedded instruments, live electronics.
+  bio: Audio researcher and electronic musician. Neural synthesis, embedded instruments, live electronics.
   location: Berlin / Paris
   email: null
   links:

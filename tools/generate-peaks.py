@@ -8,7 +8,7 @@ The player fetches that instead of decoding a multi-megabyte file in the browser
     python3 tools/generate-peaks.py            # only missing or stale peaks
     python3 tools/generate-peaks.py --force    # rebuild everything
 
-Requires ffmpeg. If ffmpeg is absent the script warns and exits 0 — the player
+Requires ffmpeg. If ffmpeg is absent the script warns and exits 0. The player
 degrades to a flat progress line, which is not worth failing a build over. CI
 installs ffmpeg, so peaks are always present in production.
 
@@ -67,7 +67,7 @@ def main():
     force = "--force" in sys.argv
 
     if not shutil.which("ffmpeg"):
-        print("generate-peaks: ffmpeg not found — skipping "
+        print("generate-peaks: ffmpeg not found, skipping "
               "(player falls back to a flat bar)", file=sys.stderr)
         os.makedirs(OUT, exist_ok=True)
         return 0

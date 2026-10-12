@@ -2,7 +2,7 @@
 
 **Canonical, linked from the site:** `ninon-devis-salvy-cv-2026.pdf`
 
-A hybrid scientific/artistic CV with selected publications and work — deliberately
+A hybrid scientific/artistic CV with selected publications and work, deliberately
 not an exhaustive academic CV.
 
 **Superseded:** `ninon-devis-cv-2024.pdf`. Kept only because its pre-reorganisation

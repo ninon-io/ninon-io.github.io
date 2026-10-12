@@ -83,7 +83,7 @@
   color-scheme: dark;
 }
 
-// Display sizes step down on narrow screens; body and utility text do not —
+// Display sizes step down on narrow screens; body and utility text do not,
 // they are already at their comfortable minimum.
 @media (max-width: 620px) {
   :root {
