@@ -220,6 +220,18 @@
   max: 620
   srcw: [480, 760, 1024]
   srcf: [webp]
+"saule-berghain-arrival.jpg":
+  w: 3024
+  h: 4032
+  max: 1512
+  srcw: [480, 760, 1024, 1440, 1960]
+  srcf: [webp]
+"saule-project-still-life.jpg":
+  w: 2392
+  h: 3077
+  max: 1196
+  srcw: [480, 760, 1024, 1440, 1960]
+  srcf: [webp]
 "sinc-nsf-model.jpg":
   w: 710
   h: 368

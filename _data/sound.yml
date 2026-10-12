@@ -10,14 +10,18 @@
 # performance. Linking a venue straight into a project page whose photography is
 # from a different night is more confusing than not linking it at all.
 
-upcoming:
+# Nothing announced. The Sound page drops the Upcoming section when this is empty.
+upcoming: []
+
+selected:
   - date: "2026-09-24"
-    display: "24 September 2026"
+    display: "September 2026"
     venue: "Säule, Berghain"
     city: "Berlin"
     kind: "Live"
-
-selected:
+    note: "Room as instrument — with the Neurorack"
+    url: /sound/saule/
+    cta: "Read"
   - date: "2026-04-03"
     display: "April 2026"
     venue: "La Station — Gare des Mines"
