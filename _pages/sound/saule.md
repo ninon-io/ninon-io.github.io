@@ -277,12 +277,7 @@ I did not want the Neurorack to function as a technological demonstration, any
 more than I wanted the room measurements to become an exercise in acoustics. I
 wanted both to become part of a musical language that could stand on its own.
 
-Building the performance around techno was never really in question. It is the
-music I make, and it is what Säule is for. What mattered was that it also happens
-to suit the experiment unusually well: its relationship with repetition, physical
-intensity and low frequencies gives the room something to respond to. It also allowed me to move between more
-direct rhythmic material and passages in which textures, resonances and less
-stable forms of sound could take over.
+Building the performance around techno was never really in question. It is the music I love making most, and its relationship with repetition, physical intensity and low frequencies made it particularly suited to exploring the relationship between music, space and dancers. It gives the room something to respond to, while allowing me to move between more direct rhythmic material and passages in which textures, resonances and less stable forms of sound could take over.
 
 The challenge was to bring these elements together without making the music feel
 like a sequence of experiments.
