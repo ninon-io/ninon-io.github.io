@@ -905,3 +905,40 @@ table thead:has(th:empty) { display: none; }
     br { display: none; }
   }
 }
+
+// ---- display equations ------------------------------------------------------
+// The site carries no maths renderer and loads nothing from a CDN, so equations
+// are set in Unicode rather than LaTeX. This gives a block equation room to
+// breathe and keeps variables italic without a second typeface.
+.eq {
+  display: block;
+  margin: var(--s3) 0;
+  padding-left: var(--s3);
+  border-left: 1px solid var(--rule);
+  font-family: var(--f-body);
+  font-size: var(--t-base);
+  line-height: 1.75;
+  color: var(--ink-dim);
+  overflow-x: auto;
+
+  i, var { font-style: italic; }
+
+  .eq__where {
+    display: block;
+    margin-top: var(--s1);
+    font-size: var(--t-sm);
+    color: var(--faint);
+  }
+}
+
+// A markdown table cannot be wrapped in a scroll container from markdown without
+// burying it in HTML, so the table scrolls itself on narrow screens. Without
+// this, any table wider than a phone pushes the whole page sideways.
+@media (max-width: 620px) {
+  .prose table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

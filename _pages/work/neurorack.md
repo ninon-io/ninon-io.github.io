@@ -41,146 +41,340 @@ credits:
   support: Developed in the ACIDS group at IRCAM–STMS.
 ---
 
-The **Neurorack** project pioneers the integration of deep learning models directly into the tactile, performance-oriented world of **Eurorack modular synthesizers**. Developed at [IRCAM](https://www.ircam.fr) within the [ACIDS group](https://acids-ircam.github.io/), the Neurorack enables real-time, descriptor-driven sound synthesis using AI models running entirely on embedded hardware, with no laptop required.
+The **Neurorack** is a Eurorack module with a deep generative model running on
+embedded hardware inside it, playing as an ordinary rack voice. It was built in
+the [ACIDS group](https://acids-ircam.github.io/) at [IRCAM](https://www.ircam.fr)
+during my [doctorate](/research/thesis/), and has been rebuilt and extended
+since, most recently for a [live set at Säule, Berghain](/sound/saule/).
 
-The spirit of **The Neurorack** lies in its modularity not just physically, but also computationally: it supports model switching, allowing different AI models to be trained and embedded for various synthesis goals. This means users can adapt the module to generate entirely different types of sounds depending on the trained model, all within the same hardware platform.
-
-This page documents the instrument's philosophy, design challenges, technical implementation, creative potential, and ongoing evolution.
-
----
-
-## The Challenge: Real-Time AI in a Tiny Box
-
-Modern deep generative models can produce incredibly realistic audio, but often require significant computational power (GPUs, large memory) and processing time, making them unsuitable for the strict constraints of musical instruments, especially compact Eurorack modules.
-
-The Neurorack tackles this challenge head-on:
-
-1.  **Real-Time Performance:** Achieving low-latency audio generation suitable for live performance and interaction.
-2.  **Embedded Constraints:** Operating within the limited power, size (3U height, variable HP width), and computational resources of the Eurorack format.
-3.  **Musical Expressivity:** Providing intuitive, high-level control over complex timbres using standard Control Voltage (CV) and Gate signals.
-
-Our design philosophy centers on balancing **model accuracy** with **lightweight efficiency** and **meaningful user interaction**.
+This page describes the instrument as it currently stands: how it generates
+sound, what the panel does, and the design constraints that shaped both. The
+2022 paper below describes the original system.
 
 ---
 
-## Core Technology
+## A generative model inside a 23 millisecond deadline
 
-### Hardware: NVIDIA Jetson Power in 11hp
+Most of the engineering follows from one number. The audio process runs in blocks
+of 512 frames at a 22.05 kHz sample rate:
 
-The computational core is the **[NVIDIA Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit)**, chosen for its balance of:
-* Quad-core ARM CPU & 128-core Maxwell GPU (CUDA-enabled)
-* 4GB LPDDR4 RAM
-* Compact size and energy efficiency
+<p class="eq">512 ⁄ 22050 Hz ≈ 23.2 ms
+<span class="eq__where">the time available to produce one block of output</span></p>
 
-This allows us to run optimized deep learning models directly within the Eurorack module. The hardware module itself occupies **11hp** width in a standard 3U Eurorack case.
+Model inference, post-model DSP and output all have to finish inside that window,
+every block, with no exceptions. A generative model that is merely fast on
+average is of no use here: a single overrun is an audible click. This is the
+difference between offline synthesis, where quality is bounded by patience, and
+an instrument, where quality is bounded by a deadline.
 
-The **Neurorack** is a deep learning-driven instrument that incorporates advanced audio synthesis techniques within a modular synthesizer environment. It’s composed of two main parts: a hardware module that interfaces with other Eurorack systems via Control Voltage (CV) and Gate inputs, and an embedded Jetson Nano board that handles real-time audio computation.
+The computational core is an **NVIDIA Jetson Nano** (quad-core ARM, 128-core
+Maxwell GPU, 4 GB LPDDR4), with a **PCM5102** I²S DAC, two **ADS1015** ADCs on
+I²C for the control voltages, and an **ST7789** SPI display.
 
 ![NVIDIA Jetson Nano Board](/assets/media/work/neurorack/images/jetson-nano.png "The NVIDIA Jetson Nano Developer Kit used in Neurorack")
 
-The hardware is responsible for capturing and interpreting CV/Gate signals, while the Jetson Nano processes those in real time using a deep neural network to generate audio. This modular split keeps interaction intuitive and performance-friendly, while offloading the heavy lifting to the embedded AI system.
+Work is split across four processes, each with its own deadline:
 
-![Hardware & Software Architecture Overview](/assets/media/work/neurorack/images/architecture-overview.jpg "The diagram shows the interaction between the hardware (left) and software (right) components.")
+| Process | Rate | Job |
+|---|---|---|
+| audio | 512 frames / 23.2 ms | model inference, post-DSP, output |
+| cv | 250 Hz | read the ADCs, condition and publish |
+| ui | 60 Hz input, 20 FPS frames | panel, screen, LED |
+| parent | 2 Hz | supervise, handle shutdown |
 
+The audio process runs at elevated priority and the interface deliberately at the
+lowest, so that redrawing a screen can never preempt sound. Parameter edits cross
+from the interface to the audio process through shared memory rather than a
+queue, so no interface work can block a note.
 
-### Sound Synthesis: Descriptor-Driven Sinc-NSF (First Model)
-
-
-This model specializes in generating **impact sounds** – complex, transient-rich, often cinematic sounds like deep kicks or resonant hits, which are notoriously difficult to create convincingly with traditional synthesis methods.
-
-* **Dataset:** Trained on a curated dataset of 3,500 high-quality impact samples (44.1kHz) sourced from [Splice](https://splice.com/), normalized and trimmed.
-* **Model:** Uses a highly adapted **Sinc-NSF (Neural Source-Filter)** model. Inspired by speech synthesis and DSP, this model separates sound into harmonic and noise components, generated in a single pass for real-time efficiency. Key features include:
-    * **Descriptor Conditioning:** Synthesis is controlled by **7 perceptual audio descriptors** calculated frame-by-frame: Loudness (RMS), Percussivity (ZCR), Brightness (Centroid), Tone (Roll-off), Richness (Bandwidth), Noise (Flatness), and Pitch ($f_0$).
-    * **SincNet Filters:** Employs trainable, DSP-inspired Sinc filters for efficient and interpretable spectral shaping, replacing generic convolutions.
-    * **Spectral Loss:** Optimized using a multi-resolution spectral loss to capture both transient details and overall timbral character.
-
-![Adapted Sinc-NSF Model Architecture](/assets/media/work/neurorack/images/sinc-nsf-model.jpg "Diagram of the Sinc-NSF model showing descriptor input, source generation, and filter blocks, BP and LP stand for Band-Pass and Low-Pass filters")
-
-* **Descriptor Generation (VAE):** To explore the timbral space and generate new sounds, a Variational Autoencoder (VAE) was trained on the descriptor curves from the dataset. This allows sampling or interpolating in a low-dimensional latent space to create novel, coherent descriptor sets that drive the Sinc-NSF model.
+![Hardware & Software Architecture Overview](/assets/media/work/neurorack/images/architecture-overview.jpg "The interaction between the hardware (left) and software (right) components.")
 
 ---
 
-## Interface & Interaction: Hands-On AI Control
+## Synthesis: conditioning on perceptual descriptors
 
-The Neurorack faceplate provides immediate tactile control, integrated seamlessly into the modular workflow:
+The model does not synthesise from an oscillator. It reconstructs a waveform from
+a *description* of one.
 
-* **1.3-inch OLED Display:** Visual feedback for parameters, modes, and navigation.
-* **Rotary Encoder + Push Button:** For menu navigation and parameter adjustments.
-* **2 Gate Inputs:** Triggering events.
-* **4 CV Inputs:** Modulating synthesis parameters.
-* **1 Mono Audio Output:** Standard Eurorack level output.
+That description is a trajectory of **seven spectral descriptors per frame**,
+computed from the training audio and, at play time, supplied by the instrument:
+
+| Descriptor | Definition | What it controls |
+|---|---|---|
+| Loudness | RMS = √( (1/N) Σ x[n]² ) | weight |
+| Percussivity | zero-crossing rate | grain, buzz |
+| Brightness | spectral centroid | perceived brightness |
+| Tone | spectral roll-off | where the energy stops |
+| Richness | spectral bandwidth | spread around the centroid |
+| Noise | spectral flatness | tonal against noisy |
+| Pitch | fundamental *f*₀ | pitch |
+
+Two of these carry most of the perceptual weight. The centroid is the
+amplitude-weighted mean frequency of the spectrum, which is the standard
+correlate of perceived brightness:
+
+<p class="eq">centroid = ( Σ<sub>f</sub> <i>f</i> · |X(<i>f</i>)| ) ⁄ ( Σ<sub>f</sub> |X(<i>f</i>)| )
+<span class="eq__where">X(f) is the magnitude spectrum of the frame</span></p>
+
+Flatness is the ratio of the geometric to the arithmetic mean of the magnitude
+spectrum, approaching 1 for noise and 0 for a pure tone:
+
+<p class="eq">flatness = exp( (1/K) Σ<sub>f</sub> ln |X(<i>f</i>)| ) ⁄ ( (1/K) Σ<sub>f</sub> |X(<i>f</i>)| )
+<span class="eq__where">K is the number of frequency bins</span></p>
+
+Conditioning on descriptors rather than on raw spectral frames is the decision
+the whole instrument rests on. It reduces the control surface from hundreds of
+bins per frame to seven numbers; those seven are perceptually meaningful rather
+than arbitrary; and because each is a scalar, each maps directly onto a control
+voltage. A latent vector would be smaller still but would not have axes anyone
+could name, let alone patch a sequencer into.
+
+### The model
+
+Synthesis uses an adapted **Sinc-NSF** (neural source-filter) model, an
+architecture borrowed from speech synthesis. Source-filter models separate
+excitation from resonance, generating a harmonic component and a noise component
+and shaping them with filters, in a single forward pass rather than
+autoregressively. That single pass is what makes the deadline above achievable.
+
+The filters are **SincNet** bandpass filters, which are parameterised by their
+cutoff frequencies rather than by learned taps. A conventional learned FIR filter
+of length *L* carries *L* free parameters with no constraint on their shape; a
+sinc filter carries two, a low and a high cutoff, and is band-pass by
+construction. This is a strong structural prior: fewer parameters, faster
+convergence, and filters whose learned values can be read as frequencies.
+
+Training minimises a **multi-resolution spectral loss**, comparing magnitude
+spectrograms at several window sizes at once:
+
+<p class="eq">ℒ = Σ<sub>r</sub> ‖ |STFT<sub>r</sub>(x)| − |STFT<sub>r</sub>(x̂)| ‖
+<span class="eq__where">r indexes the analysis resolutions, x̂ the reconstruction</span></p>
+
+The multiple resolutions matter for this material specifically. A short window
+resolves the transient that makes an impact read as a strike; a long window
+resolves the tail that gives it a body. Optimising at one resolution alone
+sacrifices whichever the window is blind to. The deployed weights are an
+exponential moving average over training, which is noticeably steadier than the
+final checkpoint.
+
+The training set was roughly 3,500 curated impact samples at 44.1 kHz,
+normalised and trimmed. A variational autoencoder trained on the descriptor
+curves provides a low-dimensional latent space from which new, coherent
+descriptor trajectories can be sampled rather than only replayed.
+
+![Adapted Sinc-NSF Model Architecture](/assets/media/work/neurorack/images/sinc-nsf-model.jpg "The Sinc-NSF model: descriptor input, source generation, and filter blocks. BP and LP are band-pass and low-pass.")
+
+---
+
+## Three sources and a simplex
+
+Three descriptor sets are loaded at once, in slots **A**, **B** and **C**, and
+playing the instrument largely consists of moving through the space between them.
+
+That space is a 2-simplex, a triangle whose vertices are the three sources, and
+it is navigated in two coordinates. **Morph** is an angle θ travelling around the
+perimeter; **Focus** is a radius, blending the perimeter position toward the
+centroid where all three sources contribute equally. The weights are barycentric:
+
+<p class="eq">w = focus · w<sub>perimeter</sub>(θ) + (1 − focus) · (1/3, 1/3, 1/3), &nbsp; Σ w<sub>i</sub> = 1
+<span class="eq__where">focus = 1 sits on an edge between two sources; focus = 0 sits at the centre of all three</span></p>
+
+Morph at full focus therefore interpolates between two sources at a time, while
+lowering focus pulls the result toward a three-way average. Because the weights
+always sum to one, every position in the triangle is a valid convex combination
+and nothing can run off the edge of the trained space.
+
+{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-morph-phrase.mp3" title="Morphing between materials" meta="Neurorack · raw render, one morph step per bar" %}
+
+### Hybrid tails
+
+A separate pair of controls, **Hybrid Donor** and **Hybrid Amount**, lets one
+descriptor set lend only the tail of its trajectory to another. The result is a
+strike whose body comes from one material and whose decay comes from a different
+one.
+
+This cannot be reached by morphing, and the reason is structural. A morph is a
+weighted sum over whole trajectories, so it moves every descriptor column at once
+and at every point in time. A hybrid splits the *time* axis instead and
+substitutes the later frames alone. The two operations act on different axes of
+the same tensor, which is why the instrument exposes both.
+
+{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A borrowed tail" meta="Neurorack · raw render, the tail changes every other strike" %}
+
+---
+
+## A second engine
+
+A **granular** voice now runs alongside the neural one, reading the same source
+recordings directly rather than through the model. `Engine Blend` crossfades
+between them. Both voices are triggered by the same gate and shaped by the same
+envelope, so any intermediate setting is two renderings of one note rather than
+two unrelated sounds layered together.
+
+What makes this more than a dry/wet control is that the same panel gesture means
+something different in each engine. Turning Morph in the neural engine
+interpolates a descriptor trajectory and resynthesises from the result. Turning
+Morph in the granular engine draws grains from all three recordings in
+proportion. One is interpolation in a parameter space; the other is mixture in a
+sample space. The knob is the same, the mathematics is not, and the two disagree
+in ways that are musically useful.
+
+`Scrub` selects where in a recording each grain is read from, and `Variation`
+scatters that position per grain so the texture does not freeze.
+
+---
+
+## Latency as a design taxonomy
+
+Because some parameters act after the model and others act on its input, they do
+not take effect at the same time. Rather than hide this, the instrument makes it
+the organising principle of the interface: every parameter carries a tier badge
+saying *when a change will be heard*.
+
+**Tier A, inside one audio block (under 25 ms).** Level, Decay, Tilt, Drive,
+Engine Blend, Texture. These are applied to the audio after the model, so they
+change a note while it is sounding. An envelope or an audio-rate LFO patched here
+behaves exactly as it would on an analogue module.
+
+**Tier C, on the next gate.** Morph, Focus, Scrub, Variation, the three source
+slots, Hybrid Donor and Amount, Brightness, Noisiness, Body, Detune, Transient.
+All of these rebuild the conditioning tensor, so the sound has to be regenerated
+and the change lands on the next trigger. While one is pending the screen reads
+`ARMED`, the value renders as an outline, and the LED pulses amber.
+
+**Tier B, reserved and deliberately empty (50 to 100 ms).** This would be genuine
+per-frame descriptor streaming, modulation following an LFO smoothly through a
+note the way a filter cutoff does. The architecture does not support it: anything
+touching the conditioning tensor currently has to rebuild it whole. The tier is
+defined but unassigned so that a later firmware can register into it without
+changing the menu, the modulation matrix or the preset format.
+
+The practical consequence is a rule a player can hold in their head. Fast
+modulation goes to Tier A. Sweeps you want to hear step from note to note go to
+Tier C. The constraint is real, and naming it turned out to be more useful than
+disguising it.
+
+---
+
+## The panel
 
 ![Neurorack Faceplate Interface](/assets/media/work/neurorack/images/faceplate.png)
 
-### CV & Gate Mapping for Creative Expression
+| Jack / control | Type | Range |
+|---|---|---|
+| GATE 1 | Gate in | trigger, +1.0 V rising / +0.6 V falling |
+| GATE 2 | Gate in | assignable, *Freeze* by default |
+| CV 1–4 | CV in | ±5 V, assignable |
+| OUT | Audio out | stereo DAC, 22.05 kHz |
+| Encoder | Rotary, turn only | no push switch |
+| Button | Momentary | the only key |
+| Screen | 240×240 colour LCD | 20 FPS |
 
-Standard Eurorack CV ($+/- 5V$) and Gate ($> 2.5V$ ON) signals control the AI model in musically meaningful ways:
+### Control voltages
 
-* **Gate 1 (Trigger):** Initiates sound generation. Essential for rhythmic sequencing.
-* **Gate 2 (Freeze Loop):** Activates a granular buffer, capturing and looping a short segment (~50-100ms) of the output for textural effects as long as the gate is high.
-    * *Creative Use:* Create stuttering effects, evolving pads, or rhythmic variations by gating the buffer.
+**CV 1** is pitch, one volt per octave, with optional quantisation to the nearest
+semitone. **CV 2 to 4** can be assigned to any parameter in the instrument. Each
+jack carries its own conditioning chain before it reaches its destination:
 
-* **CV 1 (Descriptor Interpolation):** Morphs between two predefined sets of sound descriptors ($\mathbf{F}_1, \mathbf{F}_2$). A voltage from -5V to +5V sweeps the interpolation weight $\alpha$ from 0 (fully $\mathbf{F}_1$) to 1 (fully $\mathbf{F}_2$).
-    * *Creative Use:* Use an LFO or envelope on CV1 to create smooth timbral transitions, evolving textures, or dynamic shifts between drastically different impact sounds.
+- **Depth**, an attenuverter from −100 % to +100 %, so one modulation source can
+  move two destinations in opposite directions
+- **Offset**, a bias from −100 % to +100 %
+- **Curve**, linear, exponential, logarithmic or S
+- **Slew**, 0 to 500 ms
 
-* **CV 2 (Descriptor Scrubbing):** Navigates through a small buffer of recent descriptor frames, similar to granular time-stretching but applied to the control parameters.
-    * *Creative Use:* Modulate with a slow LFO or sequence to create evolving, non-repetitive timbres. Use faster modulation for glitchy, granular-like textural effects on the sound's character.
+From the factory, CV 2 is Tilt, CV 3 is Reverb Mix and CV 4 is Engine Blend, all
+of them Tier A and therefore audible mid-note.
 
-* **CV 3 (Transient Shaping):** Dynamically adjusts the impact's attack and perceived punch by gently scaling the RMS (loudness) and Spectral Bandwidth descriptors.
-    * *Creative Use:* Control the "hardness" or "softness" of the impact using velocity CV from a sequencer or keyboard. Shape percussive sounds from sharp clicks to booming hits.
+### Gates
 
-* **CV 4 (Stochastic Variation):** Introduces controlled randomness (0-20% intensity based on CV) to selected descriptors, adding subtle organic variations.
-    * *Creative Use:* Add "human" feel to repetitive sequences. Generate slight timbral shifts to prevent sounds from becoming static. Increase for more chaotic, unpredictable textures.
+Either gate can be assigned one of nine actions, with a selectable edge (rising,
+falling or both) and a threshold between 0.5 V and 4.0 V:
+
+| Action | Effect |
+|---|---|
+| Trigger | fire a note |
+| Retrig | restart the current note |
+| Freeze | hold the current output |
+| Regen | a fresh take of the current sound |
+| Env | gate the envelope |
+| Clock | use the gate as a time base |
+| Step | advance one source slot |
+| Texture | hold a sustaining texture while high |
+| Preset | recall a stored scene |
+
+`Texture` is the one worth singling out. Holding the gate keeps generation
+running past the natural length of the source material, drifting as it goes,
+which gives an instrument built around impacts a sustaining register.
+
+---
+
+## Determinism
+
+Generation is reproducible by construction. The neural engine's seed is derived
+from a signature of the conditioning tensor itself, and the granular engine's
+jitter is seeded per note, so identical settings produce identical audio.
+
+This matters twice over. In research it makes a rendered example an artefact
+someone else can regenerate rather than a recording they have to take on trust.
+On stage it means a sound found in rehearsal is still there hours later, which is
+the difference between an instrument and a generator of pleasant surprises.
 
 ---
 
 ## Listen
 
-**Audio Demo:** A track composed entirely using impact sounds generated by the Neurorack.
+A track composed entirely from impact sounds generated by the Neurorack:
+
 {% include site/player.html src="/assets/media/work/neurorack/audio/raster-demo.mp3" title="Impact study" meta="Neurorack · composed entirely from generated impacts" %}
 
-**Video Teaser:**
 {% include site/video.html id="64VpQenCHVs" provider="youtube" %}
 
 ---
 
-## Development & Evolution
+## Development
 
-### V1 Prototype: Proof of Concept
-The first version successfully demonstrated real-time embedded AI synthesis but had limitations:
-* Exposed cabling and external power (not ideal for robust Eurorack use).
-* Limited CV interaction responsiveness in early software iterations.
-* Model "burn-in" required on startup.
-* Fixed descriptor sets required code changes for customization.
+**V1** proved that embedded real-time neural synthesis was possible at all, with
+exposed cabling, external power, a model burn-in on startup and descriptor sets
+fixed at compile time.
 
-### V2 Prototype: Refinements & Future Directions
-Developed with Corentin Vercoustre, V2 addressed key issues:
-* **Redesigned Faceplate:** Sleeker, more robust, better internal wiring.
-* **Improved Stability:** Internalized connections for better reliability.
-* **New Model Integration:** Work began on integrating **FRAVE**, a different generative model (from Chapter 4 of the [thesis](/research/phd/)) focused on continuous timbral control via latent space exploration.
-* **Future:** Ongoing work focuses on enhancing responsiveness, parameter mapping, and exploring new models.
+**V2**, with Corentin Vercoustre, Valentin Lageard and Martin Vert, internalised
+the wiring and redesigned the faceplate, and began the integration of
+[FRAVE](/work/frave/), a model built for continuous timbral control through a
+latent space.
 
----
-
-## Community Recognition & Showcases
-
-Neurorack has been presented at major industry events and recognized by the tech community:
-
-**[NVIDIA Jetson Project of the Month](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/)**: Recognized for innovative use of the Jetson platform. ([Community Project Page](https://developer.nvidia.com/embedded/community/jetson-projects/neurorack))
-
-* **Showcases:**
-    * [**IRCAM Manifeste**](https://manifeste.ircam.fr/en/) (Paris): Presented to the label [Raster-Noton](https://raster-media.net/).
-    * [**Superbooth**](https://www.superbooth.com/en/) (Berlin): Dedicated booth at one of the world's largest synthesizer trade show.
-        * [**SynthFest France**](https://www.synthfestfrance.com/) (Nantes)
-
-
-* 📰 **Media Coverage:** Featured on [Synthtopia](https://www.synthtopia.com/content/2022/01/08/new-neurorack-module-brings-artificial-intelligence-to-your-eurorack-system/), [Sonic State](https://sonicstate.com/news/2022/01/10/the-first-deep-ai-based-synthesizer/), [Keyboards.de](https://www.keyboards.de/equipment/neurorack-synthesizer-mit-kuenstlicher-intelligenz/), Matrixsynth, Geeky Gadgets.
+**The current build** adds the granular engine and the blend between the two
+voices, the three-source simplex with hybrid tails, the full modulation matrix
+with per-jack attenuversion and slew, the nine gate actions, a post-model effects
+chain with filters, three-band EQ, reverb and stereo width, stored presets, and
+the tier system that makes the architecture's timing legible on the panel.
 
 ---
 
-## Learn More & Get Involved
+## Recognition
 
-* 📄 **Scientific Publication:** [Devis et al., "Real-Time Embedded AI for Modular Synthesis: The Neurorack Project", EPFL, 2022](https://infoscience.epfl.ch/record/291222) (Detailed paper).
-* 💾 **GitHub Repository:** [acids-ircam/neurorack](https://github.com/acids-ircam/neurorack) (Code, Schematics - *Note: May reflect V1 status*).
-* 💡 **NVIDIA Developer Blog Post:** [In-depth feature on the project](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/).
+**[NVIDIA Jetson Project of the Month](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/)**,
+for the use of the Jetson platform
+([community project page](https://developer.nvidia.com/embedded/community/jetson-projects/neurorack)).
 
+Shown at [IRCAM Manifeste](https://manifeste.ircam.fr/en/) in Paris, where it was
+presented to [Raster-Noton](https://raster-media.net/); at
+[Superbooth](https://www.superbooth.com/en/) in Berlin; and at
+[SynthFest France](https://www.synthfestfrance.com/) in Nantes.
+
+Covered by [Synthtopia](https://www.synthtopia.com/content/2022/01/08/new-neurorack-module-brings-artificial-intelligence-to-your-eurorack-system/),
+[Sonic State](https://sonicstate.com/news/2022/01/10/the-first-deep-ai-based-synthesizer/),
+[Keyboards.de](https://www.keyboards.de/equipment/neurorack-synthesizer-mit-kuenstlicher-intelligenz/),
+Matrixsynth and Geeky Gadgets.
+
+---
+
+## References
+
+Devis et al., *Real-Time Embedded AI for Modular Synthesis: The Neurorack
+Project*, 2022. [Paper](https://infoscience.epfl.ch/record/291222).
+
+Source and schematics: [acids-ircam/neurorack](https://github.com/acids-ircam/neurorack).
+The public repository reflects the V1 system; the architecture described above is
+the current build.
+
+[NVIDIA developer blog](https://developer.nvidia.com/blog/jetson-neurorack-deep-ai-synthesizer/).
