@@ -221,10 +221,10 @@
   srcw: [480, 760, 1024]
   srcf: [webp]
 "saule-berghain-arrival.jpg":
-  w: 3024
-  h: 4032
-  max: 1512
-  srcw: [480, 760, 1024, 1440, 1960]
+  w: 1080
+  h: 1080
+  max: 540
+  srcw: [480, 760, 1024]
   srcf: [webp]
 "saule-project-still-life.jpg":
   w: 2392
