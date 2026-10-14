@@ -10,6 +10,7 @@ lede: |
 description: "A live set at Säule, Berghain, Berlin, 24 September 2026. Composing with the acoustic character of the room itself, and bringing the Neurorack, a neural synthesiser developed during a doctorate at IRCAM, to the stage."
 kind: "Live"
 years: "2026"
+has_player: true
 
 lead:
   src: /assets/media/sound/saule/saule-berghain-arrival.jpg
@@ -163,6 +164,18 @@ them. A morph control traverses that space continuously. A second pair of
 controls lets one description lend only its tail to another, so a strike can
 begin as one material and end as something else, which morphing alone cannot do
 because it moves every characteristic at the same time.
+
+Two short examples, rendered straight from the instrument rather than taken from
+the night itself. The first moves between loaded descriptions a step at a time,
+starting deep and dark and arriving somewhere brighter and more metallic. The
+second repeats a single strike and alternates the tail it is given, so the seam
+between the body of a sound and its tail is audible. Neither is a curated
+highlight; they are raw output, included because they show what the instrument
+will do.
+
+{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-morph-phrase.mp3" title="Morphing between materials" meta="Neurorack · raw render, one morph step per bar" %}
+
+{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A borrowed tail" meta="Neurorack · raw render, the tail changes every other strike" %}
 
 Alongside the neural engine there is now a granular one, reading the same
 recordings directly rather than through the model. A single control crossfades

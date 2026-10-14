@@ -31,8 +31,8 @@ EXTS = (".mp3", ".wav", ".flac", ".m4a", ".ogg", ".opus")
 
 
 def slug_for(path):
-    """assets/media/projects/neurorack/audio/raster-demo.mp3
-       -> projects-neurorack-raster-demo"""
+    """assets/media/work/neurorack/audio/raster-demo.mp3
+       -> work-neurorack-raster-demo"""
     rel = os.path.relpath(path, MEDIA)
     rel = os.path.splitext(rel)[0]
     parts = [p for p in rel.split(os.sep) if p != "audio"]
