@@ -152,6 +152,8 @@ within this relationship. In the months leading up to Säule, I spent a
 considerable amount of time rebuilding and extending it, exploring new ways of
 interacting with its sonic material.
 
+## Two ways of making a sound
+
 The module does not synthesise from an oscillator. The model is conditioned on a
 small set of spectral descriptors, loudness, brightness, noisiness, bandwidth and
 pitch among them, and reconstructs a waveform from that description rather than
@@ -167,6 +169,8 @@ recordings directly rather than through the model. A single control crossfades
 between the two, and the positions in between are genuinely both engines at once.
 A texture mode holds a sound open past its natural length, so an instrument built
 around impacts can also sustain.
+
+## Inside the set rather than beside it
 
 The part that mattered most for a live set is that it behaves like any other
 module in the rack. There are four control-voltage inputs and two gate inputs on
@@ -189,6 +193,8 @@ next trigger. A filter opens under your hand; a change of material waits for the
 next hit. I stopped treating that delay as a limitation to work around and began
 composing with it, thinking in terms of what could move continuously and what had
 to be placed.
+
+## What it is like to play
 
 What interests me most is not the technical complexity of the synthesis itself,
 but the way the instrument can be played. I wanted to interact with the character
