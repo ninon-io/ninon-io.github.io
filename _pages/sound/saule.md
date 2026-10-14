@@ -3,7 +3,7 @@ layout: performance
 permalink: /sound/saule/
 title: "Säule, Berghain"
 eyebrow: "Live · Berlin · 24 September 2026"
-excerpt: "On composing with a room, building instruments, and the uncertain space between intention and sound."
+excerpt: "On composing with a room, building instruments, and the (uncertain) space between intention and sound."
 description: "A live set at Säule, Berghain, Berlin, 24 September 2026. Composing with the acoustic character of the room itself, and bringing the Neurorack, a neural synthesiser developed during a doctorate at IRCAM, to the stage."
 kind: "Live"
 years: "2026"
@@ -12,13 +12,6 @@ lead:
   src: /assets/media/sound/saule/saule-berghain-arrival.jpg
   alt: "Black and white photograph: Ninon seen from behind on the path outside Berghain at night, in a long patterned coat, holding flowers, a modular synthesiser case and a suitcase standing beside her, the lit facade of the building behind the trees"
   present: natural
-
-credits:
-  role: "Live"
-  venues:
-    - name: "Säule, Berghain"
-      city: "Berlin"
-      year: "2026"
 
 gallery:
   - src: /assets/media/sound/saule/saule-project-still-life.jpg
@@ -36,12 +29,12 @@ silent.
 I wanted to know whether these properties could become part of the composition
 itself. Not something to correct or work around, but something to play.
 
-When I was invited to perform at Säule, Berghain, I decided to pursue this idea.
-I would explore the room's acoustic character and use that understanding to
-compose a techno live set specifically for the space. Alongside this, I wanted to
-bring the [Neurorack](/work/neurorack/), a neural synthesiser I had developed
-during my [doctorate](/research/thesis/) at IRCAM and had recently begun
-rebuilding.
+When I was invited to perform at Berghain's Säule, I thought it was the perfect
+opportunity to pursue this idea. I would explore the room's acoustic character
+and use that understanding to compose a techno live set specifically for the
+space. Alongside this, I wanted to bring the [Neurorack](/work/neurorack/), a
+neural synthesiser I had developed during my [doctorate](/research/thesis/) at
+IRCAM and had recently begun enhancing.
 
 These were two quite different experiments, but they came from a similar
 curiosity: what happens when we approach the conditions through which sound is
@@ -49,25 +42,24 @@ produced not as fixed constraints, but as material for musical invention?
 
 ## An instrument made of architecture
 
-An instrument is never simply a means of producing sound. Its construction,
-limitations and particular behaviour influence what can be played and,
-inevitably, what we imagine playing on it.
+An instrument is never simply a means of producing sound. Its interface,
+construction, limitations and particular behaviour influence what can be played
+and, inevitably, what we imagine playing on it.
 
 I have spent much of my research trying to understand this relationship,
-particularly through the design of new digital instruments. With Säule, I wanted
-to extend the question beyond the instrument itself.
+particularly through the design of new digital and hardware instruments. With
+Säule, I wanted to extend the question beyond the instrument itself.
 
-A room is not passive. Its dimensions, materials and geometry influence the way
-sound propagates and is perceived. Anyone who has spent time on a dancefloor
-knows this physically: a bass note that seems to fill your entire body in one
-position can feel very different elsewhere. Some sounds linger, others disappear
-almost as soon as they are produced.
+A room is not passive at all. Its dimensions, materials and geometry influence
+the way sound propagates and is perceived. Anyone who has spent time on a
+dancefloor knows this physically: a bass note that seems to fill your entire body
+in one position can feel very different elsewhere. Some sounds linger, others
+disappear almost as soon as they are produced.
 
 In sound reinforcement, these effects are usually regarded as problems.
 Considerable effort goes into minimising them, making sure that the audience
-hears something as consistent as possible across the room.
-
-But I was interested in the opposite approach.
+hears something as consistent as possible across the room. However, I was
+interested in the opposite approach.
 
 If a room naturally responds to certain sounds, why not compose with that
 response? If a sound continues to resonate after the synthesiser has stopped
@@ -76,7 +68,7 @@ introduce something into the music that I had not entirely determined myself?
 
 I did not want to turn Säule into an acoustic curiosity or make a demonstration
 of its resonances. I wanted to find a way for these properties to participate in
-a techno set, where sound is experienced as much through the body as through the
+my techno set, where sound is experienced as much through the body as through the
 ear.
 
 ## Learning to listen to the room
@@ -133,8 +125,8 @@ There was something appealing about composing for an effect I could never
 entirely reproduce in my studio.
 
 I could anticipate certain behaviours, but the final result would depend on the
-actual room, on the sound system, and on where the audience happened to be
-standing. The composition would only fully exist in that particular situation.
+actual room and on the sound system. The composition would only fully exist in
+that particular situation.
 
 ## Bringing the Neurorack back to the stage
 
@@ -153,11 +145,9 @@ sound. It gives access to certain gestures, resists others, and occasionally
 leads us somewhere we would not have thought to go.
 
 With the Neurorack, I wanted to explore what a neural synthesiser could offer
-within this relationship.
-
-In the months leading up to Säule, I spent a considerable amount of time
-rebuilding and extending it, exploring new ways of interacting with its sonic
-material.
+within this relationship. In the months leading up to Säule, I spent a
+considerable amount of time rebuilding and extending it, exploring new ways of
+interacting with its sonic material.
 
 What interests me most is not the technical complexity of the synthesis itself,
 but the way the instrument can be played. I wanted to interact with the character
@@ -232,16 +222,12 @@ hear or direct that contribution in its entirety.
 Säule was one of the most demanding projects I have undertaken, both technically
 and musically. It brought together years of research, months of instrument
 development, and a composition that could only really be tested on the night
-itself.
+itself: even if it can be played on any dancefloor, it would be felt differently
+in Säule.
 
 More than anything, it reinforced my interest in making music through systems
 whose behaviour can be explored, understood and shaped, but never completely
 reduced to intention.
-
-Perhaps this is what continues to draw me towards building instruments: not the
-possibility of controlling every aspect of a sound, but of creating the
-conditions in which something can happen that I could not have composed in quite
-the same way beforehand.
 
 ## Acknowledgements
 
@@ -251,5 +237,7 @@ professionalism and help throughout the process. Being able to investigate the
 room under the conditions of the eventual performance was essential to the
 project.
 
-Thank you also to Egregore and Terenor Records for the invitation, for trusting
-an unusual proposal, and for giving me the freedom to pursue it.
+Massive thank you also to [Egregore](https://www.instagram.com/egr3gore/) and
+[Terenor Records](https://www.instagram.com/terenor.records/) for the invitation
+and the help, for trusting an unusual proposal, and for giving me the freedom to
+pursue it.
