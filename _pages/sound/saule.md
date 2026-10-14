@@ -160,20 +160,19 @@ small set of spectral descriptors, loudness, brightness, noisiness, bandwidth an
 pitch among them, and reconstructs a waveform from that description rather than
 building one up from scratch. Three such descriptions are loaded at once, and a
 good part of playing the instrument consists of moving through the space between
-them. A morph control traverses that space continuously. A second pair of
-controls lets one description lend only its tail to another, so a strike can
-begin as one material and end as something else, which morphing alone cannot do
-because it moves every characteristic at the same time.
+them. A morph control traverses that space continuously.
 
-Two short examples, rendered straight from the instrument rather than taken from
-the night itself. The first moves between loaded descriptions a step at a time,
-starting deep and dark and arriving somewhere brighter and more metallic. The
-second repeats a single strike and alternates the tail it is given, so the seam
-between the body of a sound and its tail is audible. Neither is a curated
-highlight; they are raw output, included because they show what the instrument
-will do.
+Rendered straight from the instrument rather than taken from the night, this is
+that movement on its own: a phrase that begins deep and dark and arrives
+somewhere brighter and more metallic, moving one step at a time.
 
 {% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-morph-phrase.mp3" title="Morphing between materials" meta="Neurorack · raw render, one morph step per bar" %}
+
+A second pair of controls lets one description lend only its tail to another, so
+a strike can begin as one material and end as something else, which morphing
+alone cannot do because it moves every characteristic at the same time. The
+difference is easiest to hear when a single strike repeats and only the tail it
+is given changes.
 
 {% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A borrowed tail" meta="Neurorack · raw render, the tail changes every other strike" %}
 
