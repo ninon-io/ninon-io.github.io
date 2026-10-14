@@ -45,7 +45,7 @@ The **Neurorack** is a Eurorack module with a deep generative model running on
 embedded hardware inside it, playing as an ordinary rack voice. It was built in
 the [ACIDS group](https://acids-ircam.github.io/) at [IRCAM](https://www.ircam.fr)
 during my [doctorate](/research/thesis/), and has been rebuilt and extended
-since, most recently for a [live set at Säule, Berghain](/sound/saule/).
+since, most recently for a [live set at Berghain’s Säule](/sound/saule/).
 
 This page describes the instrument as it currently stands: how it generates
 sound, what the panel does, and the design constraints that shaped both. The
@@ -199,7 +199,7 @@ and at every point in time. A hybrid splits the *time* axis instead and
 substitutes the later frames alone. The two operations act on different axes of
 the same tensor, which is why the instrument exposes both.
 
-{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A borrowed tail" meta="Neurorack · raw render, the tail changes every other strike" %}
+{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A repeated strike" meta="Neurorack · raw render" %}
 
 ---
 

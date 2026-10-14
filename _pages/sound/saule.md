@@ -1,13 +1,13 @@
 ---
 layout: performance
 permalink: /sound/saule/
-title: "Säule, Berghain"
+title: "Berghain’s Säule"
 eyebrow: "Live · Berlin · 24 September 2026"
 excerpt: "On composing with a room, building instruments, and the (uncertain) space between intention and sound."
 lede: |
   On composing with a room, building instruments,
   and the (uncertain) space between intention and sound.
-description: "A live set at Säule, Berghain, Berlin, 24 September 2026. Composing with the acoustic character of the room itself, and bringing the Neurorack, a neural synthesiser developed during a doctorate at IRCAM, to the stage."
+description: "A live set at Berghain’s Säule, Berlin, 24 September 2026. Composing with the acoustic character of the room itself, and bringing the Neurorack, a neural synthesiser developed during a doctorate at IRCAM, to the stage."
 kind: "Live"
 years: "2026"
 has_player: true
@@ -102,6 +102,38 @@ encounter with a particular architecture.
 I returned to the studio with a new way of thinking about the material I wanted
 to write.
 
+## A room that is not a box
+
+Most of what makes the room interesting is also what makes it awkward. Heavy pillars stand inside the room rather than at its
+edges, so the low-frequency field is interrupted in the middle of the space
+instead of only at the boundaries. The ceiling is not at a constant height, which
+smears the vertical behaviour across a range rather than concentrating it where a
+rectangular room would put it. And the back of the room is a wall of glass, a
+surface that behaves nothing like the concrete around it.
+
+Two further variables sat outside my control, and they behave very differently
+from one another.
+
+The first is the audience, and I assumed it would matter less than one might
+expect. At these frequencies a wavelength is many metres long and a human body is
+a small fraction of it, so a crowd scatters and absorbs far less here than it
+does higher up the spectrum. I should be honest that this is a working
+assumption rather than a settled fact: published absorption figures for an
+audience are mostly measured in seated halls, where much of what is being
+measured is the seating rather than the people, and the data thins out badly
+below the low-mid bands. A standing crowd on a concrete floor at sub frequencies
+is not a well-documented case.
+
+The second is temperature, and that one is not an assumption at all. The speed of
+sound in air rises by roughly 0.6 metres per second for every degree Celsius,
+about 0.17 per cent, and the frequency of every room mode is directly
+proportional to that speed. An empty room measured in the afternoon and the same
+room full and warm hours later are therefore not acoustically the same room: a
+ten degree rise moves every resonance up by nearly two per cent. For a sharp,
+high-Q mode that is a meaningful fraction of its own width. I measured a cold,
+empty room and then played a warm, full one, and that difference is the single
+largest source of error in the whole approach.
+
 ## Writing for something I could not fully control
 
 The question was now how to turn that experience into music.
@@ -170,11 +202,9 @@ somewhere brighter and more metallic, moving one step at a time.
 
 A second pair of controls lets one description lend only its tail to another, so
 a strike can begin as one material and end as something else, which morphing
-alone cannot do because it moves every characteristic at the same time. The
-difference is easiest to hear when a single strike repeats and only the tail it
-is given changes.
+alone cannot do because it moves every characteristic at the same time.
 
-{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A borrowed tail" meta="Neurorack · raw render, the tail changes every other strike" %}
+{% include site/player.html src="/assets/media/work/neurorack/audio/neurorack-hybrid-seam.mp3" title="A repeated strike" meta="Neurorack · raw render" %}
 
 Alongside the neural engine there is now a granular one, reading the same
 recordings directly rather than through the model. A single control crossfades
@@ -247,9 +277,10 @@ I did not want the Neurorack to function as a technological demonstration, any
 more than I wanted the room measurements to become an exercise in acoustics. I
 wanted both to become part of a musical language that could stand on its own.
 
-The decision to build the performance around techno was important to me. Its
-relationship with repetition, physical intensity and low frequencies offered a
-natural setting for the experiment. It also allowed me to move between more
+Building the performance around techno was never really in question. It is the
+music I make, and it is what Säule is for. What mattered was that it also happens
+to suit the experiment unusually well: its relationship with repetition, physical
+intensity and low frequencies gives the room something to respond to. It also allowed me to move between more
 direct rhythmic material and passages in which textures, resonances and less
 stable forms of sound could take over.
 
