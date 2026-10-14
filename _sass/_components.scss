@@ -890,3 +890,18 @@ table thead:has(th:empty) { display: none; }
 @media (max-width: 620px) {
   .index__row__meta { grid-column: 1 / -1; justify-content: flex-start; }
 }
+
+// A hand-broken standfirst: the author chose where the line turns, so the
+// balancer must not be allowed to move it.
+//
+// Below the mobile breakpoint the chosen break is dropped. The measure there is
+// too narrow to hold the first clause on one line, so honouring the break would
+// strand a single word on a line of its own; letting it wrap naturally reads
+// better and keeps the sentence intact either way.
+.page-head__lede--set {
+  text-wrap: initial;
+
+  @media (max-width: 620px) {
+    br { display: none; }
+  }
+}

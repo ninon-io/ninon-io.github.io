@@ -4,6 +4,9 @@ permalink: /sound/saule/
 title: "Säule, Berghain"
 eyebrow: "Live · Berlin · 24 September 2026"
 excerpt: "On composing with a room, building instruments, and the (uncertain) space between intention and sound."
+lede: |
+  On composing with a room, building instruments,
+  and the (uncertain) space between intention and sound.
 description: "A live set at Säule, Berghain, Berlin, 24 September 2026. Composing with the acoustic character of the room itself, and bringing the Neurorack, a neural synthesiser developed during a doctorate at IRCAM, to the stage."
 kind: "Live"
 years: "2026"
@@ -148,6 +151,44 @@ With the Neurorack, I wanted to explore what a neural synthesiser could offer
 within this relationship. In the months leading up to Säule, I spent a
 considerable amount of time rebuilding and extending it, exploring new ways of
 interacting with its sonic material.
+
+The module does not synthesise from an oscillator. The model is conditioned on a
+small set of spectral descriptors, loudness, brightness, noisiness, bandwidth and
+pitch among them, and reconstructs a waveform from that description rather than
+building one up from scratch. Three such descriptions are loaded at once, and a
+good part of playing the instrument consists of moving through the space between
+them. A morph control traverses that space continuously. A second pair of
+controls lets one description lend only its tail to another, so a strike can
+begin as one material and end as something else, which morphing alone cannot do
+because it moves every characteristic at the same time.
+
+Alongside the neural engine there is now a granular one, reading the same
+recordings directly rather than through the model. A single control crossfades
+between the two, and the positions in between are genuinely both engines at once.
+A texture mode holds a sound open past its natural length, so an instrument built
+around impacts can also sustain.
+
+The part that mattered most for a live set is that it behaves like any other
+module in the rack. There are four control-voltage inputs and two gate inputs on
+the panel. The first CV is pitch, one volt per octave, and can be quantised to
+semitones. The other three can be assigned to any parameter in the instrument,
+each with its own attenuverter, offset, response curve and slew, so a single
+modulation source can be gentle on one destination and extreme on another. The
+gates do more than fire a note: they can freeze the current sound, regenerate it
+as a fresh take, step through the loaded descriptions, act as a clock, or hold a
+texture open for as long as the gate stays high.
+
+This is what allowed the Neurorack to sit inside the set rather than beside it.
+The sequencers, envelopes and modulation sources I was already using could
+address it directly, and its sonic character became something to play and
+automate rather than something to configure beforehand.
+
+One behaviour took some getting used to. Because the model is conditioned per
+note, some controls respond instantly while others can only take effect on the
+next trigger. A filter opens under your hand; a change of material waits for the
+next hit. I stopped treating that delay as a limitation to work around and began
+composing with it, thinking in terms of what could move continuously and what had
+to be placed.
 
 What interests me most is not the technical complexity of the synthesis itself,
 but the way the instrument can be played. I wanted to interact with the character
